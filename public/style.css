@@ -1,5 +1,5 @@
-/* Landing Page */
-html, body {
+html,
+body {
 	position: relative;
 	/* width: 1512px;
 	height: 982px; */
@@ -8,16 +8,24 @@ html, body {
 	background: #ffffff;
 }
 
-/* Blob 1 */
+.title-text {
+	font-family: DM Serif Display;
+}
 
+.body-text {
+	font-family: Source Sans Pro;
+}
+
+/* Landing Page */
+/* Blob 1 */
 .blob-1 {
 	position: absolute;
 	/* width: 701.51px;
 	height: 666.78px; */
 	/* left: -482.65px; */
 	/* top: 393.69px; */
-  left: 0;
-  top: 24.606rem;
+	left: 0;
+	top: 24.606rem;
 }
 
 /* .blob-1 .vector {
@@ -37,10 +45,10 @@ html, body {
 	/* width: 816.79px;
 	height: 846.18px; */
 	/* left: 859.69px; */
-  /* left: 53.731rem; */
-  right: 0;
+	/* left: 53.731rem; */
+	right: 0;
 	/* top: -151.91px; */
-  /* top: -9.494rem; */
+	/* top: -9.494rem; */
 }
 
 /* .blob-2 .vector {
@@ -54,34 +62,33 @@ html, body {
 	transform: rotate(-26.7deg);
 } */
 
+/* Main Content */
 
-Main Content
-
-position: absolute;
+/* position: absolute;
 width: 1002px;
 height: 571.04px;
 left: 255px;
-top: 205px;
+top: 205px; */
 
 /* Introduction */
 
-position: absolute;
+/* position: absolute;
 width: 531px;
 height: 211px;
 left: 0px;
-top: 181px;
+top: 181px; */
 
 /* Frame 4 */
 
-position: absolute;
+/* position: absolute;
 width: 531px;
 height: 151px;
 left: 0px;
-top: 0px;
+top: 0px; */
 
 /* Hi, my name is Jenny. Nice to meet you! */
 
-position: absolute;
+/* position: absolute;
 width: 531px;
 height: 151px;
 left: 0px;
@@ -93,19 +100,19 @@ font-weight: bold;
 font-size: 36px;
 line-height: 67px;
 
-color: #000000;
+color: #000000; */
 
 /* Frame 5 */
 
-position: absolute;
+/* position: absolute;
 width: 531px;
 height: 60px;
 left: 0px;
-top: 151px;
+top: 151px; */
 
 /* I’m a frontend developer.| */
 
-position: absolute;
+/* position: absolute;
 width: 531px;
 height: 60px;
 left: 0px;
@@ -117,45 +124,45 @@ font-weight: normal;
 font-size: 36px;
 line-height: 49px;
 
-color: #000000;
+color: #000000; */
 
 /* Profile Picture 1 */
 
-position: absolute;
+/* position: absolute;
 width: 421px;
 height: 571.04px;
 left: 581px;
-top: 0px;
+top: 0px; */
 
 /* Vector */
 
-position: absolute;
+/* position: absolute;
 width: 421px;
 height: 571.04px;
 left: 0px;
 top: 0px;
 
-background: url(IMG_0858.jpg);
+background: url(IMG_0858.jpg); */
 
 /* Header */
 
-position: absolute;
+/* position: absolute;
 width: 1512px;
 height: 96px;
 left: 0px;
-top: 0px;
+top: 0px; */
 
 /* Navbar */
 
-position: absolute;
+/* position: absolute;
 width: 583px;
 height: 67px;
 left: 876px;
-top: 15px;
+top: 15px; */
 
 /* About Me */
 
-position: absolute;
+/* position: absolute;
 width: 101px;
 height: 33px;
 left: -2px;
@@ -165,14 +172,14 @@ font-family: DM Serif Display;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
-line-height: 33px;
+line-height: 33px; */
 /* identical to box height */
 
-color: #000000;
+/* color: #000000; */
 
 /* Projects */
 
-position: absolute;
+/* position: absolute;
 width: 87px;
 height: 33px;
 left: 177px;
@@ -182,14 +189,14 @@ font-family: DM Serif Display;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
-line-height: 33px;
+line-height: 33px; */
 /* identical to box height */
 
-color: #000000;
+/* color: #000000; */
 
 /* Resume */
 
-position: absolute;
+/* position: absolute;
 width: 84px;
 height: 33px;
 left: 336px;
@@ -199,14 +206,14 @@ font-family: DM Serif Display;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
-line-height: 33px;
+line-height: 33px; */
 /* identical to box height */
 
-color: #000000;
+/* color: #000000; */
 
 /* Contact */
 
-position: absolute;
+/* position: absolute;
 width: 83px;
 height: 33px;
 left: 496px;
@@ -216,22 +223,22 @@ font-family: DM Serif Display;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
-line-height: 33px;
+line-height: 33px; */
 /* identical to box height */
 
-color: #000000;
+/* color: #000000; */
 
 /* Logo */
 
-position: absolute;
+/* position: absolute;
 width: 215px;
 height: 66px;
 left: 67px;
-top: 16px;
+top: 16px; */
 
 /* jennykim. */
 
-position: absolute;
+/* position: absolute;
 width: 215px;
 height: 66px;
 left: 0px;
@@ -241,9 +248,9 @@ font-family: DM Serif Display;
 font-style: normal;
 font-weight: normal;
 font-size: 48px;
-line-height: 66px;
+line-height: 66px; */
 /* identical to box height */
-display: flex;
+/* display: flex;
 align-items: center;
 
-color: #000000;
+color: #000000; */

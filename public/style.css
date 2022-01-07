@@ -145,20 +145,37 @@ top: 0px;
 background: url(IMG_0858.jpg); */
 
 /* Header */
+.header-nav {
+	position: absolute;
+	/* width: 1512px;
+	height: 96px; */
+	left: 0px;
+	top: 0px;
+}
 
-/* position: absolute;
-width: 1512px;
-height: 96px;
-left: 0px;
-top: 0px; */
+.header-nav .sections {
+	position: absolute;
+	/* width: 583px;
+	height: 67px; */
+	left: 876px;
+	top: 15px;
+}
 
-/* Navbar */
+.header-nav .logo {
+	position: absolute;
+	/* width: 215px;
+	height: 66px; */
+	/* left: 67px; */
+	left: 4.188rem;
+	/* top: 16px; */
+	top: 1rem;
 
-/* position: absolute;
-width: 583px;
-height: 67px;
-left: 876px;
-top: 15px; */
+	font-size: 48px;
+	line-height: 66px;
+	/* identical to box height */
+	display: flex;
+	align-items: center;
+}
 
 /* About Me */
 
@@ -227,30 +244,3 @@ line-height: 33px; */
 /* identical to box height */
 
 /* color: #000000; */
-
-/* Logo */
-
-/* position: absolute;
-width: 215px;
-height: 66px;
-left: 67px;
-top: 16px; */
-
-/* jennykim. */
-
-/* position: absolute;
-width: 215px;
-height: 66px;
-left: 0px;
-top: 0px;
-
-font-family: DM Serif Display;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 66px; */
-/* identical to box height */
-/* display: flex;
-align-items: center;
-
-color: #000000; */

@@ -4,7 +4,7 @@ export default function HeaderNav() {
 	return (
 		<div className="title-text header-nav">
 			<span className="logo">jennykim.</span>
-			<ul className="sections">
+			<ul>
 				<li>
 					<a href="#aboutme">About Me</a>
 				</li>

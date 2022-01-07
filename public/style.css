@@ -153,12 +153,16 @@ background: url(IMG_0858.jpg); */
 	top: 0px;
 }
 
-.header-nav .sections {
+.header-nav ul {
 	position: absolute;
-	/* width: 583px;
-	height: 67px; */
+	list-style: none;
 	left: 876px;
 	top: 15px;
+}
+
+.header-nav ul li {
+	/* float: left; */
+	display: inline-block;
 }
 
 .header-nav .logo {

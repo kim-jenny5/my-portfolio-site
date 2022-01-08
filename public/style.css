@@ -28,17 +28,6 @@ body {
 	top: 24.606rem;
 }
 
-/* .blob-1 .vector {
-	position: absolute;
-	width: 566.21px;
-	height: 510.17px;
-	left: 535.32px;
-	top: 666.78px;
-
-	background: #eae3d7;
-	transform: rotate(-160.99deg);
-} */
-
 /* Blob 2 */
 .blob-2 {
 	position: absolute;
@@ -51,19 +40,7 @@ body {
 	/* top: -9.494rem; */
 }
 
-/* .blob-2 .vector {
-	position: absolute;
-	width: 586.16px;
-	height: 652.36px;
-	left: 0px;
-	top: 263.4px;
-
-	background: #ebccc1;
-	transform: rotate(-26.7deg);
-} */
-
 /* Main Content */
-
 /* position: absolute;
 width: 1002px;
 height: 571.04px;
@@ -217,70 +194,23 @@ background: url(IMG_0858.jpg); */
 	align-items: center;
 }
 
-/* About Me */
+/* Introduction */
+.introduction {
+	position: absolute;
+	/* width: 1002px;
+	height: 571.04px; */
+	/* left: 255px; */
+	left: 15.938rem;
+	/* top: 205px; */
+	top: 12.813rem;
+}
 
-/* position: absolute;
-width: 101px;
-height: 33px;
-left: -2px;
-top: 17px;
+.introduction .title {
+	font-family: Corben;
+	font-weight: bold;
+	font-size: 36px;
+}
 
-font-family: DM Serif Display;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 33px; */
-/* identical to box height */
-
-/* color: #000000; */
-
-/* Projects */
-
-/* position: absolute;
-width: 87px;
-height: 33px;
-left: 177px;
-top: 17px;
-
-font-family: DM Serif Display;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 33px; */
-/* identical to box height */
-
-/* color: #000000; */
-
-/* Resume */
-
-/* position: absolute;
-width: 84px;
-height: 33px;
-left: 336px;
-top: 17px;
-
-font-family: DM Serif Display;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 33px; */
-/* identical to box height */
-
-/* color: #000000; */
-
-/* Contact */
-
-/* position: absolute;
-width: 83px;
-height: 33px;
-left: 496px;
-top: 17px;
-
-font-family: DM Serif Display;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 33px; */
-/* identical to box height */
-
-/* color: #000000; */
+.introduction .subtitle {
+	font-size: 36px;
+}

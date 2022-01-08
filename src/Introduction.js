@@ -8,6 +8,7 @@ export default function Introduction() {
 				<div>Nice to meet you!</div>
 			</div>
 			<div className="title-text subtitle">I'm a frontend developer.</div>
+			<div className="picture"></div>
 		</div>
 	);
 }

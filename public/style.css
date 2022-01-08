@@ -214,3 +214,25 @@ background: url(IMG_0858.jpg); */
 .introduction .subtitle {
 	font-size: 36px;
 }
+
+.introduction .picture {
+	/* Profile Picture 1 */
+
+	/* position: absolute;
+width: 421px;
+height: 571.04px; */
+	left: 581px;
+	/* top: 0px; */
+
+	/* Vector */
+
+	position: absolute;
+	width: 421px;
+	height: 571.04px;
+	/* left: 0px; */
+	top: 0px;
+
+	background-image: url(./IMG_0858.JPG);
+	background-position: center;
+	background-repeat: no-repeat;
+}

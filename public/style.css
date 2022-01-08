@@ -197,12 +197,23 @@ background: url(IMG_0858.jpg); */
 /* Introduction */
 .introduction {
 	position: absolute;
-	/* width: 1002px;
-	height: 571.04px; */
+	/* width: 1002px; */
+	width: 62.625rem;
+	/* height: 571.04px; */
+	height: 35.69rem;
+
+	/* margin: auto; */
 	/* left: 255px; */
-	left: 15.938rem;
+	margin: 9rem 15.938rem 9rem 15.938rem;
 	/* top: 205px; */
-	top: 12.813rem;
+	/* top: 12.813rem; */
+}
+
+.introduction .text-container {
+	position: absolute;
+	width: 33.188rem;
+	height: 13.188rem;
+	top: 11.313rem;
 }
 
 .introduction .title {

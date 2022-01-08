@@ -149,20 +149,33 @@ background: url(IMG_0858.jpg); */
 	position: absolute;
 	/* width: 1512px;
 	height: 96px; */
-	left: 0px;
-	top: 0px;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 6rem;
+	/* height: 100vh; */
 }
 
 .header-nav ul {
 	position: absolute;
 	list-style: none;
-	left: 876px;
-	top: 15px;
+	width: fit-content;
+	height: 4.188rem;
+	/* padding-left: 54.75rem; */
+	right: 3.313rem;
+	/* left: 54.75rem; */
+	top: 0.938rem;
+	/* left: 876px;
+	top: 15px; */
 }
 
 .header-nav ul li {
 	/* float: left; */
+	/* position: absolute; */
 	display: inline-block;
+	font-size: 24px;
+	line-height: 2.063rem;
+	margin-right: 4.875rem;
 }
 
 .header-nav .logo {

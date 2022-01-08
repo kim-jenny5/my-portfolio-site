@@ -216,10 +216,12 @@ background: url(IMG_0858.jpg); */
 	top: 11.313rem;
 }
 
-.introduction .title {
+.introduction .text-container .title {
 	font-family: Corben;
 	font-weight: bold;
 	font-size: 36px;
+	width: 33.188rem;
+	height: 9.438rem;
 }
 
 .introduction .subtitle {
@@ -232,18 +234,27 @@ background: url(IMG_0858.jpg); */
 	/* position: absolute;
 width: 421px;
 height: 571.04px; */
-	left: 581px;
+	/* left: 581px; */
+	/* left: 36.313rem; */
 	/* top: 0px; */
+	height: 25rem;
+	width: 25rem;
+	/* margin-left: 4.438em; */
+	margin-top: 5.375rem;
+	right: 0;
 
 	/* Vector */
 
 	position: absolute;
-	width: 421px;
-	height: 571.04px;
+	/* width: 100%; */
+	/* height: 100%; */
 	/* left: 0px; */
-	top: 0px;
+	/* top: 0px; */
 
-	background-image: url(./IMG_0858.JPG);
+	/* background-image: url(./IMG_0858.JPG); */
+	background-image: url(./IMG_1818.PNG);
+	/* background-size: cover; */
+	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 }

@@ -267,7 +267,6 @@ height: 571.04px; */
 
 /* About */
 #aboutme {
-	font-size: 36px;
 	position: absolute;
 	width: 100vw;
 	height: 55.375rem;
@@ -288,6 +287,10 @@ height: 571.04px; */
 	height: 395px;
 	left: 38px;
 	top: 0px;
+}
+
+#aboutme .container .top .title-text {
+	font-size: 36px;
 }
 
 #aboutme .picture {
@@ -353,4 +356,30 @@ height: 571.04px; */
 
 #aboutme #tech-stack .body-text {
 	font-size: 1.5rem;
+}
+
+/* Projects */
+#projects {
+	position: absolute;
+	width: 94.5rem;
+	height: 150.813rem;
+	left: 0px;
+	top: 128.75rem;
+}
+
+#projects .container {
+	position: absolute;
+	width: 66.375rem;
+	height: 130.813rem;
+	left: 14.063rem;
+	top: 10rem;
+}
+
+#projects .title-text {
+	position: absolute;
+	/* width: 131px;
+	height: 61px; */
+	left: 0;
+	top: 0;
+	font-size: 36px;
 }

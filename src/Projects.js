@@ -1,5 +1,14 @@
 import React from "react";
 
 export default function Projects() {
-	return <div></div>;
+	return (
+		<div id="projects">
+			<div className="container">
+				<div className="title-text">
+					Projects
+					<hr></hr>
+				</div>
+			</div>
+		</div>
+	);
 }

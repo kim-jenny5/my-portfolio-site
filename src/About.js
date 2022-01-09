@@ -1,11 +1,13 @@
 import React from "react";
+import animal_crossing_profile from "./images/animal_crossing_profile.png";
 
 export default function About() {
 	return (
 		<div id="aboutme">
 			<div className="container">
 				<div className="top">
-					<div className="picture"></div>
+					{/* <div className="picture"></div> */}
+					<img src={animal_crossing_profile} className="picture"></img>
 					<div className="description">
 						<div className="title-text">
 							About Me

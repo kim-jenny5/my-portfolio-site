@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
+import IMG_1818 from "./images/IMG_1818.PNG";
 
 export default class Introduction extends Component {
 	steps = [
@@ -35,7 +36,8 @@ export default class Introduction extends Component {
 						/>
 					</div>
 				</div>
-				<div className="picture"></div>
+				<img src={IMG_1818} className="picture"></img>
+				{/* <div className="picture"></div> */}
 			</div>
 		);
 	}

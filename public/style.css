@@ -254,11 +254,11 @@ height: 571.04px; */
 	/* left: 0px; */
 	/* top: 0px; */
 
-	background-image: url(./IMG_1818.PNG);
+	/* background-image: url(./IMG_1818.PNG); */
 	/* background-size: cover; */
-	background-size: 100%;
+	/* background-size: 100%;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 
 .introduction .typing {
@@ -296,7 +296,7 @@ height: 571.04px; */
 	height: 22.411rem;
 	left: 0;
 	top: 1.188rem;
-	background-image: url(./animal_crossing_profile.png);
+	/* background-image: url(./animal_crossing_profile.png); */
 }
 
 #aboutme .description {

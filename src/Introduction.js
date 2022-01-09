@@ -26,7 +26,13 @@ export default class Introduction extends Component {
 						<div>Nice to meet you!</div>
 					</div>
 					<div className="title-text subtitle">
-						I am <Typical wrapper="span" steps={this.steps} loop={Infinity} />
+						I am{" "}
+						<Typical
+							wrapper="span"
+							steps={this.steps}
+							loop={Infinity}
+							className="typing"
+						/>
 					</div>
 				</div>
 				<div className="picture"></div>

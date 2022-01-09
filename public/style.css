@@ -273,3 +273,17 @@ height: 571.04px; */
 	height: 55.375rem;
 	top: 67.375rem;
 }
+
+#aboutme .container {
+	position: absolute;
+	width: 80.563rem;
+	height: 38.125rem;
+	left: 7rem;
+	top: 8.625rem;
+}
+
+#aboutme .picture {
+	width: 24.046rem;
+	height: 22.411rem;
+	background-image: url(./animal_crossing_profile.png);
+}

@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #ffffff;
+	scroll-behavior: smooth;
 }
 
 .title-text {
@@ -123,13 +124,15 @@ background: url(IMG_0858.jpg); */
 
 /* Header */
 .header-nav {
-	position: absolute;
+	position: fixed;
 	/* width: 1512px;
 	height: 96px; */
 	left: 0;
 	top: 0;
 	width: 100vw;
 	height: 6rem;
+	z-index: 1;
+
 	/* height: 100vh; */
 }
 
@@ -251,7 +254,6 @@ height: 571.04px; */
 	/* left: 0px; */
 	/* top: 0px; */
 
-	/* background-image: url(./IMG_0858.JPG); */
 	background-image: url(./IMG_1818.PNG);
 	/* background-size: cover; */
 	background-size: 100%;
@@ -261,4 +263,13 @@ height: 571.04px; */
 
 .introduction .typing {
 	color: #537962;
+}
+
+/* About */
+#aboutme {
+	font-size: 36px;
+	position: absolute;
+	width: 100vw;
+	height: 55.375rem;
+	top: 67.375rem;
 }

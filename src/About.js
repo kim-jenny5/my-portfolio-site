@@ -4,7 +4,7 @@ export default function About() {
 	return (
 		<div id="aboutme">
 			<div className="container">
-				<div className="container-2">
+				<div className="top">
 					<div className="picture"></div>
 					<div className="description">
 						<div className="title-text">

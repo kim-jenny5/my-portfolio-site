@@ -3,17 +3,17 @@ import Typical from "react-typical";
 
 export default class Introduction extends Component {
 	steps = [
-		"a frontend developer",
+		"a frontend developer.",
 		1500,
-		"a creator",
+		"a creator.",
 		1500,
-		"detail-oriented",
+		"detail-oriented.",
 		1500,
-		"analytical",
+		"analytical.",
 		1500,
-		"culturally intelligent",
+		"culturally intelligent.",
 		1500,
-		"always curious",
+		"always curious.",
 		1500
 	];
 

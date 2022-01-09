@@ -377,8 +377,7 @@ height: 571.04px; */
 
 #projects .title-text {
 	position: absolute;
-	/* width: 131px;
-	height: 61px; */
+	width: inherit;
 	left: 0;
 	top: 0;
 	font-size: 36px;

@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
 	return (
@@ -7,6 +8,9 @@ export default function Projects() {
 				<div className="title-text">
 					Projects
 					<hr></hr>
+				</div>
+				<div>
+					<ProjectCard />
 				</div>
 			</div>
 		</div>

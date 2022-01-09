@@ -311,3 +311,46 @@ height: 571.04px; */
 	font-family: Source Sans Pro;
 	font-size: 24px;
 }
+
+#aboutme #tech-stack {
+	position: absolute;
+	width: 80.563rem;
+	height: 10.125rem;
+	left: 0;
+	top: 28rem;
+
+	background: #f5f3f6;
+	border-radius: 30px;
+}
+
+#aboutme #tech-stack #frontend {
+	position: absolute;
+	width: 397px;
+	height: 82px;
+	left: 45px;
+	top: 40px;
+}
+
+#aboutme #tech-stack #design {
+	position: absolute;
+	width: 236px;
+	height: 82px;
+	left: 548px;
+	top: 40px;
+}
+
+#aboutme #tech-stack #backend {
+	position: absolute;
+	width: 353px;
+	height: 82px;
+	left: 890px;
+	top: 40px;
+}
+
+#aboutme #tech-stack .title-text {
+	font-size: 1.875rem;
+}
+
+#aboutme #tech-stack .body-text {
+	font-size: 1.5rem;
+}

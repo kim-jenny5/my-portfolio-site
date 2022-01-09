@@ -34,7 +34,22 @@ export default function About() {
 						</div>
 					</div>
 				</div>
-				<div className="tech-stack"></div>
+				<div id="tech-stack">
+					<div id="frontend">
+						<div className="title-text">Frontend 🦄</div>
+						<div className="body-text">
+							JavaScript / HTML / CSS / React / Redux
+						</div>
+					</div>
+					<div id="design">
+						<div className="title-text">Design 🎨</div>
+						<div className="body-text">Figma / Bootstrap / MUI</div>
+					</div>
+					<div id="backend">
+						<div className="title-text">Backend 🤖</div>
+						<div className="body-text">Ruby on Rails / SQLite / PostgreSQL</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

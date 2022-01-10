@@ -497,18 +497,17 @@ a:visited {
 #resume {
 	position: absolute;
 	width: 94.5rem;
-	height: 74.125rem;
+	height: 84.875rem;
 	left: 0;
-	top: 296.25rem;
+	top: 285.563rem;
 }
 
 #resume .container {
 	position: absolute;
 	width: 53.875rem;
-	height: 63.813rem;
+	height: 65.625rem;
 	left: 20.313rem;
-	top: 8rem;
-	/* margin-top: 6rem; */
+	top: 9.625rem;
 }
 
 #resume .container > .title-text {

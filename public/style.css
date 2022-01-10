@@ -133,6 +133,7 @@ background: url(IMG_0858.jpg); */
 	width: 100vw;
 	height: 6rem;
 	z-index: 1;
+	background: white;
 
 	/* height: 100vh; */
 }

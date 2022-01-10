@@ -622,3 +622,17 @@ a:visited {
 	text-decoration: none;
 	color: white;
 }
+
+#contact {
+	position: absolute;
+	/* width: 546px; */
+	width: 54.313rem;
+
+	height: 201px;
+	left: 326px;
+	top: 357rem;
+	/* margin-top: 4.813rem; */
+}
+
+#contact .title-text {
+}

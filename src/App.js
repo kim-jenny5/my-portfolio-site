@@ -4,6 +4,7 @@ import Introduction from "./Introduction";
 import About from "./About";
 import ProjectsCont from "./ProjectsCont";
 import ResumeCont from "./ResumeCont";
+import Contact from "./Contact";
 
 export default function App() {
 	return (
@@ -14,6 +15,7 @@ export default function App() {
 			<About />
 			<ProjectsCont />
 			<ResumeCont />
+			<Contact />
 		</div>
 	);
 }

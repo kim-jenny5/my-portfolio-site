@@ -191,12 +191,15 @@ background: url(IMG_0858.jpg); */
 	/* margin-left: 9.063rem; */
 	/* top: 16px; */
 	top: 1rem;
-
+	/* cursor: pointer; */
 	font-size: 48px;
 	line-height: 66px;
 	/* identical to box height */
 	display: flex;
 	align-items: center;
+	font-family: DM Serif Display;
+	border: none;
+	background: transparent;
 }
 
 /* Introduction */
@@ -432,7 +435,7 @@ height: 571.04px; */
 	background: #e6b0a4;
 	color: #294234;
 	cursor: pointer;
-	border: 0;
+	border: none;
 	border-radius: 1.015rem;
 	font-family: Source Sans Pro;
 	font-weight: bold;

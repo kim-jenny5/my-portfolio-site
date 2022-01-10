@@ -3,7 +3,8 @@ import React from "react";
 export default function HeaderNav() {
 	return (
 		<div className="title-text header-nav">
-			<span className="logo">jennykim.</span>
+			{/* <span className="logo">jennykim.</span> */}
+			<button className="logo">jennykim.</button>
 			<ul>
 				<li>
 					<a href="#aboutme">About Me</a>

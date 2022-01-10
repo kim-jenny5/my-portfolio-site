@@ -456,3 +456,28 @@ a:visited {
 	text-decoration: none;
 	color: #294234;
 }
+
+/* .each-project .img-cont {
+	width: 475.85px;
+	height: 260.5px;
+	left: 582px;
+} */
+
+.each-project .top {
+	width: 1058px;
+	height: 365px;
+}
+
+.each-project .left-side {
+	width: 544px;
+	height: 232px;
+}
+
+.each-project .screenshot {
+	display: inline-block;
+	width: 29.741rem;
+	height: 16.281rem;
+	border: 3px solid #f5f3f6;
+	border-radius: 1rem;
+	/* left: 582px; */
+}

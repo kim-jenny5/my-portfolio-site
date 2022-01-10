@@ -3,14 +3,16 @@ import React from "react";
 export default function Projects(props) {
 	return (
 		<div className="each-project">
-			<div className="title-text">
-				{props.number} | {props.name}
-			</div>
-			<div className="description">{props.description}</div>
-			<div className="img-cont">
-				{/* <img>{props.img}</img> */}
-				{/* {props.img} */}
-				<img src={props.img}></img>
+			<div className="top">
+				<span className="left-side">
+					<div className="title-text">
+						{props.number} | {props.name}
+					</div>
+					<div className="description">{props.description}</div>
+				</span>
+				{/* <span className="img-cont"> */}
+				<img src={props.img} className="screenshot"></img>
+				{/* </span> */}
 			</div>
 			<div className="tech">{props.tech}</div>
 			<div className="link-btns">

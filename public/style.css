@@ -644,4 +644,13 @@ a:visited {
 #contact #msg {
 	font-family: Source Sans Pro;
 	font-size: 1.125rem;
+	margin-bottom: 1.5rem;
+}
+
+#contact #contact-links span a {
+	margin-right: 3rem;
+	color: #537962;
+	border: none;
+	background: transparent;
+	cursor: pointer;
 }

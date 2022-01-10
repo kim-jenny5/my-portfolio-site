@@ -51,7 +51,7 @@ export default class ProjectsCont extends Component {
 						Projects
 						<hr></hr>
 					</div>
-					<div>
+					<div className="project-details">
 						{projects.map((project, idx) => (
 							<Projects
 								key={idx}

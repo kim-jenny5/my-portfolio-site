@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import Projects from "./Projects";
+import my_daily_journal from "./images/screenshots/my_daily_journal.png";
+import my_travelogue from "./images/screenshots/my_travelogue.png";
+import pilim from "./images/screenshots/pilim.png";
+import tableau_dambiance from "./images/screenshots/tableau_dambiance.png";
 
 export default class ProjectsCont extends Component {
 	render() {
@@ -11,7 +15,8 @@ export default class ProjectsCont extends Component {
 				tech: "Ruby / Sinatra / ActiveRecord / SQLite / PostgreSQL / HTML / CSS",
 				githubLink: "https://github.com/kim-jenny5/journal-sinatra-project",
 				deployedSite: "https://mydailyjournal-byjenny.herokuapp.com/",
-				videoDemo: "https://youtu.be/gGmy4BkilPI"
+				videoDemo: "https://youtu.be/gGmy4BkilPI",
+				img: my_daily_journal
 			},
 			{
 				name: "Pilim",
@@ -19,7 +24,8 @@ export default class ProjectsCont extends Component {
 				tech: "Ruby on Rails / ActiveRecord / SQLite / PostgreSQL / HTML / CSS / Bootstrap / OmniAuth",
 				githubLink: "https://github.com/kim-jenny5/pilim-project",
 				deployedSite: "https://pilim-project.herokuapp.com/",
-				videoDemo: "https://youtu.be/1CdiE-hHL2U"
+				videoDemo: "https://youtu.be/1CdiE-hHL2U",
+				img: pilim
 			},
 			{
 				name: "Tableau d'Ambiance",
@@ -31,7 +37,8 @@ export default class ProjectsCont extends Component {
 					"https://github.com/kim-jenny5/tableau-dambiance-frontend"
 				],
 				deployedSite: "https://tableau-dambiance.netlify.app/",
-				videoDemo: "https://youtu.be/JCeUpYs0Jlo"
+				videoDemo: "https://youtu.be/JCeUpYs0Jlo",
+				img: tableau_dambiance
 			},
 			{
 				name: "my travelogue",
@@ -44,7 +51,8 @@ export default class ProjectsCont extends Component {
 					"https://github.com/kim-jenny5/my-travelogue-frontend"
 				],
 				deployedSite: "https://my-travelogue.netlify.app/",
-				videoDemo: "https://youtu.be/qy9HIfJedWk"
+				videoDemo: "https://youtu.be/qy9HIfJedWk",
+				img: my_travelogue
 			}
 		];
 
@@ -67,6 +75,7 @@ export default class ProjectsCont extends Component {
 									githubLink={project.githubLink}
 									deployedSite={project.deployedSite}
 									videoDemo={project.videoDemo}
+									img={project.img}
 								/>
 							</div>
 						))}

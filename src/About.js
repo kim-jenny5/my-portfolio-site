@@ -1,5 +1,6 @@
 import React from "react";
-import animal_crossing_profile from "./images/animal_crossing_profile.png";
+// import animal_crossing_profile from "./images/animal_crossing_profile.png";
+import acnh_blob from "./images/acnh_blob.png";
 
 export default function About() {
 	return (
@@ -7,7 +8,7 @@ export default function About() {
 			<div className="container">
 				<div className="top">
 					{/* <div className="picture"></div> */}
-					<img src={animal_crossing_profile} className="picture"></img>
+					<img src={acnh_blob} className="picture"></img>
 					<div className="description">
 						<div className="title-text">
 							About Me

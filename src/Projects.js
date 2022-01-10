@@ -7,6 +7,11 @@ export default function Projects(props) {
 				{props.number} | {props.name}
 			</div>
 			<div className="description">{props.description}</div>
+			<div className="img-cont">
+				{/* <img>{props.img}</img> */}
+				{/* {props.img} */}
+				<img src={props.img}></img>
+			</div>
 			<div className="tech">{props.tech}</div>
 			<div className="link-btns">
 				{props.githubLink.length === 2 ? (

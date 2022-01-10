@@ -436,7 +436,7 @@ height: 571.04px; */
 }
 
 /* .each-project .link-btns span { */
-.each-project .link-btns button {
+.each-project .link-btns a {
 	/* background: #ebccc1; */
 	background: #e6b0a4;
 	color: #294234;
@@ -451,7 +451,7 @@ height: 571.04px; */
 	margin-right: 1.125rem;
 }
 
-.each-project .link-btns button:hover {
+.each-project .link-btns a:hover {
 	/* background: #ceab8d; */
 	background: #ebccc1;
 	/* color: #988671; */

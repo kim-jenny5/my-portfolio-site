@@ -18,34 +18,24 @@ export default function Projects(props) {
 			<div className="link-btns">
 				{props.githubLink.length === 2 ? (
 					<>
-						<button>
-							<a href={props.githubLink[0]} target="_blank">
-								BACKEND GITHUB
-							</a>
-						</button>
-						<button>
-							<a href={props.githubLink[1]} target="_blank">
-								FRONTEND GITHUB
-							</a>
-						</button>
+						<a href={props.githubLink[0]} target="_blank">
+							BACKEND GITHUB
+						</a>
+						<a href={props.githubLink[1]} target="_blank">
+							FRONTEND GITHUB
+						</a>
 					</>
 				) : (
-					<button>
-						<a href={props.githubLink} target="_blank">
-							GITHUB
-						</a>
-					</button>
+					<a href={props.githubLink} target="_blank">
+						GITHUB
+					</a>
 				)}
-				<button>
-					<a href={props.deployedSite} target="_blank">
-						SITE
-					</a>
-				</button>
-				<button>
-					<a href={props.videoDemo} target="_blank">
-						VIDEO DEMO
-					</a>
-				</button>
+				<a href={props.deployedSite} target="_blank">
+					SITE
+				</a>
+				<a href={props.videoDemo} target="_blank">
+					VIDEO DEMO
+				</a>
 			</div>
 		</div>
 	);

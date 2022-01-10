@@ -3,6 +3,7 @@ import HeaderNav from "./HeaderNav";
 import Introduction from "./Introduction";
 import About from "./About";
 import ProjectsCont from "./ProjectsCont";
+import Resume from "./Resume";
 
 export default function App() {
 	return (
@@ -12,6 +13,7 @@ export default function App() {
 			<Introduction />
 			<About />
 			<ProjectsCont />
+			<Resume />
 		</div>
 	);
 }

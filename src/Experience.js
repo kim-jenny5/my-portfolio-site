@@ -4,12 +4,12 @@ export default function Experience(props) {
 	return (
 		<div className="each-experience">
 			<div>
-				<span>{props.name}</span>
-				<span>{props.city}</span>
+				<span className="name left">{props.name}</span>
+				<span className="right">{props.city}</span>
 			</div>
 			<div>
-				<span>{props.position}</span>
-				<span>{props.dates}</span>
+				<span className="left">{props.position}</span>
+				<span className="right">{props.dates}</span>
 			</div>
 			<div>
 				<ul>

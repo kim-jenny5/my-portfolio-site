@@ -18,7 +18,7 @@ const projects = [
 	},
 	{
 		name: "Pilim",
-		description: `"When Rotten Tomatoes meets Goodreads..."\nCreated for casual movie viewers who want to review and explore similar movies they’ve enjoyed, Pilim (“pill-im”) is a web app where users can create movie lists and review movies all in one place.`,
+		description: `"When Rotten Tomatoes meets Goodreads..." Created for casual movie viewers who want to review and explore similar movies they’ve enjoyed, Pilim (“pill-im”) is a web app where users can create movie lists and review movies all in one place.`,
 		tech: "Ruby on Rails / ActiveRecord / SQLite / PostgreSQL / HTML / CSS / Bootstrap / OmniAuth",
 		githubLink: "https://github.com/kim-jenny5/pilim-project",
 		deployedSite: "https://pilim-project.herokuapp.com/",

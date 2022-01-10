@@ -4,12 +4,12 @@ export default function Education(props) {
 	return (
 		<div className="each-education">
 			<div>
-				<span>{props.name}</span>
-				<span>{props.city}</span>
+				<span className="name left">{props.name}</span>
+				<span className="right">{props.city}</span>
 			</div>
 			<div>
-				<span>{props.program}</span>
-				<span>{props.dates}</span>
+				<span className="left">{props.program}</span>
+				<span className="right">{props.dates}</span>
 			</div>
 		</div>
 	);

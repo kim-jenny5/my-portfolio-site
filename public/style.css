@@ -551,3 +551,18 @@ a:visited {
 	font-family: Source Sans Pro;
 	font-size: 18px;
 }
+
+.each-education .name,
+.each-experience .name {
+	font-weight: bold;
+}
+
+.each-education .left,
+.each-experience .left {
+	left: 0;
+}
+
+.each-education .right,
+.each-experience .right {
+	float: right;
+}

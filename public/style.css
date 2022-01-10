@@ -10,6 +10,10 @@ body {
 	color: #294234;
 }
 
+::selection {
+	background: #eae3d7;
+}
+
 .title-text {
 	font-family: DM Serif Display;
 }

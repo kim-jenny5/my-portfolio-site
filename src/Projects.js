@@ -13,8 +13,6 @@ export default function Projects(props) {
 				<span>
 					<img src={props.img} className="screenshot"></img>
 				</span>
-				{/* <span className="img-cont"> */}
-				{/* </span> */}
 			</div>
 			<div className="tech">{props.tech}</div>
 			<div className="link-btns">

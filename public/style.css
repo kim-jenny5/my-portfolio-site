@@ -526,31 +526,58 @@ a:visited {
 	font-size: 2.25rem;
 }
 
+#resume .container .top .resume-details {
+	margin-top: 5.875rem;
+}
+
 #resume .container .top .resume-details .title-text {
 	/* font-size: 1.875rem; */
 	font-size: 1.75rem;
+	margin-bottom: 0.5rem;
 }
 
 #resume .container .top .resume-details .education {
-	position: absolute;
+	/* position: absolute; */
 	width: 53.813rem;
 	height: 13.875rem;
 	left: 0;
 	top: 5.875rem;
+	margin-bottom: 2.625rem;
 }
 
 #resume .container .top .resume-details .experience {
-	position: absolute;
+	/* position: absolute; */
 	width: 53.813rem;
-	height: 19.188rem;
+	/* height: 19.188rem; */
 	left: 0;
 	top: 16.5rem;
+	/* top: 20.375rem; */
+	/* margin-top: 2.625rem; */
 }
 
 #resume .container .top .resume-details .info {
 	font-family: Source Sans Pro;
 	font-size: 18px;
+	width: 53.813rem;
 }
+
+#resume .container .top .resume-details .education .info {
+	/* height: 13.875rem; */
+}
+
+#resume .container .top .resume-details .experience .info {
+	/* height: 19.188rem; */
+}
+
+.each-education {
+	margin-bottom: 1.375rem;
+}
+
+/* .header-nav ul li:nth-child(-n + 3) */
+
+/* .each-education:nth-child(-n + 2) {
+	margin-bottom: 22px;
+} */
 
 .each-education .name,
 .each-experience .name {

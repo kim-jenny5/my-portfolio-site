@@ -53,15 +53,17 @@ export default class ProjectsCont extends Component {
 					</div>
 					<div className="project-details">
 						{projects.map((project, idx) => (
-							<Projects
-								key={idx}
-								number={idx + 1}
-								name={project.name}
-								description={project.description}
-								githubLink={project.githubLink}
-								deployedSite={project.deployedSite}
-								videoDemo={project.videoDemo}
-							/>
+							<div className="each-project-cont">
+								<Projects
+									key={idx}
+									number={`0${idx + 1}`}
+									name={project.name}
+									description={project.description}
+									githubLink={project.githubLink}
+									deployedSite={project.deployedSite}
+									videoDemo={project.videoDemo}
+								/>
+							</div>
 						))}
 					</div>
 				</div>

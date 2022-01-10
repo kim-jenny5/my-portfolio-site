@@ -375,7 +375,7 @@ height: 571.04px; */
 	top: 10rem;
 }
 
-#projects .title-text {
+#projects .container > .title-text {
 	position: absolute;
 	width: inherit;
 	left: 0;
@@ -391,9 +391,20 @@ height: 571.04px; */
 	top: 8.563rem;
 }
 
-.each-project .container {
-	position: absolute;
+/* #projects .container .project-details * {
+	margin-bottom: 173px;
+} */
+
+.each-project-cont {
+	/* position: absolute; */
+	/* display: flex; */
 	left: 0;
 	width: 66.125rem;
 	height: 22.813rem;
+	/* padding-bottom: 173px; */
+	margin-bottom: 173px;
 }
+
+/* .each-project {
+	margin-bottom: 173px;
+} */

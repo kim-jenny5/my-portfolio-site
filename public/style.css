@@ -510,10 +510,39 @@ a:visited {
 	top: 9.625rem;
 }
 
-#resume .container > .title-text {
+#resume .container .top {
+	position: absolute;
+	width: 53.875rem;
+	height: 35.688rem;
+	left: 0;
+	top: 5.875rem;
+}
+
+#resume .container .top > .title-text {
 	position: absolute;
 	width: inherit;
 	left: 0;
 	top: 0;
 	font-size: 2.25rem;
+}
+
+#resume .container .top .resume-details .title-text {
+	/* font-size: 1.875rem; */
+	font-size: 1.75rem;
+}
+
+#resume .container .top .resume-details .education {
+	position: absolute;
+	width: 53.813rem;
+	height: 13.875rem;
+	left: 0;
+	top: 5.875rem;
+}
+
+#resume .container .top .resume-details .experience {
+	position: absolute;
+	width: 53.813rem;
+	height: 19.188rem;
+	left: 0;
+	top: 16.5rem;
 }

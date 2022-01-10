@@ -1,5 +1,4 @@
 import React from "react";
-// import animal_crossing_profile from "./images/animal_crossing_profile.png";
 import acnh_blob from "./images/acnh_blob.png";
 
 export default function About() {

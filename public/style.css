@@ -7,6 +7,7 @@ body {
 	padding: 0;
 	background: #ffffff;
 	scroll-behavior: smooth;
+	color: #294234;
 }
 
 .title-text {
@@ -175,7 +176,8 @@ background: url(IMG_0858.jpg); */
 
 .header-nav ul li a:visited {
 	text-decoration: none;
-	color: black;
+	color: #294234;
+	/* color: black; */
 }
 
 .header-nav .logo {
@@ -405,6 +407,7 @@ height: 571.04px; */
 .each-project .description {
 	font-family: Source Sans Pro;
 	font-size: 1.5rem;
+	/* font-size: 1.25rem; */
 	left: 0;
 	width: 34rem;
 	height: 11.813rem;
@@ -416,4 +419,31 @@ height: 571.04px; */
 	font-family: Source Sans Pro;
 	font-weight: bold;
 	font-size: 1rem;
+	margin-bottom: 1.688rem;
+}
+
+.each-project .link-btns {
+	height: 2.375rem;
+}
+
+/* .each-project .link-btns span { */
+.each-project .link-btns button {
+	/* background: #ebccc1; */
+	background: #e6b0a4;
+	color: #294234;
+	cursor: pointer;
+	border: 0;
+	border-radius: 1.015rem;
+	font-family: Source Sans Pro;
+	font-weight: bold;
+	font-size: 1.125rem;
+	padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+	/* margin: 1.688rem 1.125rem 0 0; */
+	margin-right: 1.125rem;
+}
+
+.each-project .link-btns button:hover {
+	/* background: #ceab8d; */
+	background: #ebccc1;
+	/* color: #988671; */
 }

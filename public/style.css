@@ -496,10 +496,10 @@ a:visited {
 /* Resume */
 #resume {
 	position: absolute;
-	width: 94.5rem;
-	height: 84.875rem;
-	left: 0;
-	top: 285.563rem;
+	width: 1512px;
+	height: 1050px;
+	left: 0px;
+	top: 4569px;
 }
 
 #resume .container {
@@ -557,16 +557,8 @@ a:visited {
 
 #resume .container .top .resume-details .info {
 	font-family: Source Sans Pro;
-	font-size: 18px;
+	font-size: 1.125rem;
 	width: 53.813rem;
-}
-
-#resume .container .top .resume-details .education .info {
-	/* height: 13.875rem; */
-}
-
-#resume .container .top .resume-details .experience .info {
-	/* height: 19.188rem; */
 }
 
 .each-education {
@@ -594,6 +586,10 @@ a:visited {
 	float: right;
 }
 
+.each-experience ul {
+	font-size: 18px;
+}
+
 /* #resume .container .resume-download {
 	position: absolute;
 	width: 320px;
@@ -602,12 +598,11 @@ a:visited {
 	top: 713px;
 } */
 
-#resume .container .resume-download button {
-	position: absolute;
+#resume .container .resume-download {
+	/* position: absolute;
 	width: 320px;
 	height: 59px;
 	left: 271px;
-	/* margin-top: 48px; */
 	top: 62.5rem;
 	cursor: pointer;
 	font-family: Source Sans Pro;
@@ -615,29 +610,54 @@ a:visited {
 	font-size: 1.5rem;
 	background: #988671;
 	border: none;
-	border-radius: 1.875rem;
+	border-radius: 1.875rem; */
+	position: absolute;
+	width: 320px;
+	height: 59px;
+	left: 271px;
+	top: 713px;
+	background: #988671;
+	border-radius: 30px;
 }
 
-#resume .container .resume-download button a {
+#resume .container .resume-download a {
+	position: absolute;
+	left: 2.5rem;
+	top: 0.938rem;
 	text-decoration: none;
+	font-family: Source Sans Pro;
+	font-weight: bold;
+	font-size: 1.5rem;
 	color: white;
 }
 
 #contact {
 	position: absolute;
-	/* width: 546px; */
+	width: 1512px;
+	height: 355px;
+	left: 0px;
+	top: 5572px;
+}
+
+#contact .container {
+	/* position: absolute;
 	width: 54.313rem;
 	height: 201px;
 	left: 326px;
 	top: 357rem;
-	/* margin-top: 4.813rem; */
+	margin-bottom: 14.875rem; */
+	position: absolute;
+	width: 546px;
+	height: 201px;
+	left: 326px;
+	top: 0px;
 }
 
-#contact .title-text div:first-child {
+#contact .container .title-text div:first-child {
 	font-size: 2.25rem;
 }
 
-#contact .title-text div:nth-child(2) {
+#contact .container .title-text div:nth-child(2) {
 	font-size: 1.5rem;
 }
 

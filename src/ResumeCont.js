@@ -94,11 +94,9 @@ export default function ResumeCont() {
 					</div>
 				</div>
 				<div className="resume-download">
-					<button>
-						<a href={jenny_kim_resume} download>
-							Download Full Resume
-						</a>
-					</button>
+					<a href={jenny_kim_resume} download>
+						Download Full Resume
+					</a>
 				</div>
 			</div>
 		</div>

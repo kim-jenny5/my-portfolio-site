@@ -447,3 +447,9 @@ height: 571.04px; */
 	background: #ebccc1;
 	/* color: #988671; */
 }
+
+.each-project .link-btns a,
+a:visited {
+	text-decoration: none;
+	color: #294234;
+}

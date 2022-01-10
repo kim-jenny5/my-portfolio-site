@@ -1,4 +1,6 @@
 import React from "react";
+import Education from "./Education";
+import Experience from "./Experience";
 
 const education = [
 	{
@@ -25,7 +27,7 @@ const education = [
 const experience = [
 	{
 		name: "MEK Review",
-		title:
+		position:
 			"Jr. Counselor of Enrollment and Engagement | Tutoring Administrative Assistant",
 		description: [
 			"Assisted with various administrative tasks for a local SAT prep school to support and ensure smooth operations",
@@ -38,13 +40,15 @@ const experience = [
 	},
 	{
 		name: "Japan Society",
-		title: "Human Resources Intern",
+		position: "Human Resources Intern",
 		description: [
 			"Migrated 100+ employee records from paper to digital to improve accessibility and ease of maintenance",
 			"Helped create a new process for the HR manager to accurately notify employees of their PTO usage each month",
 			"Maintained job postings on various hiring platforms and initially screened resumes to identify strong candidates",
 			"Updated reimbursement records and worked with Finance to ensure timely delivery of reimbursement checks"
-		]
+		],
+		city: "New York, NY",
+		dates: "June 2019 - August 2019"
 	}
 ];
 
@@ -59,9 +63,32 @@ export default function ResumeCont() {
 					<div className="resume-details">
 						<div className="education">
 							<div className="title-text">Education</div>
+							<div className="info">
+								{education.map((edu, idx) => (
+									<Education
+										key={idx}
+										name={edu.name}
+										program={edu.program}
+										city={edu.city}
+										dates={edu.dates}
+									/>
+								))}
+							</div>
 						</div>
 						<div className="experience">
 							<div className="title-text">Experience</div>
+							<div className="info">
+								{experience.map((exp, idx) => (
+									<Experience
+										key={idx}
+										name={exp.name}
+										position={exp.position}
+										description={exp.description}
+										city={exp.city}
+										dates={exp.dates}
+									/>
+								))}
+							</div>
 						</div>
 					</div>
 				</div>

@@ -546,3 +546,8 @@ a:visited {
 	left: 0;
 	top: 16.5rem;
 }
+
+#resume .container .top .resume-details .info {
+	font-family: Source Sans Pro;
+	font-size: 18px;
+}

@@ -380,7 +380,7 @@ height: 571.04px; */
 	width: inherit;
 	left: 0;
 	top: 0;
-	font-size: 36px;
+	font-size: 2.25rem;
 }
 
 #projects .container .project-details {
@@ -391,20 +391,29 @@ height: 571.04px; */
 	top: 8.563rem;
 }
 
-/* #projects .container .project-details * {
-	margin-bottom: 173px;
-} */
-
 .each-project-cont {
-	/* position: absolute; */
-	/* display: flex; */
 	left: 0;
 	width: 66.125rem;
 	height: 22.813rem;
-	/* padding-bottom: 173px; */
 	margin-bottom: 173px;
 }
 
-/* .each-project {
-	margin-bottom: 173px;
-} */
+.each-project .title-text {
+	font-size: 1.875rem;
+}
+
+.each-project .description {
+	font-family: Source Sans Pro;
+	font-size: 1.5rem;
+	left: 0;
+	width: 34rem;
+	height: 11.813rem;
+	margin-top: 1.375rem;
+}
+
+.each-project .tech {
+	color: #537962;
+	font-family: Source Sans Pro;
+	font-weight: bold;
+	font-size: 1rem;
+}

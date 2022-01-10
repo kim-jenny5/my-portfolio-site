@@ -465,19 +465,24 @@ a:visited {
 
 .each-project .top {
 	width: 1058px;
-	height: 365px;
+	height: 15.938rem;
+	margin-bottom: 1.688rem;
 }
 
 .each-project .left-side {
-	width: 544px;
+	position: absolute;
+	width: 66.125rem;
 	height: 232px;
 }
 
 .each-project .screenshot {
+	position: absolute;
 	display: inline-block;
 	width: 29.741rem;
 	height: 16.281rem;
-	border: 3px solid #f5f3f6;
+	/* left: 582px; */
+	margin-left: 582px;
+	border: 1.5px solid #f5f3f6;
 	border-radius: 1rem;
 	/* left: 582px; */
 }

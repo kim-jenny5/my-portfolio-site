@@ -1,6 +1,7 @@
 import React from "react";
 import Education from "./Education";
 import Experience from "./Experience";
+import jenny_kim_resume from "./resume/jenny_kim_resume.pdf";
 
 const education = [
 	{
@@ -91,6 +92,13 @@ export default function ResumeCont() {
 							</div>
 						</div>
 					</div>
+				</div>
+				<div className="resume-download">
+					<button>
+						<a href={jenny_kim_resume} download>
+							Download Full Resume
+						</a>
+					</button>
 				</div>
 			</div>
 		</div>

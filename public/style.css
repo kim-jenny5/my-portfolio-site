@@ -507,7 +507,7 @@ a:visited {
 	width: 53.875rem;
 	height: 65.625rem;
 	left: 20.313rem;
-	top: 9.625rem;
+	/* top: 9.625rem; */
 }
 
 #resume .container .top {
@@ -592,4 +592,33 @@ a:visited {
 .each-education .right,
 .each-experience .right {
 	float: right;
+}
+
+/* #resume .container .resume-download {
+	position: absolute;
+	width: 320px;
+	height: 59px;
+	left: 271px;
+	top: 713px;
+} */
+
+#resume .container .resume-download button {
+	position: absolute;
+	width: 320px;
+	height: 59px;
+	left: 271px;
+	/* margin-top: 48px; */
+	top: 62.5rem;
+	cursor: pointer;
+	font-family: Source Sans Pro;
+	font-weight: bold;
+	font-size: 1.5rem;
+	background: #988671;
+	border: none;
+	border-radius: 1.875rem;
+}
+
+#resume .container .resume-download button a {
+	text-decoration: none;
+	color: white;
 }

@@ -36,13 +36,25 @@ body {
 
 /* Header */
 .header-nav {
-	position: fixed;
+	/* position: fixed;
 	left: 0;
 	top: 0;
 	width: 100vw;
 	height: 6rem;
 	background: white;
-	z-index: 1;
+	z-index: 1; */
+	/* position: fixed;
+	height: 96px;
+	left: 0px;
+	right: 0px;
+	top: 0px; */
+	position: fixed;
+	height: 96px;
+	left: 0%;
+	right: 0%;
+	top: 0px;
+	background: white;
+	z-index: 2;
 }
 
 .header-nav ul {
@@ -88,77 +100,96 @@ body {
 /* Introduction */
 .introduction {
 	/* position: absolute;
-	width: 62.625rem;
-	height: 35.69rem;
-	margin: 9rem 15.938rem 9rem 15.938rem; */
+	left: 0px;
+	right: 0px;
+	top: 96px;
+	bottom: 5029px; */
+	/* position: absolute;
+	height: 886px;
+	left: 0px;
+	right: 0px;
+	top: 96px; */
 	position: absolute;
-	width: 100vw;
-	/* height: 852px; */
-	/* height: 90.2542372881356vh; */
-	height: 102.28091236495vh;
-	left: 0;
-	top: 10.169491525423728vh;
-	/* top: 96px; */
+	height: 886px;
+	left: 0%;
+	right: 0%;
+	top: 96px;
 }
 
 /* .introduction .text-container { */
 .introduction .main-container {
 	/* position: absolute;
-	width: 33.188rem;
-	height: 13.188rem;
-	top: 11.313rem; */
+	width: 1002px;
+	height: 571.04px;
+	left: calc(50% - 1002px / 2 - 0.35px);
+	top: 108.91px; */
 	/* position: absolute;
-	width: 62.625rem;
-	height: 35.69rem;
-	left: 15.916em;
-	top: 6.807rem; */
+	height: 571.04px;
+	left: 255px;
+	right: 255px;
+	top: 109px; */
 	position: absolute;
-	/* left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0; */
-	/* width: 1002px; */
-	/* width: 39.140625vw; */
-	width: 66.27vw;
-	height: 68.552220888355vh;
-	left: 16.842vw;
-	top: 13.074429771909vh;
-	/* height: 60.49152542372882vh; */
-	/* left: 9.947265625vw; */
-	/* top: 11.537076271186441vh; */
-	/* margin: auto; */
+	height: 571.04px;
+	left: 16.87%;
+	right: 16.87%;
+	top: 109px;
 }
 
 .introduction .text-container {
-	position: absolute;
+	/* position: absolute;
 	width: 531px;
 	height: 211px;
 	left: 0px;
-	top: 181px;
+	top: 181px; */
+	/* position: absolute;
+	width: 531px;
+	height: 211px;
+	left: 0px;
+	top: 181px; */
+	/* position: absolute;
+	width: 531px;
+	height: 201px;
+	left: 0px;
+	top: 186px; */
+	position: absolute;
+	width: 531px;
+	height: 201px;
+	left: 0px;
+	top: calc(50% - 201px / 2 + 0.98px);
+	z-index: 1;
 }
 
 .introduction .text-container .title {
 	font-family: Corben;
 	font-weight: bold;
-	font-size: 2.25rem;
-	width: 33.188rem;
-	height: 9.438rem;
+	/* font-size: 2.25rem; */
+	font-size: 3vw;
+	position: absolute;
+	width: 531px;
+	left: 0px;
+	top: 0px;
+	bottom: 94px;
 }
 
 .introduction .subtitle {
-	font-size: 2.25rem;
+	/* font-size: 2.25rem; */
+	position: absolute;
+	width: 531px;
+	height: 50px;
+	left: 0px;
+	top: 151px;
+	margin-top: 20px;
+	/* margin-top: 34px; */
+	/* top: 151px; */
+
+	font-size: 3vw;
 }
 
 .introduction img {
-	/* height: 25rem;
-	width: 25rem;
-	margin-top: 5.375rem;
-	right: 0;
-	position: absolute; */
 	position: absolute;
 	width: 400px;
 	height: 400px;
-	left: 602px;
+	right: 0px;
 	top: 86px;
 }
 
@@ -169,25 +200,31 @@ body {
 /* About */
 #aboutme {
 	position: absolute;
-	width: 100vw;
-	height: 55.375rem;
-	top: 67.375rem;
+	left: 0px;
+	right: 0px;
+	top: 1078px;
+	bottom: 4047px;
 }
 
 #aboutme .container {
+	/* position: absolute;
+	width: 1289px;
+	height: 610px; 
+	left: calc(50% - 1289px / 2 + 0.5px);
+	top: 138px; */
 	position: absolute;
-	width: 80.563rem;
-	height: 38.125rem;
-	left: 7rem;
-	top: 8.625rem;
+	left: 112px;
+	right: 111px;
+	top: 138px;
+	bottom: 138px;
 }
 
 #aboutme .container .top {
 	position: absolute;
-	width: 75.813rem;
-	height: 24.688rem;
-	left: 2.375rem;
-	top: 0;
+	height: 395px;
+	left: 38px;
+	right: 38px;
+	top: 0px;
 }
 
 #aboutme .container .top .title-text {
@@ -196,18 +233,18 @@ body {
 
 #aboutme .picture {
 	position: absolute;
-	width: 24.046rem;
-	height: 22.411rem;
-	left: 0;
-	top: 1.188rem;
+	width: 384.74px;
+	left: 0px;
+	top: 19px;
+	bottom: 17.43px;
 }
 
 #aboutme .description {
 	position: absolute;
-	width: 48.5rem;
-	height: 24.688rem;
-	left: 27.313rem;
-	top: 0;
+	width: 776px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
 }
 
 #aboutme .description .text {
@@ -217,13 +254,13 @@ body {
 
 #aboutme #tech-stack {
 	position: absolute;
-	width: 80.563rem;
-	height: 10.125rem;
-	left: 0;
-	top: 28rem;
+	height: 162px;
+	left: 0px;
+	right: 0px;
+	top: 448px;
 
 	background: #f5f3f6;
-	border-radius: 1.875rem;
+	border-radius: 30px;
 }
 
 #aboutme #tech-stack #frontend {
@@ -261,18 +298,23 @@ body {
 /* Projects */
 #projects {
 	position: absolute;
-	width: 94.5rem;
-	height: 150.813rem;
-	left: 0;
-	top: 128.75rem;
+	left: 0px;
+	right: 0px;
+	top: 2060px;
+	bottom: 1538px;
 }
 
 #projects .container {
-	position: absolute;
+	/* position: absolute;
 	width: 66.375rem;
 	height: 130.813rem;
 	left: 14.063rem;
-	top: 10rem;
+	top: 10rem; */
+	position: absolute;
+	width: 1062px;
+	height: 2093px;
+	left: calc(50% - 1062px / 2);
+	top: 160px;
 }
 
 #projects .container > .title-text {
@@ -284,11 +326,16 @@ body {
 }
 
 #projects .container .project-details {
-	position: absolute;
+	/* position: absolute;
 	width: 66.375rem;
 	height: 122.25rem;
 	left: 0;
-	top: 8.563rem;
+	top: 8.563rem; */
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 6.55%;
+	bottom: 0%;
 }
 
 .each-project-cont {
@@ -371,18 +418,28 @@ a:visited {
 
 /* Resume */
 #resume {
-	position: absolute;
+	/* position: absolute;
 	width: 94.5rem;
 	height: 65.625rem;
 	left: 0px;
-	top: 285.563rem;
+	top: 285.563rem; */
+	position: absolute;
+	height: 926px;
+	left: 0px;
+	right: 0px;
+	top: 4569px;
 }
 
 #resume .container {
-	position: absolute;
+	/* position: absolute;
 	width: 53.875rem;
 	height: 65.625rem;
-	left: 20.313rem;
+	left: 20.313rem; */
+	position: absolute;
+	height: 772px;
+	left: 325px;
+	right: 318px;
+	top: 154px;
 }
 
 #resume .container .top {

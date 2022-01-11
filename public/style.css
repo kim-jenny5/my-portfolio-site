@@ -87,17 +87,37 @@ body {
 
 /* Introduction */
 .introduction {
+	/* position: absolute;
+	width: 62.625rem;
+	height: 35.69rem;
+	margin: 9rem 15.938rem 9rem 15.938rem; */
+	position: absolute;
+	width: 100vw;
+	height: 852px;
+	left: 0px;
+	top: 96px;
+}
+
+/* .introduction .text-container { */
+.introduction .main-container {
+	/* position: absolute;
+	width: 33.188rem;
+	height: 13.188rem;
+	top: 11.313rem; */
 	position: absolute;
 	width: 62.625rem;
 	height: 35.69rem;
-	margin: 9rem 15.938rem 9rem 15.938rem;
+	/* margin-left: 15.916rem; */
+	left: 15.916em;
+	top: 6.807rem;
 }
 
 .introduction .text-container {
 	position: absolute;
-	width: 33.188rem;
-	height: 13.188rem;
-	top: 11.313rem;
+	width: 531px;
+	height: 211px;
+	left: 0px;
+	top: 181px;
 }
 
 .introduction .text-container .title {
@@ -112,12 +132,17 @@ body {
 	font-size: 2.25rem;
 }
 
-.introduction .picture {
-	height: 25rem;
+.introduction img {
+	/* height: 25rem;
 	width: 25rem;
 	margin-top: 5.375rem;
 	right: 0;
+	position: absolute; */
 	position: absolute;
+	width: 400px;
+	height: 400px;
+	left: 602px;
+	top: 86px;
 }
 
 .introduction .typing {

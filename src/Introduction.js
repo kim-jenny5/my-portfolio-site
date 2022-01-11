@@ -1,6 +1,7 @@
 import React from "react";
 import Typical from "react-typical";
 import IMG_1818 from "./images/IMG_1818.PNG";
+// import BlobGraphics from "./BlobGraphics";
 
 const steps = [
 	"a frontend developer.",
@@ -20,23 +21,25 @@ const steps = [
 export default function Introduction() {
 	return (
 		<div className="introduction">
-			<div className="text-container">
-				<div className="title">
-					<div>Hi, my name is Jenny.</div>
-					<div>Nice to meet you!</div>
+			{/* <BlobGraphics /> */}
+			<div className="main-container">
+				<div className="text-container">
+					<div className="title">
+						<div>Hi, my name is Jenny.</div>
+						<div>Nice to meet you!</div>
+					</div>
+					<div className="title-text subtitle">
+						I am{" "}
+						<Typical
+							wrapper="span"
+							steps={steps}
+							loop={Infinity}
+							className="typing"
+						/>
+					</div>
 				</div>
-				<div className="title-text subtitle">
-					I am{" "}
-					<Typical
-						wrapper="span"
-						steps={steps}
-						loop={Infinity}
-						className="typing"
-					/>
-				</div>
+				<img src={IMG_1818}></img>
 			</div>
-			<img src={IMG_1818} className="picture"></img>
-			{/* <div className="picture"></div> */}
 		</div>
 	);
 }

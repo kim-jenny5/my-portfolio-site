@@ -57,7 +57,7 @@ body {
 
 .header-nav ul li {
 	display: inline;
-	font-size: 24px;
+	font-size: 1.5rem;
 	padding-top: 1.063em;
 }
 
@@ -79,7 +79,7 @@ body {
 	left: 4.188rem;
 	top: 1rem;
 	cursor: pointer;
-	font-size: 48px;
+	font-size: 3rem;
 	font-family: DM Serif Display;
 	border: none;
 	background: transparent;
@@ -103,13 +103,13 @@ body {
 .introduction .text-container .title {
 	font-family: Corben;
 	font-weight: bold;
-	font-size: 36px;
+	font-size: 2.25rem;
 	width: 33.188rem;
 	height: 9.438rem;
 }
 
 .introduction .subtitle {
-	font-size: 36px;
+	font-size: 2.25rem;
 }
 
 .introduction .picture {
@@ -142,14 +142,14 @@ body {
 
 #aboutme .container .top {
 	position: absolute;
-	width: 1213px;
-	height: 395px;
-	left: 38px;
-	top: 0px;
+	width: 75.813rem;
+	height: 24.688rem;
+	left: 2.375rem;
+	top: 0;
 }
 
 #aboutme .container .top .title-text {
-	font-size: 36px;
+	font-size: 2.25rem;
 }
 
 #aboutme .picture {
@@ -170,7 +170,7 @@ body {
 
 #aboutme .description .text {
 	font-family: Source Sans Pro;
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 #aboutme #tech-stack {
@@ -181,15 +181,15 @@ body {
 	top: 28rem;
 
 	background: #f5f3f6;
-	border-radius: 30px;
+	border-radius: 1.875rem;
 }
 
 #aboutme #tech-stack #frontend {
 	position: absolute;
-	width: 397px;
-	height: 82px;
-	left: 45px;
-	top: 40px;
+	width: 24.813rem;
+	height: 5.125rem;
+	left: 2.813rem;
+	top: 2.5rem;
 }
 
 #aboutme #tech-stack #design {
@@ -221,7 +221,7 @@ body {
 	position: absolute;
 	width: 94.5rem;
 	height: 150.813rem;
-	left: 0px;
+	left: 0;
 	top: 128.75rem;
 }
 
@@ -253,7 +253,7 @@ body {
 	left: 0;
 	width: 66.125rem;
 	height: 22.813rem;
-	margin-bottom: 173px;
+	margin-bottom: 10.813rem;
 }
 
 .each-project .title-text {
@@ -305,7 +305,7 @@ a:visited {
 }
 
 .each-project .top {
-	width: 1058px;
+	width: 66.125rem;
 	height: 15.938rem;
 	margin-bottom: 1.688rem;
 }
@@ -313,7 +313,7 @@ a:visited {
 .each-project .left-side {
 	position: absolute;
 	width: 66.125rem;
-	height: 232px;
+	height: 14.5rem;
 }
 
 .each-project .screenshot {
@@ -322,17 +322,18 @@ a:visited {
 	width: 29.741rem;
 	height: 16.281rem;
 	margin-left: 582px;
-	border: 1.5px solid #f5f3f6;
+	/* border: 1.5px solid #f5f3f6; */
+	border: 0.094rem solid #f5f3f6;
 	border-radius: 1rem;
 }
 
 /* Resume */
 #resume {
 	position: absolute;
-	width: 1512px;
-	height: 1050px;
+	width: 94.5rem;
+	height: 65.625rem;
 	left: 0px;
-	top: 4569px;
+	top: 285.563rem;
 }
 
 #resume .container {
@@ -407,7 +408,7 @@ a:visited {
 }
 
 .each-experience ul {
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 #resume .container .resume-download {
@@ -434,17 +435,17 @@ a:visited {
 #contact {
 	position: absolute;
 	width: 100vw;
-	height: 432px;
+	height: 27rem;
 	left: 0;
-	top: 5619px;
+	top: 351.188rem;
 }
 
 #contact .container {
 	position: absolute;
-	width: 869px;
-	height: 201px;
-	left: 325px;
-	top: 115px;
+	width: 54.313rem;
+	height: 12.563rem;
+	left: 20.313rem;
+	top: 7.188rem;
 }
 
 #contact .container .title-text div:first-child {
@@ -475,17 +476,15 @@ a:visited {
 	width: 100vw;
 	height: 5rem;
 	left: 0;
-	top: 6051px;
+	/* top: 6051px; */
+	top: 378.188rem;
 	background: #eae3d7;
 }
 
 footer {
 	position: absolute;
-	width: 111px;
-	height: 19px;
-	left: 701px;
-	top: 32px;
-
+	left: 43.813rem;
+	top: 2rem;
 	font-family: Source Sans Pro;
-	font-size: 12px;
+	font-size: 0.75rem;
 }

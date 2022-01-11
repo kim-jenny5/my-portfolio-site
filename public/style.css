@@ -212,6 +212,7 @@ background: url(IMG_0858.jpg); */
 	position: absolute;
 	/* width: 1002px; */
 	width: 62.625rem;
+	/* width: 100vw; */
 	/* height: 571.04px; */
 	height: 35.69rem;
 
@@ -513,7 +514,6 @@ a:visited {
 #resume .container .top {
 	position: absolute;
 	width: 53.875rem;
-	height: 35.688rem;
 	left: 0;
 	top: 5.875rem;
 }
@@ -590,34 +590,15 @@ a:visited {
 	font-size: 18px;
 }
 
-/* #resume .container .resume-download {
-	position: absolute;
-	width: 320px;
-	height: 59px;
-	left: 271px;
-	top: 713px;
-} */
-
 #resume .container .resume-download {
-	/* position: absolute;
-	width: 320px;
-	height: 59px;
-	left: 271px;
-	top: 62.5rem;
-	cursor: pointer;
-	font-family: Source Sans Pro;
-	font-weight: bold;
-	font-size: 1.5rem;
-	background: #988671;
-	border: none;
-	border-radius: 1.875rem; */
 	position: absolute;
-	width: 320px;
-	height: 59px;
-	left: 271px;
-	top: 713px;
+	width: 20rem;
+	height: 3.688rem;
+	/* left: 271px; */
+	left: 16.938rem;
+	bottom: 0;
 	background: #988671;
-	border-radius: 30px;
+	border-radius: 1.875rem;
 }
 
 #resume .container .resume-download a {
@@ -633,10 +614,12 @@ a:visited {
 
 #contact {
 	position: absolute;
-	width: 1512px;
-	height: 355px;
+	width: 100vw;
+	/* width: 1512px; */
+	height: 432px;
 	left: 0px;
-	top: 5572px;
+	/* top: 5619px; */
+	top: 350rem;
 }
 
 #contact .container {
@@ -646,11 +629,16 @@ a:visited {
 	left: 326px;
 	top: 357rem;
 	margin-bottom: 14.875rem; */
-	position: absolute;
+	/* position: absolute;
 	width: 546px;
 	height: 201px;
 	left: 326px;
-	top: 0px;
+	top: 0px; */
+	position: absolute;
+	width: 869px;
+	height: 201px;
+	left: 325px;
+	top: 115px;
 }
 
 #contact .container .title-text div:first-child {

@@ -42,6 +42,7 @@ body {
 	width: 100vw;
 	height: 6rem;
 	background: white;
+	z-index: 1;
 }
 
 .header-nav ul {
@@ -92,9 +93,12 @@ body {
 	margin: 9rem 15.938rem 9rem 15.938rem; */
 	position: absolute;
 	width: 100vw;
-	height: 852px;
-	left: 0px;
-	top: 96px;
+	/* height: 852px; */
+	/* height: 90.2542372881356vh; */
+	height: 102.28091236495vh;
+	left: 0;
+	top: 10.169491525423728vh;
+	/* top: 96px; */
 }
 
 /* .introduction .text-container { */
@@ -103,12 +107,26 @@ body {
 	width: 33.188rem;
 	height: 13.188rem;
 	top: 11.313rem; */
-	position: absolute;
+	/* position: absolute;
 	width: 62.625rem;
 	height: 35.69rem;
-	/* margin-left: 15.916rem; */
 	left: 15.916em;
-	top: 6.807rem;
+	top: 6.807rem; */
+	position: absolute;
+	/* left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0; */
+	/* width: 1002px; */
+	/* width: 39.140625vw; */
+	width: 66.27vw;
+	height: 68.552220888355vh;
+	left: 16.842vw;
+	top: 13.074429771909vh;
+	/* height: 60.49152542372882vh; */
+	/* left: 9.947265625vw; */
+	/* top: 11.537076271186441vh; */
+	/* margin: auto; */
 }
 
 .introduction .text-container {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const handleClick = (e) => {
+const handleClick = () => {
 	window.scrollTo({ top: 0, behavior: "smooth" });
 };
 

@@ -1,8 +1,6 @@
 html,
 body {
 	position: relative;
-	/* width: 1512px;
-	height: 982px; */
 	margin: 0;
 	padding: 0;
 	background: #ffffff;
@@ -26,10 +24,6 @@ body {
 /* Blob 1 */
 .blob-1 {
 	position: absolute;
-	/* width: 701.51px;
-	height: 666.78px; */
-	/* left: -482.65px; */
-	/* top: 393.69px; */
 	left: 0;
 	top: 24.606rem;
 }
@@ -37,138 +31,34 @@ body {
 /* Blob 2 */
 .blob-2 {
 	position: absolute;
-	/* width: 816.79px;
-	height: 846.18px; */
-	/* left: 859.69px; */
-	/* left: 53.731rem; */
 	right: 0;
-	/* top: -151.91px; */
-	/* top: -9.494rem; */
 }
-
-/* Main Content */
-/* position: absolute;
-width: 1002px;
-height: 571.04px;
-left: 255px;
-top: 205px; */
-
-/* Introduction */
-
-/* position: absolute;
-width: 531px;
-height: 211px;
-left: 0px;
-top: 181px; */
-
-/* Frame 4 */
-
-/* position: absolute;
-width: 531px;
-height: 151px;
-left: 0px;
-top: 0px; */
-
-/* Hi, my name is Jenny. Nice to meet you! */
-
-/* position: absolute;
-width: 531px;
-height: 151px;
-left: 0px;
-top: 0px;
-
-font-family: Corben;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 67px;
-
-color: #000000; */
-
-/* Frame 5 */
-
-/* position: absolute;
-width: 531px;
-height: 60px;
-left: 0px;
-top: 151px; */
-
-/* I’m a frontend developer.| */
-
-/* position: absolute;
-width: 531px;
-height: 60px;
-left: 0px;
-top: 0px;
-
-font-family: DM Serif Display;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 49px;
-
-color: #000000; */
-
-/* Profile Picture 1 */
-
-/* position: absolute;
-width: 421px;
-height: 571.04px;
-left: 581px;
-top: 0px; */
-
-/* Vector */
-
-/* position: absolute;
-width: 421px;
-height: 571.04px;
-left: 0px;
-top: 0px;
-
-background: url(IMG_0858.jpg); */
 
 /* Header */
 .header-nav {
 	position: fixed;
-	/* width: 1512px;
-	height: 96px; */
 	left: 0;
 	top: 0;
 	width: 100vw;
 	height: 6rem;
 	z-index: 1;
 	background: white;
-
-	/* height: 100vh; */
 }
 
 .header-nav ul {
 	position: absolute;
 	list-style: none;
 	width: fit-content;
-	/* height: 4.188rem; */
-	/* padding-left: 54.75rem; */
 	right: 3.313rem;
 	margin: 0;
 	padding: 0;
-
-	/* left: 54.75rem; */
-	/* top: 0.938rem; */
 	top: 2.063rem;
-	/* left: 876px;
-	top: 15px; */
 }
 
 .header-nav ul li {
-	/* position: absolute; */
-	/* display: inline-block; */
 	display: inline;
 	font-size: 24px;
 	padding-top: 1.063em;
-	/* vertical-align: middle; */
-
-	/* line-height: 2.063rem; */
-	/* margin-right: 4.875rem; */
 }
 
 .header-nav ul li:nth-child(-n + 3) {
@@ -182,26 +72,14 @@ background: url(IMG_0858.jpg); */
 .header-nav ul li a:visited {
 	text-decoration: none;
 	color: #294234;
-	/* color: black; */
 }
 
 .header-nav .logo {
 	position: absolute;
-	/* width: 215px;
-	height: 66px; */
-	/* left: 67px; */
-	/* margin-left: 4.875rem; */
 	left: 4.188rem;
-	/* left: 9.063rem; */
-	/* margin-left: 9.063rem; */
-	/* top: 16px; */
 	top: 1rem;
 	cursor: pointer;
 	font-size: 48px;
-	line-height: 66px;
-	/* identical to box height */
-	display: flex;
-	align-items: center;
 	font-family: DM Serif Display;
 	border: none;
 	background: transparent;
@@ -210,17 +88,9 @@ background: url(IMG_0858.jpg); */
 /* Introduction */
 .introduction {
 	position: absolute;
-	/* width: 1002px; */
 	width: 62.625rem;
-	/* width: 100vw; */
-	/* height: 571.04px; */
 	height: 35.69rem;
-
-	/* margin: auto; */
-	/* left: 255px; */
 	margin: 9rem 15.938rem 9rem 15.938rem;
-	/* top: 205px; */
-	/* top: 12.813rem; */
 }
 
 .introduction .text-container {
@@ -243,33 +113,11 @@ background: url(IMG_0858.jpg); */
 }
 
 .introduction .picture {
-	/* Profile Picture 1 */
-
-	/* position: absolute;
-width: 421px;
-height: 571.04px; */
-	/* left: 581px; */
-	/* left: 36.313rem; */
-	/* top: 0px; */
 	height: 25rem;
 	width: 25rem;
-	/* margin-left: 4.438em; */
 	margin-top: 5.375rem;
 	right: 0;
-
-	/* Vector */
-
 	position: absolute;
-	/* width: 100%; */
-	/* height: 100%; */
-	/* left: 0px; */
-	/* top: 0px; */
-
-	/* background-image: url(./IMG_1818.PNG); */
-	/* background-size: cover; */
-	/* background-size: 100%;
-	background-position: center;
-	background-repeat: no-repeat; */
 }
 
 .introduction .typing {
@@ -310,7 +158,6 @@ height: 571.04px; */
 	height: 22.411rem;
 	left: 0;
 	top: 1.188rem;
-	/* background-image: url(./animal_crossing_profile.png); */
 }
 
 #aboutme .description {
@@ -382,7 +229,6 @@ height: 571.04px; */
 	position: absolute;
 	width: 66.375rem;
 	height: 130.813rem;
-	/* height: fit-content; */
 	left: 14.063rem;
 	top: 10rem;
 }
@@ -417,7 +263,6 @@ height: 571.04px; */
 .each-project .description {
 	font-family: Source Sans Pro;
 	font-size: 1.5rem;
-	/* font-size: 1.25rem; */
 	left: 0;
 	width: 34rem;
 	height: 11.813rem;
@@ -436,9 +281,7 @@ height: 571.04px; */
 	height: 2.375rem;
 }
 
-/* .each-project .link-btns span { */
 .each-project .link-btns a {
-	/* background: #ebccc1; */
 	background: #e6b0a4;
 	color: #294234;
 	cursor: pointer;
@@ -448,14 +291,11 @@ height: 571.04px; */
 	font-weight: bold;
 	font-size: 1.125rem;
 	padding: 0.5rem 1.25rem 0.5rem 1.25rem;
-	/* margin: 1.688rem 1.125rem 0 0; */
 	margin-right: 1.125rem;
 }
 
 .each-project .link-btns a:hover {
-	/* background: #ceab8d; */
 	background: #ebccc1;
-	/* color: #988671; */
 }
 
 .each-project .link-btns a,
@@ -463,12 +303,6 @@ a:visited {
 	text-decoration: none;
 	color: #294234;
 }
-
-/* .each-project .img-cont {
-	width: 475.85px;
-	height: 260.5px;
-	left: 582px;
-} */
 
 .each-project .top {
 	width: 1058px;
@@ -487,11 +321,9 @@ a:visited {
 	display: inline-block;
 	width: 29.741rem;
 	height: 16.281rem;
-	/* left: 582px; */
 	margin-left: 582px;
 	border: 1.5px solid #f5f3f6;
 	border-radius: 1rem;
-	/* left: 582px; */
 }
 
 /* Resume */
@@ -508,7 +340,6 @@ a:visited {
 	width: 53.875rem;
 	height: 65.625rem;
 	left: 20.313rem;
-	/* top: 9.625rem; */
 }
 
 #resume .container .top {
@@ -537,7 +368,6 @@ a:visited {
 }
 
 #resume .container .top .resume-details .education {
-	/* position: absolute; */
 	width: 53.813rem;
 	height: 13.875rem;
 	left: 0;
@@ -546,13 +376,9 @@ a:visited {
 }
 
 #resume .container .top .resume-details .experience {
-	/* position: absolute; */
 	width: 53.813rem;
-	/* height: 19.188rem; */
 	left: 0;
 	top: 16.5rem;
-	/* top: 20.375rem; */
-	/* margin-top: 2.625rem; */
 }
 
 #resume .container .top .resume-details .info {
@@ -564,12 +390,6 @@ a:visited {
 .each-education {
 	margin-bottom: 1.375rem;
 }
-
-/* .header-nav ul li:nth-child(-n + 3) */
-
-/* .each-education:nth-child(-n + 2) {
-	margin-bottom: 22px;
-} */
 
 .each-education .name,
 .each-experience .name {
@@ -594,7 +414,6 @@ a:visited {
 	position: absolute;
 	width: 20rem;
 	height: 3.688rem;
-	/* left: 271px; */
 	left: 16.938rem;
 	bottom: 0;
 	background: #988671;
@@ -615,14 +434,9 @@ a:visited {
 #contact {
 	position: absolute;
 	width: 100vw;
-	/* width: 1512px; */
-	/* height: 100%; */
 	height: 432px;
-	/* height: 27rem; */
 	left: 0;
 	top: 5619px;
-	/* top: 350rem; */
-	/* top: 343.438rem; */
 }
 
 #contact .container {
@@ -631,7 +445,6 @@ a:visited {
 	height: 201px;
 	left: 325px;
 	top: 115px;
-	/* margin: 7.188rem 0 7.188rem 0; */
 }
 
 #contact .container .title-text div:first-child {
@@ -659,14 +472,10 @@ a:visited {
 /* Footer */
 #footer-cont {
 	position: absolute;
-	/* position: relative; */
 	width: 100vw;
 	height: 5rem;
 	left: 0;
-	/* bottom: 100%; */
-	/* top: 5927px; */
 	top: 6051px;
-	/* bottom: 0; */
 	background: #eae3d7;
 }
 

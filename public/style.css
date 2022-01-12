@@ -199,11 +199,16 @@ body {
 
 /* About */
 #aboutme {
-	position: absolute;
+	/* position: absolute;
 	left: 0px;
 	right: 0px;
 	top: 1078px;
-	bottom: 4047px;
+	bottom: 4494px; */
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 982px;
+	bottom: 4149px;
 }
 
 #aboutme .container {
@@ -213,10 +218,10 @@ body {
 	left: calc(50% - 1289px / 2 + 0.5px);
 	top: 138px; */
 	position: absolute;
+	height: 610px;
 	left: 112px;
 	right: 111px;
 	top: 138px;
-	bottom: 138px;
 }
 
 #aboutme .container .top {
@@ -298,10 +303,10 @@ body {
 /* Projects */
 #projects {
 	position: absolute;
+	height: 2413px;
 	left: 0px;
 	right: 0px;
 	top: 2060px;
-	bottom: 1538px;
 }
 
 #projects .container {
@@ -423,8 +428,14 @@ a:visited {
 	height: 65.625rem;
 	left: 0px;
 	top: 285.563rem; */
-	position: absolute;
+	/* position: absolute;
+	height: 100%;
 	height: 926px;
+	left: 0px;
+	right: 0px;
+	top: 4569px; */
+	position: absolute;
+	height: 973px;
 	left: 0px;
 	right: 0px;
 	top: 4569px;
@@ -435,56 +446,93 @@ a:visited {
 	width: 53.875rem;
 	height: 65.625rem;
 	left: 20.313rem; */
-	position: absolute;
+	/* position: absolute;
+	width: 869px;
 	height: 772px;
-	left: 325px;
-	right: 318px;
-	top: 154px;
+	left: calc(50% - 869px / 2 + 3.5px);
+	top: 154px; */
+	/* position: absolute;
+	height: 815px;
+	left: 225px;
+	right: 225px;
+	top: 60px; */
+	/* position: absolute;
+	width: 1062px;
+	height: 815px;
+	left: calc(50% - 1062px / 2);
+	top: 60px; */
+	position: absolute;
+	width: 1062px;
+	height: 834px;
+	left: calc(50% - 1062px / 2);
+	top: 158px;
 }
 
 #resume .container .top {
-	position: absolute;
+	/* position: absolute;
 	width: 53.875rem;
 	left: 0;
-	top: 5.875rem;
+	top: 5.875rem; */
+	position: absolute;
+	height: 706px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
 }
 
 #resume .container .top > .title-text {
-	position: absolute;
+	/* position: absolute;
 	width: inherit;
 	left: 0;
-	top: 0;
+	top: 0; */
+	position: absolute;
+	width: 1062px;
+	height: 59px;
+	left: 0px;
+	top: 0px;
 	font-size: 2.25rem;
 }
 
 #resume .container .top .resume-details {
-	margin-top: 5.875rem;
+	position: absolute;
+	width: 1062px;
+	height: 615px;
+	left: 0px;
+	top: 91px;
+	/* top: 91px; */
+	/* margin-top: 5.875rem; */
 }
 
 #resume .container .top .resume-details .title-text {
 	/* font-size: 1.875rem; */
 	font-size: 1.75rem;
-	margin-bottom: 0.5rem;
+	/* margin-bottom: 0.5rem; */
 }
 
 #resume .container .top .resume-details .education {
-	width: 53.813rem;
-	height: 13.875rem;
+	/* width: 53.813rem; */
+	position: absolute;
+	height: 228px;
+	left: 0px;
+	right: 0px;
+	top: 0px; /* height: 13.875rem;
 	left: 0;
 	top: 5.875rem;
-	margin-bottom: 2.625rem;
+	margin-bottom: 2.625rem; */
 }
 
 #resume .container .top .resume-details .experience {
-	width: 53.813rem;
-	left: 0;
-	top: 16.5rem;
+	position: absolute;
+	width: 1062px;
+	height: 357px;
+	left: 0px;
+	top: 258px;
 }
 
 #resume .container .top .resume-details .info {
 	font-family: Source Sans Pro;
 	font-size: 1.125rem;
-	width: 53.813rem;
+	width: 1062px;
 }
 
 .each-education {
@@ -511,13 +559,19 @@ a:visited {
 }
 
 #resume .container .resume-download {
-	position: absolute;
+	/* position: absolute;
 	width: 20rem;
 	height: 3.688rem;
 	left: 16.938rem;
-	bottom: 0;
+	bottom: 0; */
+	position: absolute;
+	width: 320px;
+	height: 59px;
+	left: calc(50% - 320px / 2);
+	top: 775px;
 	background: #988671;
 	border-radius: 1.875rem;
+	/* margin-top: 48px; */
 }
 
 #resume .container .resume-download a {
@@ -532,19 +586,29 @@ a:visited {
 }
 
 #contact {
-	position: absolute;
+	/* position: absolute;
 	width: 100vw;
 	height: 27rem;
 	left: 0;
-	top: 351.188rem;
+	top: 351.188rem; */
+	position: absolute;
+	height: 372px;
+	left: 0px;
+	right: 0px;
+	top: 5561px;
 }
 
 #contact .container {
-	position: absolute;
+	/* position: absolute;
 	width: 54.313rem;
 	height: 12.563rem;
 	left: 20.313rem;
-	top: 7.188rem;
+	top: 7.188rem; */
+	position: absolute;
+	width: 1062px;
+	height: 201px;
+	left: calc(50% - 1062px / 2);
+	top: 85px;
 }
 
 #contact .container .title-text div:first-child {
@@ -571,19 +635,35 @@ a:visited {
 
 /* Footer */
 #footer-cont {
-	position: absolute;
+	/* position: absolute;
 	width: 100vw;
 	height: 5rem;
 	left: 0;
-	/* top: 6051px; */
 	top: 378.188rem;
+	background: #eae3d7; */
+	position: absolute;
+	height: 84px;
+	left: 0px;
+	right: 0px;
+	top: 5933px;
+
 	background: #eae3d7;
 }
 
 footer {
 	position: absolute;
-	left: 43.813rem;
-	top: 2rem;
+	width: 93px;
+	height: 15px;
+	left: calc(50% - 93px / 2 - 8.5px);
+	top: 34px;
+
 	font-family: Source Sans Pro;
-	font-size: 0.75rem;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
 }

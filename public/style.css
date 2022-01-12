@@ -61,10 +61,6 @@ body {
 	padding: 0;
 	left: 4.299vw;
 	top: 1.7321016166281755vh;
-	/* margin: 0;
-	padding: 0;
-	width: 14.22vw;
-	height: 7.621247113163972vh; */
 }
 
 .header-nav ul {
@@ -72,71 +68,23 @@ body {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	/* width: 38.426vw; */
-	/* height: 7.621247113163972vh; */
-	/* right: 3.505vw; */
-	/* right: 0;
-	top: 1.7321016166281755vh; */
-	/* top: 50%; */
-	/* text-align: center;
-	vertical-align: middle; */
-	/* top: 1.9630484988452657vh; */
-	/* position: absolute; */
-	/* width: 581px;
-	height: 66px;
-	right: 53px;
-	top: 15px; */
 	right: 3.505vw;
 	top: 2.116vw;
 }
 
 .header-nav ul li {
-	/* display: inline-block; */
 	display: inline;
-	/* display: inline-block; */
 	font-size: 1.587vw;
-	/* position: relative; */
 	padding-top: 1.063em;
-	/* vertical-align: middle; */
-	/* top: 1.9630484988452657vh; */
-	/* top: 50%; */
-	/* top: 3.695150115473441vh; */
-	/* margin-top: 1.9630484988452657vh; */
-	/* bottom: 1.9630484988452657vh; */
-	/* padding-top: 1.063em; */
-	/* position: absolute; */
-	/* width: 101px;
-	height: 33px; */
-	/* line-height: 3.810623556581986vh; */
-	/* margin-right: 4.894vw; */
-	/* width: 6.68vw; */
-	/* width: 100%;
-	height: 3.810623556581986vh; */
-	/* margin: 0 !important; */
 }
 
 .header-nav ul li a {
-	/* top: 1.9630484988452657vh;
-	bottom: 1.9630484988452657vh; */
-	/* margin-top: 1.9630484988452657vh; */
-	/* top: 50%; */
-	/* vertical-align: middle; */
-	/* display: inline; */
-	/* position: absolute;padding-top: 1.063em; */
-	/* line-height: 3.810623556581986vh; */
 	text-decoration: none;
-	/* display: absolute; */
-	/* top: 1.9630484988452657vh; */
-	/* line-height: 3.810623556581986vh; */
 }
 
 .header-nav ul li:nth-child(-n + 3) {
 	margin-right: 4.894vw;
 }
-
-/* .header-nav ul li a:link {
-	text-decoration: none;
-} */
 
 .header-nav ul li a:visited {
 	text-decoration: none;
@@ -191,7 +139,7 @@ body {
 .introduction img {
 	position: absolute;
 	width: 26.455vw;
-	height: 46.189376443418 vh;
+	/* height: 46.189376443418vh; */
 	right: 0;
 	top: 0;
 }
@@ -202,11 +150,6 @@ body {
 
 /* About */
 #aboutme {
-	/* position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 1078px;
-	bottom: 4494px; */
 	position: absolute;
 	height: 886px;
 	left: 0px;
@@ -215,11 +158,6 @@ body {
 }
 
 #aboutme .container {
-	/* position: absolute;
-	width: 1289px;
-	height: 610px; 
-	left: calc(50% - 1289px / 2 + 0.5px);
-	top: 138px; */
 	position: absolute;
 	width: 1289px;
 	height: 610px;
@@ -236,7 +174,6 @@ body {
 }
 
 #aboutme .container .top .title-text {
-	/* font-size: 2.381vw; */
 	font-size: 2.381vw;
 }
 
@@ -258,7 +195,6 @@ body {
 
 #aboutme .description .text {
 	font-family: Source Sans Pro;
-	/* font-size: 1.587vw; */
 	font-size: 1.587vw;
 }
 
@@ -268,7 +204,6 @@ body {
 	left: 0px;
 	right: 0px;
 	top: 448px;
-
 	background: #f5f3f6;
 	border-radius: 30px;
 }
@@ -307,11 +242,6 @@ body {
 
 /* Projects */
 #projects {
-	/* position: absolute;
-	height: 2413px;
-	left: 0px;
-	right: 0px;
-	top: 2060px; */
 	position: absolute;
 	height: 2369px;
 	left: 0px;
@@ -320,11 +250,6 @@ body {
 }
 
 #projects .container {
-	/* position: absolute;
-	width: 66.375rem;
-	height: 130.813rem;
-	left: 14.063rem;
-	top: 10rem; */
 	position: absolute;
 	width: 1062px;
 	height: 2093px;
@@ -341,11 +266,6 @@ body {
 }
 
 #projects .container .project-details {
-	/* position: absolute;
-	width: 66.375rem;
-	height: 122.25rem;
-	left: 0;
-	top: 8.563rem; */
 	position: absolute;
 	left: 0%;
 	right: 0%;
@@ -433,17 +353,6 @@ a:visited {
 
 /* Resume */
 #resume {
-	/* position: absolute;
-	width: 94.5rem;
-	height: 65.625rem;
-	left: 0px;
-	top: 285.563rem; */
-	/* position: absolute;
-	height: 100%;
-	height: 926px;
-	left: 0px;
-	right: 0px;
-	top: 4569px; */
 	position: absolute;
 	height: 1110px;
 	left: 0px;
@@ -452,25 +361,6 @@ a:visited {
 }
 
 #resume .container {
-	/* position: absolute;
-	width: 53.875rem;
-	height: 65.625rem;
-	left: 20.313rem; */
-	/* position: absolute;
-	width: 869px;
-	height: 772px;
-	left: calc(50% - 869px / 2 + 3.5px);
-	top: 154px; */
-	/* position: absolute;
-	height: 815px;
-	left: 225px;
-	right: 225px;
-	top: 60px; */
-	/* position: absolute;
-	width: 1062px;
-	height: 815px;
-	left: calc(50% - 1062px / 2);
-	top: 60px; */
 	position: absolute;
 	width: 1062px;
 	height: 834px;
@@ -479,10 +369,6 @@ a:visited {
 }
 
 #resume .container .top {
-	/* position: absolute;
-	width: 53.875rem;
-	left: 0;
-	top: 5.875rem; */
 	position: absolute;
 	height: 706px;
 	left: 0px;
@@ -491,10 +377,6 @@ a:visited {
 }
 
 #resume .container .top > .title-text {
-	/* position: absolute;
-	width: inherit;
-	left: 0;
-	top: 0; */
 	position: absolute;
 	width: 1062px;
 	height: 59px;
@@ -509,27 +391,18 @@ a:visited {
 	height: 615px;
 	left: 0px;
 	top: 91px;
-	/* top: 91px; */
-	/* margin-top: 5.875rem; */
 }
 
 #resume .container .top .resume-details .title-text {
-	/* font-size: 1.984vw; */
 	font-size: 1.852vw;
-	/* margin-bottom: 0.5rem; */
 }
 
 #resume .container .top .resume-details .education {
-	/* width: 53.813rem; */
 	position: absolute;
 	height: 228px;
 	left: 0px;
 	right: 0px;
 	top: 0px;
-	/* height: 13.875rem;
-	left: 0;
-	top: 5.875rem;
-	margin-bottom: 2.625rem; */
 }
 
 #resume .container .top .resume-details .experience {
@@ -571,19 +444,13 @@ a:visited {
 }
 
 #resume .container .resume-download {
-	/* position: absolute;
-	width: 20rem;
-	height: 3.688rem;
-	left: 16.938rem;
-	bottom: 0; */
 	position: absolute;
 	width: 275px;
 	height: 59px;
 	left: calc(50% - 275px / 2 - 0.5px);
 	top: 775px;
-
 	background: #988671;
-	border-radius: 30px; /* margin-top: 48px; */
+	border-radius: 30px;
 }
 
 #resume .container .resume-download a {
@@ -593,16 +460,10 @@ a:visited {
 	font-family: Source Sans Pro;
 	font-weight: bold;
 	font-size: 1.323vw;
-	/* font-size: 1.587vw; */
 	color: white;
 }
 
 #contact {
-	/* position: absolute;
-	width: 100vw;
-	height: 27rem;
-	left: 0;
-	top: 351.188rem; */
 	position: absolute;
 	height: 372px;
 	left: 0px;
@@ -611,11 +472,6 @@ a:visited {
 }
 
 #contact .container {
-	/* position: absolute;
-	width: 54.313rem;
-	height: 12.563rem;
-	left: 20.313rem;
-	top: 7.188rem; */
 	position: absolute;
 	width: 1062px;
 	height: 201px;
@@ -647,12 +503,6 @@ a:visited {
 
 /* Footer */
 #footer-cont {
-	/* position: absolute;
-	width: 100vw;
-	height: 5rem;
-	left: 0;
-	top: 378.188rem;
-	background: #eae3d7; */
 	position: absolute;
 	height: 84px;
 	left: 0px;
@@ -674,7 +524,6 @@ footer {
 	font-weight: normal;
 	font-size: 0.794vw;
 	line-height: 15px;
-	/* identical to box height */
 
 	display: flex;
 	align-items: center;

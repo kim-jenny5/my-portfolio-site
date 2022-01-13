@@ -14,24 +14,35 @@ export default function App() {
 	return (
 		<div className="App">
 			<GlobalStyle />
-			<Container>
-				<BlobGraphics />
-				<HeaderNav />
-				<Introduction />
+			<Grid>
+				{/* <BlobGraphics /> */}
+				<Header>
+					<HeaderNav />
+				</Header>
+				<Content>
+					<Introduction />
+				</Content>
 				{/* <About />
 				<ProjectsCont />
 				<ResumeCont />
 				<Contact />
 				<Footer /> */}
-			</Container>
+				<Ft>
+					<Footer />
+				</Ft>
+			</Grid>
 		</div>
 	);
 }
 
-const Container = styled.div`
+const Grid = styled.div`
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-column-gap: 1.25rem;
+	grid-template-areas:
+		"header header header header header header header header header header header header"
+		"content content content content content content content content content content content content"
+		"footer footer footer footer footer footer footer footer footer footer footer footer";
 `;
 
 const GlobalStyle = createGlobalStyle`body {
@@ -39,18 +50,21 @@ const GlobalStyle = createGlobalStyle`body {
   padding: 0;
 }`;
 
-// grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
-// grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-// position: relative;
-// align-items: center;
-// grid-template-columns: repeat(12, 1fr);
-// grid-template-columns: repeat(12, 8.33%);
-// margin: 0 70px 0 70px;
-// margin: 0;
-// padding: 0;
+const Section = styled.div`
+	border: solid black 1px;
+`;
 
-// grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-// const Columns = styled.div`
-// 	width: 8.33%;
-// 	float: left;
-// `;
+const Header = styled(Section)`
+	position: fixed;
+	width: 100vw;
+	grid-area: header;
+`;
+
+const Content = styled(Section)`
+	grid-area: content;
+`;
+
+const Ft = styled(Section)`
+	border: solid red 1px;
+	grid-area: footer;
+`;

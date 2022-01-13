@@ -2,6 +2,7 @@ import React from "react";
 import Typical from "react-typical";
 import IMG_1818 from "./images/IMG_1818.PNG";
 // import BlobGraphics from "./BlobGraphics";
+import styled from "styled-components";
 
 const steps = [
 	"a frontend developer.",
@@ -23,7 +24,7 @@ export default function Introduction() {
 		<div className="introduction">
 			{/* <BlobGraphics /> */}
 			<div className="main-container">
-				<div className="text-container">
+				{/* <div className="text-container">
 					<div className="title">
 						<div>Hi, my name is Jenny.</div>
 						<div>Nice to meet you!</div>
@@ -37,7 +38,7 @@ export default function Introduction() {
 							className="typing"
 						/>
 					</div>
-				</div>
+				</div> */}
 				<img src={IMG_1818}></img>
 			</div>
 		</div>

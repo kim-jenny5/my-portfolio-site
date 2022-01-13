@@ -19,17 +19,13 @@ export default function App() {
 				<Header>
 					<HeaderNav />
 				</Header>
-				<Content>
-					<Introduction />
-				</Content>
+				<Introduction />
 				{/* <About />
 				<ProjectsCont />
 				<ResumeCont />
 				<Contact />
 				<Footer /> */}
-				<Ft>
-					<Footer />
-				</Ft>
+				<Footer />
 			</Grid>
 		</div>
 	);
@@ -38,9 +34,11 @@ export default function App() {
 const Grid = styled.div`
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 12.009237875288683vh auto 9.699769053117782vh;
+	/* grid-template-rows: auto auto auto; */
 	grid-column-gap: 1.25rem;
 	grid-template-areas:
-		"header header header header header header header header header header header header"
+		"hd hd hd hd hd hd hd hd hd hd hd hd"
 		"content content content content content content content content content content content content"
 		"footer footer footer footer footer footer footer footer footer footer footer footer";
 `;
@@ -50,21 +48,17 @@ const GlobalStyle = createGlobalStyle`body {
   padding: 0;
 }`;
 
-const Section = styled.div`
-	border: solid black 1px;
-`;
-
-const Header = styled(Section)`
-	position: fixed;
+const Header = styled.div`
+	/* position: fixed; */
 	width: 100vw;
-	grid-area: header;
+	grid-area: hd;
+	background-color: lightgray;
 `;
 
-const Content = styled(Section)`
-	grid-area: content;
-`;
+// const Section = styled.div`
+// 	border: solid black 1px;
+// `;
 
-const Ft = styled(Section)`
-	border: solid red 1px;
-	grid-area: footer;
-`;
+// const Header = styled(Section)`
+
+// const Content = styled(Section)`

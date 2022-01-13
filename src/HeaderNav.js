@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { HeaderCont } from "./App";
 
 const handleClick = () => {
 	window.scrollTo({ top: 0, behavior: "smooth" });
+	// window.location.reload(false);
+	window.location.href = "";
 };
 
 export default function HeaderNav() {
@@ -10,23 +13,23 @@ export default function HeaderNav() {
 		<div className="title-text header-nav">
 			{/* <span className="logo">jennykim.</span> */}
 			{/* <Header> */}
-			<button className="logo" onClick={handleClick}>
-				jennykim.
-			</button>
-			<ul>
-				<li>
-					<a href="#aboutme">About Me</a>
-				</li>
-				<li>
-					<a href="#projects">Projects</a>
-				</li>
-				<li>
-					<a href="#resume">Resume</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
-			</ul>
+			<HeaderCont>
+				<Button onClick={handleClick}>jennykim.</Button>
+				<ul>
+					<li>
+						<a href="#aboutme">About Me</a>
+					</li>
+					<li>
+						<a href="#projects">Projects</a>
+					</li>
+					<li>
+						<a href="#resume">Resume</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</HeaderCont>
 			{/* </Header> */}
 		</div>
 	);
@@ -38,3 +41,11 @@ export default function HeaderNav() {
 // 	grid-area: hd;
 // 	background-color: lightgray;
 // `;
+
+// const Header = styled.div``;
+
+// const
+
+const Button = styled.button`
+	grid-column: 2 / 4;
+`;

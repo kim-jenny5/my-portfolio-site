@@ -1,5 +1,6 @@
 import React from "react";
 // import styled from "styled-components";
+import { Ft } from "./App";
 // import { Section } from "./App";
 
 // const Ft = styled(Section)`
@@ -17,8 +18,8 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		// <Ft>
-		<footer>© 2021 JENNY KIM</footer>
-		// </Ft>
+		<Ft>
+			<footer>© 2021 JENNY KIM</footer>
+		</Ft>
 	);
 }

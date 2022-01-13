@@ -24,23 +24,29 @@ export default function Introduction() {
 		<div className="introduction">
 			{/* <BlobGraphics /> */}
 			<div className="main-container">
-				{/* <div className="text-container">
+				<div className="text-container">
 					<div className="title">
 						<div>Hi, my name is Jenny.</div>
 						<div>Nice to meet you!</div>
 					</div>
 					<div className="title-text subtitle">
 						I am{" "}
-						<Typical
+						{/* <Typical
 							wrapper="span"
 							steps={steps}
 							loop={Infinity}
 							className="typing"
-						/>
+						/> */}
 					</div>
-				</div> */}
-				<img src={IMG_1818}></img>
+				</div>
+				{/* <ImgWrapper> */}
+				{/* <img src={IMG_1818}></img> */}
+				{/* </ImgWrapper> */}
 			</div>
 		</div>
 	);
 }
+
+const ImgWrapper = styled.div`
+	max-width: 100%;
+`;

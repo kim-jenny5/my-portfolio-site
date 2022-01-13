@@ -15,20 +15,22 @@ export default function HeaderNav() {
 			{/* <Header> */}
 			<HeaderCont>
 				<Button onClick={handleClick}>jennykim.</Button>
-				<ul>
-					<li>
+				{/* <ul> */}
+				<NavList>
+					<NavListItems>
 						<a href="#aboutme">About Me</a>
-					</li>
-					<li>
+					</NavListItems>
+					<NavListItems>
 						<a href="#projects">Projects</a>
-					</li>
-					<li>
+					</NavListItems>
+					<NavListItems>
 						<a href="#resume">Resume</a>
-					</li>
-					<li>
+					</NavListItems>
+					<NavListItems>
 						<a href="#contact">Contact</a>
-					</li>
-				</ul>
+					</NavListItems>
+				</NavList>
+				{/* </ul> */}
 			</HeaderCont>
 			{/* </Header> */}
 		</div>
@@ -48,4 +50,14 @@ export default function HeaderNav() {
 
 const Button = styled.button`
 	grid-column: 2 / 4;
+`;
+
+const NavList = styled.ul`
+	list-style: none;
+	grid-column-end: 12;
+`;
+
+const NavListItems = styled.li`
+	display: inline;
+	color: red;
 `;

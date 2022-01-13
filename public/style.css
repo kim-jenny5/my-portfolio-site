@@ -6,7 +6,24 @@ body {
 	background: #ffffff;
 	scroll-behavior: smooth;
 	color: #294234;
+	font-size: 100%;
 }
+
+/* @media (min-width: 640px) {
+	body {
+		font-size: 1rem;
+	}
+}
+@media (min-width: 960px) {
+	body {
+		font-size: 1.2rem;
+	}
+}
+@media (min-width: 1100px) {
+	body {
+		font-size: 1.5rem;
+	}
+} */
 
 ::selection {
 	background: #eae3d7;
@@ -47,6 +64,7 @@ body {
 	overflow: hidden;
 	/* background: white; */
 	z-index: 2;
+	/* vertical-align: middle; */
 }
 
 .header-nav .logo {
@@ -59,6 +77,8 @@ body {
 	position: absolute;
 	margin: 0;
 	padding: 0;
+	/* width: 7.621247113163972vh;
+	height: 66px; */
 	left: 4.299vw;
 	top: 1.7321016166281755vh;
 }
@@ -75,7 +95,9 @@ body {
 .header-nav ul li {
 	display: inline;
 	font-size: 1.587vw;
-	padding-top: 1.063em;
+	top: 17px;
+	/* top: 2.116vw;
+	padding-top: 1.063em; */
 }
 
 .header-nav ul li a {
@@ -155,6 +177,8 @@ body {
 	left: 0px;
 	right: 0px;
 	top: 886px;
+	width: 100vw;
+	height: 102.3094688221709vh;
 }
 
 #aboutme .container {
@@ -247,6 +271,8 @@ body {
 	left: 0px;
 	right: 0px;
 	top: 1772px;
+	width: 100vw;
+	height: 102.3094688221709vh;
 }
 
 #projects .container {
@@ -358,6 +384,8 @@ a:visited {
 	left: 0px;
 	right: 0px;
 	top: 4141px;
+	width: 100vw;
+	height: 102.3094688221709vh;
 }
 
 #resume .container {
@@ -469,6 +497,8 @@ a:visited {
 	left: 0px;
 	right: 0px;
 	top: 5251px;
+	/* width: 100vw;
+	height: 102.3094688221709vh; */
 }
 
 #contact .container {
@@ -514,8 +544,8 @@ a:visited {
 
 footer {
 	position: absolute;
-	width: 93px;
-	height: 15px;
+	/* width: 93px;
+	height: 15px; */
 	left: calc(50% - 93px / 2 - 8.5px);
 	top: 34px;
 

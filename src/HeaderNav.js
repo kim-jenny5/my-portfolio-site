@@ -62,14 +62,21 @@ const Button = styled.button`
 `;
 
 const NavBar = styled.ul`
-	list-style: none;
+	display: grid;
 	grid-column: 8 / 13;
+	list-style: none;
 	padding: 0;
 	margin: 0;
+	font-size: 1.375em;
+	text-align: center;
+	/* grid-template-columns: subgrid; */
 	> li {
-		display: inline;
-		// 	color: red;
+		/* display: inline; */
+		grid-template-columns: repeat(4, 1fr);
+		grid-row: 1;
+		padding: 1.125em 0 1.125em 0;
 		> a {
+			grid-column-start: 1;
 			text-decoration: none;
 			color: #294234;
 		}

@@ -21,32 +21,30 @@ export default function App() {
 				</HeaderCont>
 				{/* <Content>
 					<Introduction />
-				<About />
-				<ProjectsCont />
-				<ResumeCont />
-				<Contact />
-				<Footer />
+					<About />
+					<ProjectsCont />
+					<ResumeCont />
+					<Contact />
 				</Content> */}
-				{/* <Ft>
+				<Ft>
 					<Footer />
-				</Ft> */}
+				</Ft>
 			</GridWrapper>
 		</div>
 	);
 }
 
 const GlobalStyle = createGlobalStyle`body {
+  margin: 0;
   padding: 0;
 	color: #294234;
-  margin: 0 4.375em 0 4.375em;
-
 }`;
 
 const GridWrapper = styled.div`
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	/* grid-template-rows: 12.009237875288683vh auto 9.699769053117782vh; */
-	/* grid-template-rows: auto auto auto; */
+	grid-template-rows: auto auto auto;
 	grid-column-gap: 1.25rem;
 	grid-template-areas:
 		"hd hd hd hd hd hd hd hd hd hd hd hd"
@@ -64,6 +62,7 @@ export const HeaderCont = styled.div`
 	background-color: lightgray;
 	font-family: DM Serif Display;
 	grid-area: hd;
+	margin: 0 4.375em 0 4.375em;
 `;
 
 // export const Content = styled(Section)`
@@ -76,6 +75,7 @@ export const Content = styled.div`
 export const Ft = styled.div`
 	grid-area: ft;
 	grid-row: 3;
+	grid-template-columns: 1;
 	font-size: 0.75em;
 	background: #eae3d7;
 	text-align: center;

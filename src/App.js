@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
-import BlobGraphics from "./BlobGraphics";
+// import BlobGraphics from "./BlobGraphics";
 import HeaderNav from "./HeaderNav";
-import Introduction from "./Introduction";
-import About from "./About";
-import ProjectsCont from "./ProjectsCont";
-import ResumeCont from "./ResumeCont";
-import Contact from "./Contact";
-import Footer from "./Footer";
+// import Introduction from "./Introduction";
+// import About from "./About";
+// import ProjectsCont from "./ProjectsCont";
+// import ResumeCont from "./ResumeCont";
+// import Contact from "./Contact";
+// import Footer from "./Footer";
 
 export default function App() {
 	return (
@@ -16,16 +16,14 @@ export default function App() {
 			<GlobalStyle />
 			<Grid>
 				{/* <BlobGraphics /> */}
-				<Header>
-					<HeaderNav />
-				</Header>
-				<Introduction />
+				<HeaderNav />
+				{/* <Introduction /> */}
 				{/* <About />
 				<ProjectsCont />
 				<ResumeCont />
 				<Contact />
 				<Footer /> */}
-				<Footer />
+				{/* <Footer /> */}
 			</Grid>
 		</div>
 	);
@@ -48,17 +46,13 @@ const GlobalStyle = createGlobalStyle`body {
   padding: 0;
 }`;
 
-const Header = styled.div`
-	/* position: fixed; */
-	width: 100vw;
-	grid-area: hd;
-	background-color: lightgray;
-`;
-
 // const Section = styled.div`
 // 	border: solid black 1px;
 // `;
 
-// const Header = styled(Section)`
+// export const Hd = styled(Section)`
+// 	/* position: fixed; */
+// 	grid-area: hd;
+// `;
 
-// const Content = styled(Section)`
+/* export const Hd = styled.div` */

@@ -14,59 +14,57 @@ export default function App() {
 	return (
 		<div className="App">
 			<GlobalStyle />
-			<Grid>
+			<GridWrapper>
 				{/* <BlobGraphics /> */}
-				<HeaderNav />
+				<HeaderCont>
+					<HeaderNav />
+				</HeaderCont>
 				{/* <Content>
-					<Introduction /> */}
-				{/* <About />
+					<Introduction />
+				<About />
 				<ProjectsCont />
 				<ResumeCont />
 				<Contact />
-				<Footer /> */}
-				{/* </Content> */}
 				<Footer />
-			</Grid>
+				</Content> */}
+				{/* <Ft>
+					<Footer />
+				</Ft> */}
+			</GridWrapper>
 		</div>
 	);
 }
 
-const Grid = styled.div`
+const GlobalStyle = createGlobalStyle`body {
+  margin: 0;
+  padding: 0;
+	color: #294234;
+  margin: 0 4.375em 0 4.375em;
+
+}`;
+
+const GridWrapper = styled.div`
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	/* grid-template-rows: 12.009237875288683vh auto 9.699769053117782vh; */
 	/* grid-template-rows: auto auto auto; */
 	grid-column-gap: 1.25rem;
 	grid-template-areas:
-		/* "hd hd hd hd hd hd hd hd hd hd hd hd" */
-		"hd"
-		/* "content content content content content content content content content content content content" */
-		"content"
-		/* "ft ft ft ft ft ft ft ft ft ft ft ft"; */
-		"ft";
+		"hd hd hd hd hd hd hd hd hd hd hd hd"
+		"content content content content content content content content content content content content"
+		"ft ft ft ft ft ft ft ft ft ft ft ft";
 `;
 
-const GlobalStyle = createGlobalStyle`body {
-  margin: 0;
-  padding: 0;
-  font-family: Source Sans Pro;
-}`;
-
-// const Section = styled.div`
-// 	border: solid black 1px;
-// `;
-
-// const Serif = styled;
-
-// export const Hd = styled(Section)`
 export const HeaderCont = styled.div`
 	/* position: fixed; */
-	width: 100vw;
+	/* width: 100vw; */
+	/* grid-column-start: 2; */
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 1.25rem;
 	background-color: lightgray;
-	/* grid-area: hd; */
-	/* grid-column: 1 / span 12; */
+	font-family: DM Serif Display;
+	grid-area: hd;
 `;
 
 // export const Content = styled(Section)`
@@ -79,7 +77,7 @@ export const Content = styled.div`
 export const Ft = styled.div`
 	grid-area: ft;
 	grid-row: 3;
-	font-size: 0.75rem;
+	font-size: 0.75em;
 	background: #eae3d7;
 	text-align: center;
 	/* padding: 3.9260969976905313vh 0 3.9260969976905313vh 0; */

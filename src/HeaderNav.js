@@ -10,30 +10,33 @@ const handleClick = () => {
 
 export default function HeaderNav() {
 	return (
-		<div className="title-text header-nav">
+		// <div className="title-text header-nav">
+		<>
 			{/* <span className="logo">jennykim.</span> */}
 			{/* <Header> */}
-			<HeaderCont>
-				<Button onClick={handleClick}>jennykim.</Button>
-				{/* <ul> */}
-				<NavList>
-					<NavListItems>
-						<a href="#aboutme">About Me</a>
-					</NavListItems>
-					<NavListItems>
-						<a href="#projects">Projects</a>
-					</NavListItems>
-					<NavListItems>
-						<a href="#resume">Resume</a>
-					</NavListItems>
-					<NavListItems>
-						<a href="#contact">Contact</a>
-					</NavListItems>
-				</NavList>
-				{/* </ul> */}
-			</HeaderCont>
+			{/* <HeaderCont> */}
+
+			<Button onClick={handleClick}>jennykim.</Button>
+			{/* <ul> */}
+			<NavBar>
+				<li>
+					<a href="#aboutme">About Me</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="#resume">Resume</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</NavBar>
+			{/* </ul> */}
+			{/* </HeaderCont> */}
 			{/* </Header> */}
-		</div>
+		</>
+		// </div>
 	);
 }
 
@@ -49,15 +52,24 @@ export default function HeaderNav() {
 // const
 
 const Button = styled.button`
-	grid-column: 2 / 4;
+	grid-column: 2 / span 4;
+	/* font-family: DM Serif Display; */
 `;
 
-const NavList = styled.ul`
+const NavBar = styled.ul`
 	list-style: none;
 	grid-column-end: 12;
+	> li {
+		display: inline;
+		// 	color: red;
+		> a {
+			text-decoration: none;
+			color: #294234;
+		}
+	}
 `;
 
-const NavListItems = styled.li`
-	display: inline;
-	color: red;
-`;
+// const NavListItems = styled.li`
+// 	display: inline;
+// 	color: red;
+// `;

@@ -17,9 +17,5 @@ import { Ft } from "./App";
 // `;
 
 export default function Footer() {
-	return (
-		<Ft>
-			<footer>© 2021 JENNY KIM</footer>
-		</Ft>
-	);
+	return <footer>© 2021 JENNY KIM</footer>;
 }

@@ -52,13 +52,20 @@ export default function HeaderNav() {
 // const
 
 const Button = styled.button`
-	grid-column: 2 / span 4;
-	/* font-family: DM Serif Display; */
+	grid-column: 1 / 4;
+	font-family: DM Serif Display;
+	font-size: 3em;
+	background-color: transparent;
+	border: none;
+	text-align: start;
+	padding: 0;
 `;
 
 const NavBar = styled.ul`
 	list-style: none;
-	grid-column-end: 12;
+	grid-column: 8 / 13;
+	padding: 0;
+	margin: 0;
 	> li {
 		display: inline;
 		// 	color: red;

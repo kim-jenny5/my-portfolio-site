@@ -36,7 +36,6 @@ export default function App() {
 }
 
 const GlobalStyle = createGlobalStyle`body {
-  margin: 0;
   padding: 0;
 	color: #294234;
   margin: 0 4.375em 0 4.375em;

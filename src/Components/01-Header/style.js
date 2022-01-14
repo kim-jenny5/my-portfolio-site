@@ -1,60 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-// import { ThreeLineHorizontal } from "akar-icons";
-// import { HeaderCont } from "./App";
 
-const handleClick = () => {
-	window.scrollTo({ top: 0, behavior: "smooth" });
-	// window.location.reload(false);
-	window.location.href = "";
-};
-
-export default function HeaderNav() {
-	return (
-		// <div className="title-text header-nav">
-		// <>
-		// 	{/* <span className="logo">jennykim.</span> */}
-		// 	{/* <Header> */}
-		// 	{/* <HeaderCont> */}
-		// 	{/* <Button onClick={handleClick}>jennykim.</Button> */}
-		// 	{/* <ul> */}
-		// 	{/* <NavBar> */}
-		// 	{/* <ThreeLineHorizontal strokeWidth={2} size={35} className="mobile" /> */}
-		// 	{/* <li className="non-mobile">
-		// 			<a href="#aboutme">About Me</a>
-		// 		</li>
-		// 		<li className="non-mobile">
-		// 			<a href="#projects">Projects</a>
-		// 		</li>
-		// 		<li className="non-mobile">
-		// 			<a href="#resume">Resume</a>
-		// 		</li>
-		// 		<li className="non-mobile">
-		// 			<a href="#contact">Contact</a>
-		// 		</li> */}
-		// 	{/* </NavBar> */}
-		// 	{/* </ul> */}
-		// 	{/* </HeaderCont> */}
-		// 	{/* </Header> */}
-		// </>
-		// </div>
-		<HeaderCont>
-			<div>logo</div>
-			<div>navbar</div>
-		</HeaderCont>
-	);
-}
-
-// const Header = styled.div`
-// 	/* position: fixed; */
-// 	width: 100vw;
-// 	grid-area: hd;
-// 	background-color: lightgray;
-// `;
-
-// const Header = styled.div``;
-
-const HeaderCont = styled.div`
+export const HeaderCont = styled.div`
 	/* position: sticky; */
 	/* width: 100vw; */
 	/* grid-column-start: 2; */
@@ -98,9 +44,7 @@ const HeaderCont = styled.div`
 	/* margin: 0 4.375em 0 4.375em; */
 `;
 
-// const
-
-const Button = styled.button`
+export const Button = styled.button`
 	grid-column: 1 / 4;
 	/* grid-column-start: 1; */
 	font-family: DM Serif Display;
@@ -112,7 +56,7 @@ const Button = styled.button`
 	grid-row: 1;
 `;
 
-const NavBar = styled.ul`
+export const NavBar = styled.ul`
 	display: grid;
 	/* grid-column-end: 13; */
 	/* grid-column: 8 / 13; */
@@ -134,8 +78,3 @@ const NavBar = styled.ul`
 		}
 	}
 `;
-
-// const NavListItems = styled.li`
-// 	display: inline;
-// 	color: red;
-// `;

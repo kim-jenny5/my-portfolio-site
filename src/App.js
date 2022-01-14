@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 // import BlobGraphics from "./BlobGraphics";
-import HeaderNav from "./HeaderNav";
+import Header from "./Components/01-Header/Header";
 // import Introduction from "./Introduction";
 // import About from "./About";
 // import ProjectsCont from "./ProjectsCont";
@@ -16,7 +16,7 @@ export default function App() {
 			<GlobalStyle />
 			<GridWrapper>
 				{/* <BlobGraphics /> */}
-				<HeaderNav />
+				<Header />
 				<Content>
 					Content
 					{/* <Introduction />

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 // import BlobGraphics from "./BlobGraphics";
-// import HeaderNav from "./HeaderNav";
+import HeaderNav from "./HeaderNav";
 // import Introduction from "./Introduction";
 // import About from "./About";
 // import ProjectsCont from "./ProjectsCont";
@@ -16,11 +16,7 @@ export default function App() {
 			<GlobalStyle />
 			<GridWrapper>
 				{/* <BlobGraphics /> */}
-				<HeaderCont>
-					{/* <HeaderNav /> */}
-					<div>logo</div>
-					<div>navbar</div>
-				</HeaderCont>
+				<HeaderNav />
 				<Content>
 					Content
 					{/* <Introduction />
@@ -119,53 +115,6 @@ const GridWrapper = styled.div`
 	}
 `;
 
-export const HeaderCont = styled.div`
-	/* position: sticky; */
-	/* width: 100vw; */
-	/* grid-column-start: 2; */
-	/* display: grid; */
-	/* grid-row: 1; */
-	/* grid-template-columns: repeat(12, 1fr); */
-	/* grid-template-columns: repeat(, 1fr); */
-	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-
-	/* grid-column-gap: 1.25rem; */
-	background-color: lightgray;
-	grid-area: hd;
-	display: grid;
-	grid-template-columns: inherit;
-	grid-template-rows: 1;
-	grid-column-gap: 1.25rem;
-	grid-template-areas: "logo" "navbar";
-	text-align: center;
-
-	/* display: flex; */
-	/* flex-direction: row; */
-
-	@media only screen and (min-width: 1200px) {
-		> div:first-child {
-			grid-column: 1 / span 4;
-		}
-
-		> div:last-child {
-			grid-column: -7 / span 6;
-		}
-	}
-
-	@media only screen and (min-width: 320px) {
-		> div:first-child {
-			grid-column: 1 / span 2;
-		}
-
-		> div:last-child {
-			grid-column-end: -1;
-		}
-	}
-
-	/* font-family: DM Serif Display; */
-	/* margin: 0 4.375em 0 4.375em; */
-`;
-
 // export const Content = styled(Section)`
 export const Content = styled.div`
 	grid-area: content;
@@ -183,6 +132,6 @@ export const Ft = styled.div`
 	background: #eae3d7;
 	text-align: center;
 	padding: 2.125em 0 2.125em 0; */
-	background-color: lightgreen;
+	background-color: lightblue;
 	/* padding: 3.9260969976905313vh 0 3.9260969976905313vh 0; */
 `;

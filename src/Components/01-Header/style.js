@@ -2,15 +2,6 @@ import styled from "styled-components";
 
 export const HeaderCont = styled.div`
 	/* position: sticky; */
-	/* width: 100vw; */
-	/* grid-column-start: 2; */
-	/* display: grid; */
-	/* grid-row: 1; */
-	/* grid-template-columns: repeat(12, 1fr); */
-	/* grid-template-columns: repeat(, 1fr); */
-	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-
-	/* grid-column-gap: 1.25rem; */
 	background-color: lightgray;
 	grid-area: hd;
 	display: grid;
@@ -23,25 +14,22 @@ export const HeaderCont = styled.div`
 
 	@media only screen and (min-width: 320px) {
 		button {
-			/* > div:first-child { */
 			grid-column: 1 / span 2;
 			font-size: 2rem;
 		}
 
-		> div:last-child {
+		ul {
 			grid-column-end: -1;
 		}
 	}
 
 	@media only screen and (min-width: 1200px) {
 		button {
-			/* > div:first-child { */
-			/* grid-column: 1 / span 4; */
 			grid-column: 1 / span 4;
 			font-size: 3rem;
 		}
 
-		> div:last-child {
+		ul {
 			grid-column: -7 / span 6;
 		}
 	}
@@ -49,9 +37,8 @@ export const HeaderCont = styled.div`
 `;
 
 export const Button = styled.button`
-	/* grid-column: 1 / 4; */
 	font-family: "DM Serif Display";
-	/* font-size: 3em; */
+	cursor: pointer;
 	background-color: transparent;
 	border: none;
 	text-align: center;
@@ -59,24 +46,30 @@ export const Button = styled.button`
 `;
 
 export const NavBar = styled.ul`
-	display: grid;
+	/* display: grid; */
 	/* grid-column-end: 13; */
 	/* grid-column: 8 / 13; */
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	font-size: 1.375em;
-	text-align: center;
-	grid-row: 1;
-	> li {
-		/* grid-template-columns: repeat(4, 1fr); */
-		/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-		/* grid-row: 1; */
-		padding: 1.125em 0 1.125em 0;
-		> a {
-			/* grid-column-start: 1; */
-			text-decoration: none;
-			color: #294234;
-		}
+	display: flex;
+	justify-content: space-evenly;
+	/* justify-content: space-between; */
+	align-self: center;
+
+	@media only screen and (min-width: 320px) {
+		font-size: 1rem;
+		flex-direction: column;
+		/* font-size: 0.7rem; */
+	}
+
+	@media only screen and (min-width: 1200px) {
+		font-size: 1.5rem;
+		flex-direction: row;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
 	}
 `;

@@ -19,20 +19,13 @@ export const HeaderCont = styled.div`
 	grid-column-gap: 1.25rem;
 	grid-template-areas: "logo" "navbar";
 	text-align: center;
-
-	@media only screen and (min-width: 1200px) {
-		> div:first-child {
-			grid-column: 1 / span 4;
-		}
-
-		> div:last-child {
-			grid-column: -7 / span 6;
-		}
-	}
+	font-family: DM Serif Display;
 
 	@media only screen and (min-width: 320px) {
-		> div:first-child {
+		button {
+			/* > div:first-child { */
 			grid-column: 1 / span 2;
+			font-size: 2rem;
 		}
 
 		> div:last-child {
@@ -40,20 +33,29 @@ export const HeaderCont = styled.div`
 		}
 	}
 
-	/* font-family: DM Serif Display; */
+	@media only screen and (min-width: 1200px) {
+		button {
+			/* > div:first-child { */
+			/* grid-column: 1 / span 4; */
+			grid-column: 1 / span 4;
+			font-size: 3rem;
+		}
+
+		> div:last-child {
+			grid-column: -7 / span 6;
+		}
+	}
 	/* margin: 0 4.375em 0 4.375em; */
 `;
 
 export const Button = styled.button`
-	grid-column: 1 / 4;
-	/* grid-column-start: 1; */
-	font-family: DM Serif Display;
-	font-size: 3em;
+	/* grid-column: 1 / 4; */
+	font-family: "DM Serif Display";
+	/* font-size: 3em; */
 	background-color: transparent;
 	border: none;
 	text-align: center;
 	padding: 0;
-	grid-row: 1;
 `;
 
 export const NavBar = styled.ul`

@@ -1,13 +1,13 @@
 import React from "react";
 import { HeaderCont } from "./style";
+import { Button } from "./style";
 // import { ThreeLineHorizontal } from "akar-icons";
 // import { HeaderCont } from "./App";
 
-const handleClick = () => {
-	window.scrollTo({ top: 0, behavior: "smooth" });
-	// window.location.reload(false);
-	window.location.href = "";
-};
+// const handleClick = () => {
+// 	window.scrollTo({ top: 0, behavior: "smooth" });
+// 	window.location.href = "";
+// };
 
 export default function Header() {
 	return (
@@ -39,7 +39,9 @@ export default function Header() {
 		// </>
 		// </div>
 		<HeaderCont>
-			<div>logo</div>
+			{/* <div>logo</div> */}
+
+			<Button>jennykim.</Button>
 			<div>navbar</div>
 		</HeaderCont>
 	);

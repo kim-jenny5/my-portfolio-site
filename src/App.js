@@ -40,6 +40,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     color: #294234;
     font-family: Source Sans Pro;
+    font-size: 100%;
   }
   
   ::selection {

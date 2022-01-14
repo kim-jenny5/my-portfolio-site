@@ -18,7 +18,8 @@ export default function App() {
 				{/* <BlobGraphics /> */}
 				<HeaderCont>
 					{/* <HeaderNav /> */}
-					Header
+					<div>logo</div>
+					<div>navbar</div>
 				</HeaderCont>
 				<Content>
 					Content
@@ -54,9 +55,8 @@ const GridWrapper = styled.div`
 	display: grid;
 	height: 100vh;
 
-	/* S / Mobile */
-	@media only screen and (min-width: 480px) {
-		/* grid-template-columns: 1fr; */
+	/* XS / Mobile Portrait */
+	@media only screen and (min-width: 320px) {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: auto 1fr auto;
 		grid-column-gap: 1.25rem;
@@ -68,12 +68,12 @@ const GridWrapper = styled.div`
 			"ft ft ft ft";
 	}
 
-	/* M / Tablet Portrait */
-	@media only screen and (min-width: 768px) {
+	/* S / Mobile Landscape */
+	@media only screen and (min-width: 480px) {
 		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: auto 1fr auto;
 		grid-column-gap: 1.25rem;
-		margin: 0 40px 0 40px;
+		margin: 0 32.5px 0 32.5px;
 
 		grid-template-areas:
 			"hd hd hd hd hd hd"
@@ -81,16 +81,28 @@ const GridWrapper = styled.div`
 			"ft ft ft ft ft ft";
 	}
 
-	/* L / Tablet Landscape */
-	@media only screen and (min-width: 992px) {
+	/* M / Tablet Portrait */
+	@media only screen and (min-width: 768px) {
 		grid-template-columns: repeat(8, 1fr);
 		grid-template-rows: auto 1fr auto;
-		margin: 0 60px 0 60px;
+		margin: 0 45px 0 45px;
 
 		grid-template-areas:
 			"hd hd hd hd hd hd hd hd"
 			"content content content content content content content content"
 			"ft ft ft ft ft ft ft ft";
+	}
+
+	/* L / Tablet Landscape */
+	@media only screen and (min-width: 992px) {
+		grid-template-columns: repeat(10, 1fr);
+		grid-template-rows: auto 1fr auto;
+		margin: 0 57.5px 0 57.5px;
+
+		grid-template-areas:
+			"hd hd hd hd hd hd hd hd hd hd"
+			"content content content content content content content content content content"
+			"ft ft ft ft ft ft ft ft ft ft";
 	}
 
 	/* XL / Desktop */
@@ -119,8 +131,38 @@ export const HeaderCont = styled.div`
 
 	/* grid-column-gap: 1.25rem; */
 	background-color: lightgray;
-	/* font-family: DM Serif Display; */
 	grid-area: hd;
+	display: grid;
+	grid-template-columns: inherit;
+	grid-template-rows: 1;
+	grid-column-gap: 1.25rem;
+	grid-template-areas: "logo" "navbar";
+	text-align: center;
+
+	/* display: flex; */
+	/* flex-direction: row; */
+
+	@media only screen and (min-width: 1200px) {
+		> div:first-child {
+			grid-column: 1 / span 4;
+		}
+
+		> div:last-child {
+			grid-column: -7 / span 6;
+		}
+	}
+
+	@media only screen and (min-width: 320px) {
+		> div:first-child {
+			grid-column: 1 / span 2;
+		}
+
+		> div:last-child {
+			grid-column-end: -1;
+		}
+	}
+
+	/* font-family: DM Serif Display; */
 	/* margin: 0 4.375em 0 4.375em; */
 `;
 

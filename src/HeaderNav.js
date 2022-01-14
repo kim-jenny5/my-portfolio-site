@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+// import { ThreeLineHorizontal } from "akar-icons";
 import { HeaderCont } from "./App";
 
 const handleClick = () => {
@@ -15,23 +16,24 @@ export default function HeaderNav() {
 			{/* <span className="logo">jennykim.</span> */}
 			{/* <Header> */}
 			{/* <HeaderCont> */}
-
-			<Button onClick={handleClick}>jennykim.</Button>
+			NavBar
+			{/* <Button onClick={handleClick}>jennykim.</Button> */}
 			{/* <ul> */}
-			<NavBar>
-				<li>
+			{/* <NavBar> */}
+			{/* <ThreeLineHorizontal strokeWidth={2} size={35} className="mobile" /> */}
+			{/* <li className="non-mobile">
 					<a href="#aboutme">About Me</a>
 				</li>
-				<li>
+				<li className="non-mobile">
 					<a href="#projects">Projects</a>
 				</li>
-				<li>
+				<li className="non-mobile">
 					<a href="#resume">Resume</a>
 				</li>
-				<li>
+				<li className="non-mobile">
 					<a href="#contact">Contact</a>
-				</li>
-			</NavBar>
+				</li> */}
+			{/* </NavBar> */}
 			{/* </ul> */}
 			{/* </HeaderCont> */}
 			{/* </Header> */}
@@ -53,28 +55,33 @@ export default function HeaderNav() {
 
 const Button = styled.button`
 	grid-column: 1 / 4;
+	/* grid-column-start: 1; */
 	font-family: DM Serif Display;
 	font-size: 3em;
 	background-color: transparent;
 	border: none;
-	text-align: start;
+	text-align: center;
 	padding: 0;
+	grid-row: 1;
 `;
 
 const NavBar = styled.ul`
 	display: grid;
-	grid-column: 8 / 13;
+	/* grid-column-end: 13; */
+	/* grid-column: 8 / 13; */
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	font-size: 1.375em;
 	text-align: center;
+	grid-row: 1;
 	> li {
-		grid-template-columns: repeat(4, 1fr);
-		grid-row: 1;
+		/* grid-template-columns: repeat(4, 1fr); */
+		/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+		/* grid-row: 1; */
 		padding: 1.125em 0 1.125em 0;
 		> a {
-			grid-column-start: 1;
+			/* grid-column-start: 1; */
 			text-decoration: none;
 			color: #294234;
 		}

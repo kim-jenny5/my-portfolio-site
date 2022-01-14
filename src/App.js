@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 // import BlobGraphics from "./BlobGraphics";
-import HeaderNav from "./HeaderNav";
+// import HeaderNav from "./HeaderNav";
 // import Introduction from "./Introduction";
 // import About from "./About";
 // import ProjectsCont from "./ProjectsCont";
@@ -111,7 +111,7 @@ export const HeaderCont = styled.div`
 	/* position: sticky; */
 	/* width: 100vw; */
 	/* grid-column-start: 2; */
-	display: grid;
+	/* display: grid; */
 	/* grid-row: 1; */
 	/* grid-template-columns: repeat(12, 1fr); */
 	/* grid-template-columns: repeat(, 1fr); */

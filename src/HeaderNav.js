@@ -69,9 +69,7 @@ const NavBar = styled.ul`
 	margin: 0;
 	font-size: 1.375em;
 	text-align: center;
-	/* grid-template-columns: subgrid; */
 	> li {
-		/* display: inline; */
 		grid-template-columns: repeat(4, 1fr);
 		grid-row: 1;
 		padding: 1.125em 0 1.125em 0;

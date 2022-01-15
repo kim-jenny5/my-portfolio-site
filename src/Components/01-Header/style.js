@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderCont = styled.div`
 	/* position: sticky; */
-	background-color: lightgray;
+	/* background-color: lightgray; */
 	grid-area: hd;
 	display: grid;
 	grid-template-columns: inherit;
@@ -20,6 +20,11 @@ export const HeaderCont = styled.div`
 
 		ul {
 			grid-column-end: -1;
+		}
+
+		div {
+			grid-column-end: -1;
+			display: flex;
 		}
 	}
 
@@ -72,4 +77,14 @@ export const NavBar = styled.ul`
 		text-decoration: none;
 		color: inherit;
 	}
+`;
+
+export const HamburgerMenu = styled.div`
+	/* position: relative; */
+	/* top: 50%; */
+	/* transform: translateY(20%); */
+	/* display: flex; */
+	/* grid-row: 1; */
+	align-self: center;
+	justify-content: space-evenly;
 `;

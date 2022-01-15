@@ -25,11 +25,11 @@ export default function App() {
 					<ResumeCont />
 					<Contact /> */}
 				</Content>
-				<Ft>
-					{/* <Footer /> */}
-					Footer
-				</Ft>
 			</GridWrapper>
+			<Ft>
+				{/* <Footer /> */}
+				Footer
+			</Ft>
 		</div>
 	);
 }
@@ -57,7 +57,8 @@ const GridWrapper = styled.div`
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: auto 1fr auto;
 		grid-column-gap: 1.25rem;
-		margin: 0 20px 0 20px;
+		/* margin: 20px 20px 0 20px; */
+		margin: 1.25rem 1.25rem 0 1.25rem;
 
 		grid-template-areas:
 			"hd hd hd hd"
@@ -70,7 +71,8 @@ const GridWrapper = styled.div`
 		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: auto 1fr auto;
 		grid-column-gap: 1.25rem;
-		margin: 0 32.5px 0 32.5px;
+		/* margin: 32.5px 32.5px 0 32.5px; */
+		margin: 2.031rem 2.031rem 0 2.031rem;
 
 		grid-template-areas:
 			"hd hd hd hd hd hd"
@@ -82,7 +84,8 @@ const GridWrapper = styled.div`
 	@media only screen and (min-width: 768px) {
 		grid-template-columns: repeat(8, 1fr);
 		grid-template-rows: auto 1fr auto;
-		margin: 0 45px 0 45px;
+		/* margin: 45px 45px 0 45px; */
+		margin: 2.813rem 2.813rem 0 2.813rem;
 
 		grid-template-areas:
 			"hd hd hd hd hd hd hd hd"
@@ -94,7 +97,8 @@ const GridWrapper = styled.div`
 	@media only screen and (min-width: 992px) {
 		grid-template-columns: repeat(10, 1fr);
 		grid-template-rows: auto 1fr auto;
-		margin: 0 57.5px 0 57.5px;
+		/* margin: 57.5px 57.5px 0 57.5px; */
+		margin: 3.594rem 3.594rem 0 3.594rem;
 
 		grid-template-areas:
 			"hd hd hd hd hd hd hd hd hd hd"
@@ -107,7 +111,8 @@ const GridWrapper = styled.div`
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: auto 1fr auto;
 		grid-column-gap: 1.25rem;
-		margin: 0 70px 0 70px;
+		/* margin: 0 70px 0 70px; */
+		margin: 0 4.375rem 0 4.375rem;
 
 		grid-template-areas:
 			"hd hd hd hd hd hd hd hd hd hd hd hd"

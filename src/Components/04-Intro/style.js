@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const IntroCont = styled.div`
 	grid-area: intro;
-	background-color: lightpink;
+	/* background-color: lightpink; */
 	display: grid;
 	grid-template-columns: inherit;
 	grid-column-gap: 1.25rem;
@@ -16,7 +16,6 @@ export const IntroCont = styled.div`
 		". . . . . . . . . . . .";
 	align-items: center;
 	justify-items: center;
-	/* vertical-align: middle; */
 `;
 
 export const MainCont = styled.div`
@@ -50,11 +49,22 @@ export const Title = styled.div`
 	font-family: Corben;
 	font-weight: bold;
 	font-size: 36px;
+	/* grid-row: 1; */
+	/* > div:first-child {
+		grid-row: 1;
+	}
+	> div:last-child {
+		grid-row: 2;
+	} */
 `;
 
 export const Subtitle = styled.div`
 	font-family: DM Serif Display;
 	font-size: 36px;
+
+	span {
+		color: #537962;
+	}
 `;
 
 export const Jenny = styled.img`

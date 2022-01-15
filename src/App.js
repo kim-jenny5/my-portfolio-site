@@ -17,7 +17,9 @@ import blobbackground_medium from "./media/blobs/blobbackground_medium.png";
 
 export default function App() {
 	return (
-		<div className="App">
+		// <div className="App">
+		// <div>
+		<>
 			<GlobalStyle />
 			{/* <Blob1 />
 			<Blob2 /> */}
@@ -34,7 +36,9 @@ export default function App() {
 				{/* </Content> */}
 			</GridWrapper>
 			<Footer />
-		</div>
+		</>
+
+		// </div>
 	);
 }
 

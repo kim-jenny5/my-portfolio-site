@@ -19,14 +19,13 @@ export default function App() {
 			<Blob2 /> */}
 			<GridWrapper>
 				<Header />
-				<Content>
-					Content
-					{/* <Introduction />
+				{/* <Content> */}
+				{/* <Introduction />
 					<About />
 					<ProjectsCont />
 					<ResumeCont />
 					<Contact /> */}
-				</Content>
+				{/* </Content> */}
 			</GridWrapper>
 			<Footer />
 		</div>
@@ -61,7 +60,8 @@ const GridWrapper = styled.div`
 
 		grid-template-areas:
 			"hd hd hd hd"
-			"content content content content"
+			/* "content content content content" */
+			"intro intro intro intro"
 			"ft ft ft ft";
 	}
 
@@ -75,7 +75,8 @@ const GridWrapper = styled.div`
 
 		grid-template-areas:
 			"hd hd hd hd hd hd"
-			"content content content content content content"
+			/* "content content content content content content" */
+			"intro intro intro intro intro intro"
 			"ft ft ft ft ft ft";
 	}
 
@@ -89,7 +90,8 @@ const GridWrapper = styled.div`
 
 		grid-template-areas:
 			"hd hd hd hd hd hd hd hd"
-			"content content content content content content content content"
+			/* "content content content content content content content content" */
+			"intro intro intro intro intro intro intro intro"
 			"ft ft ft ft ft ft ft ft";
 	}
 
@@ -103,7 +105,8 @@ const GridWrapper = styled.div`
 
 		grid-template-areas:
 			"hd hd hd hd hd hd hd hd hd hd"
-			"content content content content content content content content content content"
+			/* "content content content content content content content content content content" */
+			"intro intro intro intro intro intro intro intro intro intro"
 			"ft ft ft ft ft ft ft ft ft ft";
 	}
 
@@ -118,7 +121,8 @@ const GridWrapper = styled.div`
 
 		grid-template-areas:
 			"hd hd hd hd hd hd hd hd hd hd hd hd"
-			"content content content content content content content content content content content content"
+			/* "content content content content content content content content content content content content" */
+			"intro intro intro intro intro intro intro intro intro intro intro intro"
 			"ft ft ft ft ft ft ft ft ft ft ft ft";
 	}
 `;

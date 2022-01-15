@@ -7,10 +7,9 @@ export default function Intro() {
 	return (
 		<IntroCont>
 			<MainCont>
-				<TextCont>
+				<div>
 					<Title>
 						<div>Hi, my name is Jenny.</div>
-						{/* <br /> */}
 						<div>Nice to meet you!</div>
 					</Title>
 					<Subtitle>
@@ -22,7 +21,7 @@ export default function Intro() {
 							className="typing"
 						/>
 					</Subtitle>
-				</TextCont>
+				</div>
 				<Jenny src={jenny}></Jenny>
 			</MainCont>
 		</IntroCont>

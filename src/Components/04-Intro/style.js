@@ -3,64 +3,38 @@ import styled from "styled-components";
 export const IntroCont = styled.div`
 	grid-area: intro;
 	/* background-color: lightpink; */
-	display: grid;
-	grid-template-columns: inherit;
-	grid-column-gap: 1.25rem;
-	/* grid-template-rows: 0.25fr 0.5fr 0.25fr; */
-	grid-template-rows: auto 1fr auto;
-	/* grid-template-rows: 0.5fr 0.75fr 0.5fr; */
-	/* grid-template-rows: repeat(3, 1fr); */
+	display: flex;
+	/* display: grid; */
+	/* grid-template-columns: inherit; */
+	/* grid-column-gap: 1.25rem; */
+	/* grid-template-rows: auto 1fr auto;
 	grid-template-areas:
 		". . . . . . . . . . . ."
 		"container container container container container container container container container container container container"
-		". . . . . . . . . . . .";
+		". . . . . . . . . . . ."; */
 	align-items: center;
 	justify-items: center;
+	justify-content: center;
 `;
 
 export const MainCont = styled.div`
 	grid-area: container;
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-column-gap: 1.25rem;
-	/* grid-template-rows: 5; */
-	grid-template-rows: repeat(5, 1fr);
-	grid-template-areas:
-		". . . . . . img img img img"
-		"text text text text text . img img img img"
-		"text text text text text . img img img img"
-		"text text text text text . img img img img"
-		". . . . . . img img img img";
-`;
-
-export const TextCont = styled.div`
-	/* display: grid;
-	grid-template-columns: inherit;
-	grid-column-gap: inherit;
-	grid-template-rows: inherit; */
-	grid-area: text;
-	/* grid-column-start: 2; */
-	grid-column: 2 / span 7;
-	display: grid;
-	grid-template-rows: 1fr 0.5fr;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 8.5rem;
 `;
 
 export const Title = styled.div`
 	font-family: Corben;
 	font-weight: bold;
 	font-size: 36px;
-	/* grid-row: 1; */
-	/* > div:first-child {
-		grid-row: 1;
-	}
-	> div:last-child {
-		grid-row: 2;
-	} */
 `;
 
 export const Subtitle = styled.div`
 	font-family: DM Serif Display;
 	font-size: 36px;
+	margin-top: 1.25rem;
 
 	span {
 		color: #537962;
@@ -68,7 +42,5 @@ export const Subtitle = styled.div`
 `;
 
 export const Jenny = styled.img`
-	grid-area: img;
-	grid-column: -3;
 	width: 400px;
 `;

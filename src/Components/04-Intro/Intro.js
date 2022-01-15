@@ -20,6 +20,7 @@ export default function Intro() {
 							loop={Infinity}
 							className="typing"
 						/>
+						{/* a developer. */}
 					</Subtitle>
 				</div>
 				<Jenny src={jenny}></Jenny>

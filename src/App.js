@@ -68,6 +68,9 @@ const GlobalStyle = createGlobalStyle`
       background-size: cover;
     }
 
+    @media only screen and (min-width: 992px) {
+    }
+
     @media only screen and (min-width: 1200px) {
       background-image: url(${blobbackground_large});
       background-repeat: no-repeat;
@@ -161,3 +164,18 @@ const GridWrapper = styled.div`
 			"ft ft ft ft ft ft ft ft ft ft ft ft";
 	}
 `;
+
+// @media only screen and (min-width: 320px) {
+// }
+
+// @media only screen and (min-width: 480px) {
+// }
+
+// @media only screen and (min-width: 768px) {
+// }
+
+// @media only screen and (min-width: 992px) {
+// }
+
+// @media only screen and (min-width: 1200px) {
+// }

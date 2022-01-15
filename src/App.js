@@ -6,6 +6,14 @@ import Header from "./Components/01-Header/Header";
 import Footer from "./Components/02-Footer/Footer";
 import Intro from "./Components/04-Intro/Intro";
 import { Blob1, Blob2 } from "./Components/03-Blobs/Blobs";
+// import blobbackground from "./media/blobs/blobbackground.png";
+// import blobbackground2 from "./media/blobs/blobbackground2.png";
+// import blobbackground3 from "./media/blobs/blobbackground3.png";
+
+/* background-image: url(${blobbackground3});
+    background-repeat: no-repeat;
+    background-size: cover; */
+
 // import Introduction from "./Introduction";
 // import About from "./About";
 // import ProjectsCont from "./ProjectsCont";
@@ -18,6 +26,7 @@ export default function App() {
 			<GlobalStyle />
 			{/* <Blob1 />
 			<Blob2 /> */}
+
 			<GridWrapper>
 				<Header />
 				<Intro />
@@ -46,6 +55,7 @@ const GlobalStyle = createGlobalStyle`
   ::selection {
     background: #eae3d7
   }
+
 `;
 
 const GridWrapper = styled.div`

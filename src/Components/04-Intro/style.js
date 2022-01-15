@@ -8,4 +8,5 @@ export const IntroCont = styled.div`
 	/* background: cover; */
 	/* background-position: center; */
 	/* background: url(src/media/blobs/blobbackground.png); */
+	/* background-image: url(${blobbackground}); */
 `;

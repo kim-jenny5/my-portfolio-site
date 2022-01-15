@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const IntroCont = styled.div`
 	grid-area: intro;
-	/* background-color: lightpink; */
+	background-color: lightpink;
 	display: flex;
 	align-items: center;
 	justify-items: center;

@@ -4,7 +4,7 @@ export const AboutCont = styled.div`
 	grid-area: about;
 	background-color: lightgreen;
 	display: grid;
-	grid-template-rows: 2;
+	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
 		"top top top top top top top top top top top top"
 		"btm btm btm btm btm btm btm btm btm btm btm btm";

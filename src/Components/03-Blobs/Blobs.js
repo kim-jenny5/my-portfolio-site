@@ -19,5 +19,8 @@ export const Blob2 = () => {
 
 		// </div>
 		<Blob2Cont src={blob2}></Blob2Cont>
+		// <Blob2Cont>
+		// 	<img src={blob2}></img>
+		// </Blob2Cont>
 	);
 };

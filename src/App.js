@@ -15,8 +15,8 @@ export default function App() {
 	return (
 		<div className="App">
 			<GlobalStyle />
-			{/* <Blob1 /> */}
-			{/* <Blob2 /> */}
+			{/* <Blob1 />
+			<Blob2 /> */}
 			<GridWrapper>
 				<Header />
 				<Content>

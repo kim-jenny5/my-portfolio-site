@@ -1,6 +1,7 @@
 import React from "react";
 import blob1 from "../../media/blobs/blob1.png";
 import blob2 from "../../media/blobs/blob2.png";
+// import { Blob1Cont, Blob2Cont, BlobsBackground } from "./style";
 import { Blob1Cont, Blob2Cont } from "./style";
 
 export const Blob1 = () => {
@@ -24,3 +25,7 @@ export const Blob2 = () => {
 		// </Blob2Cont>
 	);
 };
+
+// export const Blobs = () => {
+// 	return <BlobsBackground></BlobsBackground>;
+// };

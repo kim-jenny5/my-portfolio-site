@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components";
 // import BlobGraphics from "./BlobGraphics";
 import Header from "./Components/01-Header/Header";
 import Footer from "./Components/02-Footer/Footer";
+import Intro from "./Components/04-Intro/Intro";
 import { Blob1, Blob2 } from "./Components/03-Blobs/Blobs";
 // import Introduction from "./Introduction";
 // import About from "./About";
@@ -19,6 +20,7 @@ export default function App() {
 			<Blob2 /> */}
 			<GridWrapper>
 				<Header />
+				<Intro />
 				{/* <Content> */}
 				{/* <Introduction />
 					<About />
@@ -125,13 +127,4 @@ const GridWrapper = styled.div`
 			"intro intro intro intro intro intro intro intro intro intro intro intro"
 			"ft ft ft ft ft ft ft ft ft ft ft ft";
 	}
-`;
-
-// export const Content = styled(Section)`
-export const Content = styled.div`
-	grid-area: content;
-	/* grid-row: 2;
-	overflow: auto; */
-	background-color: lightpink;
-	/* width: 100vw; */
 `;

@@ -5,14 +5,9 @@ import { createGlobalStyle } from "styled-components";
 import Header from "./Components/01-Header/Header";
 import Footer from "./Components/02-Footer/Footer";
 import Intro from "./Components/04-Intro/Intro";
-import { Blob1, Blob2 } from "./Components/03-Blobs/Blobs";
-// import blobbackground from "./media/blobs/blobbackground.png";
-// import blobbackground2 from "./media/blobs/blobbackground2.png";
-// import blobbackground3 from "./media/blobs/blobbackground3.png";
-
-/* background-image: url(${blobbackground3});
-    background-repeat: no-repeat;
-    background-size: cover; */
+import blobbackground_large from "./media/blobs/blobbackground_large.png";
+import blobbackground_small from "./media/blobs/blobbackground_small.png";
+import blobbackground_medium from "./media/blobs/blobbackground_medium.png";
 
 // import Introduction from "./Introduction";
 // import About from "./About";
@@ -50,6 +45,34 @@ const GlobalStyle = createGlobalStyle`
     color: #294234;
     font-family: Source Sans Pro;
     font-size: 100%;
+
+    @media only screen and (min-width: 320px) {
+      background-image: url(${blobbackground_small});
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media only screen and (min-width: 480px) {
+      background-image: url(${blobbackground_medium});
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    @media only screen and (min-width: 768px) {
+      background-image: url(${blobbackground_medium});
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      background-image: url(${blobbackground_large});
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+
+    /* background-position: center; */
   }
   
   ::selection {

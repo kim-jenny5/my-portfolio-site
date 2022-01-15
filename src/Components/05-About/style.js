@@ -4,6 +4,11 @@ export const AboutCont = styled.div`
 	/* grid-area: about; */
 	background-color: lightgreen;
 	display: flex;
+	flex-direction: column;
+
+	/* align-items: center;
+	justify-items: center;
+	justify-content: center; */
 
 	/* flex: 1; */
 	/* flex-direction: row; */
@@ -20,9 +25,14 @@ export const AboutCont = styled.div`
 `;
 
 export const TopCont = styled.div`
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* background-color: lightblue; */
+	display: flex;
+	flex-direction: column;
+	background-color: lightblue;
+	/* justify-content: center;
+	align-items: center; */
+	/* margin: 0 20px 0 20px; */
+
+	/* justify-content: space-around; */
 
 	/* grid-area: top;
 	display: grid;
@@ -34,15 +44,40 @@ export const TopCont = styled.div`
 		"blob blob blob text text text text text"
 		"blob blob blob text text text text text"
 		"blob blob blob text text text text text"; */
+
+	div:first-child {
+		font-family: DM Serif Display;
+	}
+
+	div:last-child {
+		/* justify-content: center; */
+	}
 `;
 
 export const AcnhBlob = styled.img`
 	/* grid-area: blob; */
 `;
 
-export const BtmCont = styled.div`
-	/* grid-area: btm;
-	display: grid;
-	grid-template-columns: inherit;
-	grid-column-gap: 1.25rem; */
+export const TechStack = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	span {
+		div:first-child {
+			font-family: DM Serif Display;
+		}
+	}
 `;
+
+// export const Title = styled.div`
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: space-around;
+// `;
+
+// export const Languages = styled.div`
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: space-around;
+// `;

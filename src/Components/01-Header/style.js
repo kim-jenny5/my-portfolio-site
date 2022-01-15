@@ -12,6 +12,7 @@ export const HeaderCont = styled.div`
 	text-align: center;
 	font-family: DM Serif Display; */
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-items: center;
 	justify-content: space-around;
@@ -20,8 +21,8 @@ export const HeaderCont = styled.div`
 `;
 
 export const Button = styled.button`
-	position: sticky;
-	top: 0;
+	/* position: sticky;
+	top: 50%; */
 
 	font-family: "DM Serif Display";
 	cursor: pointer;
@@ -48,8 +49,8 @@ export const Button = styled.button`
 `;
 
 export const NavBar = styled.ul`
-	position: sticky;
-	top: 0;
+	/* position: sticky;
+	top: 50%; */
 
 	display: flex;
 	list-style: none;

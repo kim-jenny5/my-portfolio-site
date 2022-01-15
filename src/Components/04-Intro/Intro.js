@@ -1,6 +1,12 @@
 import React from "react";
-import { IntroCont } from "./style";
+import { IntroCont, MainCont, TextCont } from "./style";
 
 export default function Intro() {
-	return <IntroCont></IntroCont>;
+	return (
+		<IntroCont>
+			<MainCont>
+				<TextCont>Hi, my name is Jenny.</TextCont>
+			</MainCont>
+		</IntroCont>
+	);
 }

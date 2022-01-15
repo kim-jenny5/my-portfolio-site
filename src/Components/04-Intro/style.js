@@ -5,18 +5,24 @@ export const IntroCont = styled.div`
 	background-color: lightpink;
 	display: grid;
 	grid-template-columns: inherit;
-	grid-template-rows: 2;
-	grid-column-gap: 1.25rem;
-	grid-template-areas:
+	/* grid-template-rows: 5; */
+	/* grid-template-areas:
 		"top top top top top top top top top top top top"
-		"btm btm btm btm btm btm btm btm btm btm btm btm";
-	/* margin: 0 !important; */
+		"btm btm btm btm btm btm btm btm btm btm btm btm"; */
 `;
 
-export const TopCont = styled.div`
-	grid-area: top;
+export const MainCont = styled.div`
+	/* grid-area:; */
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-column-gap: 1.25rem;
+	grid-template-rows: 5;
+	grid-template-areas:
+		". . . . . . img img img img"
+		"text text text text text . img img img img"
+		"text text text text text . img img img img"
+		"text text text text text . img img img img"
+		". . . . . . img img img img";
 `;
 
-export const BtmCont = styled.div`
-	grid-area: btm;
-`;
+export const TextCont = styled.div``;

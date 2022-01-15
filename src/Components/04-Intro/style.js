@@ -7,6 +7,7 @@ export const IntroCont = styled.div`
 	align-items: center;
 	justify-items: center;
 	justify-content: center;
+	flex-grow: 1;
 
 	/* display: grid; */
 	/* grid-template-columns: inherit; */

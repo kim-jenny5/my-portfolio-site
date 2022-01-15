@@ -25,7 +25,7 @@ export default function App() {
 			{/* <Blob1 />
 			<Blob2 /> */}
 
-			<GridWrapper>
+			<Wrapper>
 				<Header />
 				<Intro />
 				<About />
@@ -36,7 +36,7 @@ export default function App() {
 					<ResumeCont />
 					<Contact /> */}
 				{/* </Content> */}
-			</GridWrapper>
+			</Wrapper>
 			<Footer />
 		</>
 
@@ -51,6 +51,7 @@ const GlobalStyle = createGlobalStyle`
     color: #294234;
     font-family: Source Sans Pro;
     font-size: 100%;
+    height: 100%;
 
     @media only screen and (min-width: 320px) {
       background-image: url(${blobbackground_small});
@@ -86,16 +87,18 @@ const GlobalStyle = createGlobalStyle`
 
 `;
 
-const GridWrapper = styled.div`
-	display: grid;
+const Wrapper = styled.div`
+	/* display: grid; */
+	display: flex;
+	flex-direction: column;
 	height: 100vh;
+	/* min-height: 100%; */
 
 	/* XS / Mobile Portrait */
 	@media only screen and (min-width: 320px) {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: auto 1fr 1fr auto;
 		grid-column-gap: 1.25rem;
-		/* margin: 20px 20px 0 20px; */
 		margin: 1.25rem 1.25rem 0 1.25rem;
 
 		grid-template-areas:

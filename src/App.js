@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 // import BlobGraphics from "./BlobGraphics";
 import Header from "./Components/01-Header/Header";
-import Footer from "./Components/03-Footer/Footer";
+import Footer from "./Components/02-Footer/Footer";
 // import Introduction from "./Introduction";
 // import About from "./About";
 // import ProjectsCont from "./ProjectsCont";

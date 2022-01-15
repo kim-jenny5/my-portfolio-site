@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 // import BlobGraphics from "./BlobGraphics";
 import Header from "./Components/01-Header/Header";
+import Footer from "./Components/03-Footer/Footer";
 // import Introduction from "./Introduction";
 // import About from "./About";
 // import ProjectsCont from "./ProjectsCont";
@@ -26,10 +27,10 @@ export default function App() {
 					<Contact /> */}
 				</Content>
 			</GridWrapper>
-			<Ft>
-				{/* <Footer /> */}
-				Footer
-			</Ft>
+			{/* <Ft> */}
+			<Footer />
+			{/* Footer
+			</Ft> */}
 		</div>
 	);
 }
@@ -141,6 +142,6 @@ export const Ft = styled.div`
 	background: #eae3d7;
 	text-align: center;
 	padding: 2.125em 0 2.125em 0; */
-	background-color: lightblue;
+	/* background-color: lightblue; */
 	/* padding: 3.9260969976905313vh 0 3.9260969976905313vh 0; */
 `;

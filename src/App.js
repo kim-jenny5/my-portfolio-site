@@ -86,6 +86,7 @@ const GridWrapper = styled.div`
 		grid-template-rows: auto 1fr auto;
 		/* margin: 45px 45px 0 45px; */
 		margin: 2.813rem 2.813rem 0 2.813rem;
+		/* margin: 0 2.813rem 0 2.813rem; */
 
 		grid-template-areas:
 			"hd hd hd hd hd hd hd hd"
@@ -99,6 +100,7 @@ const GridWrapper = styled.div`
 		grid-template-rows: auto 1fr auto;
 		/* margin: 57.5px 57.5px 0 57.5px; */
 		margin: 3.594rem 3.594rem 0 3.594rem;
+		/* margin: 0 3.594rem 0 3.594rem; */
 
 		grid-template-areas:
 			"hd hd hd hd hd hd hd hd hd hd"
@@ -112,7 +114,8 @@ const GridWrapper = styled.div`
 		grid-template-rows: auto 1fr auto;
 		grid-column-gap: 1.25rem;
 		/* margin: 0 70px 0 70px; */
-		margin: 0 4.375rem 0 4.375rem;
+		/* margin: 0 4.375rem 0 4.375rem; */
+		margin: 4.375rem 4.375rem 0 4.375rem;
 
 		grid-template-areas:
 			"hd hd hd hd hd hd hd hd hd hd hd hd"

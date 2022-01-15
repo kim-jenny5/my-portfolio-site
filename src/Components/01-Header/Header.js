@@ -17,7 +17,7 @@ export default function Header() {
 					<ThreeLineHorizontal strokeWidth={2} size={30} />
 				</HamburgerMenu>
 			</MediaQuery>
-			<MediaQuery minWidth={768}>
+			<MediaQuery minWidth={481}>
 				<NavBar>
 					<li>
 						<a href="#aboutme">About Me</a>

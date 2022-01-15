@@ -28,6 +28,18 @@ export const HeaderCont = styled.div`
 		}
 	}
 
+	@media only screen and (min-width: 480px) {
+		ul {
+			grid-column-start: -5;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		ul {
+			grid-column-start: -6;
+		}
+	}
+
 	@media only screen and (min-width: 1200px) {
 		button {
 			grid-column: 1 / span 4;
@@ -35,7 +47,10 @@ export const HeaderCont = styled.div`
 		}
 
 		ul {
-			grid-column: -7 / span 6;
+			/* grid-column: -7 / span 6; */
+			/* grid-column: 7 / span 6; */
+			/* grid-column-end: span 6; */
+			grid-column-start: -7;
 		}
 	}
 	/* margin: 0 4.375em 0 4.375em; */
@@ -66,6 +81,17 @@ export const NavBar = styled.ul`
 		font-size: 1rem;
 		flex-direction: column;
 		/* font-size: 0.7rem; */
+	}
+
+	@media only screen and (min-width: 480px) {
+		font-size: 1.25rem;
+		flex-direction: row;
+	}
+
+	@media only screen and (min-width: 768px) {
+		/* font-size: 1.25rem; */
+		font-size: 1.5rem;
+		flex-direction: row;
 	}
 
 	@media only screen and (min-width: 1200px) {

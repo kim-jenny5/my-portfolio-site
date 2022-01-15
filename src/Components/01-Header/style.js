@@ -13,18 +13,12 @@ export const HeaderCont = styled.div`
 	font-family: DM Serif Display;
 
 	@media only screen and (min-width: 320px) {
-		button {
-			grid-column: 1 / span 2;
-			font-size: 2rem;
-		}
-
 		ul {
 			grid-column-end: -1;
 		}
 
 		div {
 			grid-column-end: -1;
-			display: flex;
 		}
 	}
 
@@ -41,19 +35,11 @@ export const HeaderCont = styled.div`
 	}
 
 	@media only screen and (min-width: 1200px) {
-		button {
-			grid-column: 1 / span 4;
-			font-size: 3rem;
-		}
-
 		ul {
-			/* grid-column: -7 / span 6; */
 			/* grid-column: 7 / span 6; */
-			/* grid-column-end: span 6; */
 			grid-column-start: -7;
 		}
 	}
-	/* margin: 0 4.375em 0 4.375em; */
 `;
 
 export const Button = styled.button`
@@ -63,24 +49,39 @@ export const Button = styled.button`
 	border: none;
 	text-align: center;
 	padding: 0;
+
+	@media only screen and (min-width: 320px) {
+		grid-column: 1 / span 2;
+		font-size: 2rem;
+	}
+
+	@media only screen and (min-width: 480px) {
+		grid-column: 1 / span 2;
+		font-size: 2.25rem;
+	}
+
+	@media only screen and (min-width: 768px) {
+		grid-column: 1 / span 3;
+		font-size: 2.5rem;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		grid-column: 1 / span 4;
+		font-size: 3rem;
+	}
 `;
 
 export const NavBar = styled.ul`
-	/* display: grid; */
-	/* grid-column-end: 13; */
-	/* grid-column: 8 / 13; */
+	display: flex;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	display: flex;
 	justify-content: space-evenly;
-	/* justify-content: space-between; */
 	align-self: center;
 
 	@media only screen and (min-width: 320px) {
 		font-size: 1rem;
 		flex-direction: column;
-		/* font-size: 0.7rem; */
 	}
 
 	@media only screen and (min-width: 480px) {
@@ -89,8 +90,8 @@ export const NavBar = styled.ul`
 	}
 
 	@media only screen and (min-width: 768px) {
-		/* font-size: 1.25rem; */
-		font-size: 1.5rem;
+		font-size: 1.25rem;
+		/* font-size: 1.5rem; */
 		flex-direction: row;
 	}
 
@@ -106,11 +107,7 @@ export const NavBar = styled.ul`
 `;
 
 export const HamburgerMenu = styled.div`
-	/* position: relative; */
-	/* top: 50%; */
-	/* transform: translateY(20%); */
-	/* display: flex; */
-	/* grid-row: 1; */
+	display: flex;
 	align-self: center;
 	justify-content: space-evenly;
 `;

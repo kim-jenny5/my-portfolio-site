@@ -1,5 +1,6 @@
 import React from "react";
-import { AboutCont, TopCont, TechStack } from "./style";
+import { AboutCont, TopCont, AcnhBlob, TechStack } from "./style";
+import acnhblob from "../../media/acnh_blob.png";
 
 export default function About() {
 	return (
@@ -7,15 +8,26 @@ export default function About() {
 			<TopCont>
 				<div>About Me</div>
 				<div>
-					I’m a 23-year old frontend developer, with a background in business
-					and a passion for design, based in the New York Metropolitan Area.
-					Utilizing my skills in organization and time management, I create
-					thoughtfully planned out web applications. With an interest and tact
-					for design, I have a passion in creating and coding aesthetic UIs for
-					an enhanced experience. I am a great team player, but I also value
-					autonomy. I love to listen to music or true crime podcasts as I
-					wireframe and code. In my free time, my hobbies are watching
-					TV/movies, crocheting, and playing Animal Crossing.
+					<AcnhBlob src={acnhblob} />
+					<div>
+						<div>
+							I’m a 23-year old frontend developer, with a background in
+							business and a passion for design, based in the New York
+							Metropolitan Area.
+						</div>
+						<div>
+							Utilizing my skills in organization and time management, I create
+							thoughtfully planned out web applications. With an interest and
+							tact for design, I have a passion in creating and coding aesthetic
+							UIs for an enhanced experience.
+						</div>
+						<div>
+							I am a great team player, but I also value autonomy. I love to
+							listen to music or true crime podcasts as I wireframe and code. In
+							my free time, my hobbies are watching TV/movies, crocheting, and
+							playing Animal Crossing.
+						</div>
+					</div>
 				</div>
 			</TopCont>
 			<TechStack>

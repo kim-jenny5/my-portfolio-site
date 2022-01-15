@@ -50,7 +50,17 @@ export const TopCont = styled.div`
 	}
 
 	div:last-child {
+		display: flex;
+		flex-direction: row;
+		/* column-gap: 100px; */
 		/* justify-content: center; */
+
+		div {
+			display: flex;
+			flex-direction: column;
+			/* row-gap: 20px; */
+			justify-content: space-evenly;
+		}
 	}
 `;
 

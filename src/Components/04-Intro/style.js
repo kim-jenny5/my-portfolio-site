@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const IntroCont = styled.div`
-	grid-area: intro;
+	/* grid-area: intro; */
 	background-color: lightpink;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-items: center;
 	justify-content: center;
+	/* flex: 1; */
 	/* flex-grow: 1; */
 
 	/* display: grid; */
@@ -20,7 +22,11 @@ export const IntroCont = styled.div`
 `;
 
 export const MainCont = styled.div`
-	grid-area: container;
+	/* grid-area: container; */
+	/* width: 100%; */
+	/* height: 100vh; */
+	/* margin: 200px 0 200px 0; */
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

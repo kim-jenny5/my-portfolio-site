@@ -92,6 +92,8 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
+	margin: 70px 70px 0 70px;
+	/* flex-grow: 1; */
 	/* min-height: 100%; */
 
 	/* XS / Mobile Portrait */

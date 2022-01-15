@@ -16,7 +16,7 @@ export const HeaderCont = styled.div`
 	justify-items: center;
 	justify-content: space-around;
 	font-family: DM Serif Display;
-	margin-top: 70px;
+	/* margin-top: 70px; */
 `;
 
 export const Button = styled.button`

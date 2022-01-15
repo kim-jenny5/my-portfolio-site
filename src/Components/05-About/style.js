@@ -1,10 +1,17 @@
 import styled from "styled-components";
 
 export const AboutCont = styled.div`
-	grid-area: about;
+	/* grid-area: about; */
 	background-color: lightgreen;
+	display: flex;
+
+	/* flex: 1; */
+	/* flex-direction: row; */
+	/* flex-direction: column; */
+	/* height: 100vh; */
+
 	/* display: grid; */
-	flex-grow: 1;
+	/* flex-grow: 1; */
 
 	/* grid-template-rows: 1fr 1fr;
 	grid-template-areas:
@@ -13,6 +20,10 @@ export const AboutCont = styled.div`
 `;
 
 export const TopCont = styled.div`
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* background-color: lightblue; */
+
 	/* grid-area: top;
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);

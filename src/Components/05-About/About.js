@@ -4,7 +4,7 @@ import { AboutCont, TopCont, BtmCont } from "./style";
 export default function About() {
 	return (
 		<AboutCont>
-			<TopCont></TopCont>
+			<TopCont>About Me</TopCont>
 			<BtmCont></BtmCont>
 		</AboutCont>
 	);

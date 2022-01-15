@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components";
 // import BlobGraphics from "./BlobGraphics";
 import Header from "./Components/01-Header/Header";
 import Footer from "./Components/02-Footer/Footer";
+import { Blob1, Blob2 } from "./Components/03-Blobs/Blobs";
 // import Introduction from "./Introduction";
 // import About from "./About";
 // import ProjectsCont from "./ProjectsCont";
@@ -14,8 +15,9 @@ export default function App() {
 	return (
 		<div className="App">
 			<GlobalStyle />
+			{/* <Blob1 /> */}
+			{/* <Blob2 /> */}
 			<GridWrapper>
-				{/* <BlobGraphics /> */}
 				<Header />
 				<Content>
 					Content

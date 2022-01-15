@@ -69,10 +69,6 @@ const GlobalStyle = createGlobalStyle`
       background-repeat: no-repeat;
       background-size: cover;
     }
-
-
-
-    /* background-position: center; */
   }
   
   ::selection {

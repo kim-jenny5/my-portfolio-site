@@ -4,7 +4,6 @@ import { createGlobalStyle } from "styled-components";
 import blobbackground_large from "./media/blobs/blobbackground_large.png";
 import blobbackground_small from "./media/blobs/blobbackground_small.png";
 import blobbackground_medium from "./media/blobs/blobbackground_medium.png";
-// import BlobGraphics from "./BlobGraphics";
 import Header from "./Components/01-Header/Header";
 import Footer from "./Components/02-Footer/Footer";
 import Intro from "./Components/04-Intro/Intro";
@@ -18,8 +17,6 @@ import About from "./Components/05-About/About";
 
 export default function App() {
 	return (
-		// <div className="App">
-		// <div>
 		<>
 			<GlobalStyle />
 			{/* <Blob1 />
@@ -39,8 +36,6 @@ export default function App() {
 			</Wrapper>
 			{/* <Footer /> */}
 		</>
-
-		// </div>
 	);
 }
 
@@ -92,83 +87,34 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Wrapper = styled.div`
-	/* display: grid; */
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	/* column-gap: 100px; */
-	/* margin: 70px 70px 0 70px; */
-	/* margin: 0 70px 0 70px; */
-	/* flex-grow: 1; */
-	/* min-height: 100%; */
 	row-gap: 100px;
 
 	/* XS / Mobile Portrait */
 	@media only screen and (min-width: 320px) {
-		/* grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: auto 1fr 1fr auto;
-		grid-column-gap: 1.25rem; */
 		margin: 1.25rem 1.25rem 0 1.25rem;
-
-		/* grid-template-areas:
-			"hd hd hd hd"
-			"intro intro intro intro"
-			"about about about about"
-			"ft ft ft ft"; */
 	}
 
 	/* S / Mobile Landscape */
 	@media only screen and (min-width: 480px) {
-		/* grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: auto 1fr 1fr auto;
-		grid-column-gap: 1.25rem; */
 		margin: 2.031rem 2.031rem 0 2.031rem;
-
-		/* grid-template-areas:
-			"hd hd hd hd hd hd"
-			"intro intro intro intro intro intro"
-			"about about about about about about"
-			"ft ft ft ft ft ft"; */
 	}
 
 	/* M / Tablet Portrait */
 	@media only screen and (min-width: 768px) {
-		/* grid-template-columns: repeat(8, 1fr);
-		grid-template-rows: auto 1fr 1fr auto; */
 		margin: 2.813rem 2.813rem 0 2.813rem;
-
-		/* grid-template-areas:
-			"hd hd hd hd hd hd hd hd"
-			"intro intro intro intro intro intro intro intro"
-			"about about about about about about about about"
-			"ft ft ft ft ft ft ft ft"; */
 	}
 
 	/* L / Tablet Landscape */
 	@media only screen and (min-width: 992px) {
-		/* grid-template-columns: repeat(10, 1fr);
-		grid-template-rows: auto 1fr 1fr auto; */
 		margin: 3.594rem 3.594rem 0 3.594rem;
-
-		/* grid-template-areas:
-			"hd hd hd hd hd hd hd hd hd hd"
-			"intro intro intro intro intro intro intro intro intro intro"
-			"about about about about about about about about about about"
-			"ft ft ft ft ft ft ft ft ft ft"; */
 	}
 
 	/* XL / Desktop */
 	@media only screen and (min-width: 1200px) {
-		/* grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: auto auto auto auto;
-		grid-column-gap: 1.25rem; */
 		margin: 4.375rem 4.375rem 0 4.375rem;
-
-		/* grid-template-areas:
-			"hd hd hd hd hd hd hd hd hd hd hd hd"
-			"intro intro intro intro intro intro intro intro intro intro intro intro"
-			"about about about about about about about about about about about about"
-			"ft ft ft ft ft ft ft ft ft ft ft ft"; */
 	}
 `;
 

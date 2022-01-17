@@ -72,6 +72,10 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media only screen and (min-width: 992px) {
+      background-image: url(${blobbackground_large});
+      background-repeat: no-repeat;
+      background-size: cover;
+
     }
 
     @media only screen and (min-width: 1200px) {

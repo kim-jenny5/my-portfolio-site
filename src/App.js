@@ -47,6 +47,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: Source Sans Pro;
     font-size: 100%;
     height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 
     @media only screen and (min-width: 320px) {
       background-image: url(${blobbackground_small});
@@ -90,7 +92,13 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	row-gap: 100px;
+	/* overflow-x: hidden;
+	overflow-y: hidden; */
+
+	div:nth-child(n + 2) {
+		/* justify-content: center; */
+	}
+	/* row-gap: 100px; */
 
 	/* XS / Mobile Portrait */
 	@media only screen and (min-width: 320px) {

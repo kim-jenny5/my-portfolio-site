@@ -139,14 +139,14 @@ export const TextCont = styled.div`
 	}
 `;
 
-export const TechStack = styled.div`
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+// export const TechStack = styled.div`
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: space-around;
 
-	span {
-		div:first-child {
-			font-family: DM Serif Display;
-		}
-	}
-`;
+// 	span {
+// 		div:first-child {
+// 			font-family: DM Serif Display;
+// 		}
+// 	}
+// `;

@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: Source Sans Pro;
     font-size: 100%;
     height: 100%;
-    width: 100vw;
+    /* width: 100vw; */
     overflow-x: hidden;
 
     @media only screen and (min-width: 320px) {

@@ -32,15 +32,15 @@ export default function About() {
 			</TopCont>
 			<TechStack>
 				<span>
-					<div>Frontend</div>
+					<div>Frontend 🦄</div>
 					<div>JavaScript / HTML / CSS / React / Redux</div>
 				</span>
 				<span>
-					<div>Design</div>
+					<div>Design 🎨</div>
 					<div>Figma / Bootstrap / MUI</div>
 				</span>
 				<span>
-					<div>Backend</div>
+					<div>Backend 🤖</div>
 					<div>Ruby on Rails / SQLite / PostgreSQL</div>
 				</span>
 			</TechStack>

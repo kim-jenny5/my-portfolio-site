@@ -30,7 +30,7 @@ export default function About() {
 					</ul>
 				</TextCont>
 			</TopCont>
-			{/* <TechStack>
+			<TechStack>
 				<span>
 					<div>Frontend</div>
 					<div>JavaScript / HTML / CSS / React / Redux</div>
@@ -43,7 +43,7 @@ export default function About() {
 					<div>Backend</div>
 					<div>Ruby on Rails / SQLite / PostgreSQL</div>
 				</span>
-			</TechStack> */}
+			</TechStack>
 		</AboutCont>
 	);
 }

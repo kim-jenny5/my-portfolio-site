@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutCont = styled.div`
-	background-color: lightgreen;
+	/* background-color: lightgreen; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -10,17 +10,40 @@ export const AboutCont = styled.div`
 `;
 
 export const TopCont = styled.div`
-	background-color: lightblue;
+	/* background-color: lightblue; */
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	column-gap: 4rem;
+
+	@media only screen and (min-width: 320px) {
+		flex-direction: column;
+		row-gap: 1em;
+	}
+
+	@media only screen and (min-width: 480px) {
+		flex-direction: column;
+		row-gap: 1em;
+	}
+
+	@media only screen and (min-width: 768px) {
+		flex-direction: column;
+		row-gap: 1em;
+	}
+
+	@media only screen and (min-width: 992px) {
+		flex-direction: column;
+		row-gap: 1em;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		flex-direction: row;
+		column-gap: 4rem;
+	}
 `;
 
 export const AcnhBlob = styled.img`
 	@media only screen and (min-width: 320px) {
-		width: 175px;
+		width: 200px;
 	}
 
 	@media only screen and (min-width: 480px) {
@@ -43,11 +66,9 @@ export const AcnhBlob = styled.img`
 export const TextCont = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 41rem;
 
 	div:first-child {
 		font-family: DM Serif Display;
-		font-size: 32px;
 		border-bottom: 1px solid #294234;
 	}
 
@@ -56,8 +77,65 @@ export const TextCont = styled.div`
 		padding: 0;
 		display: flex;
 		flex-direction: column;
-		row-gap: 15px;
-		font-size: 18px;
+		row-gap: 1rem;
+	}
+
+	@media only screen and (min-width: 320px) {
+		div:first-child {
+			font-size: 1.5rem;
+		}
+
+		ul {
+			font-size: 1rem;
+		}
+	}
+
+	@media only screen and (min-width: 480px) {
+		div:first-child {
+			font-size: 1.5rem;
+		}
+
+		ul {
+			font-size: 1rem;
+		}
+
+		width: 30rem;
+	}
+
+	@media only screen and (min-width: 768px) {
+		div:first-child {
+			font-size: 1.75rem;
+		}
+
+		ul {
+			font-size: 1.125rem;
+		}
+
+		width: 40rem;
+	}
+
+	@media only screen and (min-width: 992px) {
+		div:first-child {
+			font-size: 1.75rem;
+		}
+
+		ul {
+			font-size: 1.125rem;
+		}
+
+		width: 45rem;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		div:first-child {
+			font-size: 2rem;
+		}
+
+		ul {
+			font-size: 1.125rem;
+		}
+
+		width: 40rem;
 	}
 `;
 

@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const AboutCont = styled.div`
-	/* grid-area: about; */
-	/* background-color: lightgreen; */
+	background-color: lightgreen;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -11,7 +10,7 @@ export const AboutCont = styled.div`
 `;
 
 export const TopCont = styled.div`
-	/* background-color: lightblue; */
+	background-color: lightblue;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -45,17 +44,11 @@ export const TextCont = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 41rem;
-	/* justify-content: center; */
-	/* margin-right: 60px; */
-	/* align-content: space-around; */
 
 	div:first-child {
 		font-family: DM Serif Display;
-		/* padding-bottom: 5px; */
-
 		font-size: 32px;
 		border-bottom: 1px solid #294234;
-		/* margin-bottom: 10px; */
 	}
 
 	ul {
@@ -63,11 +56,6 @@ export const TextCont = styled.div`
 		padding: 0;
 		display: flex;
 		flex-direction: column;
-		/* justify-items: center; */
-		/* justify-items: center; */
-		/* justify-content: center; */
-		justify-content: space-around;
-		/* justify-content: space-evenly; */
 		row-gap: 15px;
 		font-size: 18px;
 	}
@@ -84,15 +72,3 @@ export const TechStack = styled.div`
 		}
 	}
 `;
-
-// export const Title = styled.div`
-// 	display: flex;
-// 	flex-direction: row;
-// 	justify-content: space-around;
-// `;
-
-// export const Languages = styled.div`
-// 	display: flex;
-// 	flex-direction: row;
-// 	justify-content: space-around;
-// `;

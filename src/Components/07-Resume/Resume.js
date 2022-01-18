@@ -8,28 +8,27 @@ const education = [
 		name: "Flatiron School",
 		program: "Full Stack Web Development, Ruby on Rails and JavaScript program",
 		city: "New York, NY",
-		dates: "February 2021 - December 2021"
+		dates: "02/2021 - 12/2021"
 	},
 	{
 		name: "Carnegie Mellon University",
 		program:
 			"Bachelor of Science in Business Administration; Minor in Japanese",
 		city: "Pittsburgh, PA",
-		dates: "August 2016 - May 2020"
+		dates: "08/2016 - 05/2020"
 	},
 	{
 		name: "Temple University in Japan",
 		program: "Sponsored Study Abroad program",
 		city: "Tokyo, Japan",
-		dates: "January 2018 - April 2018"
+		dates: "01/2018 - 04/2018"
 	}
 ];
 
 const experience = [
 	{
 		name: "MEK Review",
-		position:
-			"Jr. Counselor of Enrollment and Engagement | Tutoring Administrative Assistant",
+		position: "Jr. Counselor of Enrollment and Engagement",
 		description: [
 			"Assisted with various administrative tasks for a local SAT prep school to support and ensure smooth operations",
 			"Provided consultations to new/existing students, advising and registering them to appropriate programs accordingly",
@@ -37,7 +36,7 @@ const experience = [
 			"Helped facilitate registration and billing, making sure invoices were finalized in a timely manner"
 		],
 		city: "Palisades Park, NJ",
-		dates: "June 2020 - June 2021"
+		dates: "06/2020 - 06/2021"
 	},
 	{
 		name: "Japan Society",
@@ -49,7 +48,7 @@ const experience = [
 			"Updated reimbursement records and worked with Finance to ensure timely delivery of reimbursement checks"
 		],
 		city: "New York, NY",
-		dates: "June 2019 - August 2019"
+		dates: "06/2019 - 08/2019"
 	}
 ];
 

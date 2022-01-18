@@ -5,9 +5,27 @@ export const ProjectsCont = styled.div`
 
 	display: flex;
 	flex-direction: column;
-	/* row-gap: 40px; */
 	row-gap: 1.5rem;
 	padding-bottom: 100px;
+	align-self: center;
+	/* @media only screen and (min-width: 320px) {
+	}
+
+	@media only screen and (min-width: 480px) {
+	}
+
+	@media only screen and (min-width: 768px) {
+	}
+
+	@media only screen and (min-width: 992px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
+	} */
+
+	@media only screen and (min-width: 1201px) {
+		width: 80%;
+	}
 `;
 
 export const TopCont = styled.div`
@@ -35,21 +53,16 @@ export const TopCont = styled.div`
 
 	@media only screen and (min-width: 768px) {
 		div + div {
-			font-size: 1.125rem;
+			font-size: 1.25rem;
 		}
 	}
 
 	@media only screen and (min-width: 992px) {
 		flex-direction: row;
 
-		div + div {
+		/* div + div {
 			font-size: 1.25rem;
-		}
-
-		> img {
-			/* align-items: end; */
-			/* align-content: flex-en; */
-		}
+		} */
 	}
 
 	@media only screen and (min-width: 1200px) {
@@ -71,10 +84,12 @@ export const Title = styled.div`
 
 	@media only screen and (min-width: 768px) {
 		font-size: 1.5rem;
+		margin-top: 1.5em;
 	}
 
 	@media only screen and (min-width: 992px) {
 		font-size: 1.75rem;
+		margin-top: 0;
 	}
 
 	@media only screen and (min-width: 1200px) {

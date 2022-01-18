@@ -60,9 +60,7 @@ export default function Projects() {
 		<ProjectsCont>
 			<div>Projects</div>
 			{projects.map((project, idx) => (
-				<EachProjCont>
-					<EachProject key={idx} number={`0${idx + 1}`} project={project} />
-				</EachProjCont>
+				<EachProject key={idx} number={`0${idx + 1}`} project={project} />
 			))}
 		</ProjectsCont>
 	);

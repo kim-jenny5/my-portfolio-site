@@ -62,14 +62,15 @@ export const Title = styled.div`
 
 export const ResumeDetail = styled.div`
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 
-	span {
+	div {
 		@media only screen and (min-width: 320px) {
+			/* justify-content: space-between; */
 		}
 
 		@media only screen and (min-width: 480px) {
+			justify-content: space-between;
+			flex-direction: row;
 		}
 
 		@media only screen and (min-width: 768px) {
@@ -85,7 +86,7 @@ export const ResumeDetail = styled.div`
 		}
 	}
 
-	> span:last-child {
+	> div:last-child {
 		text-align: end;
 	}
 `;
@@ -99,14 +100,36 @@ export const EducationCont = styled.div`
 		margin-bottom: 0.5rem;
 	}
 
-	div:nth-child(3),
-	div:nth-child(5) {
-		margin-bottom: 1rem;
-		column-gap: 1.5rem;
+	@media only screen and (min-width: 320px) {
+		> div:nth-child(3),
+		> div:nth-child(6),
+		> div:nth-child(9) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		div:nth-child(4),
+		div:nth-child(7) {
+			margin-bottom: 1rem;
+			/* column-gap: 1.5rem; */
+		}
 	}
 
-	div:nth-child(7) {
-		/* column-gap: 2rem; */
+	@media only screen and (min-width: 480px) {
+		div:nth-child(3),
+		div:nth-child(5) {
+			margin-bottom: 1rem;
+			column-gap: 1.5rem;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+	}
+
+	@media only screen and (min-width: 992px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
 	}
 `;
 
@@ -127,8 +150,25 @@ export const ExperienceCont = styled.div`
 		margin-top: 0.5rem;
 		/* margin: 0.5rem 0 1rem 0; */
 	}
+	@media only screen and (min-width: 320px) {
+		> div:nth-child(3),
+		> div:nth-child(7) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
 
-	/* span {
-		flex-wrap: nowrap;
-	} */
+	@media only screen and (min-width: 480px) {
+	}
+
+	@media only screen and (min-width: 768px) {
+	}
+
+	@media only screen and (min-width: 992px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
+	}
 `;
+
+export const Container = styled.div``;

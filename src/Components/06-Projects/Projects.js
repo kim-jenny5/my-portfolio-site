@@ -3,7 +3,8 @@ import daily_journal from "../../media/screenshots/01_my_daily_journal.png";
 import pilim from "../../media/screenshots/02_pilim.png";
 import tableau_dambiance from "../../media/screenshots/03_tableau_dambiance.png";
 import my_travelogue from "../../media/screenshots/04_my_travelogue.png";
-import { ProjectsCont } from "./style";
+import { EachProjCont, ProjectsCont } from "./style";
+import EachProject from "./EachProject";
 
 const projects = [
 	{
@@ -55,5 +56,14 @@ const projects = [
 ];
 
 export default function Projects() {
-	return <ProjectsCont>Hello</ProjectsCont>;
+	return (
+		<ProjectsCont>
+			<div>Projects</div>
+			{projects.map((project, idx) => (
+				<EachProjCont>
+					<EachProject key={idx} number={`0${idx + 1}`} project={project} />
+				</EachProjCont>
+			))}
+		</ProjectsCont>
+	);
 }

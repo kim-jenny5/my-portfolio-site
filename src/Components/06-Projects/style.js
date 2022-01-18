@@ -1,20 +1,22 @@
 import styled from "styled-components";
 
 export const ProjectsCont = styled.div`
-	background-color: lightgoldenrodyellow;
+	/* background-color: lightgoldenrodyellow; */
 
 	display: flex;
 	flex-direction: column;
-	row-gap: 40px;
+	/* row-gap: 40px; */
+	row-gap: 1.5rem;
 	padding-bottom: 100px;
 `;
 
 export const TopCont = styled.div`
-	background-color: salmon;
+	/* background-color: salmon; */
 
 	display: flex;
-	column-gap: 10px;
-	margin-bottom: 10px;
+	justify-content: space-between;
+	column-gap: 1.25rem;
+	/* margin-bottom: 1.5rem; */
 
 	@media only screen and (min-width: 320px) {
 		flex-direction: column-reverse;
@@ -43,6 +45,11 @@ export const TopCont = styled.div`
 		div + div {
 			font-size: 1.25rem;
 		}
+
+		> img {
+			/* align-items: end; */
+			/* align-content: flex-en; */
+		}
 	}
 
 	@media only screen and (min-width: 1200px) {
@@ -54,7 +61,7 @@ export const TopCont = styled.div`
 
 export const Title = styled.div`
 	font-family: DM Serif Display;
-	/* font-size: 1.75rem !important; */
+	margin-bottom: 1.25rem;
 
 	@media only screen and (min-width: 320px) {
 	}
@@ -75,10 +82,11 @@ export const Title = styled.div`
 `;
 
 export const BtmCont = styled.div`
-	background-color: lightblue;
+	/* background-color: lightblue; */
 	display: flex;
 	flex-direction: column;
-	row-gap: 10px;
+	row-gap: 1.5rem;
+	margin-bottom: 6rem;
 
 	> div:first-child {
 		color: #537962;
@@ -122,6 +130,7 @@ export const ImgCont = styled.img`
 
 	@media only screen and (min-width: 992px) {
 		width: 425px;
+		/* float: end; */
 	}
 
 	@media only screen and (min-width: 1200px) {

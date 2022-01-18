@@ -73,11 +73,6 @@ export const TextCont = styled.div`
 	display: flex;
 	flex-direction: column;
 
-	div:first-child {
-		font-family: DM Serif Display;
-		border-bottom: 1px solid #294234;
-	}
-
 	ul {
 		list-style: none;
 		padding: 0;
@@ -87,20 +82,12 @@ export const TextCont = styled.div`
 	}
 
 	@media only screen and (min-width: 320px) {
-		div:first-child {
-			font-size: 1.5rem;
-		}
-
 		ul {
 			font-size: 1rem;
 		}
 	}
 
 	@media only screen and (min-width: 480px) {
-		div:first-child {
-			font-size: 1.5rem;
-		}
-
 		ul {
 			font-size: 1rem;
 		}
@@ -109,10 +96,6 @@ export const TextCont = styled.div`
 	}
 
 	@media only screen and (min-width: 768px) {
-		div:first-child {
-			font-size: 1.75rem;
-		}
-
 		ul {
 			font-size: 1.125rem;
 		}
@@ -121,10 +104,6 @@ export const TextCont = styled.div`
 	}
 
 	@media only screen and (min-width: 992px) {
-		div:first-child {
-			font-size: 1.75rem;
-		}
-
 		ul {
 			font-size: 1.125rem;
 		}
@@ -133,10 +112,6 @@ export const TextCont = styled.div`
 	}
 
 	@media only screen and (min-width: 1200px) {
-		div:first-child {
-			font-size: 2rem;
-		}
-
 		ul {
 			font-size: 1.125rem;
 		}

@@ -8,7 +8,7 @@ export default function About() {
 			<TopCont>
 				<AcnhBlob src={acnhblob} />
 				<TextCont>
-					<div>About Me</div>
+					<div className="section-title">About Me</div>
 					<ul>
 						<li>
 							I’m a 23-year old frontend developer, with a background in

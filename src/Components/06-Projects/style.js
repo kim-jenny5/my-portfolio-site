@@ -7,47 +7,24 @@ export const ProjectsCont = styled.div`
 	flex-direction: column;
 	row-gap: 40px;
 	padding-bottom: 100px;
-
-	> div:first-child {
-		font-family: DM Serif Display;
-		border-bottom: 1px solid #294234;
-	}
-
-	@media only screen and (min-width: 320px) {
-		> div:first-child {
-			font-size: 1.5rem;
-		}
-	}
-
-	@media only screen and (min-width: 480px) {
-	}
-
-	@media only screen and (min-width: 768px) {
-		> div:first-child {
-			font-size: 1.75rem;
-		}
-	}
-
-	@media only screen and (min-width: 992px) {
-	}
-
-	@media only screen and (min-width: 1200px) {
-		> div:first-child {
-			font-size: 2rem;
-		}
-	}
 `;
 
 export const TopCont = styled.div`
 	background-color: salmon;
+
 	display: flex;
-	flex-direction: row;
 	column-gap: 10px;
 	margin-bottom: 10px;
 
 	@media only screen and (min-width: 320px) {
+		flex-direction: column-reverse;
+
 		div + div {
 			font-size: 1rem;
+		}
+
+		> img {
+			align-self: center;
 		}
 	}
 
@@ -61,6 +38,8 @@ export const TopCont = styled.div`
 	}
 
 	@media only screen and (min-width: 992px) {
+		flex-direction: row;
+
 		div + div {
 			font-size: 1.25rem;
 		}
@@ -137,7 +116,8 @@ export const ImgCont = styled.img`
 	}
 
 	@media only screen and (min-width: 768px) {
-		/* width: 375px; */
+		/* width: 450px; */
+		width: 450px;
 	}
 
 	@media only screen and (min-width: 992px) {

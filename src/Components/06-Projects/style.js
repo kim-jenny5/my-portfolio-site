@@ -7,13 +7,42 @@ export const ProjectsCont = styled.div`
 	display: flex;
 	flex-direction: column;
 	row-gap: 40px;
+	padding-bottom: 100px;
 
 	> div:first-child {
 		font-family: DM Serif Display;
 		border-bottom: 1px solid #294234;
 	}
 
-	padding-bottom: 100px;
+	@media only screen and (min-width: 320px) {
+		> div:first-child {
+			font-size: 1.5rem;
+		}
+	}
+
+	@media only screen and (min-width: 480px) {
+		/* > div:first-child {
+			font-size: 1.5rem;
+		} */
+	}
+
+	@media only screen and (min-width: 768px) {
+		> div:first-child {
+			font-size: 1.75rem;
+		}
+	}
+
+	@media only screen and (min-width: 992px) {
+		/* > div:first-child {
+			font-size: 1.75rem;
+		} */
+	}
+
+	@media only screen and (min-width: 1200px) {
+		> div:first-child {
+			font-size: 2rem;
+		}
+	}
 `;
 
 export const EachProjCont = styled.div`
@@ -23,6 +52,10 @@ export const EachProjCont = styled.div`
 export const TopCont = styled.div`
 	display: flex;
 	flex-direction: row;
+`;
+
+export const Title = styled.div`
+	font-family: DM Serif Display;
 `;
 
 export const BtmCont = styled.div`

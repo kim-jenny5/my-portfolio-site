@@ -1,5 +1,5 @@
 import React from "react";
-import { EachProjCont, TopCont, BtmCont, ImgCont } from "./style";
+import { EachProjCont, TopCont, Title, BtmCont, ImgCont } from "./style";
 
 export default function EachProject(props) {
 	const { name, description, tech, githubLink, deployedSite, videoDemo, img } =
@@ -11,9 +11,9 @@ export default function EachProject(props) {
 		<EachProjCont>
 			<TopCont>
 				<div>
-					<div>
+					<Title>
 						{number} | {name}
-					</div>
+					</Title>
 					<div>{description}</div>
 				</div>
 				<ImgCont src={img} />

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ProjectsCont = styled.div`
-	/* background-color: lightgoldenrodyellow; */
+	background-color: lightgoldenrodyellow;
 
 	display: flex;
 	flex-direction: column;
 	row-gap: 1.5rem;
-	padding-bottom: 100px;
+	/* padding-bottom: 100px; */
 	align-self: center;
 	/* @media only screen and (min-width: 320px) {
 	}
@@ -24,7 +24,7 @@ export const ProjectsCont = styled.div`
 	} */
 
 	@media only screen and (min-width: 1201px) {
-		width: 80%;
+		width: 85%;
 	}
 `;
 

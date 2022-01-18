@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutCont = styled.div`
-	/* background-color: lightgreen; */
+	background-color: lightgreen;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

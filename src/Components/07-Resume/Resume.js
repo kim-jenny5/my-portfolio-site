@@ -55,7 +55,7 @@ const experience = [
 
 export default function Resume() {
 	return (
-		<ResumeCont>
+		<ResumeCont id="resume">
 			<div className="section-title">Resume</div>
 			{education.map((edu, idx) => (
 				<Education key={idx} education={edu} />

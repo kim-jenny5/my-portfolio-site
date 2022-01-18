@@ -57,7 +57,7 @@ const projects = [
 
 export default function Projects() {
 	return (
-		<ProjectsCont>
+		<ProjectsCont id="projects">
 			<div className="section-title">Projects</div>
 			{projects.map((project, idx) => (
 				<EachProject key={idx} number={`0${idx + 1}`} project={project} />

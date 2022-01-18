@@ -9,3 +9,8 @@ export const ResumeCont = styled.div`
 	justify-content: center; */
 	padding-bottom: 100px;
 `;
+
+export const EducationCont = styled.div`
+	display: flex;
+	flex-direction: column;
+`;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ProjectsCont = styled.div`
-	/* color: red; */
 	background-color: lightgoldenrodyellow;
 
 	display: flex;
@@ -52,7 +51,8 @@ export const EachProjCont = styled.div`
 export const TopCont = styled.div`
 	display: flex;
 	flex-direction: row;
-	/* font-size: ; */
+	column-gap: 10px;
+	margin-bottom: 10px;
 
 	@media only screen and (min-width: 320px) {
 		> div > div {
@@ -95,6 +95,11 @@ export const BtmCont = styled.div`
 	flex-direction: column;
 	row-gap: 10px;
 
+	> div:first-child {
+		color: #537962;
+		font-weight: bold;
+	}
+
 	> div:last-child {
 		display: flex;
 		flex-direction: row;
@@ -107,7 +112,7 @@ export const BtmCont = styled.div`
 		color: #294234;
 		cursor: pointer;
 		border-radius: 1rem;
-		padding: 10px;
+		padding: 0.5rem 1.125rem 0.5rem 1.125rem;
 		font-weight: bold;
 		/* border: none; */
 	}

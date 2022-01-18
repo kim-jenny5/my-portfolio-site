@@ -1,6 +1,9 @@
 import styled from "styled-components";
+import ProjectCont from "./ProjectCont";
 
-export const ProjectCont = styled.div`
+// export const StyledProjectCont = styled.div`
+export const StyledProjectCont = styled(ProjectCont)`
+	color: red;
 	background-color: lightgoldenrodyellow;
 
 	display: flex;
@@ -8,7 +11,7 @@ export const ProjectCont = styled.div`
 
 	div:first-child {
 		font-family: DM Serif Display;
-		border-bottom: 1px solid #294234;
+		/* border-bottom: 1px solid #294234; */
 	}
 
 	padding-bottom: 100px;

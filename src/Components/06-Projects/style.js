@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import ProjectCont from "./ProjectCont";
 
-// export const StyledProjectCont = styled.div`
-export const StyledProjectCont = styled(ProjectCont)`
-	color: red;
+export const ProjectsCont = styled.div`
+	/* color: red; */
 	background-color: lightgoldenrodyellow;
 
 	display: flex;

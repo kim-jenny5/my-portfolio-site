@@ -8,7 +8,8 @@ export default function EachProject(props) {
 	const number = props.number;
 
 	return (
-		<EachProjCont>
+		// <EachProjCont>
+		<>
 			<TopCont>
 				<div>
 					<Title>
@@ -39,6 +40,7 @@ export default function EachProject(props) {
 					<a href={videoDemo}>VIDEO DEMO</a>
 				</div>
 			</BtmCont>
-		</EachProjCont>
+		</>
+		// </EachProjCont>
 	);
 }

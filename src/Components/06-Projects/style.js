@@ -20,9 +20,6 @@ export const ProjectsCont = styled.div`
 	}
 
 	@media only screen and (min-width: 480px) {
-		/* > div:first-child {
-			font-size: 1.5rem;
-		} */
 	}
 
 	@media only screen and (min-width: 768px) {
@@ -32,9 +29,6 @@ export const ProjectsCont = styled.div`
 	}
 
 	@media only screen and (min-width: 992px) {
-		/* > div:first-child {
-			font-size: 1.75rem;
-		} */
 	}
 
 	@media only screen and (min-width: 1200px) {
@@ -44,53 +38,65 @@ export const ProjectsCont = styled.div`
 	}
 `;
 
-export const EachProjCont = styled.div`
-	background-color: salmon;
-`;
-
 export const TopCont = styled.div`
+	background-color: salmon;
 	display: flex;
 	flex-direction: row;
 	column-gap: 10px;
 	margin-bottom: 10px;
 
 	@media only screen and (min-width: 320px) {
-		> div > div {
+		div + div {
 			font-size: 1rem;
 		}
 	}
 
 	@media only screen and (min-width: 480px) {
-		/* > div > div {
-			font-size: 1rem;
-		} */
 	}
 
 	@media only screen and (min-width: 768px) {
-		> div > div {
+		div + div {
 			font-size: 1.125rem;
 		}
 	}
 
 	@media only screen and (min-width: 992px) {
-		/* > div > div {
-			font-size: 1rem;
-		} */
+		div + div {
+			font-size: 1.25rem;
+		}
 	}
 
 	@media only screen and (min-width: 1200px) {
-		> div > div {
+		/* div + div {
 			font-size: 1.25rem;
-		}
+		} */
 	}
 `;
 
 export const Title = styled.div`
 	font-family: DM Serif Display;
-	font-size: 1.75rem;
+	/* font-size: 1.75rem !important; */
+
+	@media only screen and (min-width: 320px) {
+	}
+
+	@media only screen and (min-width: 480px) {
+	}
+
+	@media only screen and (min-width: 768px) {
+		font-size: 1.5rem;
+	}
+
+	@media only screen and (min-width: 992px) {
+		font-size: 1.75rem;
+	}
+
+	@media only screen and (min-width: 1200px) {
+	}
 `;
 
 export const BtmCont = styled.div`
+	background-color: lightblue;
 	display: flex;
 	flex-direction: column;
 	row-gap: 10px;
@@ -119,7 +125,26 @@ export const BtmCont = styled.div`
 `;
 
 export const ImgCont = styled.img`
-	width: 400px;
 	border-radius: 5px;
 	border: 1px solid #f5f3f6;
+
+	@media only screen and (min-width: 320px) {
+	}
+
+	@media only screen and (min-width: 480px) {
+		/* height: 200px; */
+		/* width: 20%; */
+	}
+
+	@media only screen and (min-width: 768px) {
+		/* width: 375px; */
+	}
+
+	@media only screen and (min-width: 992px) {
+		width: 425px;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		width: 450px;
+	}
 `;

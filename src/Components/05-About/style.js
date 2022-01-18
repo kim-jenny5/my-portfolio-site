@@ -87,9 +87,9 @@ export const TextCont = styled.div`
 	}
 
 	@media only screen and (min-width: 480px) {
-		ul {
+		/* ul {
 			font-size: 1rem;
-		}
+		} */
 	}
 
 	@media only screen and (min-width: 768px) {
@@ -101,17 +101,17 @@ export const TextCont = styled.div`
 	}
 
 	@media only screen and (min-width: 992px) {
-		ul {
+		/* ul {
 			font-size: 1.125rem;
-		}
+		} */
 
 		width: 45rem;
 	}
 
 	@media only screen and (min-width: 1200px) {
-		ul {
+		/* ul {
 			font-size: 1.125rem;
-		}
+		} */
 
 		width: 40rem;
 	}

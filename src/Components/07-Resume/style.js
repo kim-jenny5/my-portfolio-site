@@ -6,8 +6,30 @@ export const ResumeCont = styled.div`
 	flex-direction: column;
 	justify-items: center;
 	justify-content: center;
+	align-self: center;
 	padding-bottom: 100px;
+
 	row-gap: 1rem;
+
+	@media only screen and (min-width: 320px) {
+		width: 100%;
+	}
+
+	@media only screen and (min-width: 480px) {
+	}
+
+	@media only screen and (min-width: 768px) {
+	}
+
+	@media only screen and (min-width: 992px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
+	}
+
+	@media only screen and (min-width: 1201px) {
+		width: 80%;
+	}
 `;
 
 export const Title = styled.div`

@@ -5,11 +5,17 @@ export default function Education(props) {
 	const { name, program, city, dates } = props.education;
 
 	return (
-		<EducationCont>
-			{name}
-			{program}
-			{city}
-			{dates}
-		</EducationCont>
+		<>
+			<div>
+				<span>
+					<b>{name}</b>
+				</span>
+				<span>{city}</span>
+			</div>
+			<div>
+				<span>{program}</span>
+				<span>{dates}</span>
+			</div>
+		</>
 	);
 }

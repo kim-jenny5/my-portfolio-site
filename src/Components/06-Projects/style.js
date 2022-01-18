@@ -6,7 +6,6 @@ export const ProjectsCont = styled.div`
 	display: flex;
 	flex-direction: column;
 	row-gap: 1.5rem;
-	align-items: flex-start;
 	justify-items: center;
 	justify-content: center;
 	align-self: center;

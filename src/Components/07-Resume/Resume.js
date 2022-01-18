@@ -1,7 +1,7 @@
 import React from "react";
 import Education from "./Education";
 import Experience from "./Experience";
-import { ResumeCont } from "./style";
+import { Title, ResumeCont, EducationCont, ExperienceCont } from "./style";
 
 const education = [
 	{
@@ -57,12 +57,18 @@ export default function Resume() {
 	return (
 		<ResumeCont id="resume">
 			<div className="section-title">Resume</div>
-			{education.map((edu, idx) => (
-				<Education key={idx} education={edu} />
-			))}
-			{experience.map((exp, idx) => (
-				<Experience key={idx} experience={exp} />
-			))}
+			<EducationCont>
+				<Title>Education</Title>
+				{education.map((edu, idx) => (
+					<Education key={idx} education={edu} />
+				))}
+			</EducationCont>
+			<ExperienceCont>
+				<Title>Experience</Title>
+				{experience.map((exp, idx) => (
+					<Experience key={idx} experience={exp} />
+				))}
+			</ExperienceCont>
 		</ResumeCont>
 	);
 }

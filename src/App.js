@@ -7,6 +7,7 @@ import Footer from "./Components/02-Footer/Footer";
 import Intro from "./Components/04-Intro/Intro";
 import About from "./Components/05-About/About";
 import Projects from "./Components/06-Projects/Projects";
+import Resume from "./Components/07-Resume/Resume";
 
 // import Introduction from "./Introduction";
 // import About from "./About";
@@ -26,6 +27,7 @@ export default function App() {
 				<Intro />
 				<About />
 				<Projects />
+				<Resume />
 			</Wrapper>
 			{/* <Footer /> */}
 		</>

@@ -7,7 +7,6 @@ export const AboutCont = styled.div`
 	align-items: center;
 	justify-items: center;
 	justify-content: center;
-	/* padding-bottom: 100px; */
 `;
 
 export const TopCont = styled.div`

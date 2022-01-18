@@ -11,7 +11,7 @@ export const AboutCont = styled.div`
 `;
 
 export const TopCont = styled.div`
-	background-color: lightblue;
+	/* background-color: lightblue; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,26 +19,31 @@ export const TopCont = styled.div`
 	@media only screen and (min-width: 320px) {
 		flex-direction: column;
 		row-gap: 1em;
+		margin-bottom: 1.5rem;
 	}
 
 	@media only screen and (min-width: 480px) {
 		flex-direction: column;
 		row-gap: 1em;
+		margin-bottom: 2rem;
 	}
 
 	@media only screen and (min-width: 768px) {
 		flex-direction: column;
 		row-gap: 1em;
+		margin-bottom: 2.5rem;
 	}
 
 	@media only screen and (min-width: 992px) {
 		flex-direction: column;
 		row-gap: 1em;
+		margin-bottom: 3rem;
 	}
 
 	@media only screen and (min-width: 1200px) {
 		flex-direction: row;
 		column-gap: 4rem;
+		margin-bottom: 3.5rem;
 	}
 `;
 
@@ -203,5 +208,9 @@ export const TechStack = styled.div`
 
 	@media only screen and (min-width: 1200px) {
 		width: 80%;
+	}
+
+	@media only screen and (min-width: 1201px) {
+		width: 70%;
 	}
 `;

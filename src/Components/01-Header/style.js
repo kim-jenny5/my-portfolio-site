@@ -15,9 +15,17 @@ export const HeaderCont = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	font-family: DM Serif Display;
 	/* margin-top: 70px; */
+
+	margin: 2.031rem 2.031rem 0 2.031rem;
+
+	.hamburger {
+		display: flex;
+		align-self: center;
+		/* justify-content: space-evenly; */
+	}
 `;
 
 export const Button = styled.button`
@@ -56,7 +64,6 @@ export const NavBar = styled.ul`
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	column-gap: 3rem;
 
 	@media only screen and (min-width: 320px) {
 		font-size: 1rem;
@@ -68,6 +75,7 @@ export const NavBar = styled.ul`
 
 	@media only screen and (min-width: 768px) {
 		font-size: 1.25rem;
+		column-gap: 3rem;
 	}
 
 	@media only screen and (min-width: 1200px) {
@@ -78,10 +86,4 @@ export const NavBar = styled.ul`
 		text-decoration: none;
 		color: inherit;
 	}
-`;
-
-export const HamburgerMenu = styled.div`
-	display: flex;
-	align-self: center;
-	justify-content: space-evenly;
 `;

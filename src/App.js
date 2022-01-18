@@ -21,8 +21,8 @@ export default function App() {
 			{/* <Blob1 />
 			<Blob2 /> */}
 
+			<Header />
 			<Wrapper>
-				<Header />
 				<Intro />
 				<About />
 				<Projects />

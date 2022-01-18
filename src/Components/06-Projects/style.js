@@ -49,6 +49,9 @@ export const TopCont = styled.div`
 	}
 
 	@media only screen and (min-width: 480px) {
+		div + div {
+			font-size: 1.125rem;
+		}
 	}
 
 	@media only screen and (min-width: 768px) {
@@ -80,11 +83,12 @@ export const Title = styled.div`
 	}
 
 	@media only screen and (min-width: 480px) {
+		font-size: 1.375rem;
+		margin-top: 1.5rem;
 	}
 
 	@media only screen and (min-width: 768px) {
 		font-size: 1.5rem;
-		margin-top: 1.5em;
 	}
 
 	@media only screen and (min-width: 992px) {
@@ -111,7 +115,10 @@ export const BtmCont = styled.div`
 	> div:last-child {
 		display: flex;
 		flex-direction: row;
-		column-gap: 20px;
+		row-gap: 0.75rem;
+		column-gap: 1.25rem;
+		flex-wrap: wrap;
+		/* font-size: 0.875rem; */
 	}
 
 	a {
@@ -131,15 +138,14 @@ export const ImgCont = styled.img`
 	border: 1px solid #f5f3f6;
 
 	@media only screen and (min-width: 320px) {
+		/* width: 400px; */
 	}
 
 	@media only screen and (min-width: 480px) {
-		/* height: 200px; */
-		/* width: 20%; */
+		width: 425px;
 	}
 
 	@media only screen and (min-width: 768px) {
-		/* width: 450px; */
 		width: 450px;
 	}
 

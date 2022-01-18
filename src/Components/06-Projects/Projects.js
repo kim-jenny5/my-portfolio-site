@@ -25,7 +25,7 @@ const projects = [
 		name: "Tableau d'Ambiance",
 		description:
 			"Tableau d’Ambiance is a single-page application (SPA), where users can create/delete albums and upload photos to store their memories and reminisce.",
-		tech: "Rails API / ActiveRecord / PostgreSQL / Active Model Serializers / JavaScript / HTML / CSS / Bootstrap / Active Storage / Amazon AWS S3",
+		tech: "Rails API / ActiveRecord / PostgreSQL / Active Model Serializers / JavaScript / HTML / CSS / Bootstrap / Active Storage / AWS Amazon S3",
 		githubLink: [
 			"https://github.com/kim-jenny5/tableau-dambiance-backend",
 			"https://github.com/kim-jenny5/tableau-dambiance-frontend"

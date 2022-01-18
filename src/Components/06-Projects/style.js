@@ -40,7 +40,8 @@ export const TopCont = styled.div`
 		flex-direction: column-reverse;
 
 		div + div {
-			font-size: 1rem;
+			font-size: 1.125rem;
+			/* font-size: 1rem; */
 		}
 
 		> img {
@@ -80,11 +81,13 @@ export const Title = styled.div`
 	margin-bottom: 1.25rem;
 
 	@media only screen and (min-width: 320px) {
+		font-size: 1.25rem;
+		margin-top: 1.5rem;
 	}
 
 	@media only screen and (min-width: 480px) {
 		font-size: 1.375rem;
-		margin-top: 1.5rem;
+		/* margin-top: 1.5rem; */
 	}
 
 	@media only screen and (min-width: 768px) {
@@ -107,20 +110,6 @@ export const BtmCont = styled.div`
 	row-gap: 1.5rem;
 	margin-bottom: 6rem;
 
-	> div:first-child {
-		color: #537962;
-		font-weight: bold;
-	}
-
-	> div:last-child {
-		display: flex;
-		flex-direction: row;
-		row-gap: 0.75rem;
-		column-gap: 1.25rem;
-		flex-wrap: wrap;
-		/* font-size: 0.875rem; */
-	}
-
 	a {
 		text-decoration: none;
 		background: #e6b0a4;
@@ -129,7 +118,42 @@ export const BtmCont = styled.div`
 		border-radius: 1rem;
 		padding: 0.5rem 1.125rem 0.5rem 1.125rem;
 		font-weight: bold;
-		/* border: none; */
+	}
+
+	@media only screen and (min-width: 320px) {
+		> div:first-child {
+			color: #537962;
+			font-weight: bold;
+			font-size: 0.875rem;
+		}
+
+		> div:last-child {
+			display: flex;
+			flex-direction: row;
+			row-gap: 0.75rem;
+			column-gap: 1.25rem;
+			flex-wrap: wrap;
+			font-size: 0.875rem;
+		}
+	}
+
+	@media only screen and (min-width: 480px) {
+		> div:first-child {
+			font-size: 1rem;
+		}
+
+		> div:last-child {
+			font-size: 1rem;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+	}
+
+	@media only screen and (min-width: 992px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
 	}
 `;
 
@@ -138,7 +162,7 @@ export const ImgCont = styled.img`
 	border: 1px solid #f5f3f6;
 
 	@media only screen and (min-width: 320px) {
-		/* width: 400px; */
+		width: 300px;
 	}
 
 	@media only screen and (min-width: 480px) {

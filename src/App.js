@@ -11,7 +11,7 @@ import Footer from "./Components/02-Footer/Footer";
 
 export default function App() {
 	return (
-		<>
+		<div>
 			<GlobalStyle />
 			<Header />
 			<Wrapper>
@@ -21,8 +21,8 @@ export default function App() {
 				<Resume />
 				<Contact />
 			</Wrapper>
-			{/* <Footer /> */}
-		</>
+			<Footer />
+		</div>
 	);
 }
 

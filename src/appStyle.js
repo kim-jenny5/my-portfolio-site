@@ -10,12 +10,14 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     color: #294234;
     font-family: Source Sans Pro;
+    position: relative;
     font-size: 100%;
-    height: 100%;
+    /* height: 100%; */
+    min-height: 100vh;
     /* width: 100vw; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
-    @media only screen and (min-width: 320px) {
+    /* @media only screen and (min-width: 320px) {
       background-image: url(${blobbackground_small});
       background-repeat: no-repeat;
       background-size: cover;
@@ -44,7 +46,7 @@ export const GlobalStyle = createGlobalStyle`
       background-image: url(${blobbackground_large});
       background-repeat: no-repeat;
       background-size: cover;
-    }
+    } */
   }
   
   ::selection {
@@ -80,7 +82,8 @@ export const GlobalStyle = createGlobalStyle`
 export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	/* height: 100vh; */
+	min-height: 100vh;
 	/* overflow-x: hidden;
 	overflow-y: hidden; */
 

@@ -1,42 +1,22 @@
 import styled from "styled-components";
 
 export const ResumeCont = styled.div`
-	/* background-color: palevioletred; */
 	display: flex;
 	flex-direction: column;
 	justify-items: center;
 	justify-content: center;
 	align-self: center;
 	padding-top: calc(100vh * 0.15);
-	/* padding-bottom: calc(100vh * 0.15); */
+	width: 100%;
 
-	/* height: 100vh; */
-
-	/* padding-bottom: 100px; */
 	row-gap: 1rem;
 
 	.dates {
 		text-align: end;
 	}
 
-	@media only screen and (min-width: 320px) {
-		width: 100%;
-	}
-
-	/* @media only screen and (min-width: 480px) {
-	}
-
-	@media only screen and (min-width: 768px) {
-	}
-
-	@media only screen and (min-width: 992px) {
-	}
-
 	@media only screen and (min-width: 1200px) {
-	} */
-
-	@media only screen and (min-width: 1201px) {
-		width: 80%;
+		width: 72rem;
 	}
 `;
 
@@ -147,7 +127,6 @@ export const DownloadBtn = styled.a`
 	align-self: center;
 
 	@media only screen and (min-width: 320px) {
-		/* font-size: 1rem; */
 		padding: 0.625rem 1.375rem 0.625rem 1.375rem;
 	}
 

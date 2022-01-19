@@ -1,20 +1,16 @@
 import styled from "styled-components";
 
 export const IntroCont = styled.div`
-	/* background-color: lightpink; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-items: center;
 	justify-content: center;
 	height: calc(100vh - 150px);
-	/* height: 100vh; */
-	/* flex: 1 auto auto; */
 `;
 
 export const MainCont = styled.div`
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 
 	@media only screen and (min-width: 320px) {
@@ -37,14 +33,14 @@ export const MainCont = styled.div`
 
 	@media only screen and (min-width: 992px) {
 		flex-direction: row;
-		column-gap: 7.5rem;
+		width: 100%;
 		text-align: start;
+		justify-content: space-around;
 	}
 
 	@media only screen and (min-width: 1200px) {
-		flex-direction: row;
-		column-gap: 8.5rem;
-		text-align: start;
+		justify-content: space-evenly;
+		width: 90%;
 	}
 `;
 

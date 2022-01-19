@@ -159,6 +159,8 @@ export const EachEducation = styled.div`
 
 export const EachExperience = styled.div`
 	@media only screen and (min-width: 320px) {
+		margin-bottom: 2rem;
+
 		.city-dates {
 			display: flex;
 			flex-direction: row;

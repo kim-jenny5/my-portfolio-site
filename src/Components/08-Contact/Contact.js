@@ -8,11 +8,11 @@ export default function Contact() {
 		<ContactCont id="contact">
 			<Jenny src={jenny}></Jenny>
 			<ContactCard>
-				<div>
-					<div className="bold">Jenny Kim</div>
+				<div className="basic-info">
+					<div>Jenny Kim</div>
 					<div>jennykimdev@gmail.com</div>
 				</div>
-				<div className="bold">Frontend Developer</div>
+				<div className="bold job">Frontend Developer</div>
 				<SNS>
 					<a href="mailto:jennykimdev@gmail.com" target="_blank">
 						<AtSign />

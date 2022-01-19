@@ -130,3 +130,39 @@ export const EachExperience = styled.div`
 	@media only screen and (min-width: 1200px) {
 	} */
 `;
+
+// export const DownloadBtn = styled.div`
+export const DownloadBtn = styled.a`
+	background: #988671;
+	border-radius: 1.875rem;
+	text-decoration: none;
+	text-align: center;
+	/* padding: 0.75rem 1.5rem 0.75rem 1.5rem; */
+	width: fit-content;
+	font-weight: bold;
+	color: #f5f3f6;
+	align-self: center;
+
+	@media only screen and (min-width: 320px) {
+		font-size: 1rem;
+		/* padding: 0.5rem 1.25rem 0.5rem 1.25rem; */
+		padding: 0.625rem 1.375rem 0.625rem 1.375rem;
+	}
+
+	@media only screen and (min-width: 480px) {
+		/* font-size: 1rem; */
+		padding: 0.625rem 1.375rem 0.625rem 1.375rem;
+	}
+
+	@media only screen and (min-width: 768px) {
+		font-size: 1.125rem;
+	}
+
+	@media only screen and (min-width: 992px) {
+		padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+		font-size: 1.25rem;
+	}
+
+	@media only screen and (min-width: 1200px) {
+	}
+`;

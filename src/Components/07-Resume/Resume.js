@@ -1,7 +1,8 @@
 import React from "react";
 import Education from "./Education";
 import Experience from "./Experience";
-import { Title, ResumeCont } from "./style";
+import { Title, ResumeCont, DownloadBtn } from "./style";
+import resume from "../../media/jenny_kim_resume.pdf";
 
 const education = [
 	{
@@ -68,6 +69,11 @@ export default function Resume() {
 					<Experience key={idx} experience={exp} />
 				))}
 			</div>
+			{/* <DownloadBtn> */}
+			<DownloadBtn href={resume} download>
+				Download Full Resume
+			</DownloadBtn>
+			{/* </DownloadBtn> */}
 		</ResumeCont>
 	);
 }

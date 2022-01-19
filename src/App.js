@@ -1,33 +1,25 @@
-import styled from "styled-components";
 import { GlobalStyle } from "./appStyle";
 import { Wrapper } from "./appStyle";
 
 import Header from "./Components/01-Header/Header";
-import Footer from "./Components/02-Footer/Footer";
 import Intro from "./Components/04-Intro/Intro";
 import About from "./Components/05-About/About";
 import Projects from "./Components/06-Projects/Projects";
 import Resume from "./Components/07-Resume/Resume";
-
-// import Introduction from "./Introduction";
-// import About from "./About";
-// import ProjectsCont from "./ProjectsCont";
-// import ResumeCont from "./ResumeCont";
-// import Contact from "./Contact";
+import Contact from "./Components/08-Contact/Contact";
+import Footer from "./Components/02-Footer/Footer";
 
 export default function App() {
 	return (
 		<>
 			<GlobalStyle />
-			{/* <Blob1 />
-			<Blob2 /> */}
-
 			<Header />
 			<Wrapper>
 				<Intro />
 				<About />
 				<Projects />
 				<Resume />
+				<Contact />
 			</Wrapper>
 			{/* <Footer /> */}
 		</>

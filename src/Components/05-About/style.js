@@ -120,7 +120,7 @@ export const TextCont = styled.div`
 export const TechStack = styled.div`
 	display: flex;
 	padding: 2.5rem 0 2.5rem 0;
-	width: 90%;
+	/* width: 90%; */
 	background: #f5f3f6;
 	border-radius: 30px;
 
@@ -144,7 +144,7 @@ export const TechStack = styled.div`
 	}
 
 	@media only screen and (min-width: 480px) {
-		width: 80%;
+		width: 450px;
 
 		span {
 			div:first-child {
@@ -155,8 +155,7 @@ export const TechStack = styled.div`
 
 	@media only screen and (min-width: 768px) {
 		text-align: center;
-		padding: 2.5rem 2rem 2.5rem 2rem;
-		width: 65%;
+		width: 500px;
 
 		span {
 			div:last-child {
@@ -169,7 +168,7 @@ export const TechStack = styled.div`
 		flex-direction: row;
 		justify-content: space-around;
 		text-align: start;
-		width: 90%;
+		width: 950px;
 
 		span {
 			div:first-child {
@@ -179,10 +178,6 @@ export const TechStack = styled.div`
 	}
 
 	@media only screen and (min-width: 1200px) {
-		width: 80%;
-	}
-
-	@media only screen and (min-width: 1201px) {
-		width: 70%;
+		width: 1150px;
 	}
 `;

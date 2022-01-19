@@ -9,23 +9,8 @@ export const ProjectsCont = styled.div`
 	align-self: center;
 	padding-top: calc(100vh * 0.15);
 
-	/* @media only screen and (min-width: 320px) {
-	}
-
-	@media only screen and (min-width: 480px) {
-	}
-
-	@media only screen and (min-width: 768px) {
-	}
-
-	@media only screen and (min-width: 992px) {
-	}
-
 	@media only screen and (min-width: 1200px) {
-	} */
-
-	@media only screen and (min-width: 1201px) {
-		width: 85%;
+		width: 72rem;
 	}
 `;
 
@@ -33,7 +18,6 @@ export const TopCont = styled.div`
 	display: flex;
 	justify-content: space-between;
 	column-gap: 1.25rem;
-	/* margin-bottom: 1.5rem; */
 
 	@media only screen and (min-width: 320px) {
 		flex-direction: column-reverse;
@@ -75,7 +59,6 @@ export const ProjectName = styled.div`
 
 	@media only screen and (min-width: 480px) {
 		font-size: 1.375rem;
-		/* margin-top: 1.5rem; */
 	}
 
 	@media only screen and (min-width: 768px) {
@@ -149,22 +132,22 @@ export const ImgCont = styled.img`
 	border: 1px solid #f5f3f6;
 
 	@media only screen and (min-width: 320px) {
-		width: 300px;
+		width: 18.75rem;
 	}
 
 	@media only screen and (min-width: 480px) {
-		width: 425px;
+		width: 26.5rem;
 	}
 
 	@media only screen and (min-width: 768px) {
-		width: 450px;
+		width: 28.125rem;
 	}
 
 	@media only screen and (min-width: 992px) {
-		width: 425px;
+		width: 26.5rem;
 	}
 
 	@media only screen and (min-width: 1200px) {
-		width: 450px;
+		width: 28.125rem;
 	}
 `;

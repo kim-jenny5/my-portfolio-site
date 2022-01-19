@@ -71,11 +71,11 @@ export const TopCont = styled.div`
 		} */
 	}
 
-	@media only screen and (min-width: 1200px) {
-		/* div + div {
+	/* @media only screen and (min-width: 1200px) {
+		div + div {
 			font-size: 1.25rem;
-		} */
-	}
+		}
+	} */
 `;
 
 export const Title = styled.div`
@@ -101,8 +101,8 @@ export const Title = styled.div`
 		margin-top: 0;
 	}
 
-	@media only screen and (min-width: 1200px) {
-	}
+	/* @media only screen and (min-width: 1200px) {
+	} */
 `;
 
 export const BtmCont = styled.div`
@@ -149,14 +149,14 @@ export const BtmCont = styled.div`
 		}
 	}
 
-	@media only screen and (min-width: 768px) {
+	/* @media only screen and (min-width: 768px) {
 	}
 
 	@media only screen and (min-width: 992px) {
 	}
 
 	@media only screen and (min-width: 1200px) {
-	}
+	} */
 `;
 
 export const ImgCont = styled.img`
@@ -177,7 +177,6 @@ export const ImgCont = styled.img`
 
 	@media only screen and (min-width: 992px) {
 		width: 425px;
-		/* float: end; */
 	}
 
 	@media only screen and (min-width: 1200px) {

@@ -1,5 +1,5 @@
 import React from "react";
-import { EachProjCont, TopCont, Title, BtmCont, ImgCont } from "./style";
+import { TopCont, ProjectName, BtmCont, ImgCont } from "./style";
 
 export default function EachProject(props) {
 	const { name, description, tech, githubLink, deployedSite, videoDemo, img } =
@@ -8,13 +8,12 @@ export default function EachProject(props) {
 	const number = props.number;
 
 	return (
-		// <EachProjCont>
 		<>
 			<TopCont>
 				<div>
-					<Title>
+					<ProjectName>
 						{number} | {name}
-					</Title>
+					</ProjectName>
 					<div>{description}</div>
 				</div>
 				<ImgCont src={img} />
@@ -41,6 +40,5 @@ export default function EachProject(props) {
 				</div>
 			</BtmCont>
 		</>
-		// </EachProjCont>
 	);
 }

@@ -78,7 +78,7 @@ export const TopCont = styled.div`
 	} */
 `;
 
-export const Title = styled.div`
+export const ProjectName = styled.div`
 	font-family: DM Serif Display;
 	margin-bottom: 1.25rem;
 

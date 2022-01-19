@@ -12,10 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Source Sans Pro;
     position: relative;
     font-size: 100%;
-    /* height: 100%; */
     min-height: 100vh;
-    /* width: 100vw; */
-    /* overflow-x: hidden; */
 
     /* @media only screen and (min-width: 320px) {
       background-image: url(${blobbackground_small});
@@ -61,17 +58,15 @@ export const GlobalStyle = createGlobalStyle`
 		font-size: 1.5rem;
 	}
 
-	@media only screen and (min-width: 480px) {
-		/* font-size: 1.5rem; */
-	}
+	/* @media only screen and (min-width: 480px) {
+	} */
 
 	@media only screen and (min-width: 768px) {
 		font-size: 1.75rem;
 	}
 
-	@media only screen and (min-width: 992px) {
-		/* font-size: 1.75rem; */
-	}
+	/* @media only screen and (min-width: 992px) {
+	} */
 
 	@media only screen and (min-width: 1200px) {
 		font-size: 2rem;
@@ -82,35 +77,38 @@ export const GlobalStyle = createGlobalStyle`
 export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	/* height: 100vh; */
+	height: 100%;
 	min-height: 100vh;
-	/* overflow-x: hidden;
-	overflow-y: hidden; */
 
 	/* row-gap: 100px; */
 
 	/* XS / Mobile Portrait */
 	@media only screen and (min-width: 320px) {
-		margin: 1.25rem 1.25rem 0 1.25rem;
+		/* margin: 1.25rem 1.25rem 0 1.25rem; */
+		margin: 0 1.25rem 0 1.25rem;
 	}
 
 	/* S / Mobile Landscape */
 	@media only screen and (min-width: 480px) {
-		margin: 2.031rem 2.031rem 0 2.031rem;
+		/* margin: 2.031rem 2.031rem 0 2.031rem; */
+		margin: 0 2.031rem 0 2.031rem;
 	}
 
 	/* M / Tablet Portrait */
 	@media only screen and (min-width: 768px) {
-		margin: 2.813rem 2.813rem 0 2.813rem;
+		/* margin: 2.813rem 2.813rem 0 2.813rem; */
+		margin: 0 2.813rem 0 2.813rem;
 	}
 
 	/* L / Tablet Landscape */
 	@media only screen and (min-width: 992px) {
-		margin: 3.594rem 3.594rem 0 3.594rem;
+		/* margin: 3.594rem 3.594rem 0 3.594rem; */
+		margin: 0 3.594rem 0 3.594rem;
 	}
 
 	/* XL / Desktop */
 	@media only screen and (min-width: 1200px) {
-		margin: 4.375rem 4.375rem 0 4.375rem;
+		/* margin: 4.375rem 4.375rem 0 4.375rem; */
+		margin: 0 4.375rem 0 4.375rem;
 	}
 `;

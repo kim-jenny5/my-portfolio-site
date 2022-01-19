@@ -7,7 +7,12 @@ export const ResumeCont = styled.div`
 	justify-items: center;
 	justify-content: center;
 	align-self: center;
-	padding-bottom: 100px;
+	padding-top: calc(100vh * 0.15);
+	/* padding-bottom: calc(100vh * 0.15); */
+
+	/* height: 100vh; */
+
+	/* padding-bottom: 100px; */
 	row-gap: 1rem;
 
 	.dates {

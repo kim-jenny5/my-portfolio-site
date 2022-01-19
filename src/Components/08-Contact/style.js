@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const ContactCont = styled.div`
-	padding-bottom: 100px;
+	/* padding-bottom: 100px; */
 
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	height: calc(100vh - 60px);
 `;
 
 export const Jenny = styled.img`

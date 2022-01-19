@@ -9,6 +9,10 @@ export const ProjectsCont = styled.div`
 	justify-items: center;
 	justify-content: center;
 	align-self: center;
+	padding-top: calc(100vh * 0.15);
+	/* padding-bottom: calc(100vh * 0.15); */
+
+	/* height: 100vh; */
 
 	/* @media only screen and (min-width: 320px) {
 	}

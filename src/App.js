@@ -14,8 +14,8 @@ export default function App() {
 		<div>
 			<GlobalStyle />
 			<Header />
+			<Intro />
 			<Wrapper>
-				<Intro />
 				<About />
 				<Projects />
 				<Resume />

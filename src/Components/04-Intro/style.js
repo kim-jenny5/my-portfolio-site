@@ -7,6 +7,9 @@ export const IntroCont = styled.div`
 	align-items: center;
 	justify-items: center;
 	justify-content: center;
+	height: calc(100vh - 150px);
+	/* height: 100vh; */
+	/* flex: 1 auto auto; */
 `;
 
 export const MainCont = styled.div`

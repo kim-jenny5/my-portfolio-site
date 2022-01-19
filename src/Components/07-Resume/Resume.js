@@ -69,11 +69,9 @@ export default function Resume() {
 					<Experience key={idx} experience={exp} />
 				))}
 			</div>
-			{/* <DownloadBtn> */}
 			<DownloadBtn href={resume} download>
 				Download Full Resume
 			</DownloadBtn>
-			{/* </DownloadBtn> */}
 		</ResumeCont>
 	);
 }

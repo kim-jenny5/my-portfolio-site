@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsCont = styled.div`
-	background-color: lightgoldenrodyellow;
+	/* background-color: lightgoldenrodyellow; */
 
 	display: flex;
 	flex-direction: column;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const IntroCont = styled.div`
-	background-color: lightpink;
+	/* background-color: lightpink; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;

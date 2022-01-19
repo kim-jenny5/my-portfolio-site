@@ -61,35 +61,6 @@ export const Title = styled.div`
 	}
 `;
 
-export const ResumeDetail = styled.div`
-	display: flex;
-
-	/* div {
-		@media only screen and (min-width: 320px) {
-		}
-
-		@media only screen and (min-width: 480px) {
-			justify-content: space-between;
-			flex-direction: row;
-		}
-
-		@media only screen and (min-width: 768px) {
-			font-size: 1.125rem;
-		}
-
-		@media only screen and (min-width: 992px) {
-			font-size: 1.125rem;
-		}
-
-		@media only screen and (min-width: 1200px) {
-		}
-	} */
-
-	/* > div:last-child {
-		text-align: end;
-	} */
-`;
-
 export const EducationCont = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -199,9 +170,32 @@ export const EachEducation = styled.div`
 	}
 
 	@media only screen and (min-width: 768px) {
-		/* div {
-			font-size: 1.125rem;
-		} */
+	}
+
+	@media only screen and (min-width: 992px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
+	}
+`;
+
+export const EachExperience = styled.div`
+	@media only screen and (min-width: 320px) {
+		.city-dates {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		ul {
+			padding-left: 8%;
+		}
+	}
+
+	@media only screen and (min-width: 480px) {
+	}
+
+	@media only screen and (min-width: 768px) {
 	}
 
 	@media only screen and (min-width: 992px) {

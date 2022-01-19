@@ -37,6 +37,7 @@ export const Title = styled.div`
 
 	@media only screen and (min-width: 320px) {
 		font-size: 1.25rem;
+		margin-bottom: 0.5rem;
 		/* font-size: 1.125rem; */
 	}
 
@@ -63,9 +64,8 @@ export const Title = styled.div`
 export const ResumeDetail = styled.div`
 	display: flex;
 
-	div {
+	/* div {
 		@media only screen and (min-width: 320px) {
-			/* justify-content: space-between; */
 		}
 
 		@media only screen and (min-width: 480px) {
@@ -82,28 +82,36 @@ export const ResumeDetail = styled.div`
 		}
 
 		@media only screen and (min-width: 1200px) {
-			/* font-size: 1.125rem; */
 		}
-	}
+	} */
 
-	> div:last-child {
+	/* > div:last-child {
 		text-align: end;
-	}
+	} */
 `;
 
 export const EducationCont = styled.div`
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between; */
 
-	> div:first-child {
+	/* > div:first-child {
 		margin-bottom: 0.5rem;
-	}
+	} */
 
 	@media only screen and (min-width: 320px) {
-		> div:nth-child(3),
+		/* > div:nth-child(3),
 		> div:nth-child(6),
 		> div:nth-child(9) {
+			flex-direction: row;
+			justify-content: space-between;
+		} */
+		/* div {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+ */
+		/* > div:nth-child(n + 2) {
+			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 		}
@@ -111,16 +119,15 @@ export const EducationCont = styled.div`
 		div:nth-child(4),
 		div:nth-child(7) {
 			margin-bottom: 1rem;
-			/* column-gap: 1.5rem; */
-		}
+		} */
 	}
 
 	@media only screen and (min-width: 480px) {
-		div:nth-child(3),
+		/* div:nth-child(3),
 		div:nth-child(5) {
 			margin-bottom: 1rem;
 			column-gap: 1.5rem;
-		}
+		} */
 	}
 
 	@media only screen and (min-width: 768px) {
@@ -171,4 +178,35 @@ export const ExperienceCont = styled.div`
 	}
 `;
 
-export const Container = styled.div``;
+export const EachEducation = styled.div`
+	@media only screen and (min-width: 320px) {
+		margin-bottom: 1rem;
+
+		.city-dates {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	@media only screen and (min-width: 480px) {
+		div {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			font-size: 1.125rem;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		/* div {
+			font-size: 1.125rem;
+		} */
+	}
+
+	@media only screen and (min-width: 992px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
+	}
+`;

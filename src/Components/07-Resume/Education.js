@@ -1,35 +1,34 @@
 import React from "react";
-import { EducationCont, ResumeDetail } from "./style";
+import { EachEducation } from "./style";
 import MediaQuery from "react-responsive";
 
 export default function Education(props) {
 	const { name, program, city, dates } = props.education;
 
 	return (
-		<>
+		<EachEducation className="each-education">
 			<MediaQuery maxWidth={479}>
-				<ResumeDetail>
+				<div>
 					<b>{name}</b>
-				</ResumeDetail>
-				<ResumeDetail>
+				</div>
+				<div className="city-dates">
 					<span>{city}</span>
 					<span>{dates}</span>
-				</ResumeDetail>
-				<ResumeDetail>{program}</ResumeDetail>
-				{/* <ResumeDetail>{dates}</ResumeDetail> */}
+				</div>
+				<div>{program}</div>
 			</MediaQuery>
 			<MediaQuery minWidth={480}>
-				<ResumeDetail>
-					<div>
+				<div>
+					<span>
 						<b>{name}</b>
-					</div>
-					<div>{city}</div>
-				</ResumeDetail>
-				<ResumeDetail>
-					<div>{program}</div>
-					<div>{dates}</div>
-				</ResumeDetail>
+					</span>
+					<span>{city}</span>
+				</div>
+				<div>
+					<span>{program}</span>
+					<span>{dates}</span>
+				</div>
 			</MediaQuery>
-		</>
+		</EachEducation>
 	);
 }

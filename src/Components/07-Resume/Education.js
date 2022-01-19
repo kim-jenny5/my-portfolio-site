@@ -15,7 +15,9 @@ export default function Education(props) {
 					<span>{city}</span>
 					<span className="dates">{dates}</span>
 				</div>
-				<div>{program}</div>
+				<div>
+					<em>{program}</em>
+				</div>
 			</MediaQuery>
 			<MediaQuery minWidth={480}>
 				<div>
@@ -25,7 +27,9 @@ export default function Education(props) {
 					<span>{city}</span>
 				</div>
 				<div>
-					<span>{program}</span>
+					<span>
+						<em>{program}</em>
+					</span>
 					<span className="dates">{dates}</span>
 				</div>
 			</MediaQuery>

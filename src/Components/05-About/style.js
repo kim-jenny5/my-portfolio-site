@@ -100,8 +100,6 @@ export const TextCont = styled.div`
 		ul {
 			font-size: 1.25rem;
 		}
-
-		width: 45rem;
 	}
 
 	/* @media only screen and (min-width: 1200px) {

@@ -13,7 +13,6 @@ export const Jenny = styled.img`
 
 	@media only screen and (min-width: 320px) {
 		width: 125px;
-		/* width: 100px; */
 	}
 
 	@media only screen and (min-width: 480px) {
@@ -24,13 +23,11 @@ export const Jenny = styled.img`
 		width: 175px;
 	}
 
-	@media only screen and (min-width: 992px) {
-		/* width: 175px; */
+	/* @media only screen and (min-width: 992px) {
 	}
 
 	@media only screen and (min-width: 1200px) {
-		/* width: 175px; */
-	}
+	} */
 `;
 
 export const SNS = styled.div`
@@ -72,25 +69,22 @@ export const SNS = styled.div`
 	}
 
 	@media only screen and (min-width: 480px) {
-		column-gap: 40px;
-
 		a {
 			> svg {
-				padding: 8px;
 				width: 20px;
 				height: 20px;
 			}
 		}
 	}
 
-	@media only screen and (min-width: 768px) {
+	/* @media only screen and (min-width: 768px) {
 	}
 
 	@media only screen and (min-width: 992px) {
 	}
 
 	@media only screen and (min-width: 1200px) {
-	}
+	} */
 `;
 
 export const ContactCard = styled.div`
@@ -130,8 +124,6 @@ export const ContactCard = styled.div`
 		width: 400px;
 		margin-top: -80px;
 		padding-top: 100px;
-		/* padding-bottom: 40px;
-		row-gap: 20px; */
 
 		.basic-info {
 			> div:first-child {
@@ -148,18 +140,14 @@ export const ContactCard = styled.div`
 		width: 450px;
 		margin-top: -90px;
 		padding-top: 125px;
-		/* padding-bottom: 40px; */
-		/* row-gap: 20px; */
 	}
 
 	@media only screen and (min-width: 992px) {
-		/* width: 50%; */
-		padding-bottom: 50px;
 		width: 500px;
+		padding-bottom: 50px;
 	}
 
 	@media only screen and (min-width: 1200px) {
-		/* width: 50%; */
 		width: 600px;
 
 		.basic-info {
@@ -170,7 +158,6 @@ export const ContactCard = styled.div`
 	}
 
 	@media only screen and (min-width: 1201px) {
-		/* width: 40%; */
 		width: 500px;
 	}
 `;

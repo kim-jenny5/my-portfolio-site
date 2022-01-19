@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContactCont = styled.div`
 	/* background-color: lightsteelblue; */
 	padding-bottom: 100px;
-	z-index: -2;
+	/* z-index: -2; */
 
 	display: flex;
 	flex-direction: column;
@@ -32,8 +32,28 @@ export const SNS = styled.div`
 	align-self: center;
 
 	a {
+		cursor: pointer;
 		text-decoration: none;
 		color: #537962;
+		border: 1px solid #537962;
+		border-radius: 50%;
+
+		> svg {
+			padding: 8px;
+			width: 20px;
+			height: 20px;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+
+	a:hover {
+		background-color: #537962;
+		opacity: 90%;
+
+		> svg {
+			color: #eae3d7;
+		}
 	}
 `;
 
@@ -56,7 +76,7 @@ export const ContactCard = styled.div`
 	row-gap: 20px;
 
 	> div {
-		z-index: -1;
+		/* z-index: -1; */
 	}
 
 	.bold {

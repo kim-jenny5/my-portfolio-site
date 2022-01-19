@@ -15,15 +15,12 @@ export default function Contact() {
 				<div className="bold">Frontend Developer</div>
 				<SNS>
 					<a href="mailto:jennykimdev@gmail.com" target="_blank">
-						{/* <Envelope strokeWidth={2} size={30} /> */}
 						<AtSign />
 					</a>
 					<a href="https://github.com/kim-jenny5" target="_blank">
-						{/* <GithubFill strokeWidth={2} size={30} /> */}
 						<GitHub />
 					</a>
 					<a href="https://www.linkedin.com/in/kim-jenny5/" target="_blank">
-						{/* <LinkedInV1Fill strokeWidth={2} size={30} /> */}
 						<Linkedin />
 					</a>
 				</SNS>

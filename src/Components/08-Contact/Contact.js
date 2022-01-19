@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactCont, Jenny, ContactCard, TextCont, SNS } from "./style";
+import { ContactCont, Jenny, ContactCard, SNS } from "./style";
 import jenny from "../../media/jenny2.png";
 import { AtSign, Linkedin, GitHub } from "react-feather";
 

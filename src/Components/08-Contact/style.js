@@ -8,15 +8,34 @@ export const ContactCont = styled.div`
 `;
 
 export const Jenny = styled.img`
-	width: 175px;
 	z-index: 1;
 	align-self: center;
+
+	@media only screen and (min-width: 320px) {
+		width: 125px;
+		/* width: 100px; */
+	}
+
+	@media only screen and (min-width: 480px) {
+		width: 150px;
+	}
+
+	@media only screen and (min-width: 768px) {
+		width: 175px;
+	}
+
+	@media only screen and (min-width: 992px) {
+		/* width: 175px; */
+	}
+
+	@media only screen and (min-width: 1200px) {
+		/* width: 175px; */
+	}
 `;
 
 export const SNS = styled.div`
 	display: flex;
 	flex-direction: row;
-	column-gap: 40px;
 	align-self: center;
 
 	a {
@@ -27,9 +46,6 @@ export const SNS = styled.div`
 		border-radius: 50%;
 
 		> svg {
-			padding: 8px;
-			width: 20px;
-			height: 20px;
 			vertical-align: middle;
 			text-align: center;
 		}
@@ -37,54 +53,124 @@ export const SNS = styled.div`
 
 	a:hover {
 		background-color: #537962;
-		opacity: 90%;
 
 		> svg {
 			color: #eae3d7;
 		}
 	}
+
+	@media only screen and (min-width: 320px) {
+		column-gap: 40px;
+
+		a {
+			> svg {
+				padding: 8px;
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 480px) {
+		column-gap: 40px;
+
+		a {
+			> svg {
+				padding: 8px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+	}
+
+	@media only screen and (min-width: 992px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
+	}
 `;
 
 export const ContactCard = styled.div`
-	/* border: 1px solid #f5f3f6; */
 	border: 1px solid #eae3d7;
 	border-radius: 20px;
 	box-shadow: 3px 3px 6px #e0e0e0;
-	/* box-shadow: inset 3em 3em #eae3d7; */
-	width: 50%;
 	align-self: center;
 	text-align: center;
 
-	margin-top: -100px;
-	padding-top: 125px;
-	padding-bottom: 50px;
-
 	display: flex;
 	flex-direction: column;
-	row-gap: 20px;
-
-	> div {
-		/* z-index: -1; */
-	}
 
 	.bold {
 		font-weight: bold;
 	}
 
-	.basic-info {
-		> div:first-child {
-			font-family: DM Serif Display;
-			font-size: 1.75rem;
+	@media only screen and (min-width: 320px) {
+		width: 275px;
+		margin-top: -60px;
+		padding-top: 80px;
+		padding-bottom: 40px;
+		row-gap: 20px;
+
+		.basic-info {
+			> div:first-child {
+				font-family: DM Serif Display;
+				font-size: 1.25rem;
+			}
 		}
 
-		> div:last-child {
+		.job {
+			margin: 5px 0 5px 0;
+		}
+	}
+
+	@media only screen and (min-width: 480px) {
+		width: 400px;
+		margin-top: -80px;
+		padding-top: 100px;
+		/* padding-bottom: 40px;
+		row-gap: 20px; */
+
+		.basic-info {
+			> div:first-child {
+				font-size: 1.5rem;
+			}
+		}
+
+		.job {
 			font-size: 1.125rem;
 		}
 	}
 
-	.job {
-		margin-top: 5px;
-		margin-bottom: 5px;
-		font-size: 1.25rem;
+	@media only screen and (min-width: 768px) {
+		width: 450px;
+		margin-top: -90px;
+		padding-top: 125px;
+		/* padding-bottom: 40px; */
+		/* row-gap: 20px; */
+	}
+
+	@media only screen and (min-width: 992px) {
+		/* width: 50%; */
+		padding-bottom: 50px;
+		width: 500px;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		/* width: 50%; */
+		width: 600px;
+
+		.basic-info {
+			> div:first-child {
+				font-size: 1.625rem;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 1201px) {
+		/* width: 40%; */
+		width: 500px;
 	}
 `;

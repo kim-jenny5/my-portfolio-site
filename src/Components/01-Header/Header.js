@@ -2,6 +2,7 @@ import React from "react";
 import { HeaderCont, Button, NavBar, MobileNav } from "./style";
 import MediaQuery from "react-responsive";
 // import { ThreeLineHorizontal } from "akar-icons";
+import { Menu } from "react-feather";
 
 const handleRefresh = () => {
 	window.scrollTo({ top: 0, behavior: "smooth" });
@@ -54,6 +55,7 @@ export default function Header() {
 			{/* <MediaQuery minWidth={320} maxWidth={480}> */}
 			<MediaQuery maxWidth={480}>
 				{/* <ThreeLineHorizontal strokeWidth={2} size={30} className="hamburger" /> */}
+				<Menu />
 			</MediaQuery>
 			<MediaQuery minWidth={481}>
 				{/* {NavBarCont} */}

@@ -11,6 +11,10 @@ export const ResumeCont = styled.div`
 
 	row-gap: 1rem;
 
+	.dates {
+		text-align: end;
+	}
+
 	@media only screen and (min-width: 320px) {
 		width: 100%;
 	}
@@ -62,43 +66,17 @@ export const Title = styled.div`
 `;
 
 export const EducationCont = styled.div`
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	flex-direction: column; */
 
 	/* > div:first-child {
 		margin-bottom: 0.5rem;
 	} */
 
 	@media only screen and (min-width: 320px) {
-		/* > div:nth-child(3),
-		> div:nth-child(6),
-		> div:nth-child(9) {
-			flex-direction: row;
-			justify-content: space-between;
-		} */
-		/* div {
-			flex-direction: row;
-			justify-content: space-between;
-		}
- */
-		/* > div:nth-child(n + 2) {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-		}
-
-		div:nth-child(4),
-		div:nth-child(7) {
-			margin-bottom: 1rem;
-		} */
 	}
 
 	@media only screen and (min-width: 480px) {
-		/* div:nth-child(3),
-		div:nth-child(5) {
-			margin-bottom: 1rem;
-			column-gap: 1.5rem;
-		} */
 	}
 
 	@media only screen and (min-width: 768px) {
@@ -112,12 +90,12 @@ export const EducationCont = styled.div`
 `;
 
 export const ExperienceCont = styled.div`
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	flex-direction: column; */
 	/* justify-content: space-between; */
 
 	> div:first-child {
-		margin-bottom: 0.5rem;
+		/* margin-bottom: 0.5rem; */
 	}
 
 	> div:nth-child(3) {
@@ -125,15 +103,15 @@ export const ExperienceCont = styled.div`
 	}
 
 	ul {
-		margin-top: 0.5rem;
+		/* margin-top: 0.5rem; */
 		/* margin: 0.5rem 0 1rem 0; */
 	}
 	@media only screen and (min-width: 320px) {
-		> div:nth-child(3),
+		/* > div:nth-child(3),
 		> div:nth-child(7) {
 			flex-direction: row;
 			justify-content: space-between;
-		}
+		} */
 	}
 
 	@media only screen and (min-width: 480px) {
@@ -193,6 +171,16 @@ export const EachExperience = styled.div`
 	}
 
 	@media only screen and (min-width: 480px) {
+		div {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			font-size: 1.125rem;
+		}
+
+		ul {
+			padding-left: 5%;
+		}
 	}
 
 	@media only screen and (min-width: 768px) {

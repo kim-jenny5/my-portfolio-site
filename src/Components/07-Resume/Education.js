@@ -13,7 +13,7 @@ export default function Education(props) {
 				</div>
 				<div className="city-dates">
 					<span>{city}</span>
-					<span>{dates}</span>
+					<span className="dates">{dates}</span>
 				</div>
 				<div>{program}</div>
 			</MediaQuery>
@@ -26,7 +26,7 @@ export default function Education(props) {
 				</div>
 				<div>
 					<span>{program}</span>
-					<span>{dates}</span>
+					<span className="dates">{dates}</span>
 				</div>
 			</MediaQuery>
 		</EachEducation>

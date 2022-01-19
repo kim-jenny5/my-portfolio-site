@@ -13,7 +13,7 @@ export default function Experience(props) {
 				</div>
 				<div className="city-dates">
 					<span>{city}</span>
-					<span>{dates}</span>
+					<span className="dates">{dates}</span>
 				</div>
 				<div>
 					<em>{position}</em>
@@ -24,23 +24,25 @@ export default function Experience(props) {
 					))}
 				</ul>
 			</MediaQuery>
-			{/* <MediaQuery minWidth={480}>
+			<MediaQuery minWidth={480}>
 				<div>
-					<div>
+					<span>
 						<b>{name}</b>
-					</div>
-					<div>{city}</div>
+					</span>
+					<span>{city}</span>
 				</div>
 				<div>
-					<div>{position}</div>
-					<div>{dates}</div>
+					<span>
+						<em>{position}</em>
+					</span>
+					<span className="dates">{dates}</span>
 				</div>
 				<ul>
 					{description.map((desc, idx) => (
 						<li key={idx}>{desc}</li>
 					))}
 				</ul>
-			</MediaQuery> */}
+			</MediaQuery>
 		</EachExperience>
 	);
 }

@@ -1,5 +1,5 @@
-import { GlobalStyle } from "./appStyle";
-import { Wrapper } from "./appStyle";
+import { GlobalStyle } from "./style";
+import { Wrapper } from "./style";
 
 import Header from "./Components/01-Header/Header";
 import { Blob1, Blob2 } from "./Components/03-Blobs/Blobs";

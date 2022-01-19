@@ -1,8 +1,5 @@
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
-import blobbackground_large from "./media/blobs/blobbackground_large.png";
-import blobbackground_small from "./media/blobs/blobbackground_small.png";
-import blobbackground_medium from "./media/blobs/blobbackground_medium.png";
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -13,37 +10,6 @@ export const GlobalStyle = createGlobalStyle`
     position: relative;
     font-size: 100%;
     min-height: 100vh;
-
-    /* @media only screen and (min-width: 320px) {
-      background-image: url(${blobbackground_small});
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    @media only screen and (min-width: 480px) {
-      background-image: url(${blobbackground_medium});
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    
-    @media only screen and (min-width: 768px) {
-      background-image: url(${blobbackground_medium});
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    @media only screen and (min-width: 992px) {
-      background-image: url(${blobbackground_large});
-      background-repeat: no-repeat;
-      background-size: cover;
-
-    }
-
-    @media only screen and (min-width: 1200px) {
-      background-image: url(${blobbackground_large});
-      background-repeat: no-repeat;
-      background-size: cover;
-    } */
   }
   
   ::selection {

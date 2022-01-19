@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const AboutCont = styled.div`
-	/* background-color: lightgreen; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -9,12 +8,12 @@ export const AboutCont = styled.div`
 	justify-content: center;
 	padding-top: calc(100vh * 0.15);
 	padding-bottom: calc(100vh * 0.15);
-	/* height: 100vh; */
+	width: 100%;
 `;
 
 export const TopCont = styled.div`
-	/* background-color: lightblue; */
 	display: flex;
+	width: 100%;
 	justify-content: center;
 	align-items: center;
 
@@ -83,17 +82,11 @@ export const TextCont = styled.div`
 		row-gap: 1rem;
 	}
 
-	@media only screen and (min-width: 320px) {
-		ul {
-			font-size: 1rem;
-		}
-	}
+	/* @media only screen and (min-width: 320px) {
+	} */
 
-	@media only screen and (min-width: 480px) {
-		/* ul {
-			font-size: 1rem;
-		} */
-	}
+	/* @media only screen and (min-width: 480px) {
+	} */
 
 	@media only screen and (min-width: 768px) {
 		ul {
@@ -104,26 +97,20 @@ export const TextCont = styled.div`
 	}
 
 	@media only screen and (min-width: 992px) {
-		/* ul {
-			font-size: 1.125rem;
-		} */
+		ul {
+			font-size: 1.25rem;
+		}
 
 		width: 45rem;
 	}
 
-	@media only screen and (min-width: 1200px) {
-		/* ul {
-			font-size: 1.125rem;
-		} */
-
-		width: 40rem;
-	}
+	/* @media only screen and (min-width: 1200px) {
+	} */
 `;
 
 export const TechStack = styled.div`
 	display: flex;
 	padding: 2.5rem 0 2.5rem 0;
-	/* width: 90%; */
 	background: #f5f3f6;
 	border-radius: 30px;
 

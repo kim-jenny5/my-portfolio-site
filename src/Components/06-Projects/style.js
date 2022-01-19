@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const ProjectsCont = styled.div`
-	/* background-color: lightgoldenrodyellow; */
-
 	display: flex;
 	flex-direction: column;
 	row-gap: 1.5rem;
@@ -10,9 +8,6 @@ export const ProjectsCont = styled.div`
 	justify-content: center;
 	align-self: center;
 	padding-top: calc(100vh * 0.15);
-	/* padding-bottom: calc(100vh * 0.15); */
-
-	/* height: 100vh; */
 
 	/* @media only screen and (min-width: 320px) {
 	}
@@ -35,8 +30,6 @@ export const ProjectsCont = styled.div`
 `;
 
 export const TopCont = styled.div`
-	/* background-color: salmon; */
-
 	display: flex;
 	justify-content: space-between;
 	column-gap: 1.25rem;
@@ -47,7 +40,6 @@ export const TopCont = styled.div`
 
 		div + div {
 			font-size: 1.125rem;
-			/* font-size: 1rem; */
 		}
 
 		> img {
@@ -55,11 +47,8 @@ export const TopCont = styled.div`
 		}
 	}
 
-	@media only screen and (min-width: 480px) {
-		div + div {
-			font-size: 1.125rem;
-		}
-	}
+	/* @media only screen and (min-width: 480px) {
+	} */
 
 	@media only screen and (min-width: 768px) {
 		div + div {
@@ -69,16 +58,9 @@ export const TopCont = styled.div`
 
 	@media only screen and (min-width: 992px) {
 		flex-direction: row;
-
-		/* div + div {
-			font-size: 1.25rem;
-		} */
 	}
 
 	/* @media only screen and (min-width: 1200px) {
-		div + div {
-			font-size: 1.25rem;
-		}
 	} */
 `;
 
@@ -110,7 +92,6 @@ export const ProjectName = styled.div`
 `;
 
 export const BtmCont = styled.div`
-	/* background-color: lightblue; */
 	display: flex;
 	flex-direction: column;
 	row-gap: 1.5rem;

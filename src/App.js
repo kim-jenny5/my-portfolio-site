@@ -2,6 +2,7 @@ import { GlobalStyle } from "./appStyle";
 import { Wrapper } from "./appStyle";
 
 import Header from "./Components/01-Header/Header";
+import { Blob1, Blob2 } from "./Components/03-Blobs/Blobs";
 import Intro from "./Components/04-Intro/Intro";
 import About from "./Components/05-About/About";
 import Projects from "./Components/06-Projects/Projects";
@@ -13,9 +14,11 @@ export default function App() {
 	return (
 		<div>
 			<GlobalStyle />
+			<Blob1 />
+			<Blob2 />
 			<Header />
-			<Intro />
 			<Wrapper>
+				<Intro />
 				<About />
 				<Projects />
 				<Resume />

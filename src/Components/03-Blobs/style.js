@@ -1,16 +1,20 @@
 import styled from "styled-components";
-// import blobbackground from "../../media/blobs/blobbackground.png";
 
-export const Blob1Cont = styled.img``;
-
-export const Blob2Cont = styled.img`
-	display: inline;
+export const Blob1Cont = styled.img`
+	position: absolute;
 	margin: 0;
 	padding: 0;
+	left: 0;
+	top: 100vh;
+	transform: translateY(-100%);
+	z-index: -1;
 `;
-// export const Blob2Cont = styled.div``;
 
-// export const BlobsBackground = styled.span`
-// 	background-image: url("../../media/blobs/blobbackground.png");
-// 	background: cover;
-// `;
+export const Blob2Cont = styled.img`
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 0 !important;
+	right: 0;
+	z-index: -2;
+`;

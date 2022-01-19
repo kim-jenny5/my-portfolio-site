@@ -19,7 +19,9 @@ export const HeaderCont = styled.div`
 	font-family: DM Serif Display;
 	/* margin-top: 70px; */
 
-	margin: 2.031rem 2.031rem 0 2.031rem;
+	/* margin: 2.031rem 2.031rem 0 2.031rem; */
+	margin: 0 2.031rem 0 2.031rem;
+	padding-top: 2.031rem;
 
 	.hamburger {
 		display: flex;

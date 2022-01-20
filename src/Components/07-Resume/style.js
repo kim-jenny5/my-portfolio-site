@@ -28,17 +28,9 @@ export const Title = styled.div`
 		margin-bottom: 0.5rem;
 	}
 
-	/* @media only screen and (min-width: 480px) {
-		font-size: 1.25rem;
-	} */
-
 	@media only screen and (min-width: 768px) {
 		font-size: 1.375rem;
 	}
-
-	/* @media only screen and (min-width: 992px) {
-		font-size: 1.375rem;
-	} */
 
 	@media only screen and (min-width: 1200px) {
 		font-size: 1.5rem;
@@ -64,15 +56,6 @@ export const EachEducation = styled.div`
 			font-size: 1.125rem;
 		}
 	}
-
-	/* @media only screen and (min-width: 768px) {
-	}
-
-	@media only screen and (min-width: 992px) {
-	}
-
-	@media only screen and (min-width: 1200px) {
-	} */
 `;
 
 export const EachExperience = styled.div`
@@ -108,12 +91,6 @@ export const EachExperience = styled.div`
 			font-size: 1.125rem;
 		}
 	}
-
-	/* @media only screen and (min-width: 992px) {
-	}
-
-	@media only screen and (min-width: 1200px) {
-	} */
 `;
 
 export const DownloadBtn = styled.a`
@@ -130,16 +107,10 @@ export const DownloadBtn = styled.a`
 		padding: 0.625rem 1.375rem 0.625rem 1.375rem;
 	}
 
-	/* @media only screen and (min-width: 480px) {
-	} */
-
 	@media only screen and (min-width: 768px) {
 		font-size: 1.125rem;
 		padding: 0.75rem 1.5rem 0.75rem 1.5rem;
 	}
-
-	/* @media only screen and (min-width: 992px) {
-	} */
 
 	@media only screen and (min-width: 1200px) {
 		font-size: 1.25rem;

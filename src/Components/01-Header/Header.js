@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { HeaderCont, Logo, NavBar, MobileNav } from "./style";
 import MediaQuery from "react-responsive";
 import { Menu } from "react-feather";
@@ -51,13 +51,10 @@ export default function Header() {
 	return (
 		<HeaderCont className="header">
 			<Logo onClick={handleRefresh}>jennykim.</Logo>
-			{/* <MediaQuery minWidth={320} maxWidth={480}> */}
 			<MediaQuery maxWidth={480}>
-				{/* <ThreeLineHorizontal strokeWidth={2} size={30} className="hamburger" /> */}
 				<Menu />
 			</MediaQuery>
 			<MediaQuery minWidth={481}>
-				{/* {NavBarCont} */}
 				<NavBar>
 					<li>
 						<a href="#aboutme">About Me</a>

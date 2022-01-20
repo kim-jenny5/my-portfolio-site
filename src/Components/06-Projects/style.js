@@ -31,9 +31,6 @@ export const TopCont = styled.div`
 		}
 	}
 
-	/* @media only screen and (min-width: 480px) {
-	} */
-
 	@media only screen and (min-width: 768px) {
 		div + div {
 			font-size: 1.25rem;
@@ -43,9 +40,6 @@ export const TopCont = styled.div`
 	@media only screen and (min-width: 992px) {
 		flex-direction: row;
 	}
-
-	/* @media only screen and (min-width: 1200px) {
-	} */
 `;
 
 export const ProjectName = styled.div`
@@ -69,9 +63,6 @@ export const ProjectName = styled.div`
 		font-size: 1.75rem;
 		margin-top: 0;
 	}
-
-	/* @media only screen and (min-width: 1200px) {
-	} */
 `;
 
 export const BtmCont = styled.div`
@@ -116,15 +107,6 @@ export const BtmCont = styled.div`
 			font-size: 1rem;
 		}
 	}
-
-	/* @media only screen and (min-width: 768px) {
-	}
-
-	@media only screen and (min-width: 992px) {
-	}
-
-	@media only screen and (min-width: 1200px) {
-	} */
 `;
 
 export const ImgCont = styled.img`

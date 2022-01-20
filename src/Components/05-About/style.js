@@ -111,7 +111,7 @@ export const TechStack = styled.div`
 
 	@media only screen and (min-width: 320px) {
 		flex-direction: column;
-		row-gap: 20px;
+		row-gap: 1.25rem;
 		text-align: center;
 		width: 100%;
 
@@ -123,7 +123,7 @@ export const TechStack = styled.div`
 	}
 
 	@media only screen and (min-width: 480px) {
-		width: 450px;
+		width: 28.125rem;
 
 		span {
 			div:first-child {
@@ -134,7 +134,7 @@ export const TechStack = styled.div`
 
 	@media only screen and (min-width: 768px) {
 		text-align: center;
-		width: 500px;
+		width: 31.25rem;
 
 		span {
 			div:last-child {
@@ -147,7 +147,7 @@ export const TechStack = styled.div`
 		flex-direction: row;
 		justify-content: space-around;
 		text-align: start;
-		width: 950px;
+		width: 59.375rem;
 
 		span {
 			div:first-child {
@@ -157,6 +157,6 @@ export const TechStack = styled.div`
 	}
 
 	@media only screen and (min-width: 1200px) {
-		width: 1150px;
+		width: 71.875rem;
 	}
 `;

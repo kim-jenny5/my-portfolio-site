@@ -11,9 +11,8 @@ export default function About() {
 					<div className="section-title">About Me</div>
 					<ul>
 						<li>
-							I’m a 23-year old frontend developer, with a background in
-							business and a passion for design, based in the New York
-							Metropolitan Area.
+							I am a frontend developer, with a background in business and a
+							passion for design, based in the New York Metropolitan Area.
 						</li>
 						<li>
 							Utilizing my skills in organization and time management, I create
@@ -25,7 +24,7 @@ export default function About() {
 							I am a great team player, but I also value autonomy. I love to
 							listen to music or true crime podcasts as I wireframe and code. In
 							my free time, my hobbies are watching TV/movies, crocheting, and
-							playing Animal Crossing.
+							playing Animal Crossing. 🌱
 						</li>
 					</ul>
 				</TextCont>

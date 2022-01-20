@@ -1,27 +1,22 @@
 import React from "react";
 import { HeaderCont, Logo, NavBar, MobileNav, MobileHeaderCont } from "./style";
 import MediaQuery from "react-responsive";
-// import { Menu, X } from "react-feather";
-// import { slide as MobileMenu } from "react-burger-menu";
-import "animate.css";
 
 const handleRefresh = () => {
 	window.location.href = "";
 	window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-const handleClick = (e) => {
-	console.log("clicked!");
-};
+// const handleClick = (e) => {
+// 	console.log("clicked!");
+// };
 
 export default function Header() {
 	return (
 		<>
 			<MediaQuery maxWidth={480}>
 				<MobileHeaderCont className="header">
-					<Logo onClick={handleRefresh} className="logo">
-						jennykim.
-					</Logo>
+					<Logo onClick={handleRefresh}>jennykim.</Logo>
 					{/* <Menu onClick={handleClick} className="hamburger" />
 					<MobileNav className="mobile-nav animate__animated animate__fadeIn">
 						<div>

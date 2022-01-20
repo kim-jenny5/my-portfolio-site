@@ -15,7 +15,7 @@ export const HeaderCont = styled.div`
 	font-family: DM Serif Display;
 
 	margin: 0;
-	padding: 1rem 2rem 1rem 2rem;
+	padding: 0.5rem 2rem 0.5rem 2rem;
 	border-bottom: thin solid #294234;
 `;
 
@@ -75,9 +75,6 @@ export const NavBar = styled(NavBarTemplate)`
 		column-gap: 3rem;
 	}
 
-	/* @media only screen and (min-width: 992px) {
-	} */
-
 	@media only screen and (min-width: 1200px) {
 		font-size: 1.5rem;
 	}
@@ -90,7 +87,7 @@ export const MobileHeaderCont = styled.div`
 	backdrop-filter: blur(5px);
 
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-items: center;
 	justify-content: space-between;

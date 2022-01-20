@@ -2,6 +2,7 @@ import React from "react";
 import { IntroCont, MainCont, TextCont, Title, Subtitle, Jenny } from "./style";
 import jenny from "../../media/jenny.png";
 import Typical from "react-typical";
+import { ChevronsDown } from "react-feather";
 
 export default function Intro() {
 	return (
@@ -24,6 +25,9 @@ export default function Intro() {
 				</div>
 				<Jenny src={jenny}></Jenny>
 			</MainCont>
+			<a href="#aboutme">
+				<ChevronsDown className="arrow" />
+			</a>
 		</IntroCont>
 	);
 }

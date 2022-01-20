@@ -7,6 +7,21 @@ export const IntroCont = styled.div`
 	justify-items: center;
 	justify-content: center;
 	height: calc(100vh - 150px);
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		> .arrow {
+			text-decoration: none;
+
+			width: 40px;
+			height: 40px;
+			top: 100vh;
+			transform: translateY(200%);
+			z-index: -1;
+		}
+	}
 `;
 
 export const MainCont = styled.div`

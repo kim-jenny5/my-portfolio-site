@@ -35,8 +35,12 @@ export default function EachProject(props) {
 							GITHUB
 						</a>
 					)}
-					<a href={deployedSite}>SITE</a>
-					<a href={videoDemo}>VIDEO DEMO</a>
+					<a href={deployedSite} target="_blank">
+						SITE
+					</a>
+					<a href={videoDemo} target="_blank">
+						VIDEO DEMO
+					</a>
 				</div>
 			</BtmCont>
 		</>

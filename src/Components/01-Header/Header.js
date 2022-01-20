@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import { HeaderCont, Logo, NavBar, MobileNav } from "./style";
+import { HeaderCont, Logo, NavBar, MobileNav, MobileHeaderCont } from "./style";
 import MediaQuery from "react-responsive";
-import { Menu } from "react-feather";
+import { Menu, X } from "react-feather";
 import { slide as MobileMenu } from "react-burger-menu";
+import "animate.css";
 
 const handleRefresh = () => {
 	window.location.href = "";
@@ -12,11 +13,24 @@ const handleRefresh = () => {
 const handleClick = (e) => {
 	console.log("clicked!");
 	const nav = document.querySelector(".mobile-nav");
-	nav.style.display = "block";
+	const x = document.querySelector(".x");
+	const hamburger = document.querySelector(".hamburger");
+
+	if (nav.style.display === "none") {
+		nav.style.display = "block";
+		// hamburger.style.display = "none";
+		// x.style.display = "block";
+	} else {
+		nav.style.display = "none";
+		// hamburger.style.display = "none";
+		// X.style.display = "block";
+	}
+
+	// logo.style.display = "none";
+	// hamburger.style.display = "none";
 
 	// console.log(nav);
 
-	return;
 	// (
 	// 	<MobileNav>
 	// 	// 	<ul>
@@ -37,59 +51,53 @@ const handleClick = (e) => {
 	// );
 };
 
-// const handleOpen = () => {
-// 	console.log("clicked!");
-// };
-
 export default function Header() {
-	// useEffect(() => {
-	// 	const nav = document.querySelector(".mobile-nav");
-
-	// 	return () => {
-	// 		nav.style.display = "none";
-	// 	};
-	// });
-
 	return (
-		<HeaderCont className="header">
-			<Logo onClick={handleRefresh}>jennykim.</Logo>
+		<>
 			<MediaQuery maxWidth={480}>
-				<div>
-					<Menu onClick={handleClick} />
-					<MobileNav className="mobile-nav">
-						<li className="menu-item">
-							<a href="#aboutme">About Me</a>
-						</li>
-						<li className="menu-item">
-							<a href="#projects">Projects</a>
-						</li>
-						<li className="menu-item">
-							<a href="#resume">Resume</a>
-						</li>
-						<li className="menu-item">
-							<a href="#contact">Contact</a>
-						</li>
+				<MobileHeaderCont className="header">
+					<Logo onClick={handleRefresh} className="logo">
+						jennykim.
+					</Logo>
+					<Menu onClick={handleClick} className="hamburger" />
+					{/* <X className="x" /> */}
+					<MobileNav className="mobile-nav animate__animated animate__fadeIn">
+						<div>
+							<li className="menu-item">
+								<a href="#aboutme">About Me</a>
+							</li>
+							<li className="menu-item">
+								<a href="#projects">Projects</a>
+							</li>
+							<li className="menu-item">
+								<a href="#resume">Resume</a>
+							</li>
+							<li className="menu-item">
+								<a href="#contact">Contact</a>
+							</li>
+						</div>
 					</MobileNav>
-					{/* <MobileMenu right width={400}>
-					</MobileMenu> */}
-				</div>
+				</MobileHeaderCont>
 			</MediaQuery>
 			<MediaQuery minWidth={481}>
-				<NavBar>
-					<li>
-						<a href="#aboutme">About Me</a>
-					</li>
-					<li>
-						<a href="#projects">Projects</a>
-					</li>
-					<li>
-						<a href="#resume">Resume</a>
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-				</NavBar>
+				<HeaderCont>
+					<Logo onClick={handleRefresh}>jennykim.</Logo>
+					<NavBar>
+						<li>
+							<a href="#aboutme">About Me</a>
+						</li>
+						<li>
+							<a href="#projects">Projects</a>
+						</li>
+						<li>
+							<a href="#resume">Resume</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+					</NavBar>
+				</HeaderCont>
 			</MediaQuery>
-		</HeaderCont>
+		</>
 	);
 }

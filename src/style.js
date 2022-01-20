@@ -2,44 +2,48 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    color: #294234;
-    font-family: Source Sans Pro;
-    position: relative;
-    font-size: 100%;
-    min-height: 100vh;
-  }
+	html {
+		scroll-behavior: smooth;
+	}
+
+  	body {
+		margin: 0;
+		padding: 0;
+		color: #294234;
+		font-family: Source Sans Pro;
+		position: relative;
+		font-size: 100%;
+		min-height: 100vh;
+	}
   
-  ::selection {
-    background: #eae3d7
-  }
-  
-  .section-title {
-    font-family: DM Serif Display;
-	border-bottom: 1px solid #294234;
-
-	@media only screen and (min-width: 320px) {
-		font-size: 1.5rem;
+	::selection {
+		background: #eae3d7
 	}
+	
+	.section-title {
+		font-family: DM Serif Display;
+		border-bottom: 1px solid #294234;
 
-	@media only screen and (min-width: 480px) {
-		font-size: 1.625rem;
-	}
+		@media only screen and (min-width: 320px) {
+			font-size: 1.5rem;
+		}
 
-	@media only screen and (min-width: 768px) {
-		font-size: 1.75rem;
-	}
+		@media only screen and (min-width: 480px) {
+			font-size: 1.625rem;
+		}
 
-	@media only screen and (min-width: 992px) {
-		font-size: 1.875rem;
-	}
+		@media only screen and (min-width: 768px) {
+			font-size: 1.75rem;
+		}
 
-	@media only screen and (min-width: 1200px) {
-		font-size: 2rem;
+		@media only screen and (min-width: 992px) {
+			font-size: 1.875rem;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: 2rem;
+		}
 	}
-  }
 `;
 
 export const Wrapper = styled.div`

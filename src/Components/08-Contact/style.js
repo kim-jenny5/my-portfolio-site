@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 export const ContactCont = styled.div`
-	/* padding-bottom: 100px; */
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: calc(100vh - 60px);
+	height: calc(100vh - 3.75rem);
 `;
 
 export const Jenny = styled.img`
@@ -14,22 +12,16 @@ export const Jenny = styled.img`
 	align-self: center;
 
 	@media only screen and (min-width: 320px) {
-		width: 125px;
+		width: 8rem;
 	}
 
 	@media only screen and (min-width: 480px) {
-		width: 150px;
+		width: 9.375rem;
 	}
 
 	@media only screen and (min-width: 768px) {
-		width: 175px;
+		width: 11rem;
 	}
-
-	/* @media only screen and (min-width: 992px) {
-	}
-
-	@media only screen and (min-width: 1200px) {
-	} */
 `;
 
 export const SNS = styled.div`
@@ -59,13 +51,13 @@ export const SNS = styled.div`
 	}
 
 	@media only screen and (min-width: 320px) {
-		column-gap: 40px;
+		column-gap: 2.5rem;
 
 		a {
 			> svg {
-				padding: 8px;
-				width: 18px;
-				height: 18px;
+				padding: 0.5rem;
+				width: 1.125rem;
+				height: 1.125rem;
 			}
 		}
 	}
@@ -73,26 +65,17 @@ export const SNS = styled.div`
 	@media only screen and (min-width: 480px) {
 		a {
 			> svg {
-				width: 20px;
-				height: 20px;
+				width: 1.25rem;
+				height: 1.25rem;
 			}
 		}
 	}
-
-	/* @media only screen and (min-width: 768px) {
-	}
-
-	@media only screen and (min-width: 992px) {
-	}
-
-	@media only screen and (min-width: 1200px) {
-	} */
 `;
 
 export const ContactCard = styled.div`
-	border: 1px solid #eae3d7;
-	border-radius: 20px;
-	box-shadow: 3px 3px 6px #e0e0e0;
+	border: 1px solid #f5f3f6;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px #e0e0e0;
 	align-self: center;
 	text-align: center;
 
@@ -104,11 +87,11 @@ export const ContactCard = styled.div`
 	}
 
 	@media only screen and (min-width: 320px) {
-		width: 275px;
-		margin-top: -60px;
-		padding-top: 80px;
-		padding-bottom: 40px;
-		row-gap: 20px;
+		width: 17rem;
+		margin-top: -3.75rem;
+		padding-top: -5rem;
+		padding-bottom: 3.75rem;
+		row-gap: 1.25rem;
 
 		.basic-info {
 			> div:first-child {
@@ -118,14 +101,14 @@ export const ContactCard = styled.div`
 		}
 
 		.job {
-			margin: 5px 0 5px 0;
+			margin: 0.25rem 0 0.25rem 0;
 		}
 	}
 
 	@media only screen and (min-width: 480px) {
-		width: 400px;
-		margin-top: -80px;
-		padding-top: 100px;
+		width: 25rem;
+		margin-top: -5rem;
+		padding-top: 6.25rem;
 
 		.basic-info {
 			> div:first-child {
@@ -139,27 +122,23 @@ export const ContactCard = styled.div`
 	}
 
 	@media only screen and (min-width: 768px) {
-		width: 450px;
-		margin-top: -90px;
-		padding-top: 125px;
+		width: 28.125rem;
+		margin-top: -5.625rem;
+		padding-top: 7.75rem;
 	}
 
 	@media only screen and (min-width: 992px) {
-		width: 500px;
-		padding-bottom: 50px;
+		width: 31.25rem;
+		padding-bottom: 3.125rem;
 	}
 
 	@media only screen and (min-width: 1200px) {
-		width: 600px;
+		width: 35rem;
 
 		.basic-info {
 			> div:first-child {
 				font-size: 1.625rem;
 			}
 		}
-	}
-
-	@media only screen and (min-width: 1201px) {
-		width: 500px;
 	}
 `;

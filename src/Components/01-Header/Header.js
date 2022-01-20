@@ -1,7 +1,6 @@
-import React from "react";
-import { HeaderCont, Button, NavBar, MobileNav } from "./style";
+import React, { useEffect } from "react";
+import { HeaderCont, Logo, NavBar, MobileNav } from "./style";
 import MediaQuery from "react-responsive";
-// import { ThreeLineHorizontal } from "akar-icons";
 import { Menu } from "react-feather";
 
 const handleRefresh = () => {
@@ -50,8 +49,8 @@ const handleRefresh = () => {
 
 export default function Header() {
 	return (
-		<HeaderCont>
-			<Button onClick={handleRefresh}>jennykim.</Button>
+		<HeaderCont className="header">
+			<Logo onClick={handleRefresh}>jennykim.</Logo>
 			{/* <MediaQuery minWidth={320} maxWidth={480}> */}
 			<MediaQuery maxWidth={480}>
 				{/* <ThreeLineHorizontal strokeWidth={2} size={30} className="hamburger" /> */}

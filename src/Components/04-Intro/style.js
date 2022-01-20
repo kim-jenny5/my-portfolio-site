@@ -17,6 +17,10 @@ export const MainCont = styled.div`
 		flex-direction: column-reverse;
 		row-gap: 1.25rem;
 		text-align: center;
+
+		> div {
+			width: 100vw;
+		}
 	}
 
 	@media only screen and (min-width: 480px) {
@@ -29,6 +33,10 @@ export const MainCont = styled.div`
 		flex-direction: column-reverse;
 		row-gap: 1.25rem;
 		text-align: center;
+
+		> div {
+			width: 40.5rem;
+		}
 	}
 
 	@media only screen and (min-width: 992px) {
@@ -40,44 +48,43 @@ export const MainCont = styled.div`
 
 	@media only screen and (min-width: 1200px) {
 		justify-content: space-evenly;
-		width: 90%;
+		width: 85%;
 	}
 `;
 
 export const Title = styled.div`
-	font-family: Corben;
-	font-weight: bold;
+	font-family: DM Serif Display;
 
 	@media only screen and (min-width: 320px) {
-		font-size: 1.22rem;
-	}
-
-	@media only screen and (min-width: 480px) {
-		font-size: 1.5rem;
-	}
-
-	@media only screen and (min-width: 768px) {
-		font-size: 1.875rem;
-	}
-
-	@media only screen and (min-width: 992px) {
 		font-size: 1.75rem;
 	}
 
+	@media only screen and (min-width: 480px) {
+		font-size: 2rem;
+	}
+
+	@media only screen and (min-width: 768px) {
+		font-size: 2.5rem;
+	}
+
+	@media only screen and (min-width: 992px) {
+		font-size: 2.75rem;
+	}
+
 	@media only screen and (min-width: 1200px) {
-		font-size: 2.25rem;
+		font-size: 3rem;
 	}
 `;
 
 export const Subtitle = styled.div`
-	font-family: DM Serif Display;
+	font-family: Source Code Pro;
 
 	span {
 		color: #537962;
 	}
 
 	@media only screen and (min-width: 320px) {
-		font-size: 1.3rem;
+		font-size: 1.125rem;
 		margin-top: 1rem;
 	}
 
@@ -104,22 +111,22 @@ export const Subtitle = styled.div`
 
 export const Jenny = styled.img`
 	@media only screen and (min-width: 320px) {
-		width: 175px;
+		width: 11rem;
 	}
 
 	@media only screen and (min-width: 480px) {
-		width: 250px;
+		width: 15.625rem;
 	}
 
 	@media only screen and (min-width: 768px) {
-		width: 275px;
+		width: 17rem;
 	}
 
 	@media only screen and (min-width: 992px) {
-		width: 350px;
+		width: 21.875rem;
 	}
 
 	@media only screen and (min-width: 1200px) {
-		width: 400px;
+		width: 25rem;
 	}
 `;

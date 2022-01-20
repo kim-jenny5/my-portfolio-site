@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { HeaderCont, Logo, NavBar, MobileNav, MobileHeaderCont } from "./style";
 import MediaQuery from "react-responsive";
-import { Menu, X } from "react-feather";
-import { slide as MobileMenu } from "react-burger-menu";
+// import { Menu, X } from "react-feather";
+// import { slide as MobileMenu } from "react-burger-menu";
 import "animate.css";
 
 const handleRefresh = () => {
@@ -12,43 +12,6 @@ const handleRefresh = () => {
 
 const handleClick = (e) => {
 	console.log("clicked!");
-	const nav = document.querySelector(".mobile-nav");
-	const x = document.querySelector(".x");
-	const hamburger = document.querySelector(".hamburger");
-
-	if (nav.style.display === "none") {
-		nav.style.display = "block";
-		// hamburger.style.display = "none";
-		// x.style.display = "block";
-	} else {
-		nav.style.display = "none";
-		// hamburger.style.display = "none";
-		// X.style.display = "block";
-	}
-
-	// logo.style.display = "none";
-	// hamburger.style.display = "none";
-
-	// console.log(nav);
-
-	// (
-	// 	<MobileNav>
-	// 	// 	<ul>
-	// 	// 		<li>
-	// 	// 			<a href="#aboutme">About Me</a>
-	// 	// 		</li>
-	// 	// 		<li>
-	// 	// 			<a href="#projects">Projects</a>
-	// 	// 		</li>
-	// 	// 		<li>
-	// 	// 			<a href="#resume">Resume</a>
-	// 	// 		</li>
-	// 	// 		<li>
-	// 	// 			<a href="#contact">Contact</a>
-	// 	// 		</li>
-	// 	// 	</ul>
-	// 	// </MobileNav>
-	// );
 };
 
 export default function Header() {
@@ -59,8 +22,7 @@ export default function Header() {
 					<Logo onClick={handleRefresh} className="logo">
 						jennykim.
 					</Logo>
-					<Menu onClick={handleClick} className="hamburger" />
-					{/* <X className="x" /> */}
+					{/* <Menu onClick={handleClick} className="hamburger" />
 					<MobileNav className="mobile-nav animate__animated animate__fadeIn">
 						<div>
 							<li className="menu-item">
@@ -76,7 +38,7 @@ export default function Header() {
 								<a href="#contact">Contact</a>
 							</li>
 						</div>
-					</MobileNav>
+					</MobileNav> */}
 				</MobileHeaderCont>
 			</MediaQuery>
 			<MediaQuery minWidth={481}>

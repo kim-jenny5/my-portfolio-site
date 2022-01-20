@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const HeaderCont = styled.div`
 	position: sticky;
 	top: 0;
-	background-color: white;
-	/* background: rgba(255, 255, 255, 0.75); */
+	/* background-color: white; */
+	background: rgba(255, 255, 255, 0.75);
+	backdrop-filter: blur(5px);
 
 	display: flex;
 	flex-direction: row;

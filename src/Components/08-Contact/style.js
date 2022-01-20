@@ -89,7 +89,7 @@ export const ContactCard = styled.div`
 	@media only screen and (min-width: 320px) {
 		width: 17rem;
 		margin-top: -3.75rem;
-		padding-top: -5rem;
+		padding-top: 5rem;
 		padding-bottom: 3.75rem;
 		row-gap: 1.25rem;
 

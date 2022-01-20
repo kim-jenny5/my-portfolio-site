@@ -4,31 +4,33 @@ import MediaQuery from "react-responsive";
 import { Menu } from "react-feather";
 
 const handleRefresh = () => {
+	// window.location.href = "";
 	window.scrollTo({ top: 0, behavior: "smooth" });
-	window.location.href = "";
+	// window.location.pathname = "";
 };
 
-// const handleClick = () => {
-// 	console.log("clicked!");
-// 	return (
-// 		<MobileNav>
-// 			<ul>
-// 				<li>
-// 					<a href="#aboutme">About Me</a>
-// 				</li>
-// 				<li>
-// 					<a href="#projects">Projects</a>
-// 				</li>
-// 				<li>
-// 					<a href="#resume">Resume</a>
-// 				</li>
-// 				<li>
-// 					<a href="#contact">Contact</a>
-// 				</li>
-// 			</ul>
-// 		</MobileNav>
-// 	);
-// };
+const handleClick = () => {
+	console.log("clicked!");
+	return;
+	// (
+	// 	<MobileNav>
+	// 	// 	<ul>
+	// 	// 		<li>
+	// 	// 			<a href="#aboutme">About Me</a>
+	// 	// 		</li>
+	// 	// 		<li>
+	// 	// 			<a href="#projects">Projects</a>
+	// 	// 		</li>
+	// 	// 		<li>
+	// 	// 			<a href="#resume">Resume</a>
+	// 	// 		</li>
+	// 	// 		<li>
+	// 	// 			<a href="#contact">Contact</a>
+	// 	// 		</li>
+	// 	// 	</ul>
+	// 	// </MobileNav>
+	// );
+};
 
 // const NavBarCont = () => (
 // 	<NavBar>
@@ -52,7 +54,7 @@ export default function Header() {
 		<HeaderCont className="header">
 			<Logo onClick={handleRefresh}>jennykim.</Logo>
 			<MediaQuery maxWidth={480}>
-				<Menu />
+				<Menu onClick={handleClick} />
 			</MediaQuery>
 			<MediaQuery minWidth={481}>
 				<NavBar>

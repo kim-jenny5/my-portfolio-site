@@ -81,6 +81,10 @@ export const BtmCont = styled.div`
 		font-weight: bold;
 	}
 
+	a:hover {
+		background: #ebccc1;
+	}
+
 	@media only screen and (min-width: 320px) {
 		> div:first-child {
 			color: #537962;

@@ -50,23 +50,23 @@ export const TopCont = styled.div`
 
 export const AcnhBlob = styled.img`
 	@media only screen and (min-width: 320px) {
-		width: 200px;
+		width: 12.5rem;
 	}
 
 	@media only screen and (min-width: 480px) {
-		width: 250px;
+		width: 15.625rem;
 	}
 
 	@media only screen and (min-width: 768px) {
-		width: 275px;
+		width: 17rem;
 	}
 
 	@media only screen and (min-width: 992px) {
-		width: 350px;
+		width: 21.875rem;
 	}
 
 	@media only screen and (min-width: 1200px) {
-		width: 400px;
+		width: 25rem;
 	}
 `;
 
@@ -82,28 +82,19 @@ export const TextCont = styled.div`
 		row-gap: 1rem;
 	}
 
-	/* @media only screen and (min-width: 320px) {
-	} */
-
-	/* @media only screen and (min-width: 480px) {
-	} */
+	@media only screen and (min-width: 480px) {
+		ul {
+			font-size: 1.125rem;
+		}
+	}
 
 	@media only screen and (min-width: 768px) {
 		ul {
-			font-size: 1.125rem;
+			font-size: 1.25rem;
 		}
 
 		width: 40rem;
 	}
-
-	@media only screen and (min-width: 992px) {
-		ul {
-			font-size: 1.25rem;
-		}
-	}
-
-	/* @media only screen and (min-width: 1200px) {
-	} */
 `;
 
 export const TechStack = styled.div`

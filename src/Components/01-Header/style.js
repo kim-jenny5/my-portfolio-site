@@ -52,18 +52,27 @@ export const Logo = styled.button`
 	}
 `;
 
-export const NavBar = styled.ul`
+const NavBarTemplate = styled.ul`
 	display: flex;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+`;
+
+// export const NavBar = styled.ul`
+export const NavBar = styled(NavBarTemplate)`
 	@media only screen and (min-width: 320px) {
 		font-size: 1rem;
 	}
 
 	@media only screen and (min-width: 480px) {
 		font-size: 1.25rem;
+		column-gap: 2rem;
 	}
 
 	@media only screen and (min-width: 768px) {
@@ -71,15 +80,28 @@ export const NavBar = styled.ul`
 		column-gap: 3rem;
 	}
 
-	@media only screen and (min-width: 992px) {
-	}
+	/* @media only screen and (min-width: 992px) {
+	} */
 
 	@media only screen and (min-width: 1200px) {
 		font-size: 1.5rem;
 	}
+`;
+
+// export const MobileNav = styled.ul`
+export const MobileNav = styled(NavBarTemplate)`
+	display: none;
+	/* width: 100vw;
+	height: 100vh; */
+	/* background-color: white; */
+
+	/* display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 
 	a {
 		text-decoration: none;
 		color: inherit;
-	}
+	} */
 `;

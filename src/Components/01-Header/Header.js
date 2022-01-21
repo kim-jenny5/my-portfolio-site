@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderCont, Logo, NavBar MobileHeaderCont } from "./style";
+import { HeaderCont, Logo, NavBar, MobileHeaderCont } from "./style";
 import MediaQuery from "react-responsive";
 
 const handleRefresh = () => {

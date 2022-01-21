@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-// export const FooterCont = styled.div`
 export const FooterCont = styled.footer`
 	background: #eae3d7;
 	width: 100%;

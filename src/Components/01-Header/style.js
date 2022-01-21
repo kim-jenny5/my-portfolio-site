@@ -22,6 +22,8 @@ export const HeaderCont = styled.div`
 export const Logo = styled.button`
 	font-family: "DM Serif Display";
 	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
 	background-color: transparent;
 	border: none;
 	text-align: center;

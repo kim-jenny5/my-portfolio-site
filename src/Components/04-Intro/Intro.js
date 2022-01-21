@@ -1,5 +1,5 @@
 import React from "react";
-import { IntroCont, MainCont, TextCont, Title, Subtitle, Jenny } from "./style";
+import { IntroCont, MainCont, Title, Subtitle, Jenny } from "./style";
 import jenny from "../../media/jenny.png";
 import Typical from "react-typical";
 import { ChevronsDown } from "react-feather";

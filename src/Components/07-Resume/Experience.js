@@ -1,5 +1,5 @@
 import React from "react";
-import { ExperienceCont, EachExperience, Title } from "./style";
+import { EachExperience } from "./style";
 import MediaQuery from "react-responsive";
 
 export default function Experience(props) {

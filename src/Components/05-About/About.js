@@ -32,11 +32,11 @@ export default function About() {
 			<TechStack>
 				<span>
 					<div>Frontend 🦄</div>
-					<div>JavaScript / HTML / CSS / React / Redux</div>
+					<div>JavaScript / React / Redux / HTML / CSS </div>
 				</span>
 				<span>
 					<div>Design 🎨</div>
-					<div>Figma / Bootstrap / MUI</div>
+					<div>Figma / Bootstrap / MUI / styled-components </div>
 				</span>
 				<span>
 					<div>Backend 🤖</div>

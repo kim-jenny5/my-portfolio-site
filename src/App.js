@@ -8,6 +8,7 @@ import About from "./Components/05-About/About";
 import Projects from "./Components/06-Projects/Projects";
 // import Resume from "./Components/07-Resume/Resume";
 import Contact from "./Components/08-Contact/Contact";
+import Portfolio from "./Components/09-Portfolio/Portfolio";
 import Footer from "./Components/02-Footer/Footer";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
 				{/* <Resume /> */}
 				<Contact />
 			</Wrapper>
+			<Portfolio />
 			<Footer />
 		</div>
 	);

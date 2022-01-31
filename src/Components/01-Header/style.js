@@ -13,6 +13,7 @@ export const HeaderCont = styled.div`
 	justify-items: center;
 	justify-content: space-between;
 	font-family: DM Serif Display;
+	z-index: 2;
 
 	margin: 0;
 	padding: 0.5rem 2rem 0.5rem 2rem;

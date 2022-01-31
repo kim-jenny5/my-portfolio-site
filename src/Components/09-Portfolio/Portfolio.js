@@ -1,6 +1,10 @@
 import React from "react";
-import { PortfolioCont } from "./style";
+import { PortfolioCont, SemiCircle } from "./style";
 
 export default function Portfolio() {
-	return <PortfolioCont>Hello</PortfolioCont>;
+	return (
+		<PortfolioCont>
+			<SemiCircle>Hello</SemiCircle>
+		</PortfolioCont>
+	);
 }

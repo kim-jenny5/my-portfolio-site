@@ -24,7 +24,7 @@ export default function Portfolio() {
 						</a>
 					</span>
 				</div>
-				<div>for this portfolio</div>
+				<div>for this portfolio site</div>
 			</SemiCircle>
 		</PortfolioCont>
 	);

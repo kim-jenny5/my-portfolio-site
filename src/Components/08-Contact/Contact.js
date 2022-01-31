@@ -15,13 +15,25 @@ export default function Contact() {
 				</div>
 				<div className="bold job">Frontend Developer</div>
 				<SNS>
-					<a href="mailto:jennykimdev@gmail.com" target="_blank">
+					<a
+						href="mailto:jennykimdev@gmail.com"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<AtSign />
 					</a>
-					<a href="https://github.com/kim-jenny5" target="_blank">
+					<a
+						href="https://github.com/kim-jenny5"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<GitHub />
 					</a>
-					<a href="https://www.linkedin.com/in/kim-jenny5/" target="_blank">
+					<a
+						href="https://www.linkedin.com/in/kim-jenny5/"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<Linkedin />
 					</a>
 				</SNS>

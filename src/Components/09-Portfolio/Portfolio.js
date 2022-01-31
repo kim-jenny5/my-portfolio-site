@@ -1,10 +1,18 @@
 import React from "react";
-import { PortfolioCont, SemiCircle } from "./style";
+import { PortfolioCont, SemiCircle, TextCont } from "./style";
 
 export default function Portfolio() {
 	return (
 		<PortfolioCont>
-			<SemiCircle>Hello</SemiCircle>
+			<SemiCircle>
+				{/* <TextCont> */}
+				<div>This portfolio's</div>
+				<div>
+					<span>GitHub</span>
+					<span>Wireframes</span>
+				</div>
+				{/* </TextCont> */}
+			</SemiCircle>
 		</PortfolioCont>
 	);
 }

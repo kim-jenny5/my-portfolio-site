@@ -31,26 +31,26 @@ export default function EachProject(props) {
 				<div>
 					{githubLink.length === 2 ? (
 						<>
-							<a href={githubLink[0]} target="_blank">
+							<a href={githubLink[0]} target="_blank" rel="noreferrer">
 								BACKEND GITHUB
 							</a>
-							<a href={githubLink[1]} target="_blank">
+							<a href={githubLink[1]} target="_blank" rel="noreferrer">
 								FRONTEND GITHUB
 							</a>
 						</>
 					) : (
-						<a href={githubLink} target="_blank">
+						<a href={githubLink} target="_blank" rel="noreferrer">
 							GITHUB
 						</a>
 					)}
-					<a href={deployedSite} target="_blank">
+					<a href={deployedSite} target="_blank" rel="noreferrer">
 						SITE
 					</a>
-					<a href={videoDemo} target="_blank">
+					<a href={videoDemo} target="_blank" rel="noreferrer" s>
 						VIDEO DEMO
 					</a>
 					{wireframes ? (
-						<a href={wireframes} target="_blank">
+						<a href={wireframes} target="_blank" rel="noreferrer">
 							WIREFRAMES
 						</a>
 					) : null}

@@ -2,8 +2,16 @@ import React from "react";
 import { TopCont, ProjectName, BtmCont, ImgCont } from "./style";
 
 export default function EachProject(props) {
-	const { name, description, tech, githubLink, deployedSite, videoDemo, img } =
-		props.project;
+	const {
+		name,
+		description,
+		tech,
+		githubLink,
+		deployedSite,
+		videoDemo,
+		img,
+		wireframes
+	} = props.project;
 
 	const number = props.number;
 
@@ -41,6 +49,11 @@ export default function EachProject(props) {
 					<a href={videoDemo} target="_blank">
 						VIDEO DEMO
 					</a>
+					{wireframes ? (
+						<a href={wireframes} target="_blank">
+							WIREFRAMES
+						</a>
+					) : null}
 				</div>
 			</BtmCont>
 		</>

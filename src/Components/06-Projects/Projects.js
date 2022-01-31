@@ -19,7 +19,9 @@ const projects = [
 		],
 		deployedSite: "https://my-travelogue.netlify.app/",
 		videoDemo: "https://youtu.be/qy9HIfJedWk",
-		img: my_travelogue
+		img: my_travelogue,
+		wireframes:
+			"https://www.figma.com/file/67VF6XgZjFXI76jku75b1R/my-travelogue?node-id=0%3A1"
 	},
 	{
 		name: "Tableau d'Ambiance",
@@ -32,7 +34,9 @@ const projects = [
 		],
 		deployedSite: "https://tableau-dambiance.netlify.app/",
 		videoDemo: "https://youtu.be/JCeUpYs0Jlo",
-		img: tableau_dambiance
+		img: tableau_dambiance,
+		wireframes:
+			"https://www.figma.com/file/1Yy7EGwFi4K0ELf8sKoa7V/Tableau-d'Ambiance?node-id=0%3A1"
 	},
 	{
 		name: "Pilim",
@@ -41,7 +45,9 @@ const projects = [
 		githubLink: "https://github.com/kim-jenny5/pilim-project",
 		deployedSite: "https://pilim-project.herokuapp.com/",
 		videoDemo: "https://youtu.be/1CdiE-hHL2U",
-		img: pilim
+		img: pilim,
+		wireframes:
+			"https://www.figma.com/file/UuK0hykqZh11Na2UjSM42o/pilim?node-id=0%3A1"
 	},
 	{
 		name: "My Daily Journal",

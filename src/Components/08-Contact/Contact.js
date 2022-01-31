@@ -26,7 +26,7 @@ export default function Contact() {
 					</a>
 				</SNS>
 				<DownloadBtn href={resume} download>
-					Download Full Resume
+					Download Resume
 				</DownloadBtn>
 				<div>
 					<div>City</div>

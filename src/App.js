@@ -6,7 +6,7 @@ import { Blob1, Blob2 } from "./Components/03-Blobs/Blobs";
 import Intro from "./Components/04-Intro/Intro";
 import About from "./Components/05-About/About";
 import Projects from "./Components/06-Projects/Projects";
-import Resume from "./Components/07-Resume/Resume";
+// import Resume from "./Components/07-Resume/Resume";
 import Contact from "./Components/08-Contact/Contact";
 import Footer from "./Components/02-Footer/Footer";
 

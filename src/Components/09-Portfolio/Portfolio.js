@@ -1,17 +1,30 @@
 import React from "react";
-import { PortfolioCont, SemiCircle, TextCont } from "./style";
+import { PortfolioCont, SemiCircle } from "./style";
 
 export default function Portfolio() {
 	return (
 		<PortfolioCont>
 			<SemiCircle>
-				{/* <TextCont> */}
-				<div>This portfolio's</div>
 				<div>
-					<span>GitHub</span>
-					<span>Wireframes</span>
+					<span>
+						<a
+							href="https://github.com/kim-jenny5/my-portfolio-site"
+							target="_blank"
+							rel="noreferrer"
+						>
+							GitHub
+						</a>
+						/
+						<a
+							href="https://www.figma.com/file/m8lN7wdXg9pB8MQMqSyt5V/Portfolio-Website?node-id=0%3A1"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Wireframes
+						</a>
+					</span>
 				</div>
-				{/* </TextCont> */}
+				<div>for this portfolio</div>
 			</SemiCircle>
 		</PortfolioCont>
 	);

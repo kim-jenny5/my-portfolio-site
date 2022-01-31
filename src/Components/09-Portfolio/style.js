@@ -8,26 +8,35 @@ export const PortfolioCont = styled.div`
 `;
 
 export const SemiCircle = styled.div`
+	display: flex;
+	flex-direction: column;
 	align-self: center;
-	width: 300px;
-	height: 150px;
-	background-color: lightgray;
-	border-radius: 150px 150px 0px 0px;
+	background-color: #f5f3f6;
 	text-align: center;
 	align-items: center;
-	/* row-gap: 20px; */
+	row-gap: 10px;
+	width: 300px;
+	height: 150px;
+	border-radius: 150px 150px 0px 0px;
 
 	> div:first-child {
-		margin-top: 50px;
+		margin-top: 65px;
+		align-items: center;
+
+		> span {
+			display: flex;
+			flex-direction: row;
+			column-gap: 10px;
+
+			> a {
+				color: inherit;
+			}
+		}
 	}
 
 	> div:last-child {
-		display: flex;
-		flex-direction: row;
-
-		/* justify-content: center; */
-		justify-content: space-evenly;
-		/* column-gap: 5px; */
+		font-family: DM Serif Display;
+		font-style: italic;
 	}
 `;
 

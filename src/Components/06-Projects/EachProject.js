@@ -10,7 +10,8 @@ export default function EachProject(props) {
 		deployedSite,
 		videoDemo,
 		img,
-		wireframes
+		wireframes,
+		userStory
 	} = props.project;
 
 	const number = props.number;
@@ -52,6 +53,11 @@ export default function EachProject(props) {
 					{wireframes ? (
 						<a href={wireframes} target="_blank" rel="noreferrer">
 							WIREFRAMES
+						</a>
+					) : null}
+					{userStory ? (
+						<a href={userStory} target="_blank" rel="noreferrer">
+							USER STORY
 						</a>
 					) : null}
 				</div>

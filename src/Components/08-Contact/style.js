@@ -72,6 +72,31 @@ export const SNS = styled.div`
 	}
 `;
 
+export const DownloadBtn = styled.a`
+	background: #988671;
+	border-radius: 1.875rem;
+	text-decoration: none;
+	text-align: center;
+	width: fit-content;
+	font-weight: bold;
+	color: #f5f3f6;
+	align-self: center;
+
+	/* @media only screen and (min-width: 320px) {
+		padding: 0.625rem 1.375rem 0.625rem 1.375rem;
+	}
+
+	@media only screen and (min-width: 768px) {
+		font-size: 1.125rem;
+		padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		font-size: 1.25rem;
+		padding: 0.875rem 1.75rem 0.875rem 1.75rem;
+	} */
+`;
+
 export const ContactCard = styled.div`
 	border: 1px solid #f5f3f6;
 	border-radius: 10px;

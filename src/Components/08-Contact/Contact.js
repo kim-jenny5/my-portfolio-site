@@ -1,6 +1,7 @@
 import React from "react";
-import { ContactCont, Jenny, ContactCard, SNS } from "./style";
+import { ContactCont, Jenny, ContactCard, SNS, DownloadBtn } from "./style";
 import jenny from "../../media/jenny2.png";
+import resume from "../../media/jenny_kim_resume.pdf";
 import { AtSign, Linkedin, GitHub } from "react-feather";
 
 export default function Contact() {
@@ -24,6 +25,9 @@ export default function Contact() {
 						<Linkedin />
 					</a>
 				</SNS>
+				<DownloadBtn href={resume} download>
+					Download Full Resume
+				</DownloadBtn>
 				<div>
 					<div>City</div>
 					<div className="bold">New York, NY</div>

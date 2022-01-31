@@ -21,7 +21,7 @@ export default function App() {
 				<Intro />
 				<About />
 				<Projects />
-				<Resume />
+				{/* <Resume /> */}
 				<Contact />
 			</Wrapper>
 			<Footer />

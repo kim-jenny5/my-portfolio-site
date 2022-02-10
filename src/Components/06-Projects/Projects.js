@@ -3,7 +3,6 @@ import daily_journal from "../../media/screenshots/01_my_daily_journal.png";
 import pilim from "../../media/screenshots/02_pilim.png";
 import tableau_dambiance from "../../media/screenshots/03_tableau_dambiance.png";
 import my_travelogue from "../../media/screenshots/04_my_travelogue.png";
-import userstory from "../../media/userstory.jpeg";
 import { ProjectsCont } from "./style";
 import EachProject from "./EachProject";
 
@@ -49,7 +48,8 @@ const projects = [
 		img: pilim,
 		wireframes:
 			"https://www.figma.com/file/UuK0hykqZh11Na2UjSM42o/pilim?node-id=0%3A1",
-		userStory: userstory
+		userScenarios:
+			"https://jennyjellybeans.notion.site/User-Scenarios-0972e7c5221a425d91e517d0396e5608"
 	},
 	{
 		name: "My Daily Journal",

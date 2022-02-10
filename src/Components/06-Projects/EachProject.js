@@ -11,7 +11,7 @@ export default function EachProject(props) {
 		videoDemo,
 		img,
 		wireframes,
-		userStory
+		userScenarios
 	} = props.project;
 
 	const number = props.number;
@@ -50,14 +50,14 @@ export default function EachProject(props) {
 					<a href={videoDemo} target="_blank" rel="noreferrer" s>
 						VIDEO DEMO
 					</a>
+					{userScenarios ? (
+						<a href={userScenarios} target="_blank" rel="noreferrer">
+							USER STORY
+						</a>
+					) : null}
 					{wireframes ? (
 						<a href={wireframes} target="_blank" rel="noreferrer">
 							WIREFRAMES
-						</a>
-					) : null}
-					{userStory ? (
-						<a href={userStory} target="_blank" rel="noreferrer">
-							USER STORY
 						</a>
 					) : null}
 				</div>

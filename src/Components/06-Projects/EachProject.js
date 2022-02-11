@@ -52,7 +52,7 @@ export default function EachProject(props) {
 					</a>
 					{userScenarios ? (
 						<a href={userScenarios} target="_blank" rel="noreferrer">
-							USER STORY
+							USER SCENARIOS
 						</a>
 					) : null}
 					{wireframes ? (

@@ -1,4 +1,4 @@
-Hello! If you're reading this, that means you're interested in the nitty-gritty behind the technologies I used for my website, or you were just following a trail of links and you ended up here. Regardless, enjoy!
+Hello! If you're reading this, that means you're interested in the nitty-gritty behind the technologies I used for [my portfolio website](https://jennykim.dev/), or you were just following a trail of links and you ended up here. Regardless, enjoy!
 
 Disclaimer: I do not own any Animal Crossing content displayed. All rights go to its rightful owner, Nintendo.
 

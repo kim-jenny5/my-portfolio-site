@@ -115,7 +115,6 @@ export const MobileNav = styled(NavBarTemplate)`
 	left: 0;
 
 	background-color: #eae3d7;
-	/* background: rgba(255, 255, 255, 0.75); */
 
 	padding: 10px 0 10px 0;
 	width: 100vw;

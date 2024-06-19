@@ -1,7 +1,7 @@
 import React from "react";
 import { TopCont, ProjectName, BtmCont, ImgCont } from "./style";
 
-export default function EachProject(props) {
+export default function Project(props) {
 	const {
 		name,
 		description,

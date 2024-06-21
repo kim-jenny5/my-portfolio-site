@@ -17,15 +17,15 @@ export default function App() {
 	return (
 		<div>
 			<GlobalStyle />
-			<Blob1 />
-			<Blob2 />
-			<Header />
 			<Routes>
 				<Route
 					exact
 					path="/"
 					element={
 						<>
+							<Blob1 />
+							<Blob2 />
+							<Header />
 							<Wrapper>
 								<Intro />
 								<About />
@@ -39,8 +39,6 @@ export default function App() {
 				/>
 				<Route path="/test" element={<Test />} />
 			</Routes>
-			<Portfolio />
-			<Footer />
 		</div>
 	);
 }

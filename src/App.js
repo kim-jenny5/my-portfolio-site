@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import { GlobalStyle } from "./style";
 import { Wrapper } from "./style";
 
@@ -10,6 +11,8 @@ import Contact from "./Components/08-Contact/Contact";
 import Portfolio from "./Components/09-Portfolio/Portfolio";
 import Footer from "./Components/02-Footer/Footer";
 
+import Test from "./Components/Test/index";
+
 export default function App() {
 	return (
 		<div>
@@ -17,12 +20,25 @@ export default function App() {
 			<Blob1 />
 			<Blob2 />
 			<Header />
-			<Wrapper>
-				<Intro />
-				<About />
-				<Projects />
-				<Contact />
-			</Wrapper>
+			<Routes>
+				<Route
+					exact
+					path="/"
+					element={
+						<>
+							<Wrapper>
+								<Intro />
+								<About />
+								<Projects />
+								<Contact />
+							</Wrapper>
+							<Portfolio />
+							<Footer />
+						</>
+					}
+				/>
+				<Route path="/test" element={<Test />} />
+			</Routes>
 			<Portfolio />
 			<Footer />
 		</div>

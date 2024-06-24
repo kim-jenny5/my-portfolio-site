@@ -8,7 +8,8 @@ module.exports = {
 				obsidian: '#1C1D21',
 				grape: '#742DDF',
 				mushroom: '#A59980',
-				cream: '#E6E4DE'
+				cream: '#E6E4DE',
+				cloud: '#f8f9fa'
 			}
 		}
 	},

@@ -1,44 +1,24 @@
-import { Routes, Route } from "react-router-dom";
-import { GlobalStyle } from "./style";
-import { Wrapper } from "./style";
-
-import Header from "./Components/01-Header/Header";
-import { Blob1, Blob2 } from "./Components/03-Blobs/Blobs";
-import Intro from "./Components/04-Intro/Intro";
-import About from "./Components/05-About/About";
-import Projects from "./Components/06-Projects/Projects";
-import Contact from "./Components/08-Contact/Contact";
-import Portfolio from "./Components/09-Portfolio/Portfolio";
-import Footer from "./Components/02-Footer/Footer";
-
-import Test from "./Components/Test/index";
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './views/Home';
+import About from './views/About';
+import Contact from './views/Contact';
+import Projects from './views/Projects';
 
 export default function App() {
 	return (
-		<div>
-			<GlobalStyle />
-			<Routes>
-				<Route
-					exact
-					path="/"
-					element={
-						<>
-							<Blob1 />
-							<Blob2 />
-							<Header />
-							<Wrapper>
-								<Intro />
-								<About />
-								<Projects />
-								<Contact />
-							</Wrapper>
-							<Portfolio />
-							<Footer />
-						</>
-					}
-				/>
-				<Route path="/test" element={<Test />} />
-			</Routes>
+		<div className='flex flex-col min-h-screen bg-cloud'>
+			<Header />
+			<main className='flex-grow'>
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/projects' element={<Contact />} />
+					<Route path='/contact' element={<Projects />} />
+				</Routes>
+			</main>
+			<Footer />
 		</div>
 	);
 }

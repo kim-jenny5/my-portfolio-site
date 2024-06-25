@@ -10,7 +10,7 @@ export default function App() {
 	return (
 		<div className='flex flex-col min-h-screen bg-cloud'>
 			<Header />
-			<main className='flex-grow'>
+			<main className='grow content-center'>
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />
@@ -18,6 +18,7 @@ export default function App() {
 					<Route path='/contact' element={<Projects />} />
 				</Routes>
 			</main>
+			w
 			<Footer />
 		</div>
 	);

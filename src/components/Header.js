@@ -1,34 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useIsHome } from '../hooks/useIsHome';
 
 export default function Header() {
+	const isHome = useIsHome();
+
 	return (
-		<nav className='flex justify-between items-center p-6'>
-			<div>
-				<Link
-					to='/'
-					className='inline-block uppercase font-medium text-orion text-5xl hover:brightness-150'
-				>
-					Jenny Kim
-				</Link>
-				<div className='inline-block rounded-full w-2 h-2 bg-obsidian ml-1'></div>
-			</div>
-			<div className='flex gap-x-6'>
+		<nav
+			className={`w-full p-6 flex flex-col gap-y-2 uppercase ${
+				isHome ? 'text-obsidian' : 'text-orion'
+			} text-3xl uppercase`}
+		>
+			{!isHome && (
+				<div className='text-center font-semibold'>
+					<Link to='/' className='hover:brightness-150'>
+						Jenny Kim
+					</Link>
+				</div>
+			)}
+			<div className='flex justify-around font-medium text-lg xl:text-2xl'>
 				<Link
 					to='/about'
-					className='uppercase font-medium text-orion text-xl hover:brightness-150'
+					className='px-2 hover:bg-obsidian hover:text-cream active:text-mushroom'
 				>
 					About
 				</Link>
 				<Link
 					to='/projects'
-					className='uppercase font-medium text-orion text-xl hover:brightness-150'
+					className='px-2 hover:bg-obsidian hover:text-cream active:text-mushroom'
 				>
 					Projects
 				</Link>
 				<Link
 					to='/contact'
-					className='uppercase font-medium text-orion text-xl hover:brightness-150'
+					className='px-2 hover:bg-obsidian hover:text-cream active:text-mushroom'
 				>
 					Contact
 				</Link>

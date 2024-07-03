@@ -8,18 +8,19 @@ import Projects from './views/Projects';
 
 export default function App() {
 	return (
-		<div className='flex flex-col min-h-screen bg-cloud'>
-			<Header />
-			<main className='grow content-center'>
-				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/about' element={<About />} />
-					<Route path='/projects' element={<Contact />} />
-					<Route path='/contact' element={<Projects />} />
-				</Routes>
-			</main>
-			w
-			<Footer />
+		<div className='bg-cloud min-h-screen flex flex-col'>
+			<div className='flex flex-col w-full h-full max-w-screen-xl mx-auto flex-grow'>
+				<Header />
+				<main className='w-full h-full grow justify-center items-center'>
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/about' element={<About />} />
+						{/* <Route path='/projects' element={<Contact />} /> */}
+						<Route path='/contact' element={<Projects />} />
+					</Routes>
+				</main>
+				<Footer />
+			</div>
 		</div>
 	);
 }

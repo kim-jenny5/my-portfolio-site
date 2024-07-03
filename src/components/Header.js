@@ -1,42 +1,40 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { useIsHome } from '../hooks/useIsHome';
+import { Link, NavLink } from 'react-router-dom';
+// import { useIsHome } from '../hooks/useIsHome';
+import { Home } from 'react-feather';
 
 export default function Header() {
-	const isHome = useIsHome();
+	// const isHome = useIsHome();
 
 	return (
 		<nav
-			className={`w-full p-6 flex flex-col gap-y-2 uppercase ${
-				isHome ? 'text-obsidian' : 'text-orion'
-			} text-3xl uppercase`}
+			className={`w-full py-6 flex flex-col gap-y-2 uppercase text-obsidian text-3xl uppercase`}
 		>
-			{!isHome && (
-				<div className='text-center font-semibold'>
-					<Link to='/' className='hover:brightness-150'>
-						Jenny Kim
-					</Link>
-				</div>
-			)}
-			<div className='flex justify-around font-medium text-lg xl:text-2xl'>
-				<Link
+			<div className='grid grid-cols-3 font-medium text-lg xl:text-2xl'>
+				<NavLink
+					to='/'
+					// className='justify-self-center w-min px-2 active:text-mushroom'
+					className={({ isActive }) =>
+						`justify-self-center w-min px-2 active:text-mushroom ${
+							isActive ? 'underline' : 'hover:bg-obsidian hover:text-cream'
+						}`
+					}
+				>
+					{/* <Home /> */}
+					Home
+				</NavLink>
+				<NavLink
 					to='/about'
-					className='px-2 hover:bg-obsidian hover:text-cream active:text-mushroom'
+					className='justify-self-center w-min px-2 hover:bg-obsidian hover:text-cream active:text-mushroom'
 				>
 					About
-				</Link>
-				<Link
-					to='/projects'
-					className='px-2 hover:bg-obsidian hover:text-cream active:text-mushroom'
-				>
-					Projects
-				</Link>
-				<Link
+				</NavLink>
+				<NavLink
 					to='/contact'
-					className='px-2 hover:bg-obsidian hover:text-cream active:text-mushroom'
+					className='justify-self-center w-min px-2 hover:bg-obsidian hover:text-cream active:text-mushroom'
 				>
 					Contact
-				</Link>
+				</NavLink>
 			</div>
 		</nav>
 	);

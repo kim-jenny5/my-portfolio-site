@@ -2,6 +2,16 @@ module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
+			screens: {
+				tablet: '768px',
+				// tabletLandscape: '1024px',
+				desktop: '1128px',
+				widescreen: '1440px'
+			},
+			fontFamily: {
+				roboto: ['Roboto', 'sans-serif'],
+				poppins: ['Poppins', 'sans-serif']
+			},
 			colors: {
 				orion: '#1D5AE9',
 				moss: '#BABE6D',

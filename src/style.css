@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	@apply font-roboto text-obsidian bg-cloud;
+	/* @apply font-roboto text-obsidian bg-cream; */
+}
+
+::selection {
+	background-color: #a59980;
+	color: #000000;
+}
+
+/* .main {
+	@apply w-full h-full grow px-3 tablet:px-5 desktop:px-0;
+} */

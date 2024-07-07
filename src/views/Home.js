@@ -3,33 +3,20 @@ import home_profile from '../assets/images/home_profile.jpg';
 
 export default function Home() {
 	return (
-		// <div className='relative flex justify-center px-12 text-obsidian font-bold tracking-tighter uppercase'>
-		// 	<div className='absolute top-0 -translate-y-1/2 z-10 text-5xl md:text-7xl xl:text-8xl'>
-		// 		Jenny Kim
-		// 	</div>
-		// 	<div className='absolute bottom-0 translate-y-1/3 z-10 md:text-5xl xl:text-6xl'>
-		// 		Fullstack Engineer
-		// 	</div>
-		// 	<div className='w-32 h-32 md:w-72 md:h-72 overflow-hidden rounded-full'>
-		// 		<img
-		// 			src={home_profile}
-		// 			alt='home-profile'
-		// 			className='w-full h-full object-cover object-right scale-125'
-		// 			loading='lazy'
-		// 		/>
-		// 	</div>
-		// </div>
-		<div className='w-full h-full grid grid-cols-4 grid-rows-auto gap-y-4'>
-			{/* <div className='justify-self-end col-start-4 w-32 h-32 md:w-64 md:h-64 overflow-hidden rounded-full'> */}
-			<div className='col-start-1 w-32 h-32 md:w-64 md:h-64 overflow-hidden rounded-lg'>
+		<div className='w-full h-full grid grid-cols-6 grid-rows-2'>
+			{/* <div className='row-start-2 col-span-full aspect-[4/3] w-2/5 overflow-hidden rounded'> */}
+			<div className='row-start-2 col-start-2 col-span-2 aspect-[4/3] overflow-hidden rounded'>
+				{/* <div className='justify-self-end col-start-4 w-32 h-32 md:w-64 md:h-64 overflow-hidden rounded-full'> */}
+				{/* <div className='col-start-3 col-span-3 w-full h-full overflow-hidden rounded'> */}
 				<img
 					src={home_profile}
 					alt='home-profile'
-					className='w-full h-full object-cover object-right scale-125'
+					className='w-full h-full object-cover'
+					// className='w-full h-full object-cover object-right scale-125'
 					loading='lazy'
 				/>
 			</div>
-			<div className='row-start-2 col-start-1 col-span-2 uppercase'>
+			<div className='row-start-3 uppercase'>
 				<div className='font-medium text-2xl'>Hi, I'm Jenny</div>
 				<div className='text-lg'>
 					{/* <span className='bg-obsidian px-2 py-1 text-white'> */}

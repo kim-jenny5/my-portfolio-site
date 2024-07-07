@@ -7,7 +7,9 @@ export default function Footer() {
 
 	return (
 		<footer
-			className={'uppercase text-xs text-center p-1.5 tablet:p-2.5 desktop:p-4'}
+			className={
+				'uppercase text-xs text-center p-3 tablet:p-5 desktop:px-8 widescreen:px-0'
+			}
 		>
 			© {currentYear} Jenny Kim
 		</footer>

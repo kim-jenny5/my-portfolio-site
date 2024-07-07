@@ -9,14 +9,11 @@ import Contact from './views/Contact';
 export default function App() {
 	return (
 		<div className='w-full h-full min-h-screen max-w-screen-desktop mx-auto flex flex-col'>
-			{/* <div className='col-span-full flex flex-col w-full h-full max-w-screen-xl mx-auto flex-grow'> */}
 			<Header />
-			{/* <main className='w-full h-full grow grid grid-cols-12 px-3 gap-x-3 tablet:px-5 tablet:gap-x-5 desktop:px-8 desktop:gap-x-8'> */}
-			<main className='w-full h-full grow px-3 tablet:px-5 desktop:px-8 widescreen:px-0'>
+			<main className='grow grid grid-cols-12 grid-rows-[1fr_2fr_2fr] gap-x-3 px-3 tablet:px-5 tablet:gap-x-5 desktop:px-8 desktop:gap-x-8 widescreen:px-0'>
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />
-					{/* <Route path='/projects' element={<Projects />} /> */}
 					<Route path='/contact' element={<Contact />} />
 				</Routes>
 			</main>

@@ -4,13 +4,13 @@ import Footer from './components/Footer';
 import Home from './views/Home';
 import About from './views/About';
 import Contact from './views/Contact';
-// import Projects from './views/Projects';
 
 export default function App() {
 	return (
 		<div className='w-full h-full min-h-screen max-w-screen-desktop mx-auto flex flex-col'>
 			<Header />
-			<main className='grow grid grid-cols-12 grid-rows-[1fr_2fr_2fr] gap-x-3 px-3 tablet:px-5 tablet:gap-x-5 desktop:px-8 desktop:gap-x-8 widescreen:px-0'>
+			{/* <main className='grow grid grid-cols-12 grid-rows-[1fr_min-content_min-content_1fr] gap-x-3 px-3 tablet:px-5 tablet:gap-x-5 desktop:px-8 desktop:gap-x-8 widescreen:px-0'> */}
+			<main className='grow grid grid-cols-12 grid-rows-auto gap-x-3 px-3 tablet:px-5 tablet:gap-x-5 desktop:px-8 desktop:gap-x-8 widescreen:px-0'>
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />

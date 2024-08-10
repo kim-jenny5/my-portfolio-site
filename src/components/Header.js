@@ -1,29 +1,18 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import Nav from './Nav';
-// import { useIsHome } from '../hooks/useIsHome';
-// import { Home } from 'react-feather';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
-	// const isHome = useIsHome();
-
 	return (
-		<nav
-			// className={`w-full py-6 flex flex-col gap-y-2 text-obsidian text-3xl uppercase`}
-			className={`flex justify-between items-center p-3 tablet:p-5 desktop:px-8 widescreen:px-0 font-poppins text-obsidian tracking-tight`}
-			// className={`flex justify-between items-center p-3 tablet:p-5 desktop:px-8 widescreen:px-0 text-obsidian tracking-tight`}
-			// className={`flex justify-between items-center py-4 text-obsidian`}
-		>
-			{/* <NavLink to='/' className='active:text-mushroom'> */}
+		// <nav className='grid grid-cols-12 p-3 tablet:p-5 desktop:px-8 widescreen:px-0 font-poppins text-obsidian tracking-tight'>
+		// <nav className='grid grid-cols-12 gap-x-3 items-center p-3 tablet:p-5 tablet:gap-x-5 desktop:px-8 desktop:gap-x-8 widescreen:px-0 font-poppins text-obsidian tracking-tight'>
+		<nav className='flex justify-between items-center p-3 tablet:p-5 desktop:px-8 widescreen:px-0 font-poppins text-obsidian tracking-tight'>
 			<NavLink
 				to='/'
-				className='uppercase text-xl tablet:text-2xl desktop:text-3xl'
+				className='uppercase text-xl tablet:text-2xl desktop:text-3xl col-start-1 col-span-5'
 			>
 				Jenny Kim
 			</NavLink>
-			<div className='flex gap-x-8 desktop:text-lg'>
-				<Nav />
-			</div>
+			{/* <div className='text-xs'>jennykimdev@gmail.com</div> */}
 		</nav>
 	);
 }

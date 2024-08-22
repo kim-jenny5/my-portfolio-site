@@ -14,7 +14,7 @@ export default function Footer() {
 	return (
 		<footer
 			className={
-				'flex items-center justify-between text-xs h-12 p-3 tablet:p-5 desktop:px-8 widescreen:px-0'
+				'flex items-center justify-between text-xs p-3 tablet:p-5 desktop:px-8 widescreen:px-0'
 			}
 		>
 			<div className='flex gap-x-1 items-center text-gray-500'>

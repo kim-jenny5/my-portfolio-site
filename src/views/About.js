@@ -1,5 +1,7 @@
 import React from 'react';
 import about_profile from '../assets/images/about_profile.jpg';
+import home_profile from '../assets/images/home_profile.jpg';
+import profile from '../assets/images/profile.jpg';
 import cat from '../assets/images/cat.jpg';
 
 export default function About() {
@@ -14,7 +16,7 @@ export default function About() {
 				/>
 				<div>details here</div>
 			</div> */}
-			<div className='row-start-1 col-start-1 col-end-9 flex flex-col gap-y-4 justify-end items-start'>
+			<div className='row-start-2 col-start-1 col-span-5 flex flex-col gap-y-4 justify-end items-start'>
 				{/* I am a frontend developer, with a background in business and a passion
 				for design, based in the New York Metropolitan Area. Utilizing my skills
 				in organization and time management, I create thoughtfully planned out
@@ -46,11 +48,24 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<div className='row-start-2 col-start-8 col-span-4 relative w-full h-full'>
+			{/* <div className='row-start-1 col-start-1 col-span-8'> */}
+			<div className='row-start-1 col-start-8 col-span-4'>
+				<iframe
+					src='https://open.spotify.com/embed/playlist/41YR7N5B4xCiTtNxboE03k?utm_source=generator&theme=0'
+					width='100%'
+					height='100%'
+					allowfullscreen=''
+					allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+					loading='lazy'
+				></iframe>
+			</div>
+			<div className='row-start-2 col-start-8 col-span-4 relative w-full h-full overflow-hidden'>
 				<img
-					src={about_profile}
+					// src={about_profile}
+					// src={profile}
+					src={home_profile}
 					alt='about-profile'
-					className='absolute top-0 left-0 w-full h-full object-fit'
+					className='absolute top-0 left-0 w-full h-full object-cover transform scale-125'
 					loading='lazy'
 				/>
 			</div>

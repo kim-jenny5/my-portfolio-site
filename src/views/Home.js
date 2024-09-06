@@ -6,7 +6,7 @@ import Nav from '../components/Nav';
 export default function Home() {
 	return (
 		<>
-			<div className='row-start-1 row-span-2 col-start-1 col-span-8 overflow-hidden'>
+			<div className='row-start-1 row-span-3 col-start-1 col-span-8 overflow-hidden'>
 				<div className='relative w-full h-full'>
 					<img
 						src={profile}
@@ -16,11 +16,11 @@ export default function Home() {
 					/>
 				</div>
 			</div>
-			<div className='col-start-9 col-span-4 row-start-1 flex flex-col justify-end'>
+			<div className='col-start-9 col-span-4 row-start-2 flex flex-col justify-end'>
 				<div className='font-bold text-2xl'>Hi, I'm Jenny</div>
 				<div>fullstack engineer / nyc 🗽</div>
 			</div>
-			<div className='row-start-2 col-start-9 col-span-4'>
+			<div className='text-end row-start-3 col-start-9 col-span-4'>
 				<iframe
 					style={{ borderRadius: '12px', border: '0' }}
 					src='https://open.spotify.com/embed/playlist/4sp8WEHBqmXrS14xdJBpOu?utm_source=generator&theme=0'

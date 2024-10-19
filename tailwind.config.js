@@ -4,7 +4,7 @@ module.exports = {
 		extend: {
 			screens: {
 				tablet: '768px',
-				// tabletLandscape: '1024px',
+				tabletLandscape: '1024px',
 				desktop: '1128px',
 				widescreen: '1440px'
 			},
@@ -14,12 +14,9 @@ module.exports = {
 			},
 			colors: {
 				orion: '#1D5AE9',
-				// moss: '#BABE6D',
 				evergreen: '#007200',
 				obsidian: '#1C1D21',
-				grape: '#742DDF',
-				// mushroom: '#A59980',
-				cream: '#E6E4DE',
+				// grape: '#742DDF',
 				cloud: '#f8f9fa'
 			}
 		}

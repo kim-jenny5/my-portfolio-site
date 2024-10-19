@@ -6,7 +6,7 @@ export default function Nav() {
 		<div className='z-50 row-start-1 col-end-13 col-span-2 flex flex-col justify-start items-end'>
 			<NavLink to='/'>
 				{({ isActive }) => (
-					<div className='flex items-center'>
+					<div className='flex items-center hover:text-orion'>
 						{isActive && (
 							<span className='inline-block w-1.5 h-1.5 bg-black rounded-full mr-1.5'></span>
 						)}
@@ -16,7 +16,7 @@ export default function Nav() {
 			</NavLink>
 			<NavLink to='/about'>
 				{({ isActive }) => (
-					<div className='flex items-center'>
+					<div className='flex items-center hover:text-orion'>
 						{isActive && (
 							<span className='inline-block w-1.5 h-1.5 bg-black rounded-full mr-1.5'></span>
 						)}
@@ -26,7 +26,7 @@ export default function Nav() {
 			</NavLink>
 			<NavLink to='/contact'>
 				{({ isActive }) => (
-					<div className='flex items-center'>
+					<div className='flex items-center hover:text-orion'>
 						{isActive && (
 							<span className='inline-block w-1.5 h-1.5 bg-black rounded-full mr-1.5'></span>
 						)}

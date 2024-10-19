@@ -7,7 +7,7 @@ export default function Header({ className }) {
 		<nav
 			className={`${className} flex justify-center items-center p-3 tablet:p-5 desktop:px-8 widescreen:px-0 text-obsidian`}
 		>
-			<NavLink to='/' className='col-start-1 col-span-full'>
+			<NavLink to='/' className='col-start-1 col-span-full hover:text-orion'>
 				<img
 					src={site_logo}
 					alt='home-profile'

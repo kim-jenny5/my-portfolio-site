@@ -1,17 +1,17 @@
-import React from "react";
-import { AboutCont, TopCont, AcnhBlob, TextCont, TechStack } from "./style";
-import acnhblob from "../../media/acnh_blob.png";
+import React from 'react';
+import { AboutCont, TopCont, AcnhBlob, TextCont, TechStack } from './style';
+import acnhblob from '../../media/acnh_blob.png';
 
 export default function About() {
 	return (
-		<AboutCont id="aboutme">
+		<AboutCont id='aboutme'>
 			<TopCont>
 				<AcnhBlob src={acnhblob} />
 				<TextCont>
-					<div className="section-title">About Me</div>
+					<div className='section-title'>About Me</div>
 					<ul>
 						<li>
-							I am a frontend developer, with a background in business and a
+							frontend I am a developer, with a background in business and a
 							passion for design, based in the New York Metropolitan Area.
 						</li>
 						<li>

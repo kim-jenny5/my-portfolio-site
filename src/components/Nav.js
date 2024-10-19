@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
 	return (
-		<div className='row-start-1 col-start-9 col-span-4 flex flex-col justify-start items-end'>
+		<div className='z-50 row-start-1 col-end-13 flex flex-col justify-start items-end'>
 			<NavLink to='/'>
 				{({ isActive }) => (
 					<div className='flex items-center'>

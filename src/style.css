@@ -8,13 +8,13 @@ html {
 
 body {
 	height: 100%;
-	@apply font-roboto text-obsidian bg-cloud;
-	/* @apply font-roboto text-obsidian bg-cream; */
+	/* @apply font-roboto text-obsidian bg-cloud; */
+	@apply font-roboto text-obsidian bg-cream;
 }
 
 ::selection {
-	background-color: #a59980;
-	color: #000000;
+	background-color: #007200;
+	color: #fff;
 }
 
 /* .main {

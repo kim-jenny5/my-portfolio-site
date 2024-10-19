@@ -1,6 +1,7 @@
-import styled from "styled-components";
-import { createGlobalStyle } from "styled-components";
+import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
+// DELETE THIS FILE
 export const GlobalStyle = createGlobalStyle`
 	:root {
 		--tabletUp: (min-width: 768px);

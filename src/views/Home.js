@@ -4,11 +4,11 @@ import profile from '../assets/images/profile.jpg';
 export default function Home() {
 	return (
 		<>
-			<div className='row-start-1 row-span-3 col-start-1 col-span-8 overflow-hidden'>
+			<div className='row-start-1 row-span-3 col-start-1 col-span-8 overflow-hidden rounded-md'>
 				<div className='relative w-full h-full'>
 					<img
 						src={profile}
-						alt='home-profile'
+						alt='woman smiling outside'
 						className='absolute top-0 left-0 w-full h-full object-cover'
 						loading='lazy'
 					/>

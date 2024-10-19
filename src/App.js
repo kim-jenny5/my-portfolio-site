@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -10,11 +10,9 @@ import SpotifyPlayer from './components/SpotifyPlayer';
 
 export default function App() {
 	const [mainHeight, setMainHeight] = useState('auto');
-	const [spotifyPlacement, setSpotifyPlacement] = useState(
-		'row-start-3 col-start-9 col-span-4'
-	);
 	const header = useRef(null);
 	const footer = useRef(null);
+	const location = useLocation();
 
 	useEffect(() => {
 		const updateMainHeight = () => {
@@ -30,7 +28,7 @@ export default function App() {
 		return () => {
 			window.removeEventListener('resize', updateMainHeight);
 		};
-	}, []);
+	}, [location]);
 
 	return (
 		<>
@@ -45,7 +43,7 @@ export default function App() {
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />
 				</Routes>
-				<div className={`${spotifyPlacement}`}>
+				<div className='row-start-3 col-start-9 col-span-4'>
 					<SpotifyPlayer />
 				</div>
 			</main>

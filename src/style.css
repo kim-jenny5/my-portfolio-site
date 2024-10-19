@@ -13,8 +13,7 @@ body {
 }
 
 ::selection {
-	background-color: #007200;
-	color: #fff;
+	@apply bg-orion text-cloud;
 }
 
 /* .main {

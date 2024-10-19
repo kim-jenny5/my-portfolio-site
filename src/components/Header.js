@@ -13,7 +13,7 @@ export default function Header({ className }) {
 					alt='home-profile'
 					className='w-20 h-20'
 					loading='lazy'
-				></img>
+				/>
 				<div class='lowercase text-center text-sm pt-1'>Jenny Kim</div>
 			</NavLink>
 		</nav>

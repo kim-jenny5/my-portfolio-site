@@ -47,7 +47,7 @@ export default function About() {
 					alt='cute cat looking up'
 					loading='lazy'
 					className='absolute top-0 left-0 w-full h-full object-cover'
-				></img>
+				/>
 			</div>
 		</>
 	);

@@ -16,18 +16,24 @@ export default function About() {
 					my cat, Kiyo&ndash;the cutest cat alive, objectively.
 				</div>
 				<div>
-					<div className='uppercase font-bold text-sm'>Frontend</div>
+					<div className='uppercase font-bold text-sm tracking-wide'>
+						Frontend
+					</div>
 					<div>
 						HTML / CSS / JavaScript / TypeScript / React / Redux / Hotwire
 						Stimulus
 					</div>
 				</div>
 				<div>
-					<div className='uppercase font-bold text-sm'>Backend</div>
+					<div className='uppercase font-bold text-sm tracking-wide'>
+						Backend
+					</div>
 					<div>Ruby on Rails / PostgreSQL / SQLite</div>
 				</div>
 				<div>
-					<div className='uppercase font-bold text-sm'>Design</div>
+					<div className='uppercase font-bold text-sm tracking-wide'>
+						Design
+					</div>
 					<div>
 						Tailwind CSS / styled-components / Bootstrap / Material UI / Figma
 					</div>

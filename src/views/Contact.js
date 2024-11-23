@@ -52,7 +52,7 @@ export default function Contact() {
 			<div className='row-start-1 row-span-2 col-end-11 col-span-3 relative w-full h-full overflow-hidden'>
 				<img
 					src={contact_profile}
-					className='absolute top-0 left-0 w-full h-full object-contain'
+					className='absolute top-0 left-0 w-full h-full object-contain brightness-125'
 				/>
 			</div>
 		</>

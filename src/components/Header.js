@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import site_logo from '../assets/images/site_logo.png';
+import logo from '../assets/images/logo.png';
 
 export default function Header({ className }) {
 	return (
@@ -9,7 +9,7 @@ export default function Header({ className }) {
 		>
 			<NavLink to='/' className='col-start-1 col-span-full hover:text-orion'>
 				<img
-					src={site_logo}
+					src={logo}
 					alt='home-profile'
 					className='w-20 h-20'
 					loading='lazy'

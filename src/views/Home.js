@@ -14,7 +14,7 @@ export default function Home() {
 			</div>
 			<div className='col-start-9 col-span-4 row-start-2 flex flex-col justify-end'>
 				<div className='font-bold text-2xl'>Hi, I'm Jenny</div>
-				<div>fullstack engineer / nyc 🗽</div>
+				<div>frontend engineer / nyc 🗽</div>
 			</div>
 		</>
 	);

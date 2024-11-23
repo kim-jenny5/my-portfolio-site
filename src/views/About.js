@@ -7,13 +7,12 @@ export default function About() {
 		<>
 			<div className='row-start-1 row-span-full col-start-1 col-span-5 flex flex-col gap-y-4 justify-center'>
 				<div>
-					I'm a <span className='italic'>fullstack engineer</span>, with a focus
-					in frontend, based in <span className='italic'>New York City</span>.
-					With an interest and tact for design, I have a passion for creating
-					and maintaining aesthetic UIs for an enhanced, pleasing experience. In
-					my free time, I love to explore the city and its numerous "hidden
-					gems" with my friends, crochet, and watch TV/movies as I cuddle with
-					my cat, Kiyo&ndash;the cutest cat alive, objectively.
+					I'm a fullstack engineer, with a focus in frontend, based in New York
+					City. With an interest and tact for design, I have a passion for
+					creating and maintaining aesthetic UIs for an enhanced, pleasing
+					experience. In my free time, I love to explore the city and its
+					numerous "hidden gems" with my friends, crochet, and watch TV/movies
+					as I cuddle with my cat, Kiyo&ndash;the cutest cat alive, objectively.
 				</div>
 				<div>
 					<div className='uppercase font-bold text-sm tracking-wide'>

@@ -16,8 +16,8 @@ module.exports = {
 				orion: '#1D5AE9',
 				evergreen: '#007200',
 				obsidian: '#1C1D21',
-				// grape: '#742DDF',
-				cloud: '#f8f9fa'
+				cloud: '#f8f9fa',
+				mist: '#e4e5eb'
 			}
 		}
 	},

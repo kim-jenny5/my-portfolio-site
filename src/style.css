@@ -3,18 +3,13 @@
 @tailwind utilities;
 
 html {
-	height: 100%;
+	@apply h-full;
 }
 
 body {
-	height: 100%;
-	@apply font-roboto text-obsidian bg-cloud;
+	@apply h-full font-roboto text-obsidian bg-cloud;
 }
 
 ::selection {
 	@apply bg-orion text-cloud;
 }
-
-/* .main {
-	@apply w-full h-full grow px-3 tablet:px-5 desktop:px-0;
-} */

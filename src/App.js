@@ -1,5 +1,6 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
-import { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
@@ -9,45 +10,40 @@ import Contact from './views/Contact';
 import SpotifyPlayer from './components/SpotifyPlayer';
 
 export default function App() {
-	const [mainHeight, setMainHeight] = useState('auto');
-	const header = useRef(null);
-	const footer = useRef(null);
-	const location = useLocation();
+	const isDesktop = useMediaQuery({ minWidth: 1025 });
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const blurryElements = ['main', 'footer'];
 
-	useEffect(() => {
-		const updateMainHeight = () => {
-			const headerHeight = header.current?.offsetHeight || 0;
-			const footerHeight = footer.current?.offsetHeight || 0;
-			const newMainHeight = `calc(100vh - ${headerHeight}px - ${footerHeight}px)`;
-			setMainHeight(newMainHeight);
-		};
+	const toggleMenu = () => {
+		setIsMenuOpen((prevState) => !prevState);
+		for (const selector of blurryElements) {
+			const element = document.querySelector(selector);
+			element.style.filter = isMenuOpen ? 'none' : 'blur(8px)';
+		}
+	};
 
-		updateMainHeight();
-		window.addEventListener('resize', updateMainHeight);
-
-		return () => {
-			window.removeEventListener('resize', updateMainHeight);
-		};
-	}, [location]);
+	const clickOutsideMenu = (e) => {
+		// 	// e.stopPropagation();
+	};
 
 	return (
-		<>
-			<Header ref={header} className='max-w-screen-xl w-full m-auto' />
-			<main
-				style={{ height: mainHeight }}
-				className='max-w-screen-xl w-full h-[calc(100vh-9.75rem)] m-auto grow grid grid-cols-12 grid-rows-3 grid-rows-auto gap-x-3 gap-y-6 px-3 tablet:px-5 tablet:gap-x-5 tablet:gap-y-10 desktop:px-8 desktop:gap-x-8 desktop:gap-y-12 widescreen:px-0'
-			>
-				<Nav />
+		<div className='w-full h-full min-h-screen max-w-screen-desktop mx-auto flex flex-col gap-y-4 p-4 desktop:gap-y-5 desktop:p-5'>
+			<Header
+				style='max-w-screen-xl w-full h-full max-h-fit desktop:max-h-28'
+				toggleMenu={toggleMenu}
+				isMenuOpen={isMenuOpen}
+				clickOutsideMenu={clickOutsideMenu}
+			/>
+			<main className='relative max-w-screen-xl w-full h-full m-auto grow grid grid-cols-12 grid-rows-6 gap-x-3 gap-y-6 tablet:gap-x-5 tablet:gap-y-10 desktop:grid-rows-3 desktop:gap-x-8 desktop:gap-y-12'>
+				{isDesktop && <Nav />}
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />
 				</Routes>
-				<div className='row-start-3 col-start-9 col-span-4'>
-					<SpotifyPlayer />
-				</div>
+				<SpotifyPlayer style='hidden tabletLandscape:block row-start-3 col-start-9 col-span-4' />
 			</main>
-			<Footer ref={footer} className='max-w-screen-xl w-full m-auto' />
-		</>
+			<Footer style='max-w-screen-xl w-full m-auto' />
+		</div>
 	);
 }

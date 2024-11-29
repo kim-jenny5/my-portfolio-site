@@ -11,7 +11,8 @@ import SpotifyPlayer from './components/SpotifyPlayer';
 
 export default function App() {
 	const isDesktop = useMediaQuery({ minWidth: 1025 });
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	// const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [isMenuOpen, setIsMenuOpen] = useState(true);
 	const blurryElements = ['main', 'footer'];
 
 	const toggleMenu = () => {
@@ -22,17 +23,12 @@ export default function App() {
 		}
 	};
 
-	const clickOutsideMenu = (e) => {
-		// 	// e.stopPropagation();
-	};
-
 	return (
 		<div className='w-full h-full min-h-screen max-w-screen-desktop mx-auto flex flex-col gap-y-4 p-4 desktop:gap-y-5 desktop:p-5'>
 			<Header
 				style='max-w-screen-xl w-full h-full max-h-fit desktop:max-h-28'
 				toggleMenu={toggleMenu}
 				isMenuOpen={isMenuOpen}
-				clickOutsideMenu={clickOutsideMenu}
 			/>
 			<main className='relative max-w-screen-xl w-full h-full m-auto grow grid grid-cols-12 grid-rows-6 gap-x-3 gap-y-6 tablet:gap-x-5 tablet:gap-y-10 desktop:grid-rows-3 desktop:gap-x-8 desktop:gap-y-12'>
 				{isDesktop && <Nav />}

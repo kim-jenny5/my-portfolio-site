@@ -765,6 +765,14 @@ video {
   height: 100%;
 }
 
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-\[1\/3\] {
+  height: 1/3;
+}
+
 .max-h-fit {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;

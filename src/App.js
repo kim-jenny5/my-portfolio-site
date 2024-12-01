@@ -11,16 +11,10 @@ import SpotifyPlayer from './components/SpotifyPlayer';
 
 export default function App() {
 	const isDesktop = useMediaQuery({ minWidth: 1025 });
-	// const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const [isMenuOpen, setIsMenuOpen] = useState(true);
-	const blurryElements = ['main', 'footer'];
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const toggleMenu = () => {
 		setIsMenuOpen((prevState) => !prevState);
-		for (const selector of blurryElements) {
-			const element = document.querySelector(selector);
-			element.style.filter = isMenuOpen ? 'none' : 'blur(8px)';
-		}
 	};
 
 	return (
@@ -29,9 +23,12 @@ export default function App() {
 				style='max-w-screen-xl w-full h-full max-h-fit desktop:max-h-28'
 				toggleMenu={toggleMenu}
 				isMenuOpen={isMenuOpen}
+				isDesktop={isDesktop}
 			/>
 			<main className='relative max-w-screen-xl w-full h-full m-auto grow grid grid-cols-12 grid-rows-6 gap-x-3 gap-y-6 tablet:gap-x-5 tablet:gap-y-10 desktop:grid-rows-3 desktop:gap-x-8 desktop:gap-y-12'>
-				{isDesktop && <Nav />}
+				{isDesktop && (
+					<Nav style='z-50 row-start-1 col-end-13 col-span-2 flex flex-col justify-start items-end' />
+				)}
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />

@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import MobileNav from './MobileNav';
+import Nav from './Nav';
 
 export default function Header({
 	style: styleFromProps,
 	toggleMenu,
-	isMenuOpen
+	isMenuOpen,
+	isDesktop
 }) {
 	return (
 		<header
@@ -17,13 +18,24 @@ export default function Header({
 			>
 				jennykim .
 			</NavLink>
-			<div
-				onClick={toggleMenu}
-				className='rounded-full py-0.5 px-2 bg-mist italic lowercase text-sm desktop:hidden'
-			>
-				Menu
-			</div>
-			{isMenuOpen && <MobileNav toggleMenu={toggleMenu} />}
+			{!isDesktop && (
+				<>
+					<div
+						onClick={toggleMenu}
+						className={`relative z-50 rounded-full py-0.5 px-2 bg-mist italic font-poppins lowercase text-sm desktop:hidden ${
+							isMenuOpen ? 'pointer-events-none' : ''
+						}`}
+					>
+						Menu
+					</div>
+					<Nav
+						toggleMenu={toggleMenu}
+						style={`${
+							isMenuOpen ? 'opacity-100 translate-y-1/3' : 'opacity-0'
+						} z-50 absolute top-0 right-0 bg-mist w-1/2 h-fit flex flex-col gap-y-1 items-end font-poppins text-sm shadow-lg p-4 transition duration-700 ease-in-out`}
+					/>
+				</>
+			)}
 		</header>
 	);
 }

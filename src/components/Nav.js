@@ -1,10 +1,18 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
+import { useClickOutside } from '../utils/useClickOutside';
 
-export default function Nav() {
+export default function Nav({ toggleMenu = () => {}, style: styleFromProps }) {
+	const ref = useClickOutside(() => toggleMenu());
+	const location = useLocation();
+
+	useEffect(() => {
+		toggleMenu();
+	}, [location.pathname]);
+
 	return (
-		<div className='z-50 row-start-1 col-end-13 col-span-2 flex flex-col justify-start items-end'>
-			<NavLink to='/'>
+		<div ref={ref} className={styleFromProps}>
+			<NavLink to='/' onClick={toggleMenu}>
 				{({ isActive }) => (
 					<div className='flex items-center hover:text-orion'>
 						{isActive && (
@@ -14,7 +22,7 @@ export default function Nav() {
 					</div>
 				)}
 			</NavLink>
-			<NavLink to='/about'>
+			<NavLink to='/about' onClick={toggleMenu}>
 				{({ isActive }) => (
 					<div className='flex items-center hover:text-orion'>
 						{isActive && (
@@ -24,7 +32,7 @@ export default function Nav() {
 					</div>
 				)}
 			</NavLink>
-			<NavLink to='/contact'>
+			<NavLink to='/contact' onClick={toggleMenu}>
 				{({ isActive }) => (
 					<div className='flex items-center hover:text-orion'>
 						{isActive && (

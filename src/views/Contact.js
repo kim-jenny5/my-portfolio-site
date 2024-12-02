@@ -1,17 +1,24 @@
 import React from 'react';
-import contact_profile from '../assets/images/contact_profile.jpg';
+import { useImageLoader } from '../utils/useImageLoader';
+import profile from '../assets/images/contact_profile.jpg';
 import arrow from '../assets/images/arrow.png';
 
 export default function Contact() {
+	const { handleImageLoad, renderPlaceholder, isLoading } = useImageLoader();
+
 	return (
 		<>
 			<div className='row-start-1 col-start-1 col-end-12 flex items-end font-bold tablet:text-6xl desktop:text-8xl'>
 				Contact Me
 			</div>
 			<div className='row-start-2 col-start-1 col-span-2 relative w-full h-full overflow-hidden -mt-20 ml-4'>
+				{renderPlaceholder('arrow')}
 				<img
 					src={arrow}
-					className='absolute top-0 left-0 w-full h-full object-cover'
+					className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
+						isLoading('arrow') ? 'opacity-0' : 'opacity-100'
+					}`}
+					onLoad={() => handleImageLoad('arrow')}
 				/>
 			</div>
 			<div className='row-start-2 col-start-3 col-span-full flex flex-col justify-between'>
@@ -50,9 +57,13 @@ export default function Contact() {
 				</div>
 			</div>
 			<div className='row-start-1 row-span-2 col-end-11 col-span-3 relative w-full h-full overflow-hidden'>
+				{renderPlaceholder('contact-profile')}
 				<img
-					src={contact_profile}
-					className='absolute top-0 left-0 w-full h-full object-contain brightness-125'
+					src={profile}
+					className={`absolute top-0 left-0 w-full h-full object-contain brightness-125 transition-opacity duration-500 ${
+						isLoading('contact-profile') ? 'opacity-0' : 'opacity-100'
+					}`}
+					onLoad={() => handleImageLoad('contact-profile')}
 				/>
 			</div>
 		</>

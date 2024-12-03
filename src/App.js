@@ -14,6 +14,7 @@ export default function App() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const toggleMenu = () => {
+		console.log('menu is clicked');
 		setIsMenuOpen((prevState) => !prevState);
 	};
 

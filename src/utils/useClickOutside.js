@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
 
-export function useClickOutside(callback) {
+export function useClickOutside(callback, isMenuOpen) {
 	const ref = useRef(null);
 
 	useEffect(() => {
 		function handleClickOutside(e) {
-			if (ref.current && !ref.current.contains(e.target)) {
+			if (isMenuOpen && ref.current && !ref.current.contains(e.target)) {
 				callback();
 			}
 		}
@@ -14,7 +14,7 @@ export function useClickOutside(callback) {
 		return () => {
 			document.removeEventListener('mousedown', handleClickOutside);
 		};
-	}, [callback]);
+	}, [callback, isMenuOpen]);
 
 	return ref;
 }

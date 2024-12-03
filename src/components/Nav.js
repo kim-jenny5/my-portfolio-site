@@ -2,8 +2,12 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useClickOutside } from '../utils/useClickOutside';
 
-export default function Nav({ toggleMenu = () => {}, style: styleFromProps }) {
-	const ref = useClickOutside(() => toggleMenu());
+export default function Nav({
+	toggleMenu = () => {},
+	isMenuOpen,
+	style: styleFromProps
+}) {
+	const ref = useClickOutside(() => toggleMenu(), isMenuOpen);
 
 	return (
 		<div ref={ref} className={styleFromProps}>

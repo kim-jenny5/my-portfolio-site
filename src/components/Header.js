@@ -30,6 +30,7 @@ export default function Header({
 					</div>
 					<Nav
 						toggleMenu={toggleMenu}
+						isMenuOpen={isMenuOpen}
 						style={`${
 							isMenuOpen ? 'opacity-100 translate-y-1/3' : 'opacity-0'
 						} z-40 absolute top-0 right-0 bg-mist w-1/2 h-fit flex flex-col gap-y-1 items-end font-poppins text-sm shadow-lg p-4 transition duration-700 ease-in-out`}

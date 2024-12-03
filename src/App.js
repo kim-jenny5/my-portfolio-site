@@ -26,7 +26,7 @@ export default function App() {
 				isMenuOpen={isMenuOpen}
 				isDesktop={isDesktop}
 			/>
-			<main className='relative max-w-screen-xl w-full h-full m-auto grow grid grid-cols-12 grid-rows-6 gap-x-3 gap-y-6 tablet:gap-x-5 tablet:gap-y-10 desktop:grid-rows-3 desktop:gap-x-8 desktop:gap-y-12'>
+			<main className='relative max-w-screen-xl w-full h-full m-auto grow grid grid-cols-12 grid-rows-12 gap-x-3 gap-y-6 tablet:gap-x-5 tablet:gap-y-10 desktop:grid-rows-3 desktop:gap-x-8 desktop:gap-y-12'>
 				{isDesktop && (
 					<Nav style='z-50 row-start-1 col-end-13 col-span-2 flex flex-col justify-start items-end' />
 				)}

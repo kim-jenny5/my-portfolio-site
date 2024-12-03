@@ -1,14 +1,9 @@
-import React, { useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { useClickOutside } from '../utils/useClickOutside';
 
 export default function Nav({ toggleMenu = () => {}, style: styleFromProps }) {
 	const ref = useClickOutside(() => toggleMenu());
-	const location = useLocation();
-
-	useEffect(() => {
-		toggleMenu();
-	}, [location.pathname]);
 
 	return (
 		<div ref={ref} className={styleFromProps}>

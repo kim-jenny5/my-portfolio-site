@@ -8,10 +8,11 @@ export default function Contact() {
 
 	return (
 		<>
-			<div className='flex font-bold row-start-5 col-start-2 col-end-13 text-3xl tablet:text-6xl tabletLandscape:row-start-1 tabletLandscape:items-end desktop:text-8xl'>
+			{/* <div className='flex font-bold row-start-5 col-start-2 col-end-13 text-3xl tablet:text-6xl tabletLandscape:row-start-1 tabletLandscape:items-end desktop:text-8xl'> */}
+			<div className='z-20 flex items-end font-bold row-start-5 row-span-2 col-start-2 col-end-13 text-3xl tablet:text-6xl tabletLandscape:row-start-1 tabletLandscape:items-end desktop:text-8xl'>
 				Contact Me
 			</div>
-			<div className='relative w-full h-full overflow-hidden row-start-6 row-span-2 col-start-1 col-span-4 -mt-8 tabletLandscape:-mt-20 tabletLandscape:ml-4 tabletLandscape:row-start-2 tabletLandscape:col-start-1 tabletLandscape:col-span-2'>
+			<div className='relative w-full h-full overflow-hidden row-start-7 row-span-2 col-start-1 col-span-4 -mt-8 tabletLandscape:-mt-20 tabletLandscape:ml-4 tabletLandscape:row-start-2 tabletLandscape:col-start-1 tabletLandscape:col-span-2'>
 				{renderPlaceholder('arrow')}
 				<img
 					src={arrow}
@@ -22,7 +23,7 @@ export default function Contact() {
 				/>
 			</div>
 			{/* <div className='flex flex-col justify-between row-start-6 row-span-6 col-start-5 col-span-8 tabletLandscape:row-start-2 tabletLandscape:col-start-3 tabletLandscape:col-span-full'> */}
-			<div className='flex flex-col justify-between row-start-6 row-span-3 col-start-5 col-span-8 tabletLandscape:row-start-2 tabletLandscape:col-start-3 tabletLandscape:col-span-full'>
+			<div className='flex flex-col gap-y-6 row-start-7 row-span-3 col-start-5 col-span-8 -ml-2 tabletLandscape:row-start-2 tabletLandscape:col-start-3 tabletLandscape:col-span-full'>
 				<div>
 					<a
 						href='mailto:jennykimdev@gmail.com'
@@ -57,7 +58,7 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
-			<div className='relative w-full h-full overflow-hidden row-start-2 row-span-3 col-start-2 col-span-6 tabletLandscape:row-span-4 tabletLandscape:col-end-11 tabletLandscape:col-span-3'>
+			<div className='relative w-full h-full overflow-hidden row-start-1 row-span-7 col-start-2 col-span-6 tabletLandscape:row-span-4 tabletLandscape:col-end-11 tabletLandscape:col-span-3'>
 				{renderPlaceholder('contact-profile')}
 				<img
 					src={profile}

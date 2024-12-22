@@ -1,27 +1,17 @@
 Hello! If you're reading this, that means you're interested in the nitty-gritty behind the technologies I used for [my portfolio website](https://jennykim.dev/), or you were just following a trail of links and you ended up here. Regardless, enjoy!
 
-Disclaimer: I do not own any Animal Crossing content displayed. All rights go to its rightful owner, Nintendo.
-
-## Technologies Used
-
-### Development
+### Stack
 
 - JavaScript
 - React
 - HTML
-- styled-components
-- react-typical
-
-### Design
-
-- Figma
-- Feather Icons
+- Tailwind CSS
 
 ## License
 
 MIT License
 
-Copyright (c) 2021 Jenny Kim
+Copyright (c) 2024 Jenny Kim
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

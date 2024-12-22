@@ -1,16 +1,40 @@
-import styled from "styled-components";
-import { createGlobalStyle } from "styled-components";
+import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
+// DELETE THIS FILE
 export const GlobalStyle = createGlobalStyle`
+	:root {
+		--tabletUp: (min-width: 768px);
+		--desktopUp: (min-width: 1024px);
+		--widescreenUp: (min-width: 1440px);
+	}
+
+	@media (--tabletUp) {
+    :root {
+    }
+  }
+
+	@media (--desktopUp) {
+    :root {
+    }
+  }
+
+	@media (--widescreenUp) {
+    :root {
+    }
+  }
+
 	html {
 		scroll-behavior: smooth;
 	}
 
-  	body {
+  body {
 		margin: 0;
 		padding: 0;
-		color: #294234;
-		font-family: Source Sans Pro;
+		/* color: #294234; */
+		background: #E6E4DE;
+		/* font-family: Source Sans Pro; */
+		font-family: Roboto;
 		position: relative;
 		font-size: 100%;
 		min-height: 100vh;

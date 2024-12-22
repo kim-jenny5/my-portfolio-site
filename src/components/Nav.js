@@ -2,45 +2,45 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useClickOutside } from '../utils/useClickOutside';
 
+function NavItem({ to, toggleMenu, name }) {
+	return (
+		<NavLink to={to} onClick={toggleMenu}>
+			{({ isActive }) => (
+				<div className='flex items-center hover:text-orion'>
+					{isActive && (
+						<span className='inline-block w-1.5 h-1.5 bg-black rounded-full mr-1.5'></span>
+					)}
+					{name}
+				</div>
+			)}
+		</NavLink>
+	);
+}
+
 export default function Nav({
 	toggleMenu = () => {},
-	isMenuOpen,
-	style: styleFromProps
+	style: styleFromProps,
+	isMenuOpen
 }) {
 	const ref = useClickOutside(() => toggleMenu(), isMenuOpen);
 
+	const paths = [
+		{ to: '/', name: 'home' },
+		{ to: '/about', name: 'about' },
+		{ to: '/contact', name: 'contact' },
+		{ to: '/projects', name: 'projects' }
+	];
+
 	return (
 		<div ref={ref} className={styleFromProps}>
-			<NavLink to='/' onClick={toggleMenu}>
-				{({ isActive }) => (
-					<div className='flex items-center hover:text-orion'>
-						{isActive && (
-							<span className='inline-block w-1.5 h-1.5 bg-black rounded-full mr-1.5'></span>
-						)}
-						home
-					</div>
-				)}
-			</NavLink>
-			<NavLink to='/about' onClick={toggleMenu}>
-				{({ isActive }) => (
-					<div className='flex items-center hover:text-orion'>
-						{isActive && (
-							<span className='inline-block w-1.5 h-1.5 bg-black rounded-full mr-1.5'></span>
-						)}
-						about
-					</div>
-				)}
-			</NavLink>
-			<NavLink to='/contact' onClick={toggleMenu}>
-				{({ isActive }) => (
-					<div className='flex items-center hover:text-orion'>
-						{isActive && (
-							<span className='inline-block w-1.5 h-1.5 bg-black rounded-full mr-1.5'></span>
-						)}
-						contact
-					</div>
-				)}
-			</NavLink>
+			{paths.map((path) => (
+				<NavItem
+					key={path.to}
+					to={path.to}
+					name={path.name}
+					toggleMenu={toggleMenu}
+				/>
+			))}
 		</div>
 	);
 }

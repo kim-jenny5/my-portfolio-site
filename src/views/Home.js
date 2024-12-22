@@ -7,7 +7,7 @@ export default function Home() {
 
 	return (
 		<>
-			<div className='relative w-full h-full overflow-hidden rounded-md row-start-5 row-span-6 col-start-1 col-span-full desktop:col-span-8 desktop:row-start-1 desktop:row-span-3'>
+			<div className='relative w-full h-full overflow-hidden rounded-md row-start-5 row-span-6 col-start-1 col-span-full tablet:row-span-7 tabletLandscape:col-start-5 tabletLandscape:col-span-8 tabletLandscape:row-start-1 tabletLandscape:row-span-full'>
 				{renderPlaceholder('profile')}
 				<img
 					src={profile}
@@ -19,7 +19,7 @@ export default function Home() {
 					onLoad={() => handleImageLoad('profile')}
 				/>
 			</div>
-			<div className='flex flex-col justify-end row-start-1 row-span-4 col-start-1 col-span-full desktop:col-start-9 desktop:col-span-4'>
+			<div className='flex flex-col justify-end row-start-1 row-span-4 col-start-1 col-span-full tabletLandscape:row-start-4 tabletLandscape:col-span-4'>
 				<div className='font-bold text-2xl'>Hi, I'm Jenny</div>
 				<div>frontend engineer / nyc 🗽</div>
 			</div>

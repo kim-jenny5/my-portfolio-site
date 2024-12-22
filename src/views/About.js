@@ -8,7 +8,7 @@ export default function About() {
 
 	return (
 		<>
-			<div className='row-start-4 row-span-6 col-span-full tabletLandscape:row-start-1 tabletLandscape:col-start-1 tabletLandscape:col-span-5 flex flex-col gap-y-4 justify-center'>
+			<div className='flex flex-col justify-center gap-y-4 row-start-4 row-span-6 col-span-full tablet:row-start-5 tablet:row-span-4 tabletLandscape:justify-end tabletLandscape:row-start-2 tabletLandscape:row-span-7 tabletLandscape:col-start-6 tabletLandscape:col-span-7'>
 				<div>
 					I'm a fullstack engineer, with a focus in frontend, based in New York
 					City. With an interest and tact for design, I have a passion for
@@ -41,8 +41,7 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			{/* <div className='relative w-full h-full overflow-hidden rounded-md row-start-1 row-span-2 col-start-4 col-span-full tabletLandscape:col-start-7 tabletLandscape:col-span-5'> */}
-			<div className='relative w-full h-full overflow-hidden rounded-md row-start-1 row-span-3 col-start-4 col-span-full tabletLandscape:col-start-7 tabletLandscape:col-span-5'>
+			<div className='relative w-full h-full overflow-hidden rounded-md row-start-1 row-span-3 col-start-4 col-span-full tablet:row-span-4 tablet:col-start-6 tabletLandscape:row-start-3 tabletLandscape:row-span-5 tabletLandscape:col-start-2 tabletLandscape:col-span-4'>
 				{renderPlaceholder('about-profile')}
 				<img
 					src={profile}
@@ -54,8 +53,7 @@ export default function About() {
 					onLoad={() => handleImageLoad('about-profile')}
 				/>
 			</div>
-			{/* <div className='relative w-full h-full overflow-hidden rounded-md -mt-3 row-start-10 row-span-3 col-start-1 col-end-8 tablet:-mt-5 tabletLandscape:row-start-3 tabletLandscape:col-start-6 tabletLandscape:col-span-3 desktop:-mt-6'> */}
-			<div className='relative w-full h-full overflow-hidden rounded-md row-start-10 row-span-3 col-span-full tablet:-mt-5 tabletLandscape:row-start-3 tabletLandscape:col-start-6 tabletLandscape:col-span-3 desktop:-mt-6'>
+			<div className='relative w-full h-full overflow-hidden rounded-md row-start-10 row-span-3 col-span-full tablet:row-start-9 tablet:row-span-4 tabletLandscape:row-start-9 tabletLandscape:row-span-4 tabletLandscape:col-start-8 tabletLandscape:col-span-4 desktop:-mt-6'>
 				{renderPlaceholder('cat')}
 				<img
 					src={cat}

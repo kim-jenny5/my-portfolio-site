@@ -8,11 +8,10 @@ export default function Contact() {
 
 	return (
 		<>
-			{/* <div className='flex font-bold row-start-5 col-start-2 col-end-13 text-3xl tablet:text-6xl tabletLandscape:row-start-1 tabletLandscape:items-end desktop:text-8xl'> */}
-			<div className='z-20 flex items-end font-bold row-start-5 row-span-2 col-start-2 col-end-13 text-3xl tablet:text-6xl tabletLandscape:row-start-1 tabletLandscape:items-end desktop:text-8xl'>
+			<div className='z-20 flex items-end font-bold row-start-5 row-span-2 col-start-2 col-end-13 text-3xl tablet:row-start-6 tablet:col-start-3 tablet:text-6xl tabletLandscape:row-start-6 tabletLandscape:col-start-5 tabletLandscape:col-span-4 tabletLandscape:justify-center tabletLandscape:items-start tabletLandscape:-mt-5'>
 				Contact Me
 			</div>
-			<div className='relative w-full h-full overflow-hidden row-start-7 row-span-2 col-start-1 col-span-4 -mt-8 tabletLandscape:-mt-20 tabletLandscape:ml-4 tabletLandscape:row-start-2 tabletLandscape:col-start-1 tabletLandscape:col-span-2'>
+			<div className='relative w-full h-full overflow-hidden row-start-7 row-span-2 col-start-1 col-span-4 -mt-8 tablet:row-start-8 tablet:col-start-3 tablet:col-span-3 tabletLandscape:-mt-20 tabletLandscape:row-start-8 tabletLandscape:col-start-6 tabletLandscape:col-span-2 tabletLandscape:-ml-12'>
 				{renderPlaceholder('arrow')}
 				<img
 					src={arrow}
@@ -22,17 +21,16 @@ export default function Contact() {
 					onLoad={() => handleImageLoad('arrow')}
 				/>
 			</div>
-			{/* <div className='flex flex-col justify-between row-start-6 row-span-6 col-start-5 col-span-8 tabletLandscape:row-start-2 tabletLandscape:col-start-3 tabletLandscape:col-span-full'> */}
-			<div className='flex flex-col gap-y-6 row-start-7 row-span-3 col-start-5 col-span-8 -ml-2 tabletLandscape:row-start-2 tabletLandscape:col-start-3 tabletLandscape:col-span-full'>
+			<div className='flex flex-col gap-y-6 row-start-7 row-span-3 col-start-5 col-span-8 -ml-2 tablet:row-start-8 tablet:col-start-6 tabletLandscape:row-start-7 tabletLandscape:row-span-4 tabletLandscape:col-start-7 tabletLandscape:col-span-full tabletLandscape:ml-8'>
 				<div>
 					<a
 						href='mailto:jennykimdev@gmail.com'
-						className='text-lg tracking-wider underline underline-offset-[12px] hover:text-orion tabletLandscape:text-3xl'
+						className='text-lg underline underline-offset-[12px] hover:text-orion tablet:text-2xl tablet:tracking-wider tabletLandscape:text-3xl'
 					>
 						jennykimdev@gmail.com
 					</a>
 				</div>
-				<div className='flex flex-col gap-y-2 uppercase'>
+				<div className='flex flex-col gap-y-2 uppercase tablet:text-lg'>
 					<div className='font-bold tracking-wide'>Other Links</div>
 					<div className='flex flex-col gap-y-1 pl-1 tracking-wider'>
 						<div className='flex gap-x-2'>
@@ -58,7 +56,7 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
-			<div className='relative w-full h-full overflow-hidden row-start-1 row-span-7 col-start-2 col-span-6 tabletLandscape:row-span-4 tabletLandscape:col-end-11 tabletLandscape:col-span-3'>
+			<div className='relative w-full h-full overflow-hidden row-start-2 row-span-5 col-start-2 col-span-6 tablet:col-start-3 tabletLandscape:row-start-2 tabletLandscape:row-span-4 tabletLandscape:col-start-5 tabletLandscape:col-span-4'>
 				{renderPlaceholder('contact-profile')}
 				<img
 					src={profile}

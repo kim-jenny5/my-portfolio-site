@@ -53,6 +53,16 @@ export default function Contact() {
 								GitHub
 							</a>
 						</div>
+						<div className='flex gap-x-2'>
+							📄
+							<a
+								href='/resume.pdf'
+								download='Jenny Kim Resume.pdf'
+								className='hover:text-orion'
+							>
+								Resume
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

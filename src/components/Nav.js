@@ -27,8 +27,7 @@ export default function Nav({
 	const paths = [
 		{ to: '/', name: 'home' },
 		{ to: '/about', name: 'about' },
-		{ to: '/contact', name: 'contact' },
-		{ to: '/projects', name: 'projects' }
+		{ to: '/contact', name: 'contact' }
 	];
 
 	return (

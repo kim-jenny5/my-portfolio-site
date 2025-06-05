@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function SpotifyPlayer({ style: styleFromProps }) {
 	return (
 		<div className={styleFromProps}>

@@ -1,10 +1,14 @@
 import { useState } from 'react';
-import Modal from 'react-modal';
+// import Modal from 'react-modal';
 import pilim from '../assets/projects/pilim.png';
 import my_travelogue from '../assets/projects/my_travelogue.png';
 import my_daily_journal from '../assets/projects/my_daily_journal.png';
 import tableau_dambiance from '../assets/projects/tableau_dambiance.png';
-import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/solid';
+import {
+	ChevronUpIcon,
+	ChevronDownIcon,
+	ArrowTurnDownRightIcon
+} from '@heroicons/react/24/solid';
 
 const PROJECTS = [
 	{
@@ -28,9 +32,11 @@ const PROJECTS = [
 
 export default function Projects() {
 	const [expandedProjects, setExpandedProjects] = useState({});
+	const [expandedSubProjects, setExpandedSubProjects] = useState({});
+	const [selectedProject, setSelectedProject] = useState(null);
 
-	const toggleProject = (name) => {
-		setExpandedProjects((prev) => ({
+	const toggleItem = (name, fn) => {
+		fn((prev) => ({
 			...prev,
 			[name]: !prev[name]
 		}));
@@ -40,62 +46,53 @@ export default function Projects() {
 		<>
 			<div className='col-start-1 col-span-4 row-start-full ml-10'>
 				<div className='rounded-md bg-gray-100 p-4'>
-					{/* {PROJECTS.map((project, idx) => (
-						<div
-							key={idx}
-							onClick={() => setSelectedProject(project)}
-							className='cursor-pointer p-2 hover:bg-gray-200 rounded'
-						>
-							{project.name}
-						</div>
-					))}
-					{selectedProject && (
-						<div className='col-start-5 col-span-8 row-start-1 row-span-6 p-4 bg-white rounded-md'>
-							<h2 className='text-lg font-bold'>{selectedProject.name}</h2>
-							{selectedProject.subProjects?.length > 0 && (
-								<ul className='mt-2'>
-									{selectedProject.subProjects.map((sub, i) => (
-										<li key={i}>{sub.name}</li>
-									))}
-								</ul>
-							)}
-						</div>
-					)} */}
 					<div className='space-y-4'>
 						{PROJECTS.map((group) => (
 							<div key={group.name}>
 								<div
-									onClick={() => toggleProject(group.name)}
-									className='cursor-pointer font-semibold p-2 bg-gray-200 rounded-md hover:bg-gray-300'
+									onClick={() => toggleItem(group.name, setExpandedProjects)}
+									className='cursor-pointer font-semibold p-2 bg-gray-200 rounded-md hover:bg-gray-300 select-none'
 								>
 									{group.name}
 								</div>
-
 								{expandedProjects[group.name] && (
 									<div className='ml-4 mt-2 space-y-2'>
 										{group.projects.map((project, idx) => (
 											<div
 												key={idx}
-												className='flex items-center p-2 bg-gray-100 rounded'
+												className='cursor-pointer p-2 bg-gray-100 rounded select-none'
+												onClick={() =>
+													project.sub
+														? toggleItem(project.name, setExpandedSubProjects)
+														: setSelectedProject(project)
+												}
 											>
-												{project.name}
-												{project.sub && (
-													<ChevronDownIcon width={20} className='ml-1' />
-												)}
-												{/* {project.sub && (
-													<ul className='ml-4 list-disc text-sm text-gray-700 mt-1'>
-														{project.sub.map((subProject, i) => (
-															<li key={i}>{subProject.name}</li>
+												<div className='flex items-center'>
+													{project.name}
+													{project.sub &&
+														(expandedSubProjects[project.name] ? (
+															<ChevronUpIcon width={16} className='ml-1' />
+														) : (
+															<ChevronDownIcon width={16} className='ml-1' />
+														))}
+												</div>
+												{project.sub && expandedSubProjects[project.name] && (
+													<ul className='list-none text-sm text-gray-700'>
+														{project.sub.map((subProject, idx) => (
+															<li
+																key={idx}
+																className='flex items-start gap-x-1 select-none'
+																onClick={(e) => {
+																	e.stopPropagation();
+																	setSelectedProject(subProject);
+																}}
+															>
+																<ArrowTurnDownRightIcon width={16} />
+																{subProject.name}
+															</li>
 														))}
 													</ul>
-												)} */}
-												{/* {project.img && (
-													<img
-														src={project.img}
-														alt={project.name}
-														className='mt-2 w-full max-w-xs rounded'
-													/>
-												)} */}
+												)}
 											</div>
 										))}
 									</div>
@@ -105,8 +102,24 @@ export default function Projects() {
 					</div>
 				</div>
 			</div>
-			{/* <div className='col-start-5 col-span-full row-span-full rounded-md border-2 border-gray-100 shadow-sm'></div> */}
-			<div className='col-start-5 col-span-full row-span-full border border-black'></div>
+			<div className='col-start-5 col-span-full row-span-full border border-black'>
+				{selectedProject ? (
+					<div className='p-4'>
+						<h2 className='text-xl font-semibold'>{selectedProject.name}</h2>
+						{selectedProject.img && (
+							<img
+								src={selectedProject.img}
+								alt={selectedProject.name}
+								className='mt-4 max-w-md rounded'
+							/>
+						)}
+					</div>
+				) : (
+					<p className='p-4 text-gray-500 italic'>
+						Select a project to view details
+					</p>
+				)}
+			</div>
 		</>
 	);
 }

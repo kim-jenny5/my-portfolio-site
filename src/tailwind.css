@@ -627,6 +627,26 @@ video {
   top: 0px;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.-left-2 {
+  left: -0.5rem;
+}
+
+.-left-4 {
+  left: -1rem;
+}
+
+.-left-3 {
+  left: -0.75rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -735,6 +755,10 @@ video {
   grid-row-start: 7;
 }
 
+.row-start-3 {
+  grid-row-start: 3;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -818,6 +842,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.ml-14 {
+  margin-left: 3.5rem;
 }
 
 .inline-block {

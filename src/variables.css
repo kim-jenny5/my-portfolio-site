@@ -4,18 +4,3 @@
 	--desktopUp: (min-width: 1024px);
 	--widescreenUp: (min-width: 1440px);
 }
-
-/* @media (--tabletUp) {
-	:root {
-	}
-}
-
-@media (--desktopUp) {
-	:root {
-	}
-}
-
-@media (--widescreenUp) {
-	:root {
-	}
-} */

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Modal from 'react-modal';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './views/Home';
@@ -8,8 +7,6 @@ import About from './views/About';
 import Contact from './views/Contact';
 import Projects from './views/Projects';
 import SpotifyPlayer from './components/SpotifyPlayer';
-
-Modal.setAppElement('#root');
 
 export default function App() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);

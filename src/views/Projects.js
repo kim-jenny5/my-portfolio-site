@@ -1,14 +1,9 @@
 import { useState } from 'react';
-// import Modal from 'react-modal';
 import pilim from '../assets/projects/pilim.png';
 import my_travelogue from '../assets/projects/my_travelogue.png';
 import my_daily_journal from '../assets/projects/my_daily_journal.png';
 import tableau_dambiance from '../assets/projects/tableau_dambiance.png';
-import {
-	ChevronUpIcon,
-	ChevronDownIcon,
-	ArrowTurnDownRightIcon
-} from '@heroicons/react/24/solid';
+import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/solid';
 
 const PROJECTS = [
 	{
@@ -44,30 +39,38 @@ export default function Projects() {
 
 	return (
 		<>
-			<div className='col-start-1 col-span-4 row-start-full ml-10'>
+			<div className='col-start-1 col-span-full row-start-1 row-span-2 tabletLandscape:col-start-1 tabletLandscape:col-span-4 tabletLandscape:row-start-full ml-14 font-poppins'>
 				<div className='rounded-md bg-gray-100 p-4'>
 					<div className='space-y-4'>
 						{PROJECTS.map((group) => (
-							<div key={group.name}>
+							<div key={group.name} className='lowercase select-none'>
 								<div
 									onClick={() => toggleItem(group.name, setExpandedProjects)}
-									className='cursor-pointer font-semibold p-2 bg-gray-200 rounded-md hover:bg-gray-300 select-none'
+									className='flex items-center cursor-pointer hover:text-orion'
 								>
 									{group.name}
+									{expandedProjects[group.name] ? (
+										<ChevronUpIcon width={16} className='ml-1' />
+									) : (
+										<ChevronDownIcon width={16} className='ml-1' />
+									)}
 								</div>
 								{expandedProjects[group.name] && (
 									<div className='ml-4 mt-2 space-y-2'>
 										{group.projects.map((project, idx) => (
 											<div
 												key={idx}
-												className='cursor-pointer p-2 bg-gray-100 rounded select-none'
+												className='cursor-pointer'
 												onClick={() =>
 													project.sub
 														? toggleItem(project.name, setExpandedSubProjects)
 														: setSelectedProject(project)
 												}
 											>
-												<div className='flex items-center'>
+												<div className='relative flex items-center hover:text-orion'>
+													{selectedProject === project && (
+														<span className='absolute -left-3 w-1.5 h-1.5 bg-black rounded-full'></span>
+													)}
 													{project.name}
 													{project.sub &&
 														(expandedSubProjects[project.name] ? (
@@ -77,21 +80,25 @@ export default function Projects() {
 														))}
 												</div>
 												{project.sub && expandedSubProjects[project.name] && (
-													<ul className='list-none text-sm text-gray-700'>
+													<div className='text-sm text-gray-700 ml-4 mt-2 space-y-2'>
 														{project.sub.map((subProject, idx) => (
-															<li
+															<div
 																key={idx}
-																className='flex items-start gap-x-1 select-none'
+																className='cursor-pointer hover:text-orion'
 																onClick={(e) => {
 																	e.stopPropagation();
 																	setSelectedProject(subProject);
 																}}
 															>
-																<ArrowTurnDownRightIcon width={16} />
-																{subProject.name}
-															</li>
+																<div className='relative flex items-center'>
+																	{selectedProject === subProject && (
+																		<span className='absolute -left-3 w-1.5 h-1.5 bg-black rounded-full'></span>
+																	)}
+																	{subProject.name}
+																</div>
+															</div>
 														))}
-													</ul>
+													</div>
 												)}
 											</div>
 										))}
@@ -102,7 +109,7 @@ export default function Projects() {
 					</div>
 				</div>
 			</div>
-			<div className='col-start-5 col-span-full row-span-full border border-black'>
+			<div className='col-start-1 col-span-full row-start-3 row-span-full tabletLandscape:col-start-5 tabletLandscape:col-span-full tabletLandscape:row-span-full'>
 				{selectedProject ? (
 					<div className='p-4'>
 						<h2 className='text-xl font-semibold'>{selectedProject.name}</h2>
@@ -116,7 +123,7 @@ export default function Projects() {
 					</div>
 				) : (
 					<p className='p-4 text-gray-500 italic'>
-						Select a project to view details
+						👈🏻 Select a project to view its details!
 					</p>
 				)}
 			</div>

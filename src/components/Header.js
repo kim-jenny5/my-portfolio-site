@@ -32,7 +32,7 @@ export default function Header({
 						isMenuOpen
 							? 'z-50 opacity-100 translate-y-1/3'
 							: 'z-0 opacity-0 pointer-events-none'
-					} absolute top-0 -right-2 bg-mist w-[150px] h-fit flex flex-col gap-y-1 items-end font-poppins text-sm shadow-lg p-4 transition duration-700 ease-in-out`}
+					} absolute top-0 -right-2 bg-mist w-[150px] h-fit flex flex-col gap-y-1 items-end font-poppins text-sm shadow-lg p-4 transition duration-700 ease-in-out rounded-md`}
 				/>
 			</>
 		</header>

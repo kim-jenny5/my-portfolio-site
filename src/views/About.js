@@ -1,4 +1,3 @@
-import React from 'react';
 import { useImageLoader } from '../utils/useImageLoader';
 import profile from '../assets/images/about_profile.jpg';
 import cat from '../assets/images/cat.jpg';

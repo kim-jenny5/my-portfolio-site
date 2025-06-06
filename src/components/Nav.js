@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useClickOutside } from '../utils/useClickOutside';
 
@@ -27,7 +26,8 @@ export default function Nav({
 	const paths = [
 		{ to: '/', name: 'home' },
 		{ to: '/about', name: 'about' },
-		{ to: '/contact', name: 'contact' }
+		{ to: '/contact', name: 'contact' },
+		{ to: '/projects', name: 'project' }
 	];
 
 	return (

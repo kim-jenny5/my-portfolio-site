@@ -1,3 +1,4 @@
+import SelectedProject from './SelectedProject';
 import macOSFolder from '../../assets/images/macos_folder.png';
 import pilim from '../../assets/projects/pilim.png';
 import my_travelogue from '../../assets/projects/my_travelogue.png';
@@ -30,7 +31,7 @@ export default function Content({ selectProject, selectedProject }) {
 	return (
 		<>
 			{selectedProject ? (
-				<div>Selected project here</div>
+				<SelectedProject projects={selectedProject.projects} />
 			) : (
 				<div className='flex flex-col gap-y-4'>
 					{PROJECTS.map((project, index) => (
@@ -49,8 +50,7 @@ export default function Content({ selectProject, selectedProject }) {
 								>
 									<img
 										src={macOSFolder}
-										width={75}
-										className='p-1 rounded-md group-focus:bg-gray-200'
+										className='w-[100px] p-1 rounded-md group-focus:bg-gray-200'
 									/>
 									<div className='text-sm inline-block px-1 rounded group-focus:bg-blue-600 group-focus:text-white'>
 										{project.name}

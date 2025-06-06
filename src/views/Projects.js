@@ -3,7 +3,8 @@ import Content from '../components/Projects/Content';
 import {
 	ChevronLeftIcon,
 	ChevronRightIcon,
-	ListBulletIcon,
+	QueueListIcon,
+	ViewColumnsIcon,
 	ChevronUpDownIcon,
 	Squares2X2Icon,
 	ChevronDownIcon,
@@ -57,9 +58,9 @@ export default function Projects() {
 
 	return (
 		<>
-			<div className='row-start-1 row-span-full col-start-1 col-span-full ml-14 rounded-xl border border-gray-300 shadow-lg overflow-y-auto'>
+			<div className='row-start-1 row-span-full col-start-1 col-span-full ml-14 rounded-xl border border-gray-300 shadow-lg overflow-y-auto select-none'>
 				<div className='flex justify-between py-4 px-6 rounded-t-xl border-b border-gray-300 bg-stone-100 text-gray-600'>
-					<div className='flex gap-x-2 items-center font-medium tracking-wide select-none'>
+					<div className='flex gap-x-2 items-center font-medium tracking-wide'>
 						<div
 							className={`cursor-pointer rounded p-2 ${
 								hasHistory && selectedProject
@@ -84,7 +85,11 @@ export default function Projects() {
 					</div>
 					<div className='flex'>
 						<div className='flex mr-12'>
-							<ListBulletIcon width={22} />
+							{selectedProject ? (
+								<ViewColumnsIcon width={22} />
+							) : (
+								<QueueListIcon width={22} />
+							)}
 							<ChevronUpDownIcon width={20} strokeWidth={2} />
 						</div>
 						<div className='flex gap-x-4'>

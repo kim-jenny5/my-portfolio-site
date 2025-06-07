@@ -1,7 +1,9 @@
 import Links from './Links';
 
 export default function Details({ project }) {
-	const renderLanguages = (languages) => (
+	const { createdAt, active, languages, links } = project;
+
+	const renderLanguages = () => (
 		<div className='flex flex-col items-end gap-y-1'>
 			{languages.split(', ').map((language, index) => (
 				<div key={index}>{language}</div>
@@ -10,11 +12,11 @@ export default function Details({ project }) {
 	);
 
 	const details = [
-		{ label: 'Created', value: project.createdAt },
-		{ label: 'Languages', value: renderLanguages(project.languages) },
+		{ label: 'Created', value: createdAt },
+		{ label: 'Languages', value: renderLanguages() },
 		{
 			label: 'Links',
-			value: <Links links={project.links} active={project.active} />
+			value: <Links links={links} active={active} />
 		}
 	];
 

@@ -1,13 +1,10 @@
 import { useState } from 'react';
-import Details from './Details';
+import Sidebar from './Sidebar';
 
-export default function SelectedProject({ projects }) {
+export default function Student({ projects }) {
 	const [highlightedProject, setHighlightedProject] = useState(projects[0]);
 
-	const handleClick = (project) => {
-		console.log(project);
-		setHighlightedProject(project);
-	};
+	const handleClick = (project) => setHighlightedProject(project);
 
 	return (
 		// <div className='grid grid-cols-3 gap-y-8 p-4'>
@@ -57,26 +54,7 @@ export default function SelectedProject({ projects }) {
 					))}
 				</div>
 			</div>
-			<div className='flex-[1] flex flex-col gap-y-6 border-l border-gray-300 px-3 py-6'>
-				<div className='flex gap-x-3 items-center'>
-					<div className='shrink-0 shadow-md p-1'>
-						<img
-							src={highlightedProject.img}
-							className='w-[75px] object-cover border border-gray-300'
-						/>
-					</div>
-					<div className='font-medium tracking-wide text-wrap leading-[1.3]'>
-						{highlightedProject.name}
-					</div>
-				</div>
-				<div className='flex flex-col gap-y-1 text-sm tracking-wide'>
-					<div className='flex justify-between'>
-						<div className='font-bold'>Information</div>
-						<div className='text-orion text-xs'>Show Less</div>
-					</div>
-					<Details project={highlightedProject} />
-				</div>
-			</div>
+			<Sidebar project={highlightedProject} />
 		</div>
 	);
 }

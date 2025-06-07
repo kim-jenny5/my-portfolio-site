@@ -1,4 +1,5 @@
-import SelectedProject from './SelectedProject';
+import Professional from './Professional';
+import Student from './Student';
 import macOSFolder from '../../assets/images/macos_folder.png';
 import pilim from '../../assets/projects/pilim.png';
 import my_travelogue from '../../assets/projects/my_travelogue.png';
@@ -22,9 +23,9 @@ const PROJECTS = [
 			{
 				name: 'my travelogue',
 				img: my_travelogue,
-				createdAt: 'January 5, 2022', // GitHub API
+				createdAt: 'January 5, 2022',
 				active: false,
-				languages: 'HTML, CSS, JavaScript, Ruby', // GitHub API
+				languages: 'HTML, CSS, JavaScript, Ruby',
 				links: [
 					{
 						gitHub: [
@@ -58,7 +59,7 @@ const PROJECTS = [
 				active: false,
 				languages: 'HTML, CSS, JavaScript, Ruby',
 				links: [
-					{ gitHub: 'https://github.com/kim-jenny5/pilim-project' },
+					{ gitHub: ['https://github.com/kim-jenny5/pilim-project'] },
 					{ live: 'https://pilim-project.herokuapp.com/' }
 				]
 			},
@@ -69,7 +70,7 @@ const PROJECTS = [
 				active: false,
 				languages: 'HTML, CSS, Ruby',
 				links: [
-					{ gitHub: 'https://github.com/kim-jenny5/journal-sinatra-project' },
+					{ gitHub: ['https://github.com/kim-jenny5/journal-sinatra-project'] },
 					{ live: 'https://mydailyjournal-byjenny.herokuapp.com/' }
 				]
 			}
@@ -78,10 +79,23 @@ const PROJECTS = [
 ];
 
 export default function Content({ selectProject, selectedProject }) {
+	const renderSelectedProject = () => {
+		if (!selectedProject) return null;
+
+		switch (selectedProject.name) {
+			case 'BDG Media':
+				return <Professional projects={selectedProject.projects} />;
+			case 'Student':
+				return <Student projects={selectedProject.projects} />;
+			default:
+				return null;
+		}
+	};
+
 	return (
 		<>
 			{selectedProject ? (
-				<SelectedProject projects={selectedProject.projects} />
+				renderSelectedProject()
 			) : (
 				<div className='flex flex-col gap-y-4'>
 					{PROJECTS.map((project, index) => (

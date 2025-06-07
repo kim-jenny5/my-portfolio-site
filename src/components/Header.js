@@ -8,7 +8,7 @@ export default function Header({
 }) {
 	return (
 		<header
-			className={`relative ${styleFromProps} flex justify-end items-center text-obsidian`}
+			className={`relative ${styleFromProps} flex justify-end items-center text-obsidian select-none`}
 		>
 			<NavLink
 				to='/'

@@ -1,6 +1,12 @@
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Details from './Details';
 
 export default function Sidebar({ project }) {
+	const [showDetails, setShowDetails] = useState(true);
+
+	const handleClick = () => setShowDetails((prev) => !prev);
+
 	return (
 		<div className='flex-[1] flex flex-col gap-y-6 border-l border-gray-300 px-3 py-6'>
 			<div className='flex gap-x-3 items-center'>
@@ -17,9 +23,24 @@ export default function Sidebar({ project }) {
 			<div className='flex flex-col gap-y-1 text-sm tracking-wide'>
 				<div className='flex justify-between'>
 					<div className='font-bold'>Information</div>
-					<div className='text-orion text-xs'>Show Less</div>
+					<button onClick={handleClick} className='text-orion text-xs'>
+						{showDetails ? 'Show Less' : 'Show More'}
+					</button>
 				</div>
-				<Details project={project} />
+				<AnimatePresence initial={false}>
+					{showDetails && (
+						<motion.div
+							key='details'
+							initial={{ height: 0, opacity: 0 }}
+							animate={{ height: 'auto', opacity: 1 }}
+							exit={{ height: 0, opacity: 0 }}
+							transition={{ duration: 0.3, ease: 'easeInOut' }}
+							className='overflow-hidden'
+						>
+							<Details project={project} />
+						</motion.div>
+					)}
+				</AnimatePresence>
 			</div>
 		</div>
 	);

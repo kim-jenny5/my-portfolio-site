@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Content from '../components/Projects/Content';
 import {
 	ChevronLeftIcon,
@@ -57,61 +58,67 @@ export default function Projects() {
 	};
 
 	return (
-		<>
-			<div className='flex flex-col row-start-1 row-span-full col-start-1 col-span-full ml-14 rounded-xl border border-gray-300 shadow-lg overflow-y-auto select-none'>
-				<div className='flex justify-between py-4 px-6 rounded-t-xl border-b border-gray-300 bg-stone-100 text-gray-600'>
-					<div className='flex gap-x-2 items-center font-medium tracking-wide'>
-						<div
-							className={`cursor-pointer rounded p-2 ${
-								hasHistory && selectedProject
-									? 'text-gray-600 hover:bg-gray-200'
-									: 'text-gray-400 pointer-events-none'
-							}`}
-							onClick={handleBack}
-						>
-							<ChevronLeftIcon width={20} />
-						</div>
-						<div
-							className={`cursor-pointer rounded p-2 ${
-								hasFuture
-									? 'text-gray-600 hover:bg-gray-200'
-									: 'text-gray-400 pointer-events-none'
-							}`}
-							onClick={handleForward}
-						>
-							<ChevronRightIcon width={20} />
-						</div>
-						<span className='ml-2'>{topBarText}</span>
-					</div>
-					<div className='flex'>
-						<div className='flex mr-12'>
-							{selectedProject ? (
-								<ViewColumnsIcon width={22} />
-							) : (
-								<QueueListIcon width={22} />
-							)}
-							<ChevronUpDownIcon width={20} strokeWidth={2} />
-						</div>
-						<div className='flex gap-x-4'>
-							<div className='flex'>
-								<Squares2X2Icon width={22} />
-								<ChevronDownIcon width={10} strokeWidth={4} />
-							</div>
-							<ArrowUpOnSquareIcon width={22} />
-							<TagIcon width={22} />
-							<div className='flex'>
-								<EllipsisHorizontalCircleIcon width={20} />
-								<ChevronDownIcon width={10} strokeWidth={4} />
-							</div>
-						</div>
-						<MagnifyingGlassIcon width={20} className='ml-12' />
-					</div>
+		<motion.div
+			initial={{ opacity: 0, scale: 0.95 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{
+				duration: 0.35,
+				ease: [0.25, 0.1, 0.25, 1]
+			}}
+			className='flex flex-col row-start-1 row-span-full col-start-1 col-span-full ml-14 rounded-xl border border-gray-300 shadow-lg overflow-y-auto select-none' // use Tailwind for full coverage
+		>
+			<div className='flex justify-between py-4 px-6 rounded-t-xl border-b border-gray-300 bg-stone-100 text-gray-600'>
+				<div className='flex gap-x-2 items-center font-medium tracking-wide'>
+					<button
+						className={`cursor-pointer rounded p-2 ${
+							hasHistory && selectedProject
+								? 'text-gray-600 hover:bg-gray-200'
+								: 'text-gray-400 pointer-events-none'
+						}`}
+						onClick={handleBack}
+					>
+						<ChevronLeftIcon width={20} />
+					</button>
+					<button
+						className={`cursor-pointer rounded p-2 ${
+							hasFuture
+								? 'text-gray-600 hover:bg-gray-200'
+								: 'text-gray-400 pointer-events-none'
+						}`}
+						onClick={handleForward}
+					>
+						<ChevronRightIcon width={20} />
+					</button>
+					<span className='ml-2'>{topBarText}</span>
 				</div>
-				<Content
-					selectProject={selectProject}
-					selectedProject={selectedProject}
-				/>
+				<div className='flex'>
+					<div className='flex mr-12'>
+						{selectedProject ? (
+							<ViewColumnsIcon width={22} />
+						) : (
+							<QueueListIcon width={22} />
+						)}
+						<ChevronUpDownIcon width={20} strokeWidth={2} />
+					</div>
+					<div className='flex gap-x-4'>
+						<div className='flex'>
+							<Squares2X2Icon width={22} />
+							<ChevronDownIcon width={10} strokeWidth={4} />
+						</div>
+						<ArrowUpOnSquareIcon width={22} />
+						<TagIcon width={22} />
+						<div className='flex'>
+							<EllipsisHorizontalCircleIcon width={20} />
+							<ChevronDownIcon width={10} strokeWidth={4} />
+						</div>
+					</div>
+					<MagnifyingGlassIcon width={20} className='ml-12' />
+				</div>
 			</div>
-		</>
+			<Content
+				selectProject={selectProject}
+				selectedProject={selectedProject}
+			/>
+		</motion.div>
 	);
 }

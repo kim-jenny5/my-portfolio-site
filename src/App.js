@@ -13,7 +13,7 @@ export default function App() {
 	const toggleMenu = () => setIsMenuOpen((prevState) => !prevState);
 	const location = useLocation();
 	const showSpotifyPlayer =
-		location.pathname === '/contact' || location.pathname === '/about';
+		location.pathname === '/' || location.pathname === '/about';
 
 	return (
 		<div className='w-full h-full min-h-screen max-w-screen-desktop mx-auto flex flex-col gap-y-4 p-4 desktop:gap-y-5 desktop:p-5'>

@@ -19,10 +19,60 @@ const PROJECTS = [
 		year: '2021',
 		name: 'Student',
 		projects: [
-			{ name: 'my travelogue', img: my_travelogue },
-			{ name: "Tableau d'Ambiance", img: tableau_dambiance },
-			{ name: 'Pilim', img: pilim },
-			{ name: 'My Daily Journal', img: my_daily_journal }
+			{
+				name: 'my travelogue',
+				img: my_travelogue,
+				createdAt: 'January 5, 2022', // GitHub API
+				active: false,
+				languages: 'HTML, CSS, JavaScript, Ruby', // GitHub API
+				links: [
+					{
+						gitHub: [
+							'https://github.com/kim-jenny5/my-travelogue-frontend',
+							'https://github.com/kim-jenny5/my-travelogue-backend'
+						]
+					},
+					{ live: 'https://my-travelogue.netlify.app/' }
+				]
+			},
+			{
+				name: "Tableau d'Ambiance",
+				img: tableau_dambiance,
+				createdAt: 'September 27, 2021',
+				active: false,
+				languages: 'HTML, CSS, JavaScript, Ruby',
+				links: [
+					{
+						gitHub: [
+							'https://github.com/kim-jenny5/tableau-dambiance-frontend',
+							'https://github.com/kim-jenny5/tableau-dambiance-backend'
+						]
+					},
+					{ live: 'https://pilim-project.herokuapp.com/' }
+				]
+			},
+			{
+				name: 'Pilim',
+				img: pilim,
+				createdAt: 'August 3, 2021',
+				active: false,
+				languages: 'HTML, CSS, JavaScript, Ruby',
+				links: [
+					{ gitHub: 'https://github.com/kim-jenny5/pilim-project' },
+					{ live: 'https://pilim-project.herokuapp.com/' }
+				]
+			},
+			{
+				name: 'My Daily Journal',
+				img: my_daily_journal,
+				createdAt: 'June 6, 2021',
+				active: false,
+				languages: 'HTML, CSS, Ruby',
+				links: [
+					{ gitHub: 'https://github.com/kim-jenny5/journal-sinatra-project' },
+					{ live: 'https://mydailyjournal-byjenny.herokuapp.com/' }
+				]
+			}
 		]
 	}
 ];

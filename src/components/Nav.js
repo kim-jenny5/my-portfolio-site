@@ -27,7 +27,7 @@ export default function Nav({
 		{ to: '/', name: 'home' },
 		{ to: '/about', name: 'about' },
 		{ to: '/contact', name: 'contact' },
-		{ to: '/projects', name: 'project' }
+		{ to: '/projects', name: 'projects' }
 	];
 
 	return (

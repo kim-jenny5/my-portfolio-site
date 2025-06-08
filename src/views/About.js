@@ -1,14 +1,13 @@
 import { useImageLoader } from '../utils/useImageLoader';
 import WindowWrapper from '../components/WindowWrapper';
-import profile from '../assets/images/about_profile.jpg';
-import cat from '../assets/images/cat.jpg';
+import picture from '../assets/images/about.png';
 
 export default function About() {
 	const { handleImageLoad, renderPlaceholder, isLoading } = useImageLoader();
 
 	return (
 		<>
-			<div className='flex flex-col justify-center gap-y-4 row-start-4 row-span-6 col-span-full tablet:row-start-5 tablet:row-span-4 tabletLandscape:justify-end tabletLandscape:row-start-2 tabletLandscape:row-span-7 tabletLandscape:col-start-6 tabletLandscape:col-span-7'>
+			<div className='flex flex-col gap-y-4 row-start-6 row-span-full col-span-full tablet:row-start-8 tablet:col-start-2 tablet:col-end-12 tabletLandscape:row-start-7 tabletLandscape:col-end-12'>
 				<div>
 					I'm a fullstack engineer, with a focus in frontend, based in New York
 					City. With an interest and tact for design, I have a passion for
@@ -41,28 +40,16 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<WindowWrapper style='row-start-1 row-span-3 col-start-4 col-span-full tablet:row-span-4 tablet:col-start-6 tablet:col-span-6 tabletLandscape:row-start-4 tabletLandscape:row-span-6 tabletLandscape:col-start-1 tabletLandscape:col-span-5 desktop:row-start-3 desktop:row-span-7'>
-				{renderPlaceholder('about-profile')}
+			<WindowWrapper style='row-start-1 row-span-5 col-start-3 col-span-full tablet:row-start-2 tablet:row-span-6 tablet:col-start-4 tablet:col-span-6 tabletLandscape:row-start-1 tabletLandscape:col-start-5 tabletLandscape:col-end-9'>
+				{renderPlaceholder('about-picture')}
 				<img
-					src={profile}
-					alt='woman smiling in front of a green wall'
-					className={`absolute top-0 left-0 w-full h-full object-cover object-[0%_30%] transition-opacity duration-500 ${
-						isLoading('about-profile') ? 'opacity-0' : 'opacity-100'
+					src={picture}
+					alt='woman smiling with her cat'
+					className={`absolute top-0 left-0 w-full h-full object-cover object-[0%_10%] transition-opacity duration-500 ${
+						isLoading('about-picture') ? 'opacity-0' : 'opacity-100'
 					}`}
 					loading='lazy'
-					onLoad={() => handleImageLoad('about-profile')}
-				/>
-			</WindowWrapper>
-			<WindowWrapper style='row-start-10 row-span-3 col-span-full tablet:row-start-9 tablet:row-span-4 tablet:col-start-2 tablet:col-span-7 tabletLandscape:row-start-9 tabletLandscape:row-span-4 tabletLandscape:col-start-8 tabletLandscape:col-span-4'>
-				{renderPlaceholder('cat')}
-				<img
-					src={cat}
-					alt='cute cat looking up'
-					className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
-						isLoading('cat') ? 'opacity-0' : 'opacity-100'
-					}`}
-					loading='lazy'
-					onLoad={() => handleImageLoad('cat')}
+					onLoad={() => handleImageLoad('about-picture')}
 				/>
 			</WindowWrapper>
 		</>

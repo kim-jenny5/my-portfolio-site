@@ -817,6 +817,18 @@ video {
   height: 100%;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[130p\[x\]\] {
+  height: 130p[x];
+}
+
+.h-\[130px\] {
+  height: 130px;
+}
+
 .max-h-fit {
   max-height: -webkit-fit-content;
   max-height: fit-content;
@@ -856,6 +868,19 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.min-w-max {
+  min-width: -webkit-max-content;
+  min-width: max-content;
 }
 
 .max-w-screen-desktop {
@@ -1119,6 +1144,10 @@ video {
   object-fit: cover;
 }
 
+.object-fill {
+  object-fit: fill;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1206,6 +1235,10 @@ video {
 
 .text-right {
   text-align: right;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .font-poppins {
@@ -1406,6 +1439,18 @@ body {
   background-color: rgb(29 90 233 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(248 249 250 / var(--tw-text-opacity, 1));
+}
+
+.last\:pr-3:last-child {
+  padding-right: 0.75rem;
+}
+
+.last\:pr-4:last-child {
+  padding-right: 1rem;
+}
+
+.last\:pr-6:last-child {
+  padding-right: 1.5rem;
 }
 
 .hover\:bg-gray-200:hover {

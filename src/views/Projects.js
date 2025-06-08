@@ -16,6 +16,7 @@ import {
 	MagnifyingGlassIcon
 } from '@heroicons/react/24/outline';
 import WindowWrapper from '../components/WindowWrapper';
+import WindowButtons from '../components/WindowButtons';
 import { useIsTabletLandscapeUp } from '../utils/useIsTabletLandscapeUp';
 
 const DEFAULT_TOP_BAR_TEXT = 'Projects';
@@ -96,30 +97,34 @@ export default function Projects() {
 			className='flex flex-col row-start-1 row-span-full col-start-1 col-span-full ml-14 rounded-xl border border-gray-300 shadow-lg select-none'
 		>
 			<div className='flex w-full justify-between py-4 px-6 rounded-t-xl border-b border-gray-300 bg-stone-100 text-gray-600 overflow-hidden'>
-				<div className='flex gap-x-2 items-center font-medium tracking-wide'>
-					<button
-						className={`cursor-pointer rounded p-2 ${
-							hasHistory && selectedProject
-								? 'text-gray-600 hover:bg-gray-200'
-								: 'text-gray-400 pointer-events-none'
-						}`}
-						onClick={handleBack}
-					>
-						<ChevronLeftIcon width={20} />
-					</button>
-					<button
-						className={`cursor-pointer rounded p-2 ${
-							hasFuture
-								? 'text-gray-600 hover:bg-gray-200'
-								: 'text-gray-400 pointer-events-none'
-						}`}
-						onClick={handleForward}
-					>
-						<ChevronRightIcon width={20} />
-					</button>
-					<span className='ml-2'>{topBarText}</span>
+				<div className='flex items-center gap-x-6'>
+					<WindowButtons />
+					<div>
+						<div className='flex gap-x-2 items-center font-medium tracking-wide'>
+							<button
+								className={`cursor-pointer rounded p-2 ${
+									hasHistory && selectedProject
+										? 'text-gray-600 hover:bg-gray-200'
+										: 'text-gray-400 pointer-events-none'
+								}`}
+								onClick={handleBack}
+							>
+								<ChevronLeftIcon width={20} />
+							</button>
+							<button
+								className={`cursor-pointer rounded p-2 ${
+									hasFuture
+										? 'text-gray-600 hover:bg-gray-200'
+										: 'text-gray-400 pointer-events-none'
+								}`}
+								onClick={handleForward}
+							>
+								<ChevronRightIcon width={20} />
+							</button>
+							<span className='ml-2'>{topBarText}</span>
+						</div>
+					</div>
 				</div>
-
 				<div className='flex'>
 					<div className='flex mr-12'>
 						{selectedProject ? (

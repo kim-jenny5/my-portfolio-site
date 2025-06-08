@@ -1,5 +1,6 @@
 import { useImageLoader } from '../utils/useImageLoader';
 import WindowWrapper from '../components/WindowWrapper';
+import SpotifyPlayer from '../components/SpotifyPlayer';
 import profile from '../assets/images/profile.jpg';
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
 				<div className='font-bold text-2xl'>Hi, I'm Jenny</div>
 				<div>frontend engineer / nyc 🗽</div>
 			</div>
+			<SpotifyPlayer style='hidden tabletLandscape:block tabletLandscape:row-start-8 tabletLandscape:row-span-4 tabletLandscape:col-start-1 tabletLandscape:col-span-4' />
 		</>
 	);
 }

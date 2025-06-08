@@ -11,9 +11,20 @@ const PROJECTS = [
 		year: '2022-2025',
 		name: 'BDG Media',
 		projects: [
-			{ name: 'Email Newsletters', sub: [{ name: 'Dark Mode' }] },
-			{ name: 'TZR' },
-			{ name: 'Scary Mommy' }
+			{
+				name: 'Email Newsletters',
+				subs: [
+					{ name: 'Fix Outlook Compatibility' },
+					{ name: 'Support Dark Mode' }
+				]
+			},
+			{
+				name: 'Brand Websites',
+				subs: [{ name: 'BDG' }, { name: 'TZR' }, { name: 'Scary Mommy' }]
+				// bdg - unsubscribe page
+				// scary mommy - add overlay variant card (cms)
+				// tzr - add theming to featured headlines
+			}
 		]
 	},
 	{

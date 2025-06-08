@@ -5,6 +5,7 @@ import {
 	ChevronLeftIcon,
 	ChevronRightIcon,
 	QueueListIcon,
+	ListBulletIcon,
 	ViewColumnsIcon,
 	ChevronUpDownIcon,
 	Squares2X2Icon,
@@ -122,7 +123,11 @@ export default function Projects() {
 				<div className='flex'>
 					<div className='flex mr-12'>
 						{selectedProject ? (
-							<ViewColumnsIcon width={22} />
+							selectedProject.name === 'Student' ? (
+								<ViewColumnsIcon width={22} />
+							) : (
+								<ListBulletIcon width={22} />
+							)
 						) : (
 							<QueueListIcon width={22} />
 						)}

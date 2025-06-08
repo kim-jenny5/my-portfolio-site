@@ -1,4 +1,5 @@
 import Professional from './Professional';
+import Personal from './Personal';
 import Student from './Student';
 import macOSFolder from '../../assets/images/macos_folder.png';
 import pilim from '../../assets/projects/pilim.png';
@@ -24,6 +25,20 @@ const PROJECTS = [
 				// bdg - unsubscribe page
 				// scary mommy - add overlay variant card (cms)
 				// tzr - add theming to featured headlines
+			}
+		]
+	},
+	{
+		year: '2022',
+		name: 'Personal',
+		projects: [
+			{
+				name: 'Portfolio Website',
+				img: 'img',
+				createdAt: 'January 7, 2022',
+				active: true,
+				languages: 'languages',
+				links: [{ gitHub: 'github', live: 'live' }]
 			}
 		]
 	},
@@ -96,6 +111,8 @@ export default function Content({ selectProject, selectedProject }) {
 		switch (selectedProject.name) {
 			case 'BDG Media':
 				return <Professional projects={selectedProject.projects} />;
+			case 'Personal':
+				return <Personal projects={selectedProject.projects} />;
 			case 'Student':
 				return <Student projects={selectedProject.projects} />;
 			default:

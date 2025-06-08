@@ -1,11 +1,9 @@
-export default function Personal({ projects }) {
+export default function Personal() {
 	return (
-		<>
-			<div>
-				{projects.map((project) => (
-					<div>{project.name}</div>
-				))}
-			</div>
-		</>
+		<div className='p-4'>
+			This page is currently under construction. 👷🏻‍♀️
+			<br />
+			Please check back soon!
+		</div>
 	);
 }

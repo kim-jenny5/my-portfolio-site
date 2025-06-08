@@ -1,13 +1,9 @@
-// import macOSFolder from '../../assets/images/macos_folder.png';
-
-export default function Professional({ projects }) {
+export default function Professional() {
 	return (
-		<>
-			<div>
-				{projects.map((project) => (
-					<div>{project.name}</div>
-				))}
-			</div>
-		</>
+		<div className='p-4'>
+			This page is currently under construction. 👷🏻‍♀️
+			<br />
+			Please check back soon!
+		</div>
 	);
 }

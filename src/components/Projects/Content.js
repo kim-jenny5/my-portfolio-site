@@ -1,7 +1,9 @@
 import Professional from './Professional';
-import Personal from './Personal';
-import Student from './Student';
+import GalleryWrapper from './GalleryWrapper';
 import macOSFolder from '../../assets/images/macos_folder.png';
+import portfolio_site from '../../assets/projects/portfolio_site.png';
+import friend_portfolio_site_prototype from '../../assets/projects/friend_portfolio_site_prototype.png';
+import portfolio_site_v1 from '../../assets/projects/portfolio_site_v1.png';
 import pilim from '../../assets/projects/pilim.png';
 import my_travelogue from '../../assets/projects/my_travelogue.png';
 import my_daily_journal from '../../assets/projects/my_daily_journal.png';
@@ -34,11 +36,45 @@ const PROJECTS = [
 		projects: [
 			{
 				name: 'Portfolio Website',
-				img: 'img',
+				img: portfolio_site,
+				createdAt: 'June 19, 2024',
+				active: true,
+				languages: 'HTML, CSS, JavaScript',
+				links: [
+					{
+						gitHub: ['https://github.com/kim-jenny5/my-portfolio-site'],
+						live: 'https://jennykim.dev/'
+					}
+				]
+			},
+			{
+				name: "Friend's Portfolio Site Prototype",
+				img: friend_portfolio_site_prototype,
+				createdAt: 'March 12, 2022',
+				active: false,
+				languages: 'HTML, CSS, JavaScript, Ruby',
+				links: [
+					{
+						gitHub: [
+							'https://github.com/kim-jenny5/moon-portfolio-frontend',
+							'https://github.com/kim-jenny5/moon-portfolio-backend'
+						],
+						live: 'https://romantic-kirch-86d465.netlify.app/'
+					}
+				]
+			},
+			{
+				name: 'Portfolio Website v1',
+				img: portfolio_site_v1,
 				createdAt: 'January 7, 2022',
 				active: true,
-				languages: 'languages',
-				links: [{ gitHub: 'github', live: 'live' }]
+				languages: 'HTML, JavaScript',
+				links: [
+					{
+						gitHub: ['https://github.com/kim-jenny5/my-portfolio-site-v1'],
+						live: 'https://portfolio-site-v1.netlify.app/'
+					}
+				]
 			}
 		]
 	},
@@ -112,9 +148,8 @@ export default function Content({ selectProject, selectedProject }) {
 			case 'BDG Media':
 				return <Professional projects={selectedProject.projects} />;
 			case 'Personal':
-				return <Personal projects={selectedProject.projects} />;
 			case 'Student':
-				return <Student projects={selectedProject.projects} />;
+				return <GalleryWrapper projects={selectedProject.projects} />;
 			default:
 				return null;
 		}

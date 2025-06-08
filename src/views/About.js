@@ -1,4 +1,5 @@
 import { useImageLoader } from '../utils/useImageLoader';
+import PictureWrapper from '../components/PictureWrapper';
 import profile from '../assets/images/about_profile.jpg';
 import cat from '../assets/images/cat.jpg';
 
@@ -40,30 +41,30 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<div className='relative w-full h-full overflow-hidden rounded-md row-start-1 row-span-3 col-start-4 col-span-full tablet:row-span-4 tablet:col-start-6 tabletLandscape:row-start-3 tabletLandscape:row-span-5 tabletLandscape:col-start-2 tabletLandscape:col-span-4'>
+			<PictureWrapper style='row-start-1 row-span-3 col-start-4 col-span-full tablet:row-span-4 tablet:col-start-6 tabletLandscape:row-start-3 tabletLandscape:row-span-5 tabletLandscape:col-start-2 tabletLandscape:col-span-4'>
 				{renderPlaceholder('about-profile')}
 				<img
 					src={profile}
 					alt='woman smiling in front of a green wall'
-					className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
+					className={`absolute top-0 left-0 w-full h-full object-cover translate-y-[25px] transition-opacity duration-500 ${
 						isLoading('about-profile') ? 'opacity-0' : 'opacity-100'
 					}`}
 					loading='lazy'
 					onLoad={() => handleImageLoad('about-profile')}
 				/>
-			</div>
-			<div className='relative w-full h-full overflow-hidden rounded-md row-start-10 row-span-3 col-span-full tablet:row-start-9 tablet:row-span-4 tabletLandscape:row-start-9 tabletLandscape:row-span-4 tabletLandscape:col-start-8 tabletLandscape:col-span-4 desktop:-mt-6'>
+			</PictureWrapper>
+			<PictureWrapper style='row-start-10 row-span-3 col-span-full tablet:row-start-9 tablet:row-span-4 tabletLandscape:row-start-9 tabletLandscape:row-span-4 tabletLandscape:col-start-8 tabletLandscape:col-span-4 desktop:-mt-6'>
 				{renderPlaceholder('cat')}
 				<img
 					src={cat}
 					alt='cute cat looking up'
-					className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
+					className={`absolute top-0 left-0 w-full h-full object-cover translate-y-[25px] transition-opacity duration-500 ${
 						isLoading('cat') ? 'opacity-0' : 'opacity-100'
 					}`}
 					loading='lazy'
 					onLoad={() => handleImageLoad('cat')}
 				/>
-			</div>
+			</PictureWrapper>
 		</>
 	);
 }

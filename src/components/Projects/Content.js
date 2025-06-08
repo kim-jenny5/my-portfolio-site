@@ -109,14 +109,14 @@ export default function Content({ selectProject, selectedProject }) {
 							<div className='border-t border-gray-200 px-6 py-2 select-none'>
 								<div
 									tabIndex={0}
-									className='inline-block text-center cursor-pointer group focus:outline-none'
-									onDoubleClick={() => selectProject(project)}
+									className='inline-block text-center cursor-pointer group'
+									onClick={() => selectProject(project)}
 								>
 									<img
 										src={macOSFolder}
-										className='w-[100px] p-1 rounded-md group-focus:bg-gray-200'
+										className='w-[100px] p-1 rounded-md group-active:bg-gray-200'
 									/>
-									<div className='text-sm inline-block px-1 rounded group-focus:bg-blue-600 group-focus:text-white'>
+									<div className='text-sm inline-block px-1 rounded group-active:bg-blue-600 group-active:text-white'>
 										{project.name}
 									</div>
 								</div>

@@ -22,7 +22,7 @@ export default function App() {
 				toggleMenu={toggleMenu}
 				isMenuOpen={isMenuOpen}
 			/>
-			<main className='relative max-w-screen-xl w-full h-full m-auto grow grid grid-cols-12 grid-rows-12 gap-x-3 gap-y-6 tablet:gap-x-5 tablet:gap-y-10 desktop:gap-x-8 desktop:gap-y-12'>
+			<main className='max-w-screen-xl w-full h-full m-auto grow grid grid-cols-12 grid-rows-12 gap-x-3 gap-y-6 tablet:gap-x-5 tablet:gap-y-10 desktop:gap-x-8 desktop:gap-y-12'>
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />

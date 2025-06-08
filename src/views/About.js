@@ -1,5 +1,5 @@
 import { useImageLoader } from '../utils/useImageLoader';
-import PictureWrapper from '../components/PictureWrapper';
+import WindowWrapper from '../components/WindowWrapper';
 import profile from '../assets/images/about_profile.jpg';
 import cat from '../assets/images/cat.jpg';
 
@@ -41,7 +41,7 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<PictureWrapper style='row-start-1 row-span-3 col-start-4 col-span-full tablet:row-span-4 tablet:col-start-6 tabletLandscape:row-start-3 tabletLandscape:row-span-5 tabletLandscape:col-start-2 tabletLandscape:col-span-4'>
+			<WindowWrapper style='row-start-1 row-span-3 col-start-4 col-span-full tablet:row-span-4 tablet:col-start-6 tabletLandscape:row-start-3 tabletLandscape:row-span-5 tabletLandscape:col-start-2 tabletLandscape:col-span-4'>
 				{renderPlaceholder('about-profile')}
 				<img
 					src={profile}
@@ -52,8 +52,8 @@ export default function About() {
 					loading='lazy'
 					onLoad={() => handleImageLoad('about-profile')}
 				/>
-			</PictureWrapper>
-			<PictureWrapper style='row-start-10 row-span-3 col-span-full tablet:row-start-9 tablet:row-span-4 tabletLandscape:row-start-9 tabletLandscape:row-span-4 tabletLandscape:col-start-8 tabletLandscape:col-span-4 desktop:-mt-6'>
+			</WindowWrapper>
+			<WindowWrapper style='row-start-10 row-span-3 col-span-full tablet:row-start-9 tablet:row-span-4 tabletLandscape:row-start-9 tabletLandscape:row-span-4 tabletLandscape:col-start-8 tabletLandscape:col-span-4 desktop:-mt-6'>
 				{renderPlaceholder('cat')}
 				<img
 					src={cat}
@@ -64,7 +64,7 @@ export default function About() {
 					loading='lazy'
 					onLoad={() => handleImageLoad('cat')}
 				/>
-			</PictureWrapper>
+			</WindowWrapper>
 		</>
 	);
 }

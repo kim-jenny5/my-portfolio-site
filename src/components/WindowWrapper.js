@@ -1,4 +1,4 @@
-export default function PictureWrapper({ children, style: styleFromProps }) {
+export default function WindowWrapper({ children, style: styleFromProps }) {
 	return (
 		<div
 			className={`${styleFromProps} relative w-full h-full overflow-hidden rounded-lg rounded-t-2xl border border-gray-300 shadow-lg`}

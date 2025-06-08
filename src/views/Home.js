@@ -1,5 +1,5 @@
 import { useImageLoader } from '../utils/useImageLoader';
-import PictureWrapper from '../components/PictureWrapper';
+import WindowWrapper from '../components/WindowWrapper';
 import profile from '../assets/images/profile.jpg';
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<>
 			<div className='row-start-5 row-span-6 col-start-1 col-span-full tablet:row-span-7 tabletLandscape:col-start-5 tabletLandscape:col-span-8 tabletLandscape:row-start-1 tabletLandscape:row-span-full'>
-				<PictureWrapper>
+				<WindowWrapper>
 					{renderPlaceholder('profile')}
 					<img
 						src={profile}
@@ -19,7 +19,7 @@ export default function Home() {
 						loading='lazy'
 						onLoad={() => handleImageLoad('profile')}
 					/>
-				</PictureWrapper>
+				</WindowWrapper>
 			</div>
 			<div className='flex flex-col justify-end row-start-1 row-span-4 col-start-1 col-span-full tabletLandscape:row-start-4 tabletLandscape:col-span-4'>
 				<div className='font-bold text-2xl'>Hi, I'm Jenny</div>

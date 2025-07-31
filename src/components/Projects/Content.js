@@ -1,6 +1,6 @@
 import GalleryWrapper from './GalleryWrapper';
-import macOSFolder from '../../assets/images/macos_folder.png';
-import PROJECTS from './Data';
+import macOSFolder from '../../assets/macos_folder.png';
+import projects from '../../data/projects.json';
 
 export default function Content({ selectProject, selectedProject }) {
 	const renderSelectedProject = () =>
@@ -14,7 +14,7 @@ export default function Content({ selectProject, selectedProject }) {
 				renderSelectedProject()
 			) : (
 				<div className='flex flex-col gap-y-4'>
-					{PROJECTS.map((group, index) => (
+					{projects.map((group, index) => (
 						<div key={index}>
 							<div className='flex justify-between items-center px-6 py-2 text-gray-500'>
 								<span className='font-medium tracking-wide'>{group.label}</span>

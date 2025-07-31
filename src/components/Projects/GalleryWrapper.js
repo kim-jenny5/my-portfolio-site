@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useImageLoader } from '../../utils/useImageLoader';
+import { S3_BASE_URL } from '../../utils/constants';
 import Sidebar from './Sidebar';
 
 export default function GalleryWrapper({ projects }) {
@@ -13,7 +14,7 @@ export default function GalleryWrapper({ projects }) {
 				<div className='flex justify-center grow px-8 py-16'>
 					{renderPlaceholder('highlighted')}
 					<img
-						src={highlightedProject.img}
+						src={`${S3_BASE_URL}${highlightedProject.img}`}
 						className={`rounded-md border border-gray-200 w-full h-full object-cover transition-opacity duration-500 ${
 							isLoading('highlighted') ? 'opacity-0' : 'opacity-100'
 						}`}
@@ -32,7 +33,7 @@ export default function GalleryWrapper({ projects }) {
 							>
 								{renderPlaceholder(`project-${index}`)}
 								<img
-									src={project.img}
+									src={`${S3_BASE_URL}${project.img}`}
 									className={`w-[150px] h-[100px] border border-gray-200 object-cover transition-opacity duration-500 ${
 										isLoading('highlighted') ? 'opacity-0' : 'opacity-100'
 									}`}

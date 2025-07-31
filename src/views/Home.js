@@ -1,7 +1,7 @@
 import { useImageLoader } from '../utils/useImageLoader';
 import WindowWrapper from '../components/WindowWrapper';
 import SpotifyPlayer from '../components/SpotifyPlayer';
-import profile from '../assets/images/profile.jpg';
+import { S3_BASE_URL } from '../utils/constants';
 
 export default function Home() {
 	const { handleImageLoad, renderPlaceholder, isLoading } = useImageLoader();
@@ -10,15 +10,15 @@ export default function Home() {
 		<>
 			<div className='row-start-5 row-span-6 col-start-1 col-span-full tablet:row-span-7 tabletLandscape:col-start-5 tabletLandscape:col-span-8 tabletLandscape:row-start-1 tabletLandscape:row-span-full'>
 				<WindowWrapper>
-					{renderPlaceholder('profile')}
+					{renderPlaceholder('home-profile')}
 					<img
-						src={profile}
+						src={`${S3_BASE_URL}/profile/home.png`}
 						alt='woman smiling outside'
 						className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
-							isLoading('profile') ? 'opacity-0' : 'opacity-100'
+							isLoading('home-profile') ? 'opacity-0' : 'opacity-100'
 						}`}
 						loading='lazy'
-						onLoad={() => handleImageLoad('profile')}
+						onLoad={() => handleImageLoad('home-profile')}
 					/>
 				</WindowWrapper>
 			</div>

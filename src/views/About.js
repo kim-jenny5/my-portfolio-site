@@ -1,6 +1,6 @@
 import { useImageLoader } from '../utils/useImageLoader';
 import WindowWrapper from '../components/WindowWrapper';
-import picture from '../assets/images/about.png';
+import { S3_BASE_URL } from '../utils/constants';
 
 export default function About() {
 	const { handleImageLoad, renderPlaceholder, isLoading } = useImageLoader();
@@ -41,15 +41,15 @@ export default function About() {
 				</div>
 			</div>
 			<WindowWrapper style='row-start-1 row-span-5 col-start-3 col-span-full tablet:row-start-2 tablet:row-span-6 tablet:col-start-4 tablet:col-span-6 tabletLandscape:row-start-1 tabletLandscape:col-start-5 tabletLandscape:col-end-9'>
-				{renderPlaceholder('about-picture')}
+				{renderPlaceholder('about-profile')}
 				<img
-					src={picture}
+					src={`${S3_BASE_URL}/profile/about.png`}
 					alt='woman smiling with her cat'
 					className={`absolute top-0 left-0 w-full h-full object-cover object-[0%_10%] transition-opacity duration-500 ${
-						isLoading('about-picture') ? 'opacity-0' : 'opacity-100'
+						isLoading('about-profile') ? 'opacity-0' : 'opacity-100'
 					}`}
 					loading='lazy'
-					onLoad={() => handleImageLoad('about-picture')}
+					onLoad={() => handleImageLoad('about-profile')}
 				/>
 			</WindowWrapper>
 		</>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { S3_BASE_URL } from '../../utils/constants';
 import Details from './Details';
 
 export default function Sidebar({ project }) {
@@ -13,7 +14,7 @@ export default function Sidebar({ project }) {
 				<div className='flex gap-x-3 items-center'>
 					<div className='shrink-0 shadow-md p-1'>
 						<img
-							src={project.img}
+							src={`${S3_BASE_URL}${project.img}`}
 							className='w-[75px] object-cover border border-gray-300'
 						/>
 					</div>

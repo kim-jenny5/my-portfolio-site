@@ -25,7 +25,7 @@ export default function Details({ project }) {
 			{details.map((item, index) => (
 				<div
 					key={index}
-					className='flex justify-between items-start py-2 max-h-32 overflow-y-auto'
+					className='flex justify-between items-start py-2 max-h-[140px] overflow-y-auto'
 				>
 					<div className='font-medium text-gray-400'>{item.label}</div>
 					<div className='text-right'>{item.value}</div>

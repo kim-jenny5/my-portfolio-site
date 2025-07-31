@@ -1,6 +1,8 @@
 export default function Links({ links, active }) {
-	const githubLinks = links.find((link) => link.gitHub)?.gitHub || [];
-	const liveLink = links.find((link) => link.live)?.live || '';
+	if (!links) return null;
+
+	const githubLinks = links.gitHub || [];
+	const liveLink = links.live || '';
 
 	return (
 		<div className='flex flex-col items-end gap-y-1'>
@@ -20,17 +22,21 @@ export default function Links({ links, active }) {
 								: 'Backend GitHub'}
 					</a>
 				))}
-			<span>
-				<a
-					href={liveLink}
-					className='text-blue-600 underline'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					Live
-				</a>
-				<span className='italic text-gray-500'>{!active && ' (inactive)'}</span>
-			</span>
+			{liveLink && (
+				<span>
+					<a
+						href={liveLink}
+						className='text-blue-600 underline'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						Live
+					</a>
+					<span className='italic text-gray-500'>
+						{!active && ' (inactive)'}
+					</span>
+				</span>
+			)}
 		</div>
 	);
 }

@@ -1,6 +1,6 @@
 import WindowWrapper from '../components/WindowWrapper';
 import { useImageLoader } from '../utils/useImageLoader';
-import contact_profile from '../assets/images/contact_profile.jpg';
+import { S3_BASE_URL } from '../utils/constants';
 
 export default function Contact() {
 	const { handleImageLoad, renderPlaceholder, isLoading } = useImageLoader();
@@ -12,7 +12,7 @@ export default function Contact() {
 					<div className='relative w-full h-full'>
 						{renderPlaceholder('contact-profile')}
 						<img
-							src={contact_profile}
+							src={`${S3_BASE_URL}/profile/contact.png`}
 							className={`absolute top-0 left-0 w-full h-full object-[0%_25%] object-cover brightness-125 transition-opacity duration-500 ${
 								isLoading('contact-profile') ? 'opacity-0' : 'opacity-100'
 							} brightness-[0.95]`}

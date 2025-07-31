@@ -11,16 +11,18 @@ export default function GalleryWrapper({ projects }) {
 	return (
 		<div className='flex grow'>
 			<div className='flex flex-col flex-[3]'>
-				<div className='flex justify-center grow px-8 py-16'>
+				<div className='flex justify-center grow px-8 py-16 h-[200px] max-h-fit'>
 					{renderPlaceholder('highlighted')}
-					<img
-						src={`${S3_BASE_URL}${highlightedProject.img}`}
-						className={`rounded-md border border-gray-200 w-full h-full object-cover transition-opacity duration-500 ${
-							isLoading('highlighted') ? 'opacity-0' : 'opacity-100'
-						}`}
-						loading='lazy'
-						onLoad={() => handleImageLoad('highlighted')}
-					/>
+					<div className='rounded-md border border-gray-200'>
+						<img
+							src={`${S3_BASE_URL}${highlightedProject.img}`}
+							className={`rounded-md w-full h-full object-cover transition-opacity duration-500 ${
+								isLoading('highlighted') ? 'opacity-0' : 'opacity-100'
+							}`}
+							loading='lazy'
+							onLoad={() => handleImageLoad('highlighted')}
+						/>
+					</div>
 				</div>
 				<div className='flex w-full h-1/4 items-end overflow-x-auto px-4 py-2'>
 					<div className='flex'>

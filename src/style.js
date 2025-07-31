@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { createGlobalStyle } from "styled-components";
+import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 // DELETE THIS FILE
 export const GlobalStyle = createGlobalStyle`
@@ -71,33 +71,33 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 100vh;
 
-  /* XS / Mobile Portrait */
-  @media only screen and (min-width: 320px) {
-    margin: 0 1.25rem 0 1.25rem;
-  }
+	/* XS / Mobile Portrait */
+	@media only screen and (min-width: 320px) {
+		margin: 0 1.25rem 0 1.25rem;
+	}
 
-  /* S / Mobile Landscape */
-  @media only screen and (min-width: 480px) {
-    margin: 0 2.031rem 0 2.031rem;
-  }
+	/* S / Mobile Landscape */
+	@media only screen and (min-width: 480px) {
+		margin: 0 2.031rem 0 2.031rem;
+	}
 
-  /* M / Tablet Portrait */
-  @media only screen and (min-width: 768px) {
-    margin: 0 2.813rem 0 2.813rem;
-  }
+	/* M / Tablet Portrait */
+	@media only screen and (min-width: 768px) {
+		margin: 0 2.813rem 0 2.813rem;
+	}
 
-  /* L / Tablet Landscape */
-  @media only screen and (min-width: 992px) {
-    margin: 0 3.594rem 0 3.594rem;
-  }
+	/* L / Tablet Landscape */
+	@media only screen and (min-width: 992px) {
+		margin: 0 3.594rem 0 3.594rem;
+	}
 
-  /* XL / Desktop */
-  @media only screen and (min-width: 1200px) {
-    margin: 0 4.375rem 0 4.375rem;
-  }
+	/* XL / Desktop */
+	@media only screen and (min-width: 1200px) {
+		margin: 0 4.375rem 0 4.375rem;
+	}
 `;

@@ -1,6 +1,6 @@
 :root {
-	/* breakpoints */
-	--tabletUp: (min-width: 768px);
-	--desktopUp: (min-width: 1024px);
-	--widescreenUp: (min-width: 1440px);
+  /* breakpoints */
+  --tabletUp: (min-width: 768px);
+  --desktopUp: (min-width: 1024px);
+  --widescreenUp: (min-width: 1440px);
 }

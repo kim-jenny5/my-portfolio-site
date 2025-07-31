@@ -1,12 +1,34 @@
-import GalleryWrapper from './GalleryWrapper';
+import { useEffect, useState } from 'react';
 import macOSFolder from '../../assets/macos_folder.png';
-import projects from '../../data/projects.json';
+import { S3_BASE_URL } from '../../utils/constants';
+import GalleryWrapper from './GalleryWrapper';
 
 export default function Content({ selectProject, selectedProject }) {
+	const [projectGroups, setProjectGroups] = useState([]);
+	const [isLoading, setIsLoading] = useState(true);
+
+	useEffect(() => {
+		const fetchProjects = async () => {
+			try {
+				const response = await fetch(`${S3_BASE_URL}/projects.json`);
+				const data = await response.json();
+				setProjectGroups(data);
+				setIsLoading(false);
+			} catch (error) {
+				console.error('Error loading projects.json:', error);
+				setIsLoading(false);
+			}
+		};
+
+		fetchProjects();
+	}, []);
+
 	const renderSelectedProject = () =>
 		selectedProject ? (
 			<GalleryWrapper projects={selectedProject.projects} />
 		) : null;
+
+	if (isLoading) return <div className='p-6'>Loading...</div>;
 
 	return (
 		<>
@@ -14,7 +36,7 @@ export default function Content({ selectProject, selectedProject }) {
 				renderSelectedProject()
 			) : (
 				<div className='flex flex-col gap-y-4'>
-					{projects.map((group, index) => (
+					{projectGroups.map((group, index) => (
 						<div key={index}>
 							<div className='flex justify-between items-center px-6 py-2 text-gray-500'>
 								<span className='font-medium tracking-wide'>{group.label}</span>

@@ -11,11 +11,12 @@ export default function Content({ selectProject, selectedProject }) {
     const fetchProjects = async () => {
       try {
         const response = await fetch(`${S3_BASE_URL}/projects.json`);
+        if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
         const data = await response.json();
         setProjectGroups(data);
-        setIsLoading(false);
       } catch (error) {
         console.error('Error loading projects.json:', error);
+      } finally {
         setIsLoading(false);
       }
     };

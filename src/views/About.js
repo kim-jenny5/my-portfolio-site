@@ -17,18 +17,22 @@ export default function About() {
         </div>
         <div>
           <div className='text-sm font-bold uppercase tracking-wide'>Frontend</div>
-          <div>
-            JavaScript / TypeScript / HTML / CSS / React / Next.js / Redux / Motion / Hotwire
-            Stimulus / Hotwire Turbo
-          </div>
+          <div>JavaScript / TypeScript / HTML / CSS / React / Hotwire Stimulus / Hotwire Turbo</div>
         </div>
         <div>
           <div className='text-sm font-bold uppercase tracking-wide'>Backend</div>
-          <div>Ruby on Rails / PostgreSQL / Supabase / Neon / Drizzle ORM / SQLite</div>
+          <div>Ruby on Rails / PostgreSQL</div>
         </div>
         <div>
           <div className='text-sm font-bold uppercase tracking-wide'>Design</div>
           <div>Tailwind CSS / Tailwind UI / styled-components / Bootstrap / MUI / Figma</div>
+        </div>
+        <hr className='border-orion/50'></hr>
+        <div>
+          <div className='text-sm font-bold uppercase tracking-wide'>
+            Currently diving deeper into:
+          </div>
+          <div>Next.js / Motion / Redux / Supabase / Neon</div>
         </div>
       </div>
       <WindowWrapper style='row-start-1 row-span-5 col-start-3 col-span-full tablet:row-start-2 tablet:row-span-6 tablet:col-start-4 tablet:col-span-6 tabletLandscape:row-start-1 tabletLandscape:col-start-5 tabletLandscape:col-end-9'>

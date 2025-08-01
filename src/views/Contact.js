@@ -1,6 +1,7 @@
 import WindowWrapper from '../components/WindowWrapper';
 import { useImageLoader } from '../utils/useImageLoader';
 import { S3_BASE_URL } from '../utils/constants';
+import { ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 
 export default function Contact() {
   const { handleImageLoad, renderPlaceholder, isLoading } = useImageLoader();
@@ -49,11 +50,11 @@ export default function Contact() {
               </a>
               <span className='inline-block h-1 w-1 rounded-full bg-black'></span>
               <a
-                href='/resume.pdf'
-                download='Jenny Kim Resume.pdf'
-                className='rounded-md px-2 py-1 hover:bg-gray-100 hover:font-medium active:text-orion'
+                href={`${S3_BASE_URL}/resume.pdf`}
+                className='flex gap-x-1 rounded-md px-2 py-1 hover:bg-gray-100 hover:font-medium active:text-orion'
               >
                 Resume
+                <ArrowDownTrayIcon width={15} />
               </a>
             </div>
           </div>

@@ -73,8 +73,8 @@ export default function Projects() {
           exit={{ opacity: 0, scale: 0.9 }}
           transition={{ delay: 0.3, duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
         >
-          <WindowWrapper>
-            <div className='absolute flex translate-y-1/2 flex-col justify-center gap-y-1 px-4 text-gray-500 tablet:translate-y-3/4 tablet:px-6'>
+          <WindowWrapper style='h-full'>
+            <div className='absolute flex translate-y-1/2 flex-col justify-center gap-y-1 px-6 text-gray-500 tablet:translate-y-3/4 tablet:px-6'>
               <div>Bigger screen, better vibes ✨</div>
               <div className='text-sm'>Please view this page on a desktop or rotated tablet!</div>
             </div>

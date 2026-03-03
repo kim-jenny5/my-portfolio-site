@@ -22,9 +22,9 @@ export default function Home() {
           />
         </WindowWrapper>
       </div>
-      <div className='col-span-full col-start-1 row-span-4 row-start-9 flex flex-col tablet:col-start-2 tabletLandscape:col-start-1 tabletLandscape:col-end-6 tabletLandscape:row-span-3 tabletLandscape:row-start-6 tabletLandscape:justify-end'>
-        <div className='text-5xl font-bold tablet:text-6xl'>Hi, I'm Jenny</div>
-        <div>frontend engineer / nyc 🗽</div>
+      <div className='col-span-full col-start-1 row-span-4 row-start-1 flex flex-col justify-end tabletLandscape:col-span-4 tabletLandscape:row-start-4'>
+        <div className='text-2xl font-bold'>Hi, I'm Jenny</div>
+        <div>a product-minded engineer / nyc 🗽</div>
       </div>
       <SpotifyPlayer style='hidden tabletLandscape:block tabletLandscape:row-start-9 tabletLandscape:content-end tabletLandscape:row-span-4 tabletLandscape:col-start-1 tabletLandscape:col-span-5' />
     </>

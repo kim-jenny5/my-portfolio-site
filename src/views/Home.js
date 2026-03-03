@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       <div className='col-span-full col-start-1 row-span-4 row-start-1 flex flex-col justify-end tabletLandscape:col-span-4 tabletLandscape:row-start-4'>
         <div className='text-2xl font-bold'>Hi, I'm Jenny</div>
-        <div>frontend engineer / nyc 🗽</div>
+        <div>a product-minded engineer / nyc 🗽</div>
       </div>
       <SpotifyPlayer style='hidden tabletLandscape:block tabletLandscape:row-start-8 tabletLandscape:row-span-4 tabletLandscape:col-start-1 tabletLandscape:col-span-4' />
     </>

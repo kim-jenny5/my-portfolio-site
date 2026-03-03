@@ -1,26 +1,26 @@
 import WindowWrapper from '../components/WindowWrapper';
 import { useImageLoader } from '../utils/useImageLoader';
 import { S3_BASE_URL } from '../utils/constants';
-import { ArrowDownTrayIcon } from '@heroicons/react/24/outline';
+import { LockClosedIcon } from '@heroicons/react/24/outline';
 
 export default function Contact() {
   const { handleImageLoad, renderPlaceholder, isLoading } = useImageLoader();
 
   return (
     <>
-      <WindowWrapper style='row-start-2 row-span-10 col-start-2 col-span-10 tablet:row-start-3 tablet:row-span-8 tablet:col-start-4 tablet:col-span-6 tabletLandscape:row-start-2 tabletLandscape:row-span-10 tabletLandscape:col-start-5 tabletLandscape:col-span-4 desktop:row-start-3 desktop:row-span-8'>
-        <div className='flex h-full w-full -translate-y-[9%] flex-col overflow-hidden'>
-          <div className='relative h-full w-full'>
+      <WindowWrapper style='h-fit row-start-2 row-end-12 col-start-1 col-end-13 tablet:row-start-3 tablet:row-span-8 tablet:col-start-4 tablet:col-span-6 tabletLandscape:row-start-2 tabletLandscape:row-span-10 tabletLandscape:col-start-5 tabletLandscape:col-span-4 widescreen:row-end-13 widescreen:translate-y-[5%]'>
+        <div className='flex flex-col'>
+          <div className='relative aspect-square w-full overflow-hidden'>
             {renderPlaceholder('contact-profile')}
             <img
               src={`${S3_BASE_URL}/profile/contact.png`}
-              className={`absolute left-0 top-0 h-full w-full object-cover object-[0%_25%] brightness-125 transition-opacity duration-500 ${
+              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${
                 isLoading('contact-profile') ? 'opacity-0' : 'opacity-100'
               } brightness-[0.95]`}
               onLoad={() => handleImageLoad('contact-profile')}
             />
           </div>
-          <div className='flex h-[150px] w-full shrink-0 flex-col justify-between p-2 pb-3 pt-4 tablet:p-4 tablet:pb-5 tablet:pt-6'>
+          <div className='flex w-full shrink-0 flex-col justify-between gap-y-5 p-2 pb-3 pt-4 tablet:p-4 tablet:pb-5 tablet:pt-6'>
             <div className='px-2'>
               <div className='text-2xl font-bold uppercase leading-[1.2] tracking-tight'>
                 Jenny Kim
@@ -54,7 +54,7 @@ export default function Contact() {
                 className='flex gap-x-1 rounded-md px-2 py-1 hover:bg-gray-100 hover:font-medium active:text-orion'
               >
                 Resume
-                <ArrowDownTrayIcon width={15} />
+                <LockClosedIcon width={15} />
               </a>
             </div>
           </div>

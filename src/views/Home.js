@@ -8,8 +8,8 @@ export default function Home() {
 
   return (
     <>
-      <div className='col-span-full col-start-1 row-span-6 row-start-5 tablet:row-span-7 tabletLandscape:col-span-8 tabletLandscape:col-start-5 tabletLandscape:row-span-full tabletLandscape:row-start-1'>
-        <WindowWrapper>
+      <div className='col-span-full col-start-1 row-span-6 row-start-3 tablet:col-span-8 tablet:col-start-4 tabletLandscape:col-span-7 tabletLandscape:col-start-6 tabletLandscape:row-start-1 tabletLandscape:row-end-13'>
+        <WindowWrapper style='h-full'>
           {renderPlaceholder('home-profile')}
           <img
             src={`${S3_BASE_URL}/profile/home.png`}
@@ -26,7 +26,7 @@ export default function Home() {
         <div className='text-2xl font-bold'>Hi, I'm Jenny</div>
         <div>a product-minded engineer / nyc 🗽</div>
       </div>
-      <SpotifyPlayer style='hidden tabletLandscape:block tabletLandscape:row-start-8 tabletLandscape:row-span-4 tabletLandscape:col-start-1 tabletLandscape:col-span-4' />
+      <SpotifyPlayer style='hidden tabletLandscape:block tabletLandscape:row-start-9 tabletLandscape:content-end tabletLandscape:row-span-4 tabletLandscape:col-start-1 tabletLandscape:col-span-5' />
     </>
   );
 }
